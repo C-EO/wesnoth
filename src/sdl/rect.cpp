@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2014 - 2023
+	Copyright (C) 2014 - 2024
 	by Mark de Wever <koraq@xs4all.nl>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
@@ -15,9 +15,8 @@
 
 #include "sdl/point.hpp"
 #include "sdl/rect.hpp"
-#include "sdl/window.hpp"
-#include "video.hpp"
 
+#include <algorithm>
 #include <ostream>
 
 bool operator==(const SDL_Rect& a, const SDL_Rect& b)
@@ -107,6 +106,27 @@ void rect::shift(const point& other)
 {
 	this->x += other.x;
 	this->y += other.y;
+}
+
+rect rect::shifted_by(int x, int y) const
+{
+	rect res = *this;
+	res.x += x;
+	res.y += y;
+	return res;
+}
+
+rect rect::shifted_by(const point& other) const
+{
+	return shifted_by(other.x, other.y);
+}
+
+point rect::point_at(double x, double y) const
+{
+	return {
+		static_cast<int>(this->x + this->w * std::clamp(x, 0.0, 1.0)),
+		static_cast<int>(this->y + this->h * std::clamp(y, 0.0, 1.0))
+	};
 }
 
 std::ostream& operator<<(std::ostream& s, const rect& r)

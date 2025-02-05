@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2003 - 2023
+	Copyright (C) 2003 - 2024
 	by David White <dave@whitevine.net>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
@@ -17,10 +17,8 @@
 
 #include "game_events/handlers.hpp"
 #include "game_events/manager_impl.hpp"
-#include "game_events/menu_item.hpp"
 #include "game_events/pump.hpp"
 
-#include "formula/string_utils.hpp"
 #include "game_data.hpp"
 #include "log.hpp"
 #include "resources.hpp"
@@ -85,9 +83,9 @@ void manager::add_event_handler_from_wml(const config& handler, game_lua_kernel&
 			}
 			args[attr] = val;
 		}
-		for(auto child : handler.all_children_range()) {
-			if(child.key.compare(0, 6, "filter") != 0) {
-				args.add_child(child.key, child.cfg);
+		for(auto [key, cfg] : handler.all_children_view()) {
+			if(key.compare(0, 6, "filter") != 0) {
+				args.add_child(key, cfg);
 			}
 		}
 		new_handler->set_arguments(args);
@@ -204,22 +202,18 @@ void manager::write_events(config& cfg, bool include_nonserializable) const
 	wml_menu_items_.to_config(cfg);
 }
 
-void manager::execute_on_events(const std::string& event_id, manager::event_func_t func)
+void manager::execute_on_events(const std::string& event_id, const manager::event_func_t& func)
 {
 	const std::string standardized_event_id = event_handlers::standardize_name(event_id);
 	const game_data* gd = resources::gamedata;
-	auto& active_handlers = event_handlers_->get_active();
-
-	// Save the end outside the loop so the end point remains constant,
-	// even if new events are added to the queue.
-	const unsigned saved_end = active_handlers.size();
-
+	// Copy the list so that new events added during processing are not executed.
+	auto active_handlers = event_handlers_->get_active();
 
 	{
 		// Ensure that event handlers won't be cleaned up while we're iterating them.
 		event_handler_list_lock lock;
 
-		for (unsigned i = 0; i < saved_end; ++i) {
+		for (unsigned i = 0; i < active_handlers.size(); ++i) {
 			handler_ptr handler = nullptr;
 
 			try {

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: en@shaw\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2023-10-17 04:13 UTC\n"
+"POT-Creation-Date: 2024-09-18 02:19 UTC\n"
 "PO-Revision-Date: 2009-10-13 11:20-0400\n"
 "Last-Translator: Arc Riley <arcriley@ubuntu.com>\n"
 "Language-Team: Shavian English <ubuntu-l10n-en-shaw@lists.launchpad.net>\n"
@@ -360,7 +360,7 @@ msgstr "Kembe"
 msgid "Treagh"
 msgstr "Treagh"
 
-#. [unit]: type=Footpad_Peasant, id=Harper
+#. [unit]: type=Footpad_Peasant, id=Harper, gender=female
 #: data/campaigns/Liberty/scenarios/01_The_Raid.cfg:240
 msgid "Harper"
 msgstr "𐑣𐑸𐑐𐑻"
@@ -501,7 +501,8 @@ msgstr ""
 #. [message]: speaker=Harper
 #: data/campaigns/Liberty/scenarios/01_The_Raid.cfg:416
 msgid ""
-"Hey, someone left their pack here. I could use it to carry some more rocks."
+"Hey, someone left their pack here. I could use it to carry some heavier "
+"rocks."
 msgstr ""
 
 #. [message]: speaker=unit
@@ -616,8 +617,8 @@ msgstr ""
 #. [side]: type=Bandit_Peasant, id=Baldras
 #. [side]
 #. [side]: type=Bandit, id=Baldras
-#. [side]: type=Highwayman_Peasant, id=Relana
-#. [side]: type=General, id=Lord Maddock
+#. [side]: type=Highwayman_Peasant, gender=female, id=Relana
+#. [side]: type=Lord of Elensefar, id=Lord Maddock
 #. [side]: type=Rogue, id=Hans
 #. [side]: type=Highwayman, id=Baldras
 #. [side]: type=Shadow Lord, id=Helicrom
@@ -918,7 +919,7 @@ msgid ""
 "trouble ahead of us..."
 msgstr ""
 
-#. [side]: type=Highwayman_Peasant, id=Relana
+#. [side]: type=Highwayman_Peasant, gender=female, id=Relana
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:57
 msgid "Relana"
 msgstr ""
@@ -1210,7 +1211,7 @@ msgstr "·𐑧𐑤𐑧𐑯𐑕𐑓𐑸"
 msgid "Port of Elensefar"
 msgstr "𐑐𐑹𐑑 𐑝 ·𐑧𐑤𐑧𐑯𐑕𐑓𐑸"
 
-#. [side]: type=General, id=Lord Maddock
+#. [side]: type=Lord of Elensefar, id=Lord Maddock
 #: data/campaigns/Liberty/scenarios/04_Unlawful_Orders.cfg:45
 msgid "Lord Maddock"
 msgstr "𐑤𐑹𐑛 𐑥𐑨𐑛𐑩𐑒"
@@ -2884,6 +2885,25 @@ msgid ""
 "bones has one more adventure left in it..."
 msgstr ""
 
+#. [unit_type]: id=Lord of Elensefar, race=human
+#: data/campaigns/Liberty/units/Maddock.cfg:4
+#, fuzzy
+#| msgid "Port of Elensefar"
+msgid "Lord of Elensefar"
+msgstr "𐑐𐑹𐑑 𐑝 ·𐑧𐑤𐑧𐑯𐑕𐑓𐑸"
+
+#. [unit_type]: id=Lord of Elensefar, race=human
+#: data/campaigns/Liberty/units/Maddock.cfg:7
+msgid ""
+"The grand city-state of Elensefar is the wealthiest human settlement on the "
+"Great Continent, commanding a reputation and power that belies its "
+"relatively small population. Unlike the more war-minded inland nobles, "
+"Elensefar’s governors master the art of commerce and the skill of sailing, "
+"and are known to be particularly agreeable. Yet behind that merchant charm "
+"lies a fierce independence, a trait that sometimes puts them at odds with "
+"the aristocrats of other regions."
+msgstr ""
+
 #. [unit_type]: id=Rogue Mage, race=human
 #: data/campaigns/Liberty/units/Rogue_Mage.cfg:5
 msgid "Rogue Mage"
@@ -3003,12 +3023,12 @@ msgstr ""
 "𐑰𐑗 𐑝 𐑞 𐑝𐑦𐑤𐑦𐑡𐑦𐑟 𐑕𐑒𐑨𐑑𐑼𐑛 𐑩𐑒𐑮𐑪𐑕 𐑞 ·𐑢𐑧𐑕𐑯𐑷𐑔 𐑒𐑳𐑯𐑑𐑮𐑦𐑕𐑲𐑛 𐑦𐑟 𐑯𐑹𐑥𐑩𐑤𐑦 𐑜𐑲𐑛𐑩𐑛 𐑚𐑲 𐑩 𐑜𐑮𐑵𐑐 𐑝 "
 "𐑧𐑤𐑛𐑼𐑟, 𐑣𐑵 𐑸 𐑞 𐑝𐑦𐑤𐑦𐑡𐑦𐑟 𐑢𐑲𐑟𐑩𐑕𐑑 𐑯 𐑥𐑴𐑕𐑑 𐑦𐑒𐑕𐑐𐑽𐑦𐑩𐑯𐑕𐑑 𐑮𐑧𐑟𐑦𐑛𐑩𐑯𐑑𐑕."
 
-#. [unit_type]: id=Highwayman_Peasant
+#. [unit_type]: id=Highwayman_Peasant, gender=male,female
 #: data/campaigns/Liberty/units/Villagers.cfg:53
 msgid "Senior Village Elder"
 msgstr "𐑕𐑰𐑯𐑘𐑻 𐑝𐑦𐑤𐑦𐑡 𐑧𐑤𐑛𐑼"
 
-#. [unit_type]: id=Highwayman_Peasant
+#. [unit_type]: id=Highwayman_Peasant, gender=male,female
 #: data/campaigns/Liberty/units/Villagers.cfg:57
 msgid ""
 "The entire village looks to the senior elder for guidance. Strong and wise, "
@@ -3021,7 +3041,7 @@ msgstr ""
 "𐑑 𐑗𐑵𐑟 𐑕𐑰𐑯𐑘𐑻 𐑝𐑦𐑤𐑦𐑡 𐑧𐑤𐑛𐑼𐑟 𐑨𐑟 𐑥𐑨𐑡𐑦𐑕𐑑𐑮𐑱𐑑𐑕 𐑕𐑴 𐑞𐑨𐑑 𐑤𐑰𐑜𐑩𐑤 𐑯 𐑒𐑳𐑕𐑑𐑩𐑥𐑼𐑦 𐑷𐑔𐑪𐑮𐑦𐑑𐑰 𐑢𐑦𐑤 "
 "𐑒𐑴𐑦𐑯𐑕𐑲𐑛."
 
-#. [female]
+#. [female]: gender=female
 #: data/campaigns/Liberty/units/Villagers.cfg:59
 #, fuzzy
 msgid "female^Senior Village Elder"

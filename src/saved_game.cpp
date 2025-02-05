@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2003 - 2023
+	Copyright (C) 2003 - 2024
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
 	This program is free software; you can redistribute it and/or modify
@@ -21,8 +21,7 @@
  *	  This is present in all savefiles
  *
  *  - [statistics]
- *    This is present in all savefiles but it's not handled by playcampaign/play_controller/saved_game.
- *    It's handled by savegame.cpp
+ *    This is present in all savefiles.
  *
  *  - [snapshot]
  *    If a savegame was saved during a scenario this contains a snapshot of the game at the point when
@@ -74,7 +73,8 @@
 #include "random.hpp"
 #include "serialization/binary_or_text.hpp"
 #include "side_controller.hpp"
-#include "statistics.hpp"
+#include "utils/general.hpp"
+#include "team.hpp" // for team::attributes, team::variables
 #include "variable.hpp" // for config_variable_set
 #include "variable_info.hpp"
 
@@ -175,7 +175,7 @@ void saved_game::set_random_seed()
 	}
 
 	std::stringstream stream;
-	stream << std::setfill('0') << std::setw(8) << std::hex << randomness::generator->get_random_int(0, INT_MAX);
+	stream << std::setfill('0') << std::setw(8) << std::hex << randomness::generator->get_random_int(0, std::numeric_limits<int>::max());
 	carryover_["random_seed"] = stream.str();
 	carryover_["random_calls"] = 0;
 }
@@ -231,6 +231,9 @@ void saved_game::set_defaults()
 	};
 
 	if(auto campaign = game_config.find_child("campaign", "id", classification_.campaign)) {
+		// FIXME: The mp code could use `require_scenario` to check whether we have the addon in question installed.
+		//        But since [scenario]s are usually hidden behind `#ifdef CAMPAIGN_DEFINE` it would not be able to find them.
+		//        Investigate how this should actually work.
 		bool require_campaign = campaign["require_campaign"].to_bool(true);
 		starting_point_["require_scenario"] = require_campaign;
 	}
@@ -249,6 +252,27 @@ void saved_game::set_defaults()
 		}
 		if(side["save_id"].empty()) {
 			side["save_id"] = side.child_or_empty("leader")["id"];
+		}
+
+		// If this side tag describes the leader of the side, convert it into a [leader] tag here, by doing this here,
+		// all code that follows, no longer has to hande the possibility of leader information directly in [side].
+
+		// If this side tag describes the leader of the side
+		if(!side["type"].empty() && side["type"] != "null") {
+			auto temp = config{};
+
+			for(const std::string& tag : team::tags) {
+				temp.append_children_by_move(side, tag);
+			}
+			for(const std::string& attr : team::attributes) {
+				if(side.has_attribute(attr)) {
+					temp[attr] = side[attr];
+					side.remove_attribute(attr);
+				}
+			}
+			temp["side"] = side["side"];
+			temp.swap(side);
+			temp.swap(side.add_child_at("leader", config(), 0));
 		}
 
 		if(!is_multiplayer_tag) {
@@ -319,6 +343,7 @@ void saved_game::check_require_scenario()
 	config& content = scenario.add_child("content");
 	content["id"] = starting_point_["id"];
 	content["name"] = starting_point_["name"];
+	// TODO: would it be better if this used the actual tagname ([multiplayer]/[scenario]) instead of always using [scenario]?
 	content["type"] = "scenario";
 
 	mp_settings_.update_addon_requirements(scenario);
@@ -331,9 +356,7 @@ void saved_game::load_non_scenario(const std::string& type, const std::string& i
 		// Note the addon_id if this mod is required to play the game in mp.
 		std::string require_attr = "require_" + type;
 
-		// By default, eras have "require_era = true", and mods have "require_modification = false".
 		// anything with no addon_id is from mainline, and therefore isn't required in the sense that all players already have it
-		const bool require_default = cfg["addon_id"].empty() ? false : type == "era";
 		const std::string version_default = cfg["addon_id"].empty() ? game_config::wesnoth_version.str() : "";
 		config non_scenario;
 		// if there's no addon_id, then this isn't an add-on
@@ -341,7 +364,7 @@ void saved_game::load_non_scenario(const std::string& type, const std::string& i
 		non_scenario["name"] = cfg["addon_title"].str("mainline");
 		non_scenario["version"] = cfg["addon_version"].str(version_default);
 		non_scenario["min_version"] = cfg["addon_min_version"];
-		non_scenario["required"] = cfg[require_attr].to_bool(require_default);
+		non_scenario["required"] = cfg[require_attr].to_bool(!cfg["addon_id"].empty());
 		config& content = non_scenario.add_child("content");
 		content["id"] = id;
 		content["name"] = cfg["addon_title"].str(cfg["name"].str(""));
@@ -708,7 +731,7 @@ void saved_game::update_label()
 		label = classification().abbrev + "-" + starting_point_["name"];
 	}
 
-	label.erase(std::remove_if(label.begin(), label.end(), is_illegal_file_char), label.end());
+	utils::erase_if(label, is_illegal_file_char);
 	std::replace(label.begin(), label.end(), '_', ' ');
 }
 

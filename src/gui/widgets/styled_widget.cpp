@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2008 - 2023
+	Copyright (C) 2008 - 2024
 	by Mark de Wever <koraq@xs4all.nl>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
@@ -26,10 +26,8 @@
 #include "gui/core/log.hpp"
 #include "gui/dialogs/tooltip.hpp"
 #include "gui/widgets/settings.hpp"
-#include "gui/widgets/window.hpp"
 #include "hotkey/hotkey_item.hpp"
 #include "sdl/rect.hpp"
-#include "video.hpp"
 #include "wml_exception.hpp"
 #include <functional>
 
@@ -303,7 +301,7 @@ const widget* styled_widget::find_at(const point& coordinate,
 				   : nullptr;
 }
 
-widget* styled_widget::find(const std::string& id, const bool must_be_active)
+widget* styled_widget::find(const std::string_view id, const bool must_be_active)
 {
 	return (widget::find(id, must_be_active)
 			&& (!must_be_active || get_active()))
@@ -311,7 +309,7 @@ widget* styled_widget::find(const std::string& id, const bool must_be_active)
 				   : nullptr;
 }
 
-const widget* styled_widget::find(const std::string& id, const bool must_be_active)
+const widget* styled_widget::find(const std::string_view id, const bool must_be_active)
 		const
 {
 	return (widget::find(id, must_be_active)
@@ -489,7 +487,7 @@ point styled_widget::get_best_text_size(point minimum_size, point maximum_size) 
 		<< "Status:\n"
 		<< "minimum_size: " << minimum_size << "\n"
 		<< "maximum_size: " << maximum_size << "\n"
-		<< "text_maximum_width_: " << text_maximum_width_ << "\n"
+		<< "maximum width of text: " << text_maximum_width_ << "\n"
 		<< "can_wrap: " << can_wrap() << "\n"
 		<< "characters_per_line: " << get_characters_per_line() << "\n"
 		<< "truncated: " << renderer_.is_truncated() << "\n"

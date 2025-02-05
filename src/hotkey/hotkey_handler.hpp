@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2014 - 2023
+	Copyright (C) 2014 - 2024
 	by Chris Beck <render787@gmail.com>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
@@ -27,7 +27,6 @@ namespace events { class menu_handler; }
 namespace events { class mouse_handler; }
 namespace game_events { class wml_menu_item; }
 
-class game_display;
 class game_state;
 class saved_game;
 
@@ -70,9 +69,6 @@ private:
 protected:
 	bool browse() const;
 	bool linger() const;
-
-	const team & viewing_team() const;
-	bool viewing_team_is_playing() const;
 
 public:
 	hotkey_handler(play_controller &, saved_game &);

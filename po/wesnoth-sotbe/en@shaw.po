@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: en@shaw\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2023-07-16 03:12 UTC\n"
+"POT-Creation-Date: 2024-10-21 16:11 UTC\n"
 "PO-Revision-Date: 2009-10-13 13:00-0400\n"
 "Last-Translator: Arc Riley <arcriley@ubuntu.com>\n"
 "Language-Team: Shavian English <ubuntu-l10n-en-shaw@lists.launchpad.net>\n"
@@ -139,7 +139,7 @@ msgstr "𐑛𐑦𐑓𐑰𐑑 ·𐑨𐑤𐑚𐑼𐑑"
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:46
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/06_Black_Flag.cfg:126
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:24
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:434
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:438
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/08_Silent_Forest.cfg:24
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/09_Shan_Taum_the_Smug.cfg:26
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:49
@@ -163,11 +163,11 @@ msgstr "𐑛𐑧𐑔 𐑝 ·𐑒𐑨𐑐𐑬'𐑰"
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/01_End_of_Peace.cfg:56
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/01_End_of_Peace.cfg:64
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/02_The_Human_Army.cfg:76
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:74
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:128
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:96
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:150
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:57
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:87
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:72
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:75
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/06_Black_Flag.cfg:23
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/06_Black_Flag.cfg:81
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:72
@@ -685,7 +685,7 @@ msgstr "𐑥𐑵𐑝 ·𐑒𐑨𐑐𐑬'𐑰 𐑑 𐑞 𐑧𐑯𐑛 𐑝 𐑞 �
 #. [objectives]
 #. [objective]: condition=win
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:33
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:430
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:434
 #, fuzzy
 msgid "Defeat the enemy leader"
 msgstr "𐑛𐑦𐑓𐑰𐑑 𐑷𐑤 𐑧𐑯𐑩𐑥𐑦 𐑤𐑰𐑛𐑼𐑟"
@@ -696,7 +696,7 @@ msgstr "𐑛𐑦𐑓𐑰𐑑 𐑷𐑤 𐑧𐑯𐑩𐑥𐑦 𐑤𐑰𐑛𐑼𐑟"
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:50
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/06_Black_Flag.cfg:130
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:28
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:438
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:442
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/08_Silent_Forest.cfg:28
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/09_Shan_Taum_the_Smug.cfg:30
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:53
@@ -712,18 +712,18 @@ msgid "Death of Grüü"
 msgstr "𐑛𐑧𐑔 𐑝 Grüü"
 
 #. [side]: type=Dwarvish Lord, type=Dwarvish Steelclad, id=Kwili
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:88
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:110
 #, fuzzy
 msgid "Kwili"
 msgstr "Kwili"
 
 #. [side]: type=Dwarvish Lord, type=Dwarvish Steelclad, id=Kwili
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:95
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:117
 msgid "Dwarves"
 msgstr "𐑛𐑢𐑹𐑝𐑟"
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:149
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:197
 msgid ""
 "We have almost crossed the mountains. We’re close to the lands of the free "
 "tribes. So far so good."
@@ -732,17 +732,17 @@ msgstr ""
 "𐑜𐑫𐑛."
 
 #. [message]: speaker=Kwili
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:153
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:201
 msgid "Halt! Who goes there?"
 msgstr "𐑣𐑷𐑤𐑑! 𐑣𐑵 𐑜𐑴𐑟 𐑞𐑺?"
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:158
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:206
 msgid "It is I, Kapou’e, son of the Black-Eye Karun. What do you want, dwarf?"
 msgstr "𐑦𐑑 𐑦𐑟 𐑲, ·𐑒𐑨𐑐𐑬'𐑰, 𐑕𐑳𐑯 𐑝 𐑞 𐑚𐑤𐑨𐑒-𐑲 𐑒𐑻𐑵𐑯. 𐑢𐑪𐑑 𐑛𐑵 𐑿 𐑢𐑪𐑯𐑑, 𐑛𐑢𐑹𐑓?"
 
 #. [message]: speaker=Kwili
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:164
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:212
 #, fuzzy
 msgid ""
 "Oh, so it’s another group o’ stinkin’ orcs, eh. Begone, or we shall wash our "
@@ -752,7 +752,7 @@ msgstr ""
 "𐑘𐑻 𐑚𐑤𐑳𐑛."
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:169
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:217
 msgid ""
 "Look, you pint-sized idiot, we aren’t out to kill you so why don’t you just "
 "scamper away and hide in a cave or something. We’ll be through here in a few "
@@ -762,24 +762,24 @@ msgstr ""
 "𐑦𐑯 𐑩 𐑒𐑱𐑝 𐑹 𐑕𐑳𐑥𐑔𐑦𐑙. 𐑢𐑰'𐑤 𐑚𐑰 𐑔𐑮𐑵 𐑣𐑽 𐑦𐑯 𐑩 𐑓𐑿 𐑬𐑼𐑟."
 
 #. [message]: role=Helper
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:174
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:222
 msgid "(<i>Snicker</i>)"
 msgstr ""
 
 #. [message]: speaker=Kwili
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:179
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:227
 msgid ""
 "Your scorn and rudeness shall be your undoing. Dwarves, let no orc pass this "
 "way alive!"
 msgstr "𐑿𐑼 𐑕𐑒𐑹𐑯 𐑯 𐑮𐑵𐑛𐑯𐑩𐑕 𐑖𐑨𐑤 𐑚𐑰 𐑿𐑼 𐑳𐑯𐑛𐑵𐑦𐑙. 𐑛𐑢𐑹𐑝𐑟, 𐑤𐑧𐑑 𐑯𐑴 𐑹𐑒 𐑐𐑭𐑕 𐑞𐑦𐑕 𐑢𐑱 𐑩𐑤𐑲𐑝!"
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:184
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:232
 msgid "It looks like we might have to fight them after all."
 msgstr "𐑦𐑑 𐑤𐑫𐑒𐑕 𐑤𐑲𐑒 𐑢𐑰 𐑥𐑲𐑑 𐑣𐑨𐑝 𐑑 𐑓𐑲𐑑 𐑞𐑧𐑥 𐑭𐑓𐑑𐑼 𐑷𐑤."
 
 #. [message]: role=Helper
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:189
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:237
 #, fuzzy
 msgid ""
 "Hey, Chief, I was thinking — dwarves are pretty slow; why don’t we just "
@@ -787,12 +787,12 @@ msgid ""
 msgstr "𐑣𐑱, 𐑡𐑰𐑓, 𐑲 𐑢𐑪𐑟 𐑔𐑦𐑙𐑒𐑦𐑙 - 𐑛𐑢𐑹𐑝𐑟 𐑸 𐑐𐑮𐑦𐑑𐑦 𐑕𐑤𐑴; 𐑢𐑲 𐑛𐑴𐑯𐑑 𐑢𐑰 𐑡𐑳𐑕𐑑 𐑚𐑲𐑐𐑨𐑕 𐑞𐑧𐑥?"
 
 #. [message]: role=Helper
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:194
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:242
 msgid "I mean, we could defeat them easily but it would just slow us down."
 msgstr "𐑲 𐑥𐑰𐑯, 𐑢𐑰 𐑒𐑫𐑛 𐑛𐑦𐑓𐑰𐑑 𐑞𐑧𐑥 𐑰𐑟𐑦𐑤𐑦 𐑚𐑳𐑑 𐑦𐑑 𐑢𐑫𐑛 𐑡𐑳𐑕𐑑 𐑕𐑤𐑴 𐑳𐑕 𐑛𐑬𐑯."
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:199
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:247
 #, fuzzy
 #| msgid ""
 #| "We could, but then again, if we crush them then we can loot their "
@@ -805,7 +805,7 @@ msgstr ""
 "𐑞 𐑜𐑴𐑤𐑛 𐑢𐑦𐑤 𐑚𐑰 𐑿𐑕𐑓𐑩𐑤."
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:204
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:252
 #, fuzzy
 #| msgid ""
 #| "Whatever else happens, we have to pass through these mountains and I "
@@ -818,54 +818,54 @@ msgstr ""
 "𐑬𐑼 𐑮𐑽. 𐑕𐑑𐑨𐑚, 𐑕𐑥𐑲𐑑, 𐑯 𐑕𐑤𐑱!"
 
 #. [message]: speaker=unit
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:220
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:268
 msgid ""
 "I’ve never pushed so far. We are crossing the border of the Black-Eye lands."
 msgstr "𐑲'𐑝 𐑯𐑧𐑝𐑼 𐑐𐑫𐑖𐑑 𐑕𐑴 𐑓𐑸. 𐑢𐑰 𐑸 𐑒𐑮𐑪𐑕𐑦𐑙 𐑞 𐑚𐑹𐑛𐑼 𐑝 𐑞 𐑚𐑤𐑨𐑒-𐑲 𐑤𐑨𐑯𐑛𐑟."
 
 #. [unit]: id=Blemaker, type=Troll Warrior
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:239
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:287
 msgid "Blemaker"
 msgstr "·𐑚𐑤𐑧𐑥𐑱𐑒𐑻"
 
 #. [unit]: id=Grüü, type=Troll Hero
 #. [side]: id=Grüü, type=Great Troll
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:248
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:296
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/14_Back_Home.cfg:80
 msgid "Grüü"
 msgstr "Grüü"
 
 #. [unit]: id=Toughkon, type=Troll Whelp
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:270
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:318
 #, fuzzy
 msgid "Toughkon"
 msgstr "Toughkon"
 
 #. [unit]: id=Pe, type=Troll Whelp
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:279
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:327
 #, fuzzy
 msgid "Pe"
 msgstr "Pe"
 
 #. [message]: speaker=Blemaker
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:289
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:337
 msgid "Look! Dwarves are fighting orcs!"
 msgstr "𐑤𐑫𐑒! 𐑛𐑢𐑹𐑝𐑟 𐑸 𐑓𐑲𐑑𐑦𐑙 𐑹𐑒𐑕!"
 
 #. [message]: speaker=Grüü
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:293
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:341
 msgid "Father, we should help them. Orcs are our allies."
 msgstr "𐑓𐑭𐑞𐑼, 𐑢𐑰 𐑖𐑫𐑛 𐑣𐑧𐑤𐑐 𐑞𐑧𐑥. 𐑹𐑒𐑕 𐑸 𐑬𐑼 𐑨𐑤𐑲𐑟."
 
 #. [message]: speaker=Blemaker
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:297
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:345
 msgid ""
 "I don’t know. Orcs have been our allies in the past, but they treat us as "
 "fools."
 msgstr "𐑲 𐑛𐑴𐑯𐑑 𐑯𐑴. 𐑹𐑒𐑕 𐑣𐑨𐑝 𐑚𐑰𐑯 𐑬𐑼 𐑨𐑤𐑲𐑟 𐑦𐑯 𐑞 𐑐𐑭𐑕𐑑, 𐑚𐑳𐑑 𐑞𐑱 𐑑𐑮𐑰𐑑 𐑳𐑕 𐑨𐑟 𐑓𐑵𐑤𐑟."
 
 #. [message]: speaker=Grüü
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:301
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:349
 msgid ""
 "But, Father, we don’t know what they are seeking there. Between us, we could "
 "squash these dwarves."
@@ -873,7 +873,7 @@ msgstr ""
 "𐑚𐑳𐑑, 𐑓𐑭𐑞𐑼, 𐑢𐑰 𐑛𐑴𐑯𐑑 𐑯𐑴 𐑢𐑪𐑑 𐑞𐑱 𐑸 𐑕𐑰𐑒𐑦𐑙 𐑞𐑺. 𐑚𐑦𐑑𐑢𐑰𐑯 𐑳𐑕, 𐑢𐑰 𐑒𐑫𐑛 𐑕𐑒𐑢𐑭𐑖 𐑞𐑰𐑟 𐑛𐑢𐑹𐑝𐑟."
 
 #. [message]: speaker=Blemaker
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:305
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:353
 #, fuzzy
 msgid ""
 "Right, my son. We help our orcish friends. But you take care... I would be "
@@ -883,23 +883,23 @@ msgstr ""
 "𐑕𐑳𐑥𐑔𐑦𐑙 𐑣𐑨𐑐𐑩𐑯𐑛 𐑑 𐑿."
 
 #. [message]: speaker=Grüü
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:319
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:367
 msgid "Father! Oh no!"
 msgstr "𐑓𐑭𐑞𐑼! 𐑴 𐑯𐑴!"
 
 #. [message]: speaker=Grüü
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:323
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:371
 #, fuzzy
 msgid "Filthy dwarves! Now I’ll kill you to the last!"
 msgstr "𐑓𐑦𐑤𐑔𐑦 𐑛𐑢𐑹𐑝𐑟! 𐑯𐑬 𐑲'𐑤 𐑒𐑦𐑤 𐑿 𐑑 𐑞 𐑤𐑭𐑕𐑑!"
 
 #. [message]: speaker=unit
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:334
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:382
 msgid "Oh no, I’m defeated."
 msgstr "𐑴 𐑯𐑴, 𐑲'𐑧𐑥 𐑛𐑦𐑓𐑰𐑑𐑩𐑛."
 
 #. [message]: speaker=Blemaker
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:343
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:391
 msgid ""
 "My son! I should have never brought him to this fight. Now we return to our "
 "caverns, and we never return."
@@ -908,7 +908,7 @@ msgstr ""
 "𐑯𐑧𐑝𐑼 𐑮𐑦𐑑𐑻𐑯."
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:349
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:397
 msgid ""
 "The trolls are done. We will desperately need their help in the coming "
 "battles. Without them there is no hope."
@@ -917,12 +917,12 @@ msgstr ""
 "𐑦𐑟 𐑯𐑴 𐑣𐑴𐑐."
 
 #. [message]: speaker=unit
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:366
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:414
 msgid "Argh! I die!"
 msgstr "𐑸𐑜! 𐑲 𐑛𐑲!"
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:371
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:419
 #, fuzzy
 #| msgid ""
 #| "You were warned, dwarf. Riders, spread out of the area and collect what "
@@ -940,13 +940,13 @@ msgstr ""
 "𐑤𐑦𐑝 𐑴𐑯𐑤𐑦 𐑪𐑯 𐑥𐑲 𐑜𐑫𐑛 𐑜𐑮𐑱𐑕𐑩𐑟. 𐑲'𐑤 𐑑𐑱𐑒 𐑞 𐑸𐑥𐑦 𐑑 ·𐑚𐑸𐑨𐑜 Gór. 𐑒𐑨𐑗 𐑳𐑐 𐑢𐑧𐑯 𐑿'𐑼 𐑛𐑳𐑯."
 
 #. [message]: role=doggie
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:381
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:429
 #, fuzzy
 msgid "Sounds like fun. All right boys, let’s go!"
 msgstr "𐑕𐑬𐑯𐑛𐑟 𐑤𐑲𐑒 𐑓𐑳𐑯. 𐑪𐑤𐑮𐑲𐑑 𐑚𐑶𐑟, 𐑤𐑧𐑑'𐑕 𐑜𐑴!"
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:406
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:454
 msgid ""
 "We’ve succeeded! We’ve passed through the Mountains of Haag! Look at these "
 "green hills! The land of the free tribes is near now. I can see the walls of "
@@ -956,7 +956,7 @@ msgstr ""
 "𐑞 𐑓𐑮𐑰 𐑑𐑮𐑲𐑚𐑟 𐑦𐑟 𐑯𐑽 𐑯𐑬. 𐑲 𐑒𐑨𐑯 𐑕𐑰 𐑞 𐑢𐑷𐑤𐑟 𐑝 ·𐑚𐑸𐑨𐑜 Gór 𐑦𐑯 𐑞 𐑛𐑦𐑕𐑑𐑩𐑯𐑕."
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:426
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:474
 #, fuzzy
 #| msgid ""
 #| "Blemaker, many thanks for your help in this fight. Would you like to join "
@@ -971,12 +971,12 @@ msgstr ""
 "𐑢𐑦𐑞 𐑿𐑼 𐑕𐑳𐑯? 𐑿 𐑸 𐑩 𐑐𐑬𐑼𐑓𐑩𐑤 𐑢𐑪𐑮𐑦𐑼, 𐑯 𐑿 𐑢𐑫𐑛 𐑚𐑰 𐑝 𐑜𐑮𐑱𐑑 𐑣𐑧𐑤𐑐."
 
 #. [message]: speaker=Grüü
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:431
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:479
 msgid "Father, I’d like to join them. Would you mind it?"
 msgstr "𐑓𐑭𐑞𐑼, 𐑲'𐑛𐑰 𐑤𐑲𐑒 𐑑 𐑡𐑶𐑯 𐑞𐑧𐑥. 𐑢𐑫𐑛 𐑿 𐑥𐑲𐑯𐑛 𐑦𐑑?"
 
 #. [message]: speaker=Blemaker
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:435
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:483
 msgid ""
 "My son, you’re old enough to discover the world. Me, I have to stay here. "
 "But take care, there are plenty of creatures that seek our end, like elves "
@@ -986,12 +986,12 @@ msgstr ""
 "𐑐𐑤𐑧𐑯𐑑𐑰 𐑝 𐑒𐑮𐑰𐑗𐑼𐑟 𐑞𐑨𐑑 𐑕𐑰𐑒 𐑬𐑼 𐑧𐑯𐑛, 𐑤𐑲𐑒 𐑧𐑤𐑝𐑟 𐑹 𐑣𐑿𐑥𐑩𐑯𐑟. 𐑞𐑱 𐑸 𐑒𐑤𐑧𐑝𐑼 𐑯 𐑥𐑻𐑕𐑩𐑤𐑩𐑕."
 
 #. [message]: speaker=Grüü
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:439
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:487
 msgid "Thanks, father. Don’t worry, I’ll take care of myself."
 msgstr "𐑔𐑨𐑙𐑒𐑕, 𐑓𐑭𐑞𐑼. 𐑛𐑴𐑯𐑑 𐑢𐑳𐑮𐑦, 𐑲'𐑤 𐑑𐑱𐑒 𐑒𐑺 𐑝 𐑥𐑲𐑕𐑧𐑤𐑓."
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:445
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:493
 msgid ""
 "Grüü, many thanks for your help in this fight. I’m sorry for the loss of "
 "your father. Would you like to join us in our journey? Your help would be "
@@ -1001,7 +1001,7 @@ msgstr ""
 "𐑤𐑲𐑒 𐑑 𐑡𐑶𐑯 𐑳𐑕 𐑦𐑯 𐑬𐑼 𐑡𐑻𐑯𐑰? 𐑿𐑼 𐑣𐑧𐑤𐑐 𐑢𐑫𐑛 𐑚𐑰 𐑿𐑕𐑓𐑩𐑤 𐑑 𐑥𐑰."
 
 #. [message]: speaker=Grüü
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:449
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:497
 msgid ""
 "My father would have come to help you. I would insult his memory not to help "
 "you. I come!"
@@ -1027,7 +1027,7 @@ msgstr "𐑛𐑦𐑓𐑰𐑑 𐑷𐑤 𐑧𐑯𐑩𐑥𐑦 𐑤𐑰𐑛𐑼𐑟"
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:35
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:54
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:32
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:442
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:446
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/08_Silent_Forest.cfg:32
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/09_Shan_Taum_the_Smug.cfg:34
 msgid "Death of a Shaman"
@@ -1050,7 +1050,7 @@ msgstr "Etheliel"
 #. [side]: type=Elvish Marshal, id=Hida'tul
 #. [side]: type=Elvish Marshal, id=Ammon
 #. [side]: type=Elvish Marshal, id=Sammual
-#. [side]: type=Elvish Sharpshooter, id=Lucile
+#. [side]: type=Elvish Sharpshooter, gender=female, id=Lucile
 #. [side]: type=Elvish Captain, id=Raceme
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:69
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:102
@@ -1421,24 +1421,24 @@ msgid "To the Harbor of Tirigaz"
 msgstr "𐑑 𐑞 𐑣𐑸𐑚𐑼 𐑝 ·𐑑𐑻𐑦𐑜𐑨𐑟"
 
 #. [side]: type=Lich, id=Na-Mana
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:80
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:83
 msgid "Na-Mana"
 msgstr "𐑯𐑭-𐑥𐑭𐑯𐑩"
 
 #. [side]: type=Lich, id=Na-Mana
 #. [side]: type=Death Knight, id=Ma-Rana
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:83
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:112
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:86
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:115
 msgid "Undead"
 msgstr "𐑳𐑯𐑛𐑧𐑛"
 
 #. [side]: type=Death Knight, id=Ma-Rana
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:109
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:112
 msgid "Ma-Rana"
 msgstr "𐑥𐑶-𐑮𐑨𐑯𐑩"
 
 #. [part]
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:126
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:129
 #, fuzzy
 #| msgid ""
 #| "Kapou’e and the shamans rested and discussed the matter for three days. "
@@ -1456,7 +1456,7 @@ msgstr ""
 "𐑣𐑬𐑧𐑝𐑼, 𐑦𐑯 𐑹𐑛𐑼 𐑑 𐑛𐑵 𐑞𐑨𐑑 𐑞 𐑧𐑯𐑑𐑲𐑼 𐑜𐑮𐑱𐑑 𐑒𐑬𐑯𐑕𐑩𐑤 𐑢𐑫𐑛 𐑣𐑨𐑝 𐑑 𐑜𐑨𐑞𐑼."
 
 #. [part]
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:132
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:135
 #, fuzzy
 #| msgid ""
 #| "Since it was now obvious that the humans were going to try their best to "
@@ -1474,7 +1474,7 @@ msgstr ""
 "·𐑑𐑻𐑦𐑜𐑨𐑟 𐑢𐑺 𐑞 𐑮𐑧𐑕𐑑 𐑝 𐑞 𐑒𐑬𐑯𐑕𐑩𐑤 𐑢𐑪𐑟 𐑮𐑦𐑟𐑲𐑛𐑦𐑙."
 
 #. [part]
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:138
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:141
 #, fuzzy
 #| msgid ""
 #| "Leaving most of his people at Barag Gór, Kapou’e, accompanied by the "
@@ -1487,50 +1487,50 @@ msgstr ""
 "𐑢𐑪𐑮𐑦𐑼𐑟 𐑕𐑧𐑑 𐑪𐑓 𐑑 ·𐑑𐑻𐑦𐑜𐑨𐑟."
 
 #. [message]: speaker=narrator
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:186
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:189
 msgid ""
 "A couple of days into their journey, the party halted to rest for the night."
 msgstr "𐑩 𐑒𐑳𐑐𐑩𐑤 𐑝 𐑛𐑱𐑟 𐑦𐑯𐑑𐑫 𐑞𐑺 𐑡𐑻𐑯𐑰, 𐑞 𐑐𐑸𐑑𐑦 𐑣𐑷𐑤𐑑𐑩𐑛 𐑑 𐑮𐑧𐑕𐑑 𐑓𐑹 𐑞 𐑯𐑲𐑑."
 
 #. [message]: speaker=Vraurk
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:192
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:195
 msgid "Ahhh, I’m so tired. It was a good idea to halt in such a quiet place."
 msgstr "𐑭𐑭𐑭, 𐑲'𐑧𐑥 𐑕𐑴 𐑑𐑲𐑼𐑛. 𐑦𐑑 𐑢𐑪𐑟 𐑩 𐑜𐑫𐑛 𐑲𐑛𐑾 𐑑 𐑣𐑷𐑤𐑑 𐑦𐑯 𐑕𐑳𐑗 𐑩 𐑒𐑢𐑲𐑧𐑑 𐑐𐑤𐑱𐑕."
 
 #. [message]: speaker=Grüü
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:196
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:199
 msgid "It is too quiet. Just plain boring."
 msgstr "𐑦𐑑 𐑦𐑟 𐑑𐑵 𐑒𐑢𐑲𐑧𐑑. 𐑡𐑳𐑕𐑑 𐑐𐑤𐑱𐑯 𐑚𐑹𐑦𐑙."
 
 #. [message]: speaker=Pirk
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:200
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:203
 msgid "Shut up, I just heard something."
 msgstr "𐑖𐑳𐑑 𐑳𐑐, 𐑲 𐑡𐑳𐑕𐑑 𐑣𐑻𐑛 𐑕𐑳𐑥𐑔𐑦𐑙."
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:204
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:207
 msgid ""
 "You’re right. I can see something is moving in these hills. Looks like there "
 "are undead there."
 msgstr "𐑿'𐑼 𐑮𐑲𐑑. 𐑲 𐑒𐑨𐑯 𐑕𐑰 𐑕𐑳𐑥𐑔𐑦𐑙 𐑦𐑟 𐑥𐑵𐑝𐑦𐑙 𐑦𐑯 𐑞𐑰𐑟 𐑣𐑦𐑤𐑟. 𐑤𐑫𐑒𐑕 𐑤𐑲𐑒 𐑞𐑺 𐑸 𐑳𐑯𐑛𐑧𐑛 𐑞𐑺."
 
 #. [message]: speaker=Grüü
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:225
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:228
 msgid "Excellent! It is time for exercise!"
 msgstr "𐑧𐑒𐑕𐑩𐑤𐑩𐑯𐑑! 𐑦𐑑 𐑦𐑟 𐑑𐑲𐑥 𐑓𐑹 𐑧𐑒𐑕𐑩𐑕𐑲𐑟!"
 
 #. [message]: speaker=Vraurk
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:230
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:233
 msgid "Uh... I don’t think so. Let’s get out of here!"
 msgstr "𐑩... 𐑲 𐑛𐑴𐑯𐑑 𐑔𐑦𐑙𐑒 𐑕𐑴. 𐑤𐑧𐑑'𐑕 𐑜𐑧𐑑 𐑬𐑑 𐑝 𐑣𐑽!"
 
 #. [message]: speaker=Grüü
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:235
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:238
 msgid "No way! Grüü want to crush some undead."
 msgstr "𐑯𐑴 𐑢𐑱! Grüü 𐑢𐑪𐑯𐑑 𐑑 𐑒𐑮𐑳𐑖 𐑕𐑳𐑥 𐑳𐑯𐑛𐑧𐑛."
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:240
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:243
 #, fuzzy
 #| msgid ""
 #| "Grüü is right. It is not wise to let these undead remain here cutting off "
@@ -1546,12 +1546,12 @@ msgstr ""
 "𐑑 𐑤𐑰𐑝 𐑧𐑯𐑦 𐑔𐑮𐑧𐑑𐑕 𐑦𐑯 𐑬𐑼 𐑮𐑽."
 
 #. [message]: speaker=Vraurk
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:245
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:248
 msgid "But..."
 msgstr "𐑚𐑳𐑑..."
 
 #. [message]: speaker=Gork
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:250
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:253
 #, fuzzy
 msgid ""
 "Hush, Vraurk, we must trust the Son of the Black-Eye in these matters, for "
@@ -1561,44 +1561,44 @@ msgstr ""
 "𐑝𐑻𐑕𐑑 𐑦𐑯 𐑞𐑧𐑥 𐑞𐑧𐑯 𐑢𐑰 𐑸."
 
 #. [message]: speaker=Grüü
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:255
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:258
 #, fuzzy
 msgid "That’s right, let’s go!"
 msgstr "𐑞𐑨𐑔'𐑕 𐑮𐑲𐑑, 𐑤𐑧𐑑𐑕 𐑜𐑴!"
 
 #. [message]: speaker=unit
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:269
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:274
 msgid "Hmmm, what a neat bottle! What is it?"
 msgstr "𐑣𐑩𐑥, 𐑢𐑪𐑑 𐑩 𐑯𐑰𐑑 𐑚𐑪𐑑𐑤! 𐑢𐑪𐑑 𐑦𐑟 𐑦𐑑?"
 
 #. [message]: speaker=unit
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:273
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:278
 msgid "It is written H.O.L.Y W.A.T.E.R"
 msgstr "𐑦𐑑 𐑦𐑟 𐑮𐑦𐑑𐑩𐑯 𐑱𐑗.𐑴.𐑧𐑤.𐑢𐑲 𐑛𐑩𐑚𐑩𐑤𐑿.𐑩.𐑑𐑰.𐑧.𐑸"
 
 #. [message]: speaker=unit
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:277
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:282
 #, fuzzy
 msgid "I’m thirsty... <i>Gulp gulp</i>"
 msgstr "𐑲'𐑧𐑥 𐑔𐑻𐑕𐑑𐑦 ... *𐑜𐑩𐑤𐑐* *𐑜𐑩𐑤𐑐*"
 
 #. [message]: speaker=unit
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:282
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:287
 msgid "Ahhh, that was yummy!"
 msgstr "𐑭𐑭𐑭, 𐑞𐑨𐑑 𐑢𐑪𐑟 𐑘𐑩𐑥𐑰!"
 
 #. [message]: speaker=Grüü
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:296
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:301
 msgid "The day is coming, these night creatures will soon return to the pit."
 msgstr "𐑞 𐑛𐑱 𐑦𐑟 𐑒𐑳𐑥𐑦𐑙, 𐑞𐑰𐑟 𐑯𐑲𐑑 𐑒𐑮𐑰𐑗𐑼𐑟 𐑢𐑦𐑤 𐑕𐑵𐑯 𐑮𐑦𐑑𐑻𐑯 𐑑 𐑞 𐑐𐑦𐑑."
 
 #. [message]: speaker=Pirk
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:300
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:305
 msgid "Grüü, are you forgetting we are also night creatures?"
 msgstr "Grüü, 𐑸 𐑿 𐑓𐑼𐑜𐑧𐑑𐑦𐑙 𐑢𐑰 𐑸 𐑷𐑤𐑕𐑴 𐑯𐑲𐑑 𐑒𐑮𐑰𐑗𐑼𐑟?"
 
 #. [message]: speaker=Grüü
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:304
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:309
 msgid "Err... well..."
 msgstr "𐑺... 𐑢𐑧𐑤..."
 
@@ -1726,12 +1726,20 @@ msgstr ""
 
 #. [message]: speaker=Kapou'e
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/06_Black_Flag.cfg:243
+#, fuzzy
+#| msgid ""
+#| "Wise decision. We have actually come to speak to the shamans, but while "
+#| "we are here we must help you out of this scrape. Grüü, hold them while I "
+#| "run to the keep and organize our forces to counterattack. We can’t defeat "
+#| "them by sea without ships, but we can destroy the foothold they have "
+#| "gained on the land."
 msgid ""
 "Wise decision. We have actually come to speak to the shamans, but while we "
-"are here we must help you out of this scrape. Grüü, hold them while I run to "
-"the keep and organize our forces to counterattack. We can’t defeat them by "
-"sea without ships, but we can destroy the foothold they have gained on the "
-"land."
+"are here we must help you out of this scrape. Grüü, fight the humans if you "
+"must, but don’t be reckless. Getting me to the Tirigaz keep so I can rally "
+"our forces for the counterattack must be our first priority. And, I need you "
+"to stay alive. We can’t defeat them by sea without ships, but we can destroy "
+"the foothold they have gained on the land."
 msgstr ""
 "𐑢𐑲𐑟 𐑛𐑩𐑕𐑦𐑠𐑩𐑯. 𐑢𐑰 𐑣𐑨𐑝 𐑨𐑒𐑗𐑫𐑩𐑤𐑦 𐑒𐑳𐑥 𐑑 𐑕𐑐𐑰𐑒 𐑑 𐑞 𐑖𐑱𐑥𐑩𐑯𐑟, 𐑚𐑳𐑑 𐑢𐑲𐑤 𐑢𐑰 𐑸 𐑣𐑽 𐑢𐑰 𐑥𐑳𐑕𐑑 "
 "𐑣𐑧𐑤𐑐 𐑿 𐑬𐑑 𐑝 𐑞𐑦𐑕 𐑕𐑒𐑮𐑱𐑐. Grüü, 𐑣𐑴𐑤𐑛 𐑞𐑧𐑥 𐑢𐑲𐑤 𐑲 𐑮𐑳𐑯 𐑑 𐑞 𐑒𐑰𐑐 𐑯 𐑹𐑜𐑩𐑯𐑲𐑟 𐑬𐑼 𐑓𐑹𐑕𐑩𐑟 𐑑 "
@@ -1860,7 +1868,7 @@ msgid "Villains"
 msgstr "𐑝𐑦𐑤𐑩𐑯𐑟"
 
 #. [part]
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:114
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:118
 msgid ""
 "Resting during the day and doing most of their marching by night, the party "
 "moved steadily through the sand for two days."
@@ -1869,7 +1877,7 @@ msgstr ""
 "𐑕𐑭𐑯𐑛 𐑓𐑹 𐑑𐑵 𐑛𐑱𐑟."
 
 #. [part]
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:120
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:124
 msgid ""
 "The heat of the day and the chill of the night wore heavily on the orcs. "
 "Fortunately, they didn’t encounter any giant scorpions, but neither did they "
@@ -1879,7 +1887,7 @@ msgstr ""
 "𐑧𐑯𐑦 𐑡𐑲𐑩𐑯𐑑 𐑕𐑒𐑹𐑐𐑰𐑩𐑯𐑟, 𐑚𐑳𐑑 𐑯𐑲𐑞𐑼 𐑛𐑦𐑛 𐑞𐑱 𐑛𐑦𐑕𐑒𐑳𐑝𐑼 𐑧𐑯𐑦 𐑕𐑹𐑕 𐑝 𐑓𐑵𐑛 𐑹 𐑢𐑷𐑑𐑼."
 
 #. [part]
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:126
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:130
 msgid ""
 "By the dawn of the third day the party was hungry, tired and weary, but "
 "according to their map, a good-sized oasis was not far away."
@@ -1888,7 +1896,7 @@ msgstr ""
 "𐑜𐑫𐑛-𐑕𐑲𐑟𐑛 𐑴𐑱𐑕𐑦𐑕 𐑢𐑪𐑟 𐑯𐑪𐑑 𐑓𐑸 𐑩𐑢𐑱."
 
 #. [part]
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:132
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:136
 msgid ""
 "Just then, however, a strong wind began to blow. It rapidly increased in "
 "fury, whipping hot sand up all around them. They could see little further "
@@ -1900,18 +1908,18 @@ msgstr ""
 "𐑚𐑩𐑜𐑨𐑯 𐑑 𐑕𐑰𐑥 𐑞𐑱 𐑢𐑫𐑛 𐑚𐑰 𐑚𐑧𐑮𐑦𐑛 𐑩𐑤𐑲𐑝 𐑚𐑲 𐑕𐑥𐑩𐑞𐑻𐑦𐑙 𐑕𐑭𐑯𐑛."
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:161
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:165
 msgid "Ack! This blasted sand!"
 msgstr "𐑨𐑒! 𐑞𐑦𐑕 𐑚𐑤𐑨𐑕𐑑𐑩𐑛 𐑕𐑭𐑯𐑛!"
 
 #. [message]: speaker=Grüü
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:166
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:170
 msgid ""
 "I’m hungry and we found no giant scorpion yet. I’m sure it would be tasty."
 msgstr "𐑲'𐑧𐑥 𐑣𐑳𐑙𐑜𐑮𐑦 𐑯 𐑢𐑰 𐑓𐑬𐑯𐑛 𐑯𐑴 𐑡𐑲𐑩𐑯𐑑 𐑕𐑒𐑹𐑐𐑰𐑩𐑯 𐑘𐑧𐑑. 𐑲'𐑧𐑥 𐑖𐑫𐑼 𐑦𐑑 𐑢𐑫𐑛 𐑚𐑰 𐑑𐑱𐑕𐑑𐑰."
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:170
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:174
 msgid ""
 "I hope we won’t find one! They are terrible armored beasts; your hammer "
 "would be useless against their heavy shells."
@@ -1920,7 +1928,7 @@ msgstr ""
 "𐑞𐑺 𐑣𐑧𐑝𐑦 𐑖𐑧𐑤𐑟."
 
 #. [message]: speaker=Vraurk
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:174
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:178
 msgid ""
 "I’ve been told the best way to defeat them is to attack their eyes with "
 "sharp blades, set them afire, or pierce them with arrows. But I hope too we "
@@ -1930,7 +1938,7 @@ msgstr ""
 "𐑩𐑓𐑲𐑮, 𐑹 𐑐𐑽𐑕 𐑞𐑧𐑥 𐑢𐑦𐑞 𐑨𐑮𐑴𐑟. 𐑚𐑳𐑑 𐑲 𐑣𐑴𐑐 𐑑𐑵 𐑢𐑰 𐑢𐑴𐑯𐑑 𐑥𐑰𐑑 𐑞𐑧𐑥."
 
 #. [message]: speaker=Pirk
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:178
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:182
 #, fuzzy
 #| msgid ""
 #| "I wouldn’t worry about the scorpions right now, I would worry about "
@@ -1946,25 +1954,25 @@ msgstr ""
 "𐑢𐑦𐑤 𐑛𐑲 𐑝 𐑣𐑳𐑙𐑜𐑼 𐑯 𐑔𐑻𐑕𐑑."
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:182
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:186
 msgid "Hurry then, break camp, we must get to the oasis!"
 msgstr "𐑣𐑳𐑮𐑦 𐑞𐑧𐑯, 𐑚𐑮𐑱𐑒 𐑒𐑨𐑥𐑐, 𐑢𐑰 𐑥𐑳𐑕𐑑 𐑜𐑧𐑑 𐑑 𐑞 𐑴𐑱𐑕𐑦𐑕!"
 
 #. [message]: speaker=Pirk
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:187
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:191
 #, fuzzy
 msgid "What?! Through all this chaos?!"
 msgstr "𐑢𐑪𐑑!? 𐑔𐑮𐑵 𐑷𐑤 𐑞𐑦𐑕 𐑒𐑱𐑭𐑕!?"
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:192
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:196
 #, fuzzy
 #| msgid "We don’t have any other choice. If we remain here we’ll die."
 msgid "We don’t have any other choice. If we remain here, we’ll die."
 msgstr "𐑢𐑰 𐑛𐑴𐑯𐑑 𐑣𐑨𐑝 𐑧𐑯𐑦 𐑳𐑞𐑼 𐑗𐑶𐑕. 𐑦𐑓 𐑢𐑰 𐑮𐑦𐑥𐑱𐑯 𐑣𐑽 𐑢𐑰'𐑤 𐑛𐑲."
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:216
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:220
 msgid ""
 "Finally we’ve done it! Now let’s wait out this sandstorm, resupply and get "
 "some rest before we continue on our journey."
@@ -1973,82 +1981,82 @@ msgstr ""
 "𐑚𐑦𐑓𐑹 𐑢𐑰 𐑒𐑩𐑯𐑑𐑦𐑯𐑿 𐑪𐑯 𐑬𐑼 𐑡𐑻𐑯𐑰."
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:284
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:288
 msgid "There you go, Grüü, there is your giant scorpion!"
 msgstr "𐑞𐑺 𐑿 𐑜𐑴, Grüü, 𐑞𐑺 𐑦𐑟 𐑿𐑼 𐑡𐑲𐑩𐑯𐑑 𐑕𐑒𐑹𐑐𐑰𐑩𐑯!"
 
 #. [message]: speaker=Vraurk
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:289
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:293
 msgid "Oh great, perfect timing."
 msgstr "𐑴 𐑜𐑮𐑱𐑑, 𐑐𐑼𐑓𐑧𐑒𐑑 𐑑𐑲𐑥𐑦𐑙."
 
 #. [message]: speaker=Grüü
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:294
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:298
 msgid "Yeah, I am really hungry."
 msgstr "𐑘𐑨, 𐑲 𐑨𐑥 𐑮𐑾𐑤𐑦 𐑣𐑳𐑙𐑜𐑮𐑦."
 
 #. [message]: speaker=Vraurk
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:299
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:303
 msgid "That is not what I meant!"
 msgstr "𐑞𐑨𐑑 𐑦𐑟 𐑯𐑪𐑑 𐑢𐑪𐑑 𐑲 𐑥𐑧𐑯𐑑!"
 
 #. [message]: speaker=Grüü
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:316
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:320
 msgid "Ahh, finally! Lunchtime!"
 msgstr "𐑭, 𐑓𐑲𐑯𐑩𐑤𐑦! 𐑤𐑩𐑯𐑗𐑑𐑲𐑥!"
 
 #. [message]: speaker=Vraurk
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:321
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:325
 msgid "You trolls are just sick!"
 msgstr "𐑿 𐑑𐑮𐑴𐑤𐑟 𐑸 𐑡𐑳𐑕𐑑 𐑕𐑦𐑒!"
 
 #. [message]: speaker=Grüü
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:326
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:330
 #, fuzzy
 msgid "<i>Yuck</i>! Disgusting! These things taste horrible!"
 msgstr "𐑘𐑩𐑒! 𐑛𐑦𐑕𐑜𐑩𐑕𐑑𐑦𐑙! 𐑞𐑰𐑟 𐑔𐑦𐑙𐑟 𐑑𐑱𐑕𐑑 𐑣𐑪𐑮𐑩𐑚𐑩𐑤!"
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:331
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:335
 #, fuzzy
 msgid ""
 "I don’t know if you should have eaten that, Grüü, you don’t look so good."
 msgstr "𐑲 𐑛𐑴𐑯𐑑 𐑯𐑴 𐑦𐑓 𐑿 𐑖𐑫𐑛 𐑣𐑨𐑝 𐑰𐑑𐑩𐑯 𐑞𐑨𐑑 Grüü, 𐑿 𐑛𐑴𐑯𐑑 𐑤𐑫𐑒 𐑕𐑴 𐑜𐑫𐑛."
 
 #. [message]: speaker=Grüü
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:336
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:340
 msgid "Ugh... I feel sick."
 msgstr "𐑳𐑜... 𐑲 𐑓𐑰𐑤 𐑕𐑦𐑒."
 
 #. [message]: speaker=Gork
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:341
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:345
 msgid "Hmmm, it seems that scorpions are poisonous."
 msgstr "𐑣𐑩𐑥, 𐑦𐑑 𐑕𐑰𐑥𐑟 𐑞𐑨𐑑 𐑕𐑒𐑹𐑐𐑰𐑩𐑯𐑟 𐑸 𐑐𐑶𐑕𐑩𐑯𐑩𐑕."
 
 #. [message]: speaker=Vraurk
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:346
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:350
 msgid "But what about Grüü?"
 msgstr "𐑚𐑳𐑑 𐑢𐑪𐑑 𐑩𐑚𐑬𐑑 Grüü?"
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:351
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:355
 msgid ""
 "Ahh, he will be fine in a few minutes. He is a troll, after all. Right, Grüü?"
 msgstr "𐑭, 𐑣𐑰 𐑢𐑦𐑤 𐑚𐑰 𐑓𐑲𐑯 𐑦𐑯 𐑩 𐑓𐑿 𐑥𐑦𐑯𐑦𐑑𐑕. 𐑣𐑰 𐑦𐑟 𐑩 𐑑𐑮𐑴𐑤, 𐑭𐑓𐑑𐑼 𐑷𐑤. 𐑮𐑲𐑑, Grüü?"
 
 #. [message]: speaker=Grüü
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:356
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:360
 msgid "(<i>Puke</i>)"
 msgstr ""
 
 #. [message]: speaker=unit
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:404
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:408
 msgid ""
 "Hold it right there! This oasis is ours! Begone or you all will be killed!"
 msgstr "𐑣𐑴𐑤𐑛 𐑦𐑑 𐑮𐑲𐑑 𐑞𐑺! 𐑞𐑦𐑕 𐑴𐑱𐑕𐑦𐑕 𐑦𐑟 𐑬𐑼𐑟! 𐑚𐑰𐑜𐑪𐑯 𐑹 𐑿 𐑷𐑤 𐑢𐑦𐑤 𐑚𐑰 𐑒𐑦𐑤𐑛!"
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:409
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:413
 msgid ""
 "Look, fool, we are in the middle of a sandstorm, and we are almost "
 "completely out of food and water. There is no way we can keep going without "
@@ -2058,17 +2066,17 @@ msgstr ""
 "𐑢𐑷𐑑𐑼. 𐑞𐑺 𐑦𐑟 𐑯𐑴 𐑢𐑱 𐑢𐑰 𐑒𐑨𐑯 𐑒𐑰𐑐 𐑜𐑴𐑦𐑙 𐑢𐑦𐑞𐑬𐑑 𐑕𐑑𐑪𐑐𐑦𐑙 𐑨𐑑 𐑞𐑦𐑕 𐑴𐑱𐑕𐑦𐑕."
 
 #. [message]: speaker=unit
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:414
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:418
 msgid "I don’t care, get lost!"
 msgstr "𐑲 𐑛𐑴𐑯𐑑 𐑒𐑺, 𐑜𐑧𐑑 𐑤𐑪𐑕𐑑!"
 
 #. [message]: speaker=Pirk
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:419
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:423
 msgid "It’s no use reasoning with them, Kapou’e, they aren’t going to listen."
 msgstr "𐑦𐑑'𐑕 𐑯𐑴 𐑿𐑕 𐑮𐑰𐑟𐑩𐑯𐑦𐑙 𐑢𐑦𐑞 𐑞𐑧𐑥, ·𐑒𐑨𐑐𐑬'𐑰, 𐑞𐑱 𐑸𐑯𐑑 𐑜𐑴𐑦𐑙 𐑑 𐑤𐑦𐑕𐑩𐑯."
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:424
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:428
 #, fuzzy
 #| msgid ""
 #| "Yeah, I can see that. Well, I guess we have to clean these rabble out of "
@@ -2081,25 +2089,25 @@ msgstr ""
 "𐑕𐑤𐑱!"
 
 #. [message]: speaker=Grüü
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:460
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:464
 #, fuzzy
 msgid "... Food...!"
 msgstr "...𐑓𐑵𐑛..."
 
 #. [message]: speaker=Vraurk
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:465
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:469
 #, fuzzy
 msgid "... Water...!"
 msgstr "...𐑢𐑷𐑑𐑼..."
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:470
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:474
 #, fuzzy
 msgid "... Come... on..., people...! We have... to... keep... going..."
 msgstr "...𐑒𐑳𐑥... 𐑪𐑯 .... 𐑐𐑰𐑐𐑩𐑤 .... 𐑢𐑰 𐑣𐑨𐑝 .... 𐑑 .... 𐑒𐑰𐑐.... 𐑜𐑴𐑦𐑙...."
 
 #. [message]: speaker=Pirk
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:475
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:479
 #, fuzzy
 msgid "... Can’t... The... heat... is... too... much..."
 msgstr ".... 𐑒𐑭𐑯𐑑.... 𐑞 .... 𐑣𐑰𐑑.... 𐑦𐑟.... 𐑑𐑵..... 𐑥𐑳𐑗...."
@@ -2114,7 +2122,7 @@ msgstr "𐑕𐑲𐑤𐑩𐑯𐑑 𐑓𐑹𐑦𐑕𐑑"
 msgid "Defeat the elves"
 msgstr "𐑛𐑦𐑓𐑰𐑑 𐑞 𐑧𐑤𐑝𐑟"
 
-#. [side]: type=Elvish Sharpshooter, id=Lucile
+#. [side]: type=Elvish Sharpshooter, gender=female, id=Lucile
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/08_Silent_Forest.cfg:76
 msgid "Lucile"
 msgstr "𐑤𐑵𐑕𐑰𐑤"
@@ -3864,7 +3872,7 @@ msgstr "𐑔𐑮𐑴 𐑣𐑦𐑥 𐑦𐑯 𐑞 𐑤𐑱𐑒. 𐑦𐑓 𐑣𐑰 
 
 #. [message]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/14_Back_Home.cfg:767
-msgid "You retrieve $amount_gold of Grüü's leftover gold."
+msgid "You retrieve $amount_gold of Grüü’s leftover gold."
 msgstr ""
 
 #. [scenario]: id=15_Civil_War

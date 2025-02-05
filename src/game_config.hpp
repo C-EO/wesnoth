@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2003 - 2023
+	Copyright (C) 2003 - 2024
 	by David White <dave@whitevine.net>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
@@ -22,9 +22,9 @@ class color_range;
 #include "tstring.hpp"
 #include "game_config_view.hpp"
 
+#include <chrono>
 #include <vector>
 #include <map>
-#include <cstdint>
 
 //basic game configuration information is here.
 namespace game_config
@@ -38,8 +38,8 @@ namespace game_config
 	extern int kill_experience;
 	extern int combat_experience;
 	extern unsigned int tile_size;
-	extern unsigned lobby_network_timer;
-	extern unsigned lobby_refresh;
+	extern std::chrono::milliseconds lobby_network_timer;
+	extern std::chrono::milliseconds lobby_refresh;
 	extern const std::string default_title_string;
 	extern std::string default_terrain;
 
@@ -59,9 +59,10 @@ namespace game_config
 	extern const int gold_carryover_percentage;
 
 	extern bool debug_lua, strict_lua, editor, ignore_replay_errors, mp_debug,
-		exit_at_end, no_delay, disable_autosave, no_addons;
+		exit_at_end, disable_autosave, no_addons;
 
 	extern bool allow_insecure;
+	extern bool addon_server_info;
 
 	extern const bool& debug;
 	void set_debug(bool new_debug);
@@ -122,7 +123,6 @@ namespace game_config
 			mouseover,
 			selected,
 			editor_brush,
-			unreachable,
 			linger,
 			// GUI elements
 			observer,
@@ -142,13 +142,15 @@ namespace game_config
 	} //images
 
 
-	extern std::string shroud_prefix, fog_prefix;
+	extern std::string shroud_prefix, fog_prefix, reach_map_prefix;
 
 	extern double hp_bar_scaling, xp_bar_scaling;
 
 	extern std::string flag_rgb, unit_rgb;
 	extern std::vector<color_t> red_green_scale;
 	extern std::vector<color_t> red_green_scale_text;
+	extern std::vector<color_t> blue_white_scale;
+	extern std::vector<color_t> blue_white_scale_text;
 
 	extern std::vector<std::string> foot_speed_prefix;
 	extern std::string foot_teleport_enter, foot_teleport_exit;
@@ -157,9 +159,9 @@ namespace game_config
 	 * Colors defined by WML [color_range] tags. In addition to team colors such as "red" and
 	 * "blue", this also contains the colors used on the minimap for "cave", "fungus" etc.
 	 */
-	extern std::map<std::string, color_range> team_rgb_range;
-	extern std::map<std::string, t_string> team_rgb_name;
-	extern std::map<std::string, std::vector<color_t>> team_rgb_colors;
+	extern std::map<std::string, color_range, std::less<>> team_rgb_range;
+	extern std::map<std::string, t_string, std::less<>> team_rgb_name;
+	extern std::map<std::string, std::vector<color_t>, std::less<>> team_rgb_colors;
 
 	extern std::vector<std::string> default_colors;
 
@@ -187,8 +189,8 @@ namespace game_config
 
 	void add_color_info(const game_config_view& v);
 	void reset_color_info();
-	const std::vector<color_t>& tc_info(const std::string& name);
-	const color_range& color_info(const std::string& name);
+	const std::vector<color_t>& tc_info(std::string_view name);
+	const color_range& color_info(std::string_view name);
 
 	/**
 	 * Return a color corresponding to the value val

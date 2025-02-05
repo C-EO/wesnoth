@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2008 - 2023
+	Copyright (C) 2008 - 2024
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
 	This program is free software; you can redistribute it and/or modify
@@ -16,7 +16,6 @@
 
 #include "gui/dialogs/sp_options_configure.hpp"
 
-#include "gui/widgets/settings.hpp"
 
 namespace gui2::dialogs
 {
@@ -29,17 +28,22 @@ sp_options_configure::sp_options_configure(ng::create_engine& create_engine, ng:
 	, config_engine_(config_engine)
 	, options_manager_()
 {
+	set_show_even_without_video(true);
+	set_allow_plugin_skip(false);
 }
 
-void sp_options_configure::pre_show(window& window)
+void sp_options_configure::pre_show()
 {
-	options_manager_.reset(new mp_options_helper(window, create_engine_));
+	options_manager_.reset(new mp_options_helper(*this, create_engine_));
 	options_manager_->update_all_options();
+
+	plugins_context_.reset(new plugins_context("Campaign Configure"));
+	plugins_context_->set_callback("launch", [this](const config&) { set_retval(retval::OK); }, false);
 }
 
-void sp_options_configure::post_show(window& window)
+void sp_options_configure::post_show()
 {
-	if(window.get_retval() == retval::OK) {
+	if(get_retval() == retval::OK) {
 		config_engine_.set_options(options_manager_->get_options_config());
 	}
 }

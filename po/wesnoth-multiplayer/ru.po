@@ -9,13 +9,13 @@
 # Sergey Khlutchin (Khlut) - Sergey.Khlutchin@gmail.com
 # Azamat H. Hackimov <azamat.hackimov@gmail.com>, 2006, 2007.
 # Fedor Khodkov <fkhodkov@gmail.com>, 2014
-# Artem Khrapov (kabachuha) <artemkhrapov2001@yandex.ru>, 2020-2021.
+# Artem Khrapov (kabachuha) <artemkhrapov2001@yandex.ru>, 2020-2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: wesnoth-multiplayer\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2023-10-28 14:02 UTC\n"
-"PO-Revision-Date: 2021-08-06 16:18+0300\n"
+"POT-Creation-Date: 2024-10-21 16:11 UTC\n"
+"PO-Revision-Date: 2024-04-08 22:44+0300\n"
 "Last-Translator: Artem Khrapov <artemkhrapov2001@yandex.ru>\n"
 "Language-Team: https://wiki.wesnoth.org/RussianTranslation\n"
 "Language: ru\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
 #. [generic_multiplayer]: id=user_map
@@ -35,102 +35,126 @@ msgstr "Пользовательская карта"
 #. [achievement_group]
 #: data/multiplayer/achievements.cfg:3
 msgid "Wesnoth Multiplayer (Survivals)"
-msgstr ""
+msgstr "Мультиплеер Веснота (Выживание)"
 
 #. [achievement]: id=Wesnoth_MP_Dark_Forecast
 #: data/multiplayer/achievements.cfg:9 data/multiplayer/achievements.cfg:10
 msgid "Foresight of Triumph"
-msgstr ""
+msgstr "Предвидение триумфа"
 
 #. [achievement]: id=Wesnoth_MP_Dark_Forecast
 #: data/multiplayer/achievements.cfg:11
-msgid "Complete the survival scenario <i>2p - Dark Forecast</i>."
-msgstr ""
+#, fuzzy
+#| msgid "Complete the survival scenario <i>2p - Dark Forecast</i>."
+msgid "Complete the survival scenario <i>2p — Dark Forecast</i>."
+msgstr "Завершите сценарий на выживание <i>2и — Тёмный прогноз</i>."
 
 #. [achievement]: id=Wesnoth_MP_Dark_Forecast
 #: data/multiplayer/achievements.cfg:12
-msgid "Completed the survival scenario <i>2p - Dark Forecast</i>."
-msgstr ""
+#, fuzzy
+#| msgid "Completed the survival scenario <i>2p - Dark Forecast</i>."
+msgid "Completed the survival scenario <i>2p — Dark Forecast</i>."
+msgstr "Завершён сценарий на выживание <i>2и — Тёмный прогноз</i>."
 
 #. [achievement]: id=Wesnoth_MP_Isle_of_Mists
 #: data/multiplayer/achievements.cfg:20
 msgid "Banish the Mists"
-msgstr ""
+msgstr "Изгоните Мглу"
 
 #. [achievement]: id=Wesnoth_MP_Isle_of_Mists
 #: data/multiplayer/achievements.cfg:21
 msgid "Banished the Mists"
-msgstr ""
+msgstr "Изгнали Мглу"
 
 #. [achievement]: id=Wesnoth_MP_Isle_of_Mists
 #: data/multiplayer/achievements.cfg:22
-msgid "Complete the survival scenario <i>2p - Isle of Mists</i>."
-msgstr ""
+#, fuzzy
+#| msgid "Complete the survival scenario <i>2p - Isle of Mists</i>."
+msgid "Complete the survival scenario <i>2p — Isle of Mists</i>."
+msgstr "Завершите сценарий на выживание <i>2и — Остров Туманов</i>."
 
 #. [achievement]: id=Wesnoth_MP_Isle_of_Mists
 #: data/multiplayer/achievements.cfg:23
-msgid "Completed the survival scenario <i>2p - Isle of Mists</i>."
-msgstr ""
+#, fuzzy
+#| msgid "Completed the survival scenario <i>2p - Isle of Mists</i>."
+msgid "Completed the survival scenario <i>2p — Isle of Mists</i>."
+msgstr "Завершён сценарий на выживание <i>2и — Остров Туманов</i>."
 
 #. [achievement]: id=Wesnoth_MP_Team_Survival
 #: data/multiplayer/achievements.cfg:31 data/multiplayer/achievements.cfg:32
 msgid "Flawless Teamwork"
-msgstr ""
+msgstr "Безупречная команда"
 
 #. [achievement]: id=Wesnoth_MP_Team_Survival
 #: data/multiplayer/achievements.cfg:33
-msgid "Complete the survival scenario <i>6p - Team Survival</i>."
-msgstr ""
+#, fuzzy
+#| msgid "Complete the survival scenario <i>6p - Team Survival</i>."
+msgid "Complete the survival scenario <i>6p — Team Survival</i>."
+msgstr "Завершите сценарий на выживание <i>6и — Командное выживание</i>."
 
 #. [achievement]: id=Wesnoth_MP_Team_Survival
 #: data/multiplayer/achievements.cfg:34
-msgid "Completed the survival scenario <i>6p - Team Survival</i>."
-msgstr ""
+#, fuzzy
+#| msgid "Completed the survival scenario <i>6p - Team Survival</i>."
+msgid "Completed the survival scenario <i>6p — Team Survival</i>."
+msgstr "Завершён сценарий на выживание <i>6и — Team Survival</i>."
 
 #. [achievement]: id=Wesnoth_MP_ANL
 #: data/multiplayer/achievements.cfg:42 data/multiplayer/achievements.cfg:43
 msgid "Return to Glory"
-msgstr ""
+msgstr "Возвращение славы"
 
 #. [achievement]: id=Wesnoth_MP_ANL
 #: data/multiplayer/achievements.cfg:44
-msgid "Complete the survival scenario <i>4p - A New Land</i>."
-msgstr ""
+#, fuzzy
+#| msgid "Complete the survival scenario <i>4p - A New Land</i>."
+msgid "Complete the survival scenario <i>4p — A New Land</i>."
+msgstr "Завершите сценарий на выживание <i>4и — Новая земля</i>."
 
 #. [achievement]: id=Wesnoth_MP_ANL
 #: data/multiplayer/achievements.cfg:45
-msgid "Completed the survival scenario <i>4p - A New Land</i>."
-msgstr ""
+#, fuzzy
+#| msgid "Completed the survival scenario <i>4p - A New Land</i>."
+msgid "Completed the survival scenario <i>4p — A New Land</i>."
+msgstr "Завершён сценарий на выживание <i>4и — Новая земля</i>."
 
 #. [achievement]: id=Wesnoth_MP_ANL_mines
 #: data/multiplayer/achievements.cfg:52 data/multiplayer/achievements.cfg:53
 msgid "Economic Recession"
-msgstr ""
+msgstr "Крызис"
 
 #. [achievement]: id=Wesnoth_MP_ANL_mines
 #: data/multiplayer/achievements.cfg:54
-msgid "Destroy all enemy mushroom mines in <i>4p - A New Land</i>."
-msgstr ""
+#, fuzzy
+#| msgid "Destroy all enemy mushroom mines in <i>4p - A New Land</i>."
+msgid "Destroy all enemy mushroom mines in <i>4p — A New Land</i>."
+msgstr "Разрушьте все вражеские грибные шахты в <i>4и — Новая земля</i>."
 
 #. [achievement]: id=Wesnoth_MP_ANL_mines
 #: data/multiplayer/achievements.cfg:55
-msgid "Destroyed all enemy mushroom mines in <i>4p - A New Land</i>."
-msgstr ""
+#, fuzzy
+#| msgid "Destroyed all enemy mushroom mines in <i>4p - A New Land</i>."
+msgid "Destroyed all enemy mushroom mines in <i>4p — A New Land</i>."
+msgstr "Разрушены все вражеские грибные шахты в <i>4и — Новая земля</i>."
 
 #. [achievement]: id=Wesnoth_MP_ANL_rescue_allies
 #: data/multiplayer/achievements.cfg:63 data/multiplayer/achievements.cfg:64
 msgid "Rescue!"
-msgstr ""
+msgstr "На помощь!"
 
 #. [achievement]: id=Wesnoth_MP_ANL_rescue_allies
 #: data/multiplayer/achievements.cfg:65
-msgid "Rescue the trapped units in <i>4p - A New Land</i>."
-msgstr ""
+#, fuzzy
+#| msgid "Rescue the trapped units in <i>4p - A New Land</i>."
+msgid "Rescue the trapped units in <i>4p — A New Land</i>."
+msgstr "Спасите всех пойманных бойцов в <i>4и — Новая земля</i>."
 
 #. [achievement]: id=Wesnoth_MP_ANL_rescue_allies
 #: data/multiplayer/achievements.cfg:66
-msgid "Rescued the trapped units in <i>4p - A New Land</i>."
-msgstr ""
+#, fuzzy
+#| msgid "Rescued the trapped units in <i>4p - A New Land</i>."
+msgid "Rescued the trapped units in <i>4p — A New Land</i>."
+msgstr "Всех пойманные бойцы в <i>4и — Новая земля</i> спасены."
 
 #. [era]: id=era_default, type=hybrid
 #: data/multiplayer/eras.cfg:5
@@ -139,8 +163,12 @@ msgstr "По умолчанию"
 
 #. [era]: id=era_default, type=hybrid
 #: data/multiplayer/eras.cfg:6
+#, fuzzy
+#| msgid ""
+#| "The standard era for Wesnoth multiplayer. Consists of six factions and is "
+#| "generally balanced."
 msgid ""
-"The standard era for Wesnoth multiplayer. Consists of six factions and is "
+"The standard era for Wesnoth multiplayer. Consists of seven factions and is "
 "generally balanced."
 msgstr ""
 "Стандартная эра веснотского мультиплеера. Состоит из шести фракций и в целом "
@@ -153,59 +181,22 @@ msgstr "Эпоха героев"
 
 #. [era]: id=era_heroes
 #: data/multiplayer/eras.cfg:15
+#, fuzzy
+#| msgid ""
+#| "An era with higher level units: level three leaders, with level one and "
+#| "two units available for recruit. Consists of six factions. Not considered "
+#| "balanced."
 msgid ""
 "An era with higher level units: level three leaders, with level one and two "
-"units available for recruit. Consists of six factions. Not considered "
+"units available for recruit. Consists of seven factions. Not considered "
 "balanced."
 msgstr ""
 "Эра с более высоким уровнем бойцов: лидеры уровня 3 с возможностью нанимать "
 "бойцов уровня 1 и 2. Состоит из шести фракций. Не считается сбалансированной."
 
-#. [era]: id=era_dunefolk
-#: data/multiplayer/eras.cfg:22
-msgid "Default + Dunefolk"
-msgstr "По умолчанию + Народ пустыни"
-
-#. [era]: id=era_dunefolk
-#: data/multiplayer/eras.cfg:23
-msgid ""
-"An era featuring an additional faction besides the six factions from Default "
-"Era. Dunefolk units rely on careful use of terrain and coordinated strikes "
-"around dusk or dawn.\n"
-"\n"
-"This era is still under development, so please be sure to report any "
-"problems that arise."
-msgstr ""
-"Эра с еще одной фракцией в дополнение к шести из эры по умолчанию. Бойцы "
-"Народа пустыни не используют магию, но полагаются на использование местности "
-"и скоориднированные удары на восходе или закате.\n"
-"\n"
-"Эра все еще дорабатывается так что не стесняйтесь сообщать о любых проблемах."
-
-#. [era]: id=era_dunefolk_heroes
-#: data/multiplayer/eras.cfg:33
-msgid "Age of Heroes + Dunefolk"
-msgstr "Эпоха героев + Народ пустыни"
-
-#. [era]: id=era_dunefolk_heroes
-#: data/multiplayer/eras.cfg:34
-msgid ""
-"An era featuring an additional faction besides the six factions from Age of "
-"Heroes Era. Dunefolk units rely on careful use of terrain and coordinated "
-"strikes around dusk or dawn.\n"
-"\n"
-"This era is still under development, so please be sure to report any "
-"problems that arise."
-msgstr ""
-"Эра с еще одной фракцией в дополнение к шести из Эры Героев. Бойцы Народа "
-"пустыни не используют магию, но полагаются на использование местности и "
-"скоориднированные удары на восходе или закате.\n"
-"\n"
-"Эра все еще дорабатывается так что не стесняйтесь сообщать о любых проблемах."
-
-#. [lua]: f
+#. [lua]: res.show_turns_over_advantage
 #. In the end-of-match summary, a side which has no units left and therefore lost. In English the loss is shown by displaying it with the text struck through.
-#: data/multiplayer/eras.lua:53
+#: data/multiplayer/eras.lua:113
 msgid ""
 "<span strikethrough='true' foreground='$side_color'>Side $side_number</"
 "span>:  Has lost all units"
@@ -213,9 +204,9 @@ msgstr ""
 "<span strikethrough='true' foreground='$side_color'>Сторона $side_number</"
 "span> потеряла всех бойцов"
 
-#. [lua]: f
+#. [lua]: res.show_turns_over_advantage
 #. In the end-of-match summary, any side that still has units left
-#: data/multiplayer/eras.lua:69
+#: data/multiplayer/eras.lua:118
 msgid ""
 "<span foreground='$side_color'>Side $side_number</span>:  Income score = "
 "$income  Unit score = $units  Gold = $gold\n"
@@ -225,41 +216,41 @@ msgstr ""
 "$income  Очки за бойцов = $units  Золото = $gold\n"
 "Итоговые очки: <b>$total</b>"
 
-#. [lua]: f
+#. [lua]: res.show_turns_over_advantage
 #. In the end-of-match summary, there's a single side that's won.
-#: data/multiplayer/eras.lua:84
+#: data/multiplayer/eras.lua:127
 msgid ""
 "<span foreground='$side_color'>Side $side_number</span> has the advantage."
 msgstr ""
 "Преимущество у <span foreground='$side_color'>Стороны $side_number</span>."
 
-#. [lua]: f
+#. [lua]: res.show_turns_over_advantage
 #. In the end-of-match summary, there's a two-way tie (this is only used for exactly two winning teams)
-#: data/multiplayer/eras.lua:89
+#: data/multiplayer/eras.lua:132
 msgid "Sides $side_number and $other_side_number are tied."
 msgstr "Стороны $side_number и $other_side_number связаны."
 
-#. [lua]: f
+#. [lua]: res.show_turns_over_advantage
 #. In the end-of-match summary, three or more teams have all tied for the best score. $winners contains the result of formatting the conjunct list.
-#: data/multiplayer/eras.lua:94
+#: data/multiplayer/eras.lua:137
 msgid "Sides $winners are tied."
 msgstr "Стороны $winners связаны."
 
-#. [lua]: f
+#. [lua]: res.show_turns_over_advantage
 #. "Turns Over", meaning "turn limit reached" is the title of the end-of-match summary dialog
-#: data/multiplayer/eras.lua:100
+#: data/multiplayer/eras.lua:142
 msgid "dialog^Turns Over"
 msgstr "Конец ходов"
 
-#. [multiplayer_side]: id=Drakes, type=random
+#. [multiplayer_side]: id=Drakes, type=random, description=<img>src='portraits/drakes/inferno.webp~BG()' align='middle'</img><br/>
 #: data/multiplayer/factions/drakes-aoh.cfg:4
 #: data/multiplayer/factions/drakes-default.cfg:4
 msgid "Drakes"
 msgstr "Дрейки"
 
-#. [multiplayer_side]: id=Drakes, type=random
-#: data/multiplayer/factions/drakes-aoh.cfg:14
-#: data/multiplayer/factions/drakes-default.cfg:14
+#. [multiplayer_side]: id=Drakes, type=random, description=<img>src='portraits/drakes/inferno.webp~BG()' align='middle'</img><br/>
+#: data/multiplayer/factions/drakes-aoh.cfg:12
+#: data/multiplayer/factions/drakes-default.cfg:12
 msgid ""
 "The <bold>text='Drakes'</bold> are a faction of dragon-like "
 "<ref>text='Drakes' dst='..race_drake'</ref> and their lizard "
@@ -277,15 +268,15 @@ msgstr ""
 "защиту, что приводит к необычной тактике этой фракции из<ref>text='Эры по "
 "умолчанию' dst='..era_era_default'</ref>."
 
-#. [multiplayer_side]: id=Dunefolk, type=random
+#. [multiplayer_side]: id=Dunefolk, type=random, description=<img>src='portraits/dunefolk/herbalist.webp~BG()' align='middle'</img><br/>
 #: data/multiplayer/factions/dunefolk-aoh.cfg:4
 #: data/multiplayer/factions/dunefolk-default.cfg:4
 msgid "Dunefolk"
 msgstr "Народ пустыни"
 
-#. [multiplayer_side]: id=Dunefolk, type=random
-#: data/multiplayer/factions/dunefolk-aoh.cfg:14
-#: data/multiplayer/factions/dunefolk-default.cfg:14
+#. [multiplayer_side]: id=Dunefolk, type=random, description=<img>src='portraits/dunefolk/herbalist.webp~BG()' align='middle'</img><br/>
+#: data/multiplayer/factions/dunefolk-aoh.cfg:12
+#: data/multiplayer/factions/dunefolk-default.cfg:12
 msgid ""
 "The <bold>text='Dunefolk'</bold> are a faction of humans from the deserts "
 "and hills of the southern lands. The Dunefolk specialize in using terrain "
@@ -303,15 +294,15 @@ msgstr ""
 "бойцы Народа пустынь, как правило, дороже, чем бойцы фракции Лоялистов, они "
 "компенсируют это высокой мобильностью — особенно на холмистой местности."
 
-#. [multiplayer_side]: id=Knalgan Alliance, type=random
+#. [multiplayer_side]: id=Knalgan Alliance, type=random, description=<img>src='portraits/dwarves/ulfserker.webp~BG()' align='middle'</img><br/>
 #: data/multiplayer/factions/knalgans-aoh.cfg:4
 #: data/multiplayer/factions/knalgans-default.cfg:4
 msgid "Knalgan Alliance"
 msgstr "Альянс Кналга"
 
-#. [multiplayer_side]: id=Knalgan Alliance, type=random
-#: data/multiplayer/factions/knalgans-aoh.cfg:13
-#: data/multiplayer/factions/knalgans-default.cfg:13
+#. [multiplayer_side]: id=Knalgan Alliance, type=random, description=<img>src='portraits/dwarves/ulfserker.webp~BG()' align='middle'</img><br/>
+#: data/multiplayer/factions/knalgans-aoh.cfg:11
+#: data/multiplayer/factions/knalgans-default.cfg:11
 msgid ""
 "The <bold>text='Knalgan Alliance'</bold> is a faction of <ref>text='Dwarves' "
 "dst='..race_dwarf'</ref> and their outlaw <ref>text='Human' dst='.."
@@ -332,15 +323,15 @@ msgstr ""
 "определенной местности, и людей, которые могут захватывать территории, на "
 "которой гномы не умеют сражаться."
 
-#. [multiplayer_side]: id=Loyalists, type=random
+#. [multiplayer_side]: id=Loyalists, type=random, description=<img>src='portraits/humans/grand-knight.webp~BG()' align='middle'</img><br/>
 #: data/multiplayer/factions/loyalists-aoh.cfg:4
 #: data/multiplayer/factions/loyalists-default.cfg:4
 msgid "Loyalists"
 msgstr "Лоялисты"
 
-#. [multiplayer_side]: id=Loyalists, type=random
-#: data/multiplayer/factions/loyalists-aoh.cfg:14
-#: data/multiplayer/factions/loyalists-default.cfg:14
+#. [multiplayer_side]: id=Loyalists, type=random, description=<img>src='portraits/humans/grand-knight.webp~BG()' align='middle'</img><br/>
+#: data/multiplayer/factions/loyalists-aoh.cfg:12
+#: data/multiplayer/factions/loyalists-default.cfg:12
 msgid ""
 "The <bold>text='Loyalists'</bold> are a faction of <ref>text='Humans' dst='.."
 "race_human'</ref> who are loyal to the throne of Wesnoth. Humans are a "
@@ -355,15 +346,15 @@ msgstr ""
 "ориентированной на ближний бой, с существнной поддержкой со стороны лучников "
 "и магов."
 
-#. [multiplayer_side]: id=Northerners, type=random, description=<img>src='portraits/orcs/warlord.webp~BG()' align='middle'</img>
+#. [multiplayer_side]: id=Northerners, type=random, description=<img>src='portraits/orcs/warlord.webp~BG()' align='middle'</img><br/>
 #: data/multiplayer/factions/northerners-aoh.cfg:4
 #: data/multiplayer/factions/northerners-default.cfg:4
 msgid "Northerners"
 msgstr "Северяне"
 
-#. [multiplayer_side]: id=Northerners, type=random, description=<img>src='portraits/orcs/warlord.webp~BG()' align='middle'</img>
-#: data/multiplayer/factions/northerners-aoh.cfg:16
-#: data/multiplayer/factions/northerners-default.cfg:15
+#. [multiplayer_side]: id=Northerners, type=random, description=<img>src='portraits/orcs/warlord.webp~BG()' align='middle'</img><br/>
+#: data/multiplayer/factions/northerners-aoh.cfg:12
+#: data/multiplayer/factions/northerners-default.cfg:11
 msgid ""
 "The <bold>text='Northerners'</bold> are a faction of <ref>text='Orcs' dst='.."
 "race_orc'</ref> and their allies who live in the north of the Great "
@@ -383,15 +374,15 @@ msgstr ""
 "ref>. Северяне имеют преимущество за счет того, что у них много недорогих "
 "бойцов с большим числом очков здоровья."
 
-#. [multiplayer_side]: id=Rebels, type=random
+#. [multiplayer_side]: id=Rebels, type=random, description=<img>src='portraits/elves/druid.webp~BG()' align='middle'</img><br/>
 #: data/multiplayer/factions/rebels-aoh.cfg:4
 #: data/multiplayer/factions/rebels-default.cfg:4
 msgid "Rebels"
 msgstr "Мятежники"
 
-#. [multiplayer_side]: id=Rebels, type=random
-#: data/multiplayer/factions/rebels-aoh.cfg:14
-#: data/multiplayer/factions/rebels-default.cfg:14
+#. [multiplayer_side]: id=Rebels, type=random, description=<img>src='portraits/elves/druid.webp~BG()' align='middle'</img><br/>
+#: data/multiplayer/factions/rebels-aoh.cfg:12
+#: data/multiplayer/factions/rebels-default.cfg:12
 msgid ""
 "The <bold>text='Rebels'</bold> are a faction of <ref>text='Elves' dst='.."
 "race_elf'</ref> and their various forest-dwelling allies. They get their "
@@ -417,15 +408,15 @@ msgstr ""
 "сражаются, используя свою высокую защиту в лесу, мастерство при дальних "
 "атаках и нейтральность в мировоззрении эльфов."
 
-#. [multiplayer_side]: id=Undead, type=random
+#. [multiplayer_side]: id=Undead, type=random, description=<img>src='portraits/undead/spectre.webp~BG()' align='middle'</img><br/>
 #: data/multiplayer/factions/undead-aoh.cfg:4
 #: data/multiplayer/factions/undead-default.cfg:4
 msgid "Undead"
 msgstr "Нежить"
 
-#. [multiplayer_side]: id=Undead, type=random
-#: data/multiplayer/factions/undead-aoh.cfg:14
-#: data/multiplayer/factions/undead-default.cfg:14
+#. [multiplayer_side]: id=Undead, type=random, description=<img>src='portraits/undead/spectre.webp~BG()' align='middle'</img><br/>
+#: data/multiplayer/factions/undead-aoh.cfg:12
+#: data/multiplayer/factions/undead-default.cfg:12
 msgid ""
 "The <bold>text='Undead'</bold> are a faction of <ref>text='undead' dst='.."
 "race_undead'</ref> creatures and <ref>text='human' dst='..race_human'</ref> "
@@ -453,19 +444,34 @@ msgstr "2и — Эфирный пузырь"
 
 #. [multiplayer]: id=multiplayer_Aethermaw
 #: data/multiplayer/scenarios/2p_Aethermaw.cfg:6
+#, fuzzy
+#| msgid ""
+#| "Long ago, the Great Mage Sulla was imprisoned in the Aethermaw, a nexus "
+#| "of mystical energy whose chaotic nature was able to prevent her escape. "
+#| "Over the centuries, however, Sulla gradually attuned her powers to the "
+#| "maelstrom of disorder that is the Aethermaw, and has now begun to project "
+#| "its influence onto the material plane, drawing in entire regions of land "
+#| "from hundreds of different worlds, realities and time-periods. She "
+#| "experiments with these disparate pieces of the cosmos, manipulating them, "
+#| "merging them and sending them back and forth between the Aethermaw and "
+#| "their place of origin. Perhaps, as her mastery over the Aethermaw grows, "
+#| "Sulla will one day break free of its bonds. Until that time comes, she "
+#| "will continue to amuse herself by arranging battles between the mortal "
+#| "beings unlucky enough to be drawn into its depths. Designed by Doc "
+#| "Paterson."
 msgid ""
-"Long ago, the Great Mage Sulla was imprisoned in the Aethermaw, a nexus of "
-"mystical energy whose chaotic nature was able to prevent her escape. Over "
-"the centuries, however, Sulla gradually attuned her powers to the maelstrom "
-"of disorder that is the Aethermaw, and has now begun to project its "
-"influence onto the material plane, drawing in entire regions of land from "
-"hundreds of different worlds, realities and time-periods. She experiments "
-"with these disparate pieces of the cosmos, manipulating them, merging them "
-"and sending them back and forth between the Aethermaw and their place of "
-"origin. Perhaps, as her mastery over the Aethermaw grows, Sulla will one day "
-"break free of its bonds. Until that time comes, she will continue to amuse "
-"herself by arranging battles between the mortal beings unlucky enough to be "
-"drawn into its depths. Designed by Doc Paterson."
+"Long ago, the Legendary Aether Mage, Sulla, was imprisoned in the Aethermaw, "
+"a nexus of mystical energy whose chaotic nature was able to prevent her "
+"escape. Over the centuries, however, Sulla gradually attuned her powers to "
+"the maelstrom of disorder that is the Aethermaw, and has now begun to "
+"project its influence onto the material plane, drawing in entire regions of "
+"land from hundreds of different worlds, realities and time-periods. She now "
+"experiments with these disparate pieces of the cosmos, manipulating them, "
+"merging them and sending them back and forth between the Aethermaw and their "
+"place of origin. Perhaps, as her mastery over the Aethermaw grows, Sulla "
+"will one day break free of its bonds. Until that time comes, she will "
+"continue to amuse herself by arranging battles between the mortal beings "
+"unlucky enough to be drawn into its depths. Designed by Doc Paterson."
 msgstr ""
 "Давным-давно великая волшебница Сулла была заключена в Эфирном Пузыре, "
 "сгустке мистической энергии, хаотическая природа которого не даёт ей "
@@ -561,8 +567,12 @@ msgstr "Победите лидера противников"
 
 #. [note]
 #: data/multiplayer/scenarios/2p_Aethermaw.cfg:312
+#, fuzzy
+#| msgid ""
+#| "The Great Mage Sulla has transported your armies to this bizarre nexus, "
+#| "and demands that you amuse her by doing battle."
 msgid ""
-"The Great Mage Sulla has transported your armies to this bizarre nexus, and "
+"The Aether Mage Sulla has transported your armies to this bizarre nexus, and "
 "demands that you amuse her by doing battle."
 msgstr ""
 "Великая волшебница Сулла перенесла ваши армии в эту причудливую реальность и "
@@ -579,9 +589,14 @@ msgstr ""
 
 #. [note]
 #: data/multiplayer/scenarios/2p_Aethermaw.cfg:318
+#, fuzzy
+#| msgid ""
+#| "Beginning on turn 4, the Great Mage Sulla will begin to unite the two "
+#| "halves of the battlefield. The process will be complete by the end of "
+#| "turn 6."
 msgid ""
-"Beginning on turn 4, the Great Mage Sulla will begin to unite the two halves "
-"of the battlefield. The process will be complete by the end of turn 6."
+"Beginning on turn 4, the Aether Mage Sulla will begin to unite the two "
+"halves of the battlefield. The process will be complete by the end of turn 6."
 msgstr ""
 "Начиная с 4-го хода, великая волшебница Сулла начнет объединять две "
 "половинки поля боя в одну. Процесс будет завершен к концу 6-го хода."
@@ -951,8 +966,6 @@ msgstr ""
 
 #. [side]
 #: data/multiplayer/scenarios/2p_Caves_of_the_Basilisk.cfg:162
-#, fuzzy
-#| msgid "Turin's Monster of the Lake"
 msgid "Turin’s Monster of the Lake"
 msgstr "Туринское чудовище озера"
 
@@ -1166,16 +1179,6 @@ msgstr "2и — Наводнение"
 
 #. [multiplayer]: id=multiplayer_Clearing_Gushes
 #: data/multiplayer/scenarios/2p_Clearing_Gushes.cfg:8
-#, fuzzy
-#| msgid ""
-#| "The banks of the Great River make for some of the most fertile land in "
-#| "all the known world. The spring and summer bring floods all along its "
-#| "length, making the soil rich and providing bountiful harvests each "
-#| "autumn. The Kingdom of Wesnoth has turned this land into the engine of "
-#| "their wealth and prosperity — making it the target of countless raids and "
-#| "attacks. The rigorous discipline and organization of Wesnoth's armies are "
-#| "in no small part driven by a constant need to patrol and defend these "
-#| "prosperous lands."
 msgid ""
 "The banks of the Great River make for some of the most fertile land in all "
 "the known world. The spring and summer bring floods all along its length, "
@@ -1909,7 +1912,7 @@ msgstr ""
 msgid "Statue of Sulla"
 msgstr "Статуя Суллы"
 
-#. [unit]
+#. [unit]: gender=female
 #: data/multiplayer/scenarios/2p_Sullas_Ruins.cfg:101
 msgid ""
 "A stone-carved likeness of Sulla the Great, also known as Sulla the Just, "
@@ -1967,18 +1970,6 @@ msgstr "2и — Болото Ужаса"
 
 #. [multiplayer]: id=multiplayer_Swamp_of_Dread
 #: data/multiplayer/scenarios/2p_Swamp_of_Dread.cfg:8
-#, fuzzy
-#| msgid ""
-#| "North of the Great River lies the Swamp of Dread, a vast, inhospitable "
-#| "mire cursed by foul magic. There exist only a few routes that aren't "
-#| "nearly guaranteed entrapment and death. Nonetheless, they are highly "
-#| "sought after as lucrative bridges between the southern flatlands and the "
-#| "rugged north, and intrepid explorers traverse the perilous bogs in search "
-#| "of profitable places to set up trading posts. The largest of these "
-#| "routes, Areth's Pass, is a long-disputed and well-known crossing since "
-#| "the first ancient wars between elves and dwarves. Despite poor land and "
-#| "limited resources, its great strategic value means it is fiercely "
-#| "contested by all with military aims in the Great Continent's heart."
 msgid ""
 "North of the Great River lies the Swamp of Dread, a vast, inhospitable mire "
 "cursed by foul magic. There exist only a few routes that aren’t nearly "
@@ -2228,7 +2219,7 @@ msgstr "Три игрока сходятся лицом к лицу на это�
 #. [multiplayer]: id=multiplayer_Island_of_the_Horatii
 #: data/multiplayer/scenarios/3p_Island_of_the_Horatii.cfg:5
 msgid "3p — Island of the Horatii"
-msgstr "3и - Остров Хоратии"
+msgstr "3и — Остров Хоратии"
 
 #. [multiplayer]: id=multiplayer_Island_of_the_Horatii
 #: data/multiplayer/scenarios/3p_Island_of_the_Horatii.cfg:6
@@ -2260,17 +2251,6 @@ msgstr "4и — Купальня Славы"
 
 #. [multiplayer]: id=multiplayer_Bath_of_Glory
 #: data/multiplayer/scenarios/4p_Bath_of_Glory.cfg:9
-#, fuzzy
-#| msgid ""
-#| "The distant, legendary city of Malisat is famed for many great works — "
-#| "among its most prized being the enormous complex known as the Bath of "
-#| "Glory. Made to be a relaxing paradise to weary soldiers returning home, "
-#| "the Bath is a stunning oasis built where once was nothing but sand. In "
-#| "time, it has become a city unto its own, with arts and music flourishing "
-#| "about the wild culture centered on the baths. The complex's vastness "
-#| "means flared tempers between wealthy nobles can turn into veritable "
-#| "battlegrounds — but even this has become a form of entertainment woven "
-#| "into the allure of the Bath."
 msgid ""
 "The distant, legendary city of Malisat is famed for many great works — among "
 "its most prized being the enormous complex known as the Bath of Glory. Made "
@@ -2473,44 +2453,43 @@ msgid ""
 "throne of a king? This free for all map has 38 villages and bonus income for "
 "the leader on the center keep."
 msgstr ""
+"Король мёртв. В отсутствие наследника лорды устроили междоусобную войну — "
+"они борются за трон на холме, и всё богатство, и власть, что он содержит. "
+"Достаточно ли Вы сильны, чтобы занять это седалище могущества прежде, чем "
+"это сделают Ваши соперники? Выдержите ли Вы настолько много их наёмных "
+"убийц? Достаточно ли толста Ваша задница, чтобы заполнить собой трон короля? "
+"Эта доступная для всех карта содержит 38 деревень и бонусный доход для "
+"лидера в центральной цитадели."
 
 #. [side]
 #: data/multiplayer/scenarios/4p_King_of_the_Hill.cfg:63
-#, fuzzy
-#| msgid "teamname^Southwest"
 msgid "Southwest"
 msgstr "Юго-запад"
 
 #. [side]
 #: data/multiplayer/scenarios/4p_King_of_the_Hill.cfg:73
-#, fuzzy
-#| msgid "teamname^Southeast"
 msgid "Southeast"
 msgstr "Юго-восток"
 
 #. [side]
 #: data/multiplayer/scenarios/4p_King_of_the_Hill.cfg:83
-#, fuzzy
-#| msgid "Northerners"
 msgid "Northeast"
-msgstr "Северяне"
+msgstr "Северо-восток"
 
 #. [side]
 #: data/multiplayer/scenarios/4p_King_of_the_Hill.cfg:93
-#, fuzzy
-#| msgid "Northerners"
 msgid "Northwest"
-msgstr "Северяне"
+msgstr "Северо-запад"
 
 #. [side]
 #: data/multiplayer/scenarios/4p_King_of_the_Hill.cfg:106
 msgid "High Guard"
-msgstr ""
+msgstr "Высшая охрана"
 
 #. [slider]: id=bonus_income
 #: data/multiplayer/scenarios/4p_King_of_the_Hill.cfg:121
 msgid "Hill Bonus Income"
-msgstr ""
+msgstr "Бонусный доход с холма"
 
 #. [slider]: id=bonus_income
 #: data/multiplayer/scenarios/4p_King_of_the_Hill.cfg:122
@@ -2518,21 +2497,21 @@ msgid ""
 "The amount of extra gold per turn granted to the leader who occupies the "
 "hill keep."
 msgstr ""
+"Количество дополнительного золота за ход для лидера, который займёт цитадель "
+"на холме."
 
 #. [slider]: id=chest_gold
 #: data/multiplayer/scenarios/4p_King_of_the_Hill.cfg:130
 msgid "Treasure Chest Gold"
-msgstr ""
+msgstr "Сундук с сокровищами"
 
 #. [slider]: id=chest_gold
 #: data/multiplayer/scenarios/4p_King_of_the_Hill.cfg:131
 msgid "The amount of gold stashed inside the treasure chest on the hill."
-msgstr ""
+msgstr "Количество золота, хранимого в сундуке с сокровищами на холме."
 
 #. [objective]: condition=win
 #: data/multiplayer/scenarios/4p_King_of_the_Hill.cfg:139
-#, fuzzy
-#| msgid "Defeat all enemy leaders"
 msgid "Defeat enemy leaders"
 msgstr "Победите всех вражеских лидеров"
 
@@ -2542,6 +2521,8 @@ msgid ""
 "The treasure chest on the hill keep can only be unlocked by a leader, for a "
 "bonus of $chest_gold gold."
 msgstr ""
+"Сундук с сокровищами в цитадели холма можно открыть только лидером, он "
+"принесёт $chest_gold золота."
 
 #. [note]
 #: data/multiplayer/scenarios/4p_King_of_the_Hill.cfg:146
@@ -2549,6 +2530,8 @@ msgid ""
 "A side with a leader holding the hill keep gets +$bonus_income gold income "
 "each turn."
 msgstr ""
+"Сторона, лидер которой занимает холм, получит доход в +$bonus_income золота "
+"каждый ход."
 
 #. [note]
 #: data/multiplayer/scenarios/4p_King_of_the_Hill.cfg:149
@@ -2556,16 +2539,18 @@ msgid ""
 "Each side gets two leaders. Whenever a leader is lost then another appears "
 "on the recall list at its full cost."
 msgstr ""
+"У каждой стороны два лидера. Если один из них потерян, в списке призыва "
+"появится другой, за полную стоимость."
 
 #. [floating_text]
 #: data/multiplayer/scenarios/4p_King_of_the_Hill.cfg:233
 msgid "<span color='gold'>+$bonus_income gold</span>"
-msgstr ""
+msgstr "<span color='gold'>+$chest_gold дохода</span>"
 
 #. [floating_text]
 #: data/multiplayer/scenarios/4p_King_of_the_Hill.cfg:270
 msgid "<span color='gold'>+$chest_gold gold</span>"
-msgstr ""
+msgstr "<span color='gold'>+$chest_gold золота</span>"
 
 #. [multiplayer]: id=multiplayer_Loris_River
 #: data/multiplayer/scenarios/4p_Loris_River.cfg:7
@@ -2837,7 +2822,7 @@ msgstr "Защищающийся"
 #. [objective]: condition=win
 #: data/multiplayer/scenarios/6p_Team_Survival.cfg:390
 msgid "Survive all enemy attacks"
-msgstr "Отбейте все атаки противника."
+msgstr "Переживите все атаки противника"
 
 #. [objective]: condition=lose
 #: data/multiplayer/scenarios/6p_Team_Survival.cfg:396
@@ -3081,8 +3066,10 @@ msgstr ""
 
 #. [multiplayer]: id=multiplayer_test_Elevation_Demo
 #: data/multiplayer/scenarios/Test_Elevation_Test.cfg:5
-msgid "3p - Elevation Test"
-msgstr ""
+#, fuzzy
+#| msgid "3p - Elevation Test"
+msgid "3p — Elevation Test"
+msgstr "3p - Проверка рельефа"
 
 #. [multiplayer]: id=multiplayer_test_Elevation_Demo
 #: data/multiplayer/scenarios/Test_Elevation_Test.cfg:6
@@ -3090,6 +3077,44 @@ msgid ""
 "This map is an example of how to use the new (BfW v1.17) elevated terrain "
 "graphics. Please be advised that it is not intended for playing."
 msgstr ""
+"Эта карта — пример использования новой местности с переменной высотой (БзаВ "
+"v1.17+). Пожалуйста, учтите, что она не предназначена для игры."
+
+#~ msgid "Default + Dunefolk"
+#~ msgstr "По умолчанию + Народ пустыни"
+
+#~ msgid ""
+#~ "An era featuring an additional faction besides the six factions from "
+#~ "Default Era. Dunefolk units rely on careful use of terrain and "
+#~ "coordinated strikes around dusk or dawn.\n"
+#~ "\n"
+#~ "This era is still under development, so please be sure to report any "
+#~ "problems that arise."
+#~ msgstr ""
+#~ "Эра с еще одной фракцией в дополнение к шести из эры по умолчанию. Бойцы "
+#~ "Народа пустыни не используют магию, но полагаются на использование "
+#~ "местности и скоориднированные удары на восходе или закате.\n"
+#~ "\n"
+#~ "Эра все еще дорабатывается так что не стесняйтесь сообщать о любых "
+#~ "проблемах."
+
+#~ msgid "Age of Heroes + Dunefolk"
+#~ msgstr "Эпоха героев + Народ пустыни"
+
+#~ msgid ""
+#~ "An era featuring an additional faction besides the six factions from Age "
+#~ "of Heroes Era. Dunefolk units rely on careful use of terrain and "
+#~ "coordinated strikes around dusk or dawn.\n"
+#~ "\n"
+#~ "This era is still under development, so please be sure to report any "
+#~ "problems that arise."
+#~ msgstr ""
+#~ "Эра с еще одной фракцией в дополнение к шести из Эры Героев. Бойцы Народа "
+#~ "пустыни не используют магию, но полагаются на использование местности и "
+#~ "скоориднированные удары на восходе или закате.\n"
+#~ "\n"
+#~ "Эра все еще дорабатывается так что не стесняйтесь сообщать о любых "
+#~ "проблемах."
 
 #~ msgid ""
 #~ "Controlling the area around the central keep is very lucrative in this 4 "

@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2016 - 2023
+	Copyright (C) 2016 - 2024
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
 	This program is free software; you can redistribute it and/or modify
@@ -19,7 +19,6 @@
 #include <SDL2/SDL_keycode.h>
 #include <vector>
 
-class display;
 
 namespace gui2
 {
@@ -42,7 +41,7 @@ public:
 private:
 	virtual const std::string& window_id() const override;
 
-	virtual void pre_show(window& window) override;
+	virtual void pre_show() override;
 
 	void key_press_callback(const SDL_Keycode key);
 

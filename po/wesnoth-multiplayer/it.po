@@ -8,14 +8,14 @@
 # Automatically generated, 2004.
 # Alessio D'Ascanio <otaku@fastwebnet.it>, 2004, 2005.
 # Luciano Montanaro <mikelima@cirulla.net>, 2006, 2007, 2009, 2011.
-# Antonio Rosella <arosella@yahoo.com>, 2012-2023.
+# Antonio Rosella <arosella@yahoo.com>, 2012-2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2023-10-28 14:02 UTC\n"
-"PO-Revision-Date: 2023-10-21 21:06+0200\n"
+"POT-Creation-Date: 2024-10-21 16:11 UTC\n"
+"PO-Revision-Date: 2024-11-23 15:01+0100\n"
 "Last-Translator: Antonio 'Antro' Rosella <arosella@yahoo.com>\n"
 "Language-Team: Italiano <wesnoth-l10n-it@cirulla.net>\n"
 "Language: it\n"
@@ -43,14 +43,13 @@ msgstr "Previsione di Trionfo"
 
 #. [achievement]: id=Wesnoth_MP_Dark_Forecast
 #: data/multiplayer/achievements.cfg:11
-msgid "Complete the survival scenario <i>2p - Dark Forecast</i>."
-msgstr "Completa lo scenario di sopravvivenza <i>2g - La Tetra Previsione</i>."
+msgid "Complete the survival scenario <i>2p — Dark Forecast</i>."
+msgstr "Completa lo scenario di sopravvivenza <i>2g — La Tetra Previsione</i>."
 
 #. [achievement]: id=Wesnoth_MP_Dark_Forecast
 #: data/multiplayer/achievements.cfg:12
-msgid "Completed the survival scenario <i>2p - Dark Forecast</i>."
-msgstr ""
-"Completato lo scenario di sopravvivenza <i>2g - La Tetra Previsione</i>."
+msgid "Completed the survival scenario <i>2p — Dark Forecast</i>."
+msgstr "Scenario di sopravvivenza <i>2g — La Tetra Previsione</i> completato."
 
 #. [achievement]: id=Wesnoth_MP_Isle_of_Mists
 #: data/multiplayer/achievements.cfg:20
@@ -64,14 +63,13 @@ msgstr "Brume Bandite"
 
 #. [achievement]: id=Wesnoth_MP_Isle_of_Mists
 #: data/multiplayer/achievements.cfg:22
-msgid "Complete the survival scenario <i>2p - Isle of Mists</i>."
-msgstr "Completa lo scenario di sopravvivenza <i>2g - L’Isola delle Brume</i>."
+msgid "Complete the survival scenario <i>2p — Isle of Mists</i>."
+msgstr "Completa lo scenario di sopravvivenza <i>2g — L’Isola delle Brume</i>."
 
 #. [achievement]: id=Wesnoth_MP_Isle_of_Mists
 #: data/multiplayer/achievements.cfg:23
-msgid "Completed the survival scenario <i>2p - Isle of Mists</i>."
-msgstr ""
-"Completato lo scenario di sopravvivenza <i>2g - L’Isola delle Brume</i>."
+msgid "Completed the survival scenario <i>2p — Isle of Mists</i>."
+msgstr "Scenario di sopravvivenza <i>2g — L’Isola delle Brume</i> completato."
 
 #. [achievement]: id=Wesnoth_MP_Team_Survival
 #: data/multiplayer/achievements.cfg:31 data/multiplayer/achievements.cfg:32
@@ -80,15 +78,15 @@ msgstr "Impeccabile lavoro di squadra"
 
 #. [achievement]: id=Wesnoth_MP_Team_Survival
 #: data/multiplayer/achievements.cfg:33
-msgid "Complete the survival scenario <i>6p - Team Survival</i>."
+msgid "Complete the survival scenario <i>6p — Team Survival</i>."
 msgstr ""
-"Completa lo scenario di sopravvivenza <i>6g - Sopravvivenza a Squadre</i>."
+"Completa lo scenario di sopravvivenza <i>6g — Sopravvivenza a Squadre</i>."
 
 #. [achievement]: id=Wesnoth_MP_Team_Survival
 #: data/multiplayer/achievements.cfg:34
-msgid "Completed the survival scenario <i>6p - Team Survival</i>."
+msgid "Completed the survival scenario <i>6p — Team Survival</i>."
 msgstr ""
-"Completato lo scenario di sopravvivenza <i>6g - Sopravvivenza a Squadre</i>."
+"Scenario di sopravvivenza <i>6g — Sopravvivenza a Squadre</i> comlpletato."
 
 #. [achievement]: id=Wesnoth_MP_ANL
 #: data/multiplayer/achievements.cfg:42 data/multiplayer/achievements.cfg:43
@@ -97,13 +95,13 @@ msgstr "Ritorno alla Gloria"
 
 #. [achievement]: id=Wesnoth_MP_ANL
 #: data/multiplayer/achievements.cfg:44
-msgid "Complete the survival scenario <i>4p - A New Land</i>."
-msgstr "Completa lo scenario di sopravvivenza <i>4g - Una Nuova Landa</i>."
+msgid "Complete the survival scenario <i>4p — A New Land</i>."
+msgstr "Completa lo scenario di sopravvivenza <i>4g — Una Nuova Landa</i>."
 
 #. [achievement]: id=Wesnoth_MP_ANL
 #: data/multiplayer/achievements.cfg:45
-msgid "Completed the survival scenario <i>4p - A New Land</i>."
-msgstr "Completato lo scenario di sopravvivenza <i>4g - Una Nuova Landa</i>."
+msgid "Completed the survival scenario <i>4p — A New Land</i>."
+msgstr "Scenario di sopravvivenza <i>4g — Una Nuova Landa</i> completato."
 
 #. [achievement]: id=Wesnoth_MP_ANL_mines
 #: data/multiplayer/achievements.cfg:52 data/multiplayer/achievements.cfg:53
@@ -112,15 +110,15 @@ msgstr "Recessione Economica"
 
 #. [achievement]: id=Wesnoth_MP_ANL_mines
 #: data/multiplayer/achievements.cfg:54
-msgid "Destroy all enemy mushroom mines in <i>4p - A New Land</i>."
+msgid "Destroy all enemy mushroom mines in <i>4p — A New Land</i>."
 msgstr ""
-"Distruggi tutti i campi di funghi dei nemici in <i>4g - Una Nuova Landa</i>."
+"Distruggi tutti i campi di funghi dei nemici in <i>4g — Una Nuova Landa</i>."
 
 #. [achievement]: id=Wesnoth_MP_ANL_mines
 #: data/multiplayer/achievements.cfg:55
-msgid "Destroyed all enemy mushroom mines in <i>4p - A New Land</i>."
+msgid "Destroyed all enemy mushroom mines in <i>4p — A New Land</i>."
 msgstr ""
-"Distrutti tutti i campi di funghi dei nemici in <i>4g - Una Nuova Landa</i>."
+"Distrutti tutti i campi di funghi dei nemici in <i>4g — Una Nuova Landa</i>."
 
 #. [achievement]: id=Wesnoth_MP_ANL_rescue_allies
 #: data/multiplayer/achievements.cfg:63 data/multiplayer/achievements.cfg:64
@@ -129,13 +127,13 @@ msgstr "Salvataggio!"
 
 #. [achievement]: id=Wesnoth_MP_ANL_rescue_allies
 #: data/multiplayer/achievements.cfg:65
-msgid "Rescue the trapped units in <i>4p - A New Land</i>."
-msgstr "Recupera le unità intrappolate in <i>4g - Una Nuova Landa</i>."
+msgid "Rescue the trapped units in <i>4p — A New Land</i>."
+msgstr "Recupera le unità intrappolate in <i>4g — Una Nuova Landa</i>."
 
 #. [achievement]: id=Wesnoth_MP_ANL_rescue_allies
 #: data/multiplayer/achievements.cfg:66
-msgid "Rescued the trapped units in <i>4p - A New Land</i>."
-msgstr "Recuperate le unità intrappolate in <i>4g - Una Nuova Landa</i>."
+msgid "Rescued the trapped units in <i>4p — A New Land</i>."
+msgstr "Recuperate le unità intrappolate in <i>4g — Una Nuova Landa</i>."
 
 #. [era]: id=era_default, type=hybrid
 #: data/multiplayer/eras.cfg:5
@@ -145,11 +143,11 @@ msgstr "Era predefinita"
 #. [era]: id=era_default, type=hybrid
 #: data/multiplayer/eras.cfg:6
 msgid ""
-"The standard era for Wesnoth multiplayer. Consists of six factions and is "
+"The standard era for Wesnoth multiplayer. Consists of seven factions and is "
 "generally balanced."
 msgstr ""
-"L’era predefinita di Wesnoth per il gioco multi-giocatore. Consta di sei "
-"fazioni, piuttosto bilanciate."
+"L’era predefinita di Wesnoth per il gioco multi-giocatore. Consta di sette "
+"fazioni, piuttosto ben bilanciate."
 
 #. [era]: id=era_heroes
 #: data/multiplayer/eras.cfg:14
@@ -160,62 +158,16 @@ msgstr "Era degli eroi"
 #: data/multiplayer/eras.cfg:15
 msgid ""
 "An era with higher level units: level three leaders, with level one and two "
-"units available for recruit. Consists of six factions. Not considered "
+"units available for recruit. Consists of seven factions. Not considered "
 "balanced."
 msgstr ""
 "Un’era con unità di alto livello: comandanti di livello tre, che possono "
-"reclutare unità di livello uno e due. Conta di sei fazioni, non considerate "
-"bilanciate."
+"reclutare unità di livello uno e due. Consta di sette fazioni, non "
+"considerate bilanciate."
 
-#. [era]: id=era_dunefolk
-#: data/multiplayer/eras.cfg:22
-msgid "Default + Dunefolk"
-msgstr "Default + Popolo delle Dune"
-
-#. [era]: id=era_dunefolk
-#: data/multiplayer/eras.cfg:23
-msgid ""
-"An era featuring an additional faction besides the six factions from Default "
-"Era. Dunefolk units rely on careful use of terrain and coordinated strikes "
-"around dusk or dawn.\n"
-"\n"
-"This era is still under development, so please be sure to report any "
-"problems that arise."
-msgstr ""
-"Un’era che propone una fazione aggiuntiva rispetto alle sei dell’era "
-"predefinita. Le unità del Popolo delle Dune preferiscono fare affidamento ad "
-"un uso accorto del terreno e di attacchi coordinati, sferrati "
-"preferibilmente all’alba o al tramonto.\n"
-"\n"
-"Quest’era è ancora in fase di sviluppo, siete quindi pregati di riportare "
-"qualsiasi problema possiate incontrare."
-
-#. [era]: id=era_dunefolk_heroes
-#: data/multiplayer/eras.cfg:33
-msgid "Age of Heroes + Dunefolk"
-msgstr "Era degli eroi + Popolo delle Dune"
-
-#. [era]: id=era_dunefolk_heroes
-#: data/multiplayer/eras.cfg:34
-msgid ""
-"An era featuring an additional faction besides the six factions from Age of "
-"Heroes Era. Dunefolk units rely on careful use of terrain and coordinated "
-"strikes around dusk or dawn.\n"
-"\n"
-"This era is still under development, so please be sure to report any "
-"problems that arise."
-msgstr ""
-"Un’era che propone una fazione aggiuntiva rispetto alle sei dell’Era degli "
-"Eroi. Le unità del Popolo delle Dune preferiscono fare affidamento ad un uso "
-"accorto del terreno e di attacchi coordinati, sferrati preferibilmente "
-"all’alba o al tramonto.\n"
-"\n"
-"Quest’era è ancora in fase di sviluppo, siete quindi pregati di riportare "
-"qualsiasi problema possiate incontrare."
-
-#. [lua]: f
+#. [lua]: res.show_turns_over_advantage
 #. In the end-of-match summary, a side which has no units left and therefore lost. In English the loss is shown by displaying it with the text struck through.
-#: data/multiplayer/eras.lua:53
+#: data/multiplayer/eras.lua:113
 msgid ""
 "<span strikethrough='true' foreground='$side_color'>Side $side_number</"
 "span>:  Has lost all units"
@@ -223,9 +175,9 @@ msgstr ""
 "<span strikethrough='true' foreground='$side_color'>Squadra $side_number</"
 "span>:  ha perso tutte le unità"
 
-#. [lua]: f
+#. [lua]: res.show_turns_over_advantage
 #. In the end-of-match summary, any side that still has units left
-#: data/multiplayer/eras.lua:69
+#: data/multiplayer/eras.lua:118
 msgid ""
 "<span foreground='$side_color'>Side $side_number</span>:  Income score = "
 "$income  Unit score = $units  Gold = $gold\n"
@@ -235,41 +187,41 @@ msgstr ""
 "entrate = $income  Punteggio unità = $units  Oro = $gold\n"
 "Totale: <b>$total</b>"
 
-#. [lua]: f
+#. [lua]: res.show_turns_over_advantage
 #. In the end-of-match summary, there's a single side that's won.
-#: data/multiplayer/eras.lua:84
+#: data/multiplayer/eras.lua:127
 msgid ""
 "<span foreground='$side_color'>Side $side_number</span> has the advantage."
 msgstr ""
 "<span foreground='$side_color'>La squadra $side_number</span> è in vantaggio."
 
-#. [lua]: f
+#. [lua]: res.show_turns_over_advantage
 #. In the end-of-match summary, there's a two-way tie (this is only used for exactly two winning teams)
-#: data/multiplayer/eras.lua:89
+#: data/multiplayer/eras.lua:132
 msgid "Sides $side_number and $other_side_number are tied."
 msgstr "Le squadre $side_number e $other_side_number sono accoppiate."
 
-#. [lua]: f
+#. [lua]: res.show_turns_over_advantage
 #. In the end-of-match summary, three or more teams have all tied for the best score. $winners contains the result of formatting the conjunct list.
-#: data/multiplayer/eras.lua:94
+#: data/multiplayer/eras.lua:137
 msgid "Sides $winners are tied."
 msgstr "Le squadre$winners sono accoppiate."
 
-#. [lua]: f
+#. [lua]: res.show_turns_over_advantage
 #. "Turns Over", meaning "turn limit reached" is the title of the end-of-match summary dialog
-#: data/multiplayer/eras.lua:100
+#: data/multiplayer/eras.lua:142
 msgid "dialog^Turns Over"
 msgstr "Fine dei turni"
 
-#. [multiplayer_side]: id=Drakes, type=random
+#. [multiplayer_side]: id=Drakes, type=random, description=<img>src='portraits/drakes/inferno.webp~BG()' align='middle'</img><br/>
 #: data/multiplayer/factions/drakes-aoh.cfg:4
 #: data/multiplayer/factions/drakes-default.cfg:4
 msgid "Drakes"
 msgstr "Draghi"
 
-#. [multiplayer_side]: id=Drakes, type=random
-#: data/multiplayer/factions/drakes-aoh.cfg:14
-#: data/multiplayer/factions/drakes-default.cfg:14
+#. [multiplayer_side]: id=Drakes, type=random, description=<img>src='portraits/drakes/inferno.webp~BG()' align='middle'</img><br/>
+#: data/multiplayer/factions/drakes-aoh.cfg:12
+#: data/multiplayer/factions/drakes-default.cfg:12
 msgid ""
 "The <bold>text='Drakes'</bold> are a faction of dragon-like "
 "<ref>text='Drakes' dst='..race_drake'</ref> and their lizard "
@@ -288,15 +240,15 @@ msgstr ""
 "sviluppo di tattiche inusuali per una fazione dell’<ref>text='Era "
 "Predefinita' dst='..era_era_default'</ref>."
 
-#. [multiplayer_side]: id=Dunefolk, type=random
+#. [multiplayer_side]: id=Dunefolk, type=random, description=<img>src='portraits/dunefolk/herbalist.webp~BG()' align='middle'</img><br/>
 #: data/multiplayer/factions/dunefolk-aoh.cfg:4
 #: data/multiplayer/factions/dunefolk-default.cfg:4
 msgid "Dunefolk"
 msgstr "Popolo delle Dune"
 
-#. [multiplayer_side]: id=Dunefolk, type=random
-#: data/multiplayer/factions/dunefolk-aoh.cfg:14
-#: data/multiplayer/factions/dunefolk-default.cfg:14
+#. [multiplayer_side]: id=Dunefolk, type=random, description=<img>src='portraits/dunefolk/herbalist.webp~BG()' align='middle'</img><br/>
+#: data/multiplayer/factions/dunefolk-aoh.cfg:12
+#: data/multiplayer/factions/dunefolk-default.cfg:12
 msgid ""
 "The <bold>text='Dunefolk'</bold> are a faction of humans from the deserts "
 "and hills of the southern lands. The Dunefolk specialize in using terrain "
@@ -315,15 +267,15 @@ msgstr ""
 "costose di quelle della fazione Lealista, compensano il costo con la loro "
 "alta mobilità, specialmente su terreni collinosi."
 
-#. [multiplayer_side]: id=Knalgan Alliance, type=random
+#. [multiplayer_side]: id=Knalgan Alliance, type=random, description=<img>src='portraits/dwarves/ulfserker.webp~BG()' align='middle'</img><br/>
 #: data/multiplayer/factions/knalgans-aoh.cfg:4
 #: data/multiplayer/factions/knalgans-default.cfg:4
 msgid "Knalgan Alliance"
 msgstr "Alleanza di Knalga"
 
-#. [multiplayer_side]: id=Knalgan Alliance, type=random
-#: data/multiplayer/factions/knalgans-aoh.cfg:13
-#: data/multiplayer/factions/knalgans-default.cfg:13
+#. [multiplayer_side]: id=Knalgan Alliance, type=random, description=<img>src='portraits/dwarves/ulfserker.webp~BG()' align='middle'</img><br/>
+#: data/multiplayer/factions/knalgans-aoh.cfg:11
+#: data/multiplayer/factions/knalgans-default.cfg:11
 msgid ""
 "The <bold>text='Knalgan Alliance'</bold> is a faction of <ref>text='Dwarves' "
 "dst='..race_dwarf'</ref> and their outlaw <ref>text='Human' dst='.."
@@ -344,15 +296,15 @@ msgstr ""
 "combinazione di nani tozzi e corazzati, molto abili in determinati tipi di "
 "terreno e umani che invece si destreggiano bene sugli altri tipi di terreno."
 
-#. [multiplayer_side]: id=Loyalists, type=random
+#. [multiplayer_side]: id=Loyalists, type=random, description=<img>src='portraits/humans/grand-knight.webp~BG()' align='middle'</img><br/>
 #: data/multiplayer/factions/loyalists-aoh.cfg:4
 #: data/multiplayer/factions/loyalists-default.cfg:4
 msgid "Loyalists"
 msgstr "Lealisti"
 
-#. [multiplayer_side]: id=Loyalists, type=random
-#: data/multiplayer/factions/loyalists-aoh.cfg:14
-#: data/multiplayer/factions/loyalists-default.cfg:14
+#. [multiplayer_side]: id=Loyalists, type=random, description=<img>src='portraits/humans/grand-knight.webp~BG()' align='middle'</img><br/>
+#: data/multiplayer/factions/loyalists-aoh.cfg:12
+#: data/multiplayer/factions/loyalists-default.cfg:12
 msgid ""
 "The <bold>text='Loyalists'</bold> are a faction of <ref>text='Humans' dst='.."
 "race_human'</ref> who are loyal to the throne of Wesnoth. Humans are a "
@@ -367,15 +319,15 @@ msgstr ""
 "versatile nelle battaglie in mischia, supportate egregiamente da attacchi a "
 "distanza portati da arcieri e maghi."
 
-#. [multiplayer_side]: id=Northerners, type=random, description=<img>src='portraits/orcs/warlord.webp~BG()' align='middle'</img>
+#. [multiplayer_side]: id=Northerners, type=random, description=<img>src='portraits/orcs/warlord.webp~BG()' align='middle'</img><br/>
 #: data/multiplayer/factions/northerners-aoh.cfg:4
 #: data/multiplayer/factions/northerners-default.cfg:4
 msgid "Northerners"
 msgstr "Gente del Nord"
 
-#. [multiplayer_side]: id=Northerners, type=random, description=<img>src='portraits/orcs/warlord.webp~BG()' align='middle'</img>
-#: data/multiplayer/factions/northerners-aoh.cfg:16
-#: data/multiplayer/factions/northerners-default.cfg:15
+#. [multiplayer_side]: id=Northerners, type=random, description=<img>src='portraits/orcs/warlord.webp~BG()' align='middle'</img><br/>
+#: data/multiplayer/factions/northerners-aoh.cfg:12
+#: data/multiplayer/factions/northerners-default.cfg:11
 msgid ""
 "The <bold>text='Northerners'</bold> are a faction of <ref>text='Orcs' dst='.."
 "race_orc'</ref> and their allies who live in the north of the Great "
@@ -396,15 +348,15 @@ msgstr ""
 "rende al meglio avvantaggiandosi del basso costo e degli alti PF dei suoi "
 "soldati."
 
-#. [multiplayer_side]: id=Rebels, type=random
+#. [multiplayer_side]: id=Rebels, type=random, description=<img>src='portraits/elves/druid.webp~BG()' align='middle'</img><br/>
 #: data/multiplayer/factions/rebels-aoh.cfg:4
 #: data/multiplayer/factions/rebels-default.cfg:4
 msgid "Rebels"
 msgstr "Ribelli"
 
-#. [multiplayer_side]: id=Rebels, type=random
-#: data/multiplayer/factions/rebels-aoh.cfg:14
-#: data/multiplayer/factions/rebels-default.cfg:14
+#. [multiplayer_side]: id=Rebels, type=random, description=<img>src='portraits/elves/druid.webp~BG()' align='middle'</img><br/>
+#: data/multiplayer/factions/rebels-aoh.cfg:12
+#: data/multiplayer/factions/rebels-default.cfg:12
 msgid ""
 "The <bold>text='Rebels'</bold> are a faction of <ref>text='Elves' dst='.."
 "race_elf'</ref> and their various forest-dwelling allies. They get their "
@@ -430,15 +382,15 @@ msgstr ""
 "avvantaggiano in termini difensivi delle zone boscose, sono maestri negli "
 "attacchi a distanza e possiedono l’allineamento neutrale degli elfi."
 
-#. [multiplayer_side]: id=Undead, type=random
+#. [multiplayer_side]: id=Undead, type=random, description=<img>src='portraits/undead/spectre.webp~BG()' align='middle'</img><br/>
 #: data/multiplayer/factions/undead-aoh.cfg:4
 #: data/multiplayer/factions/undead-default.cfg:4
 msgid "Undead"
 msgstr "Non-morti"
 
-#. [multiplayer_side]: id=Undead, type=random
-#: data/multiplayer/factions/undead-aoh.cfg:14
-#: data/multiplayer/factions/undead-default.cfg:14
+#. [multiplayer_side]: id=Undead, type=random, description=<img>src='portraits/undead/spectre.webp~BG()' align='middle'</img><br/>
+#: data/multiplayer/factions/undead-aoh.cfg:12
+#: data/multiplayer/factions/undead-default.cfg:12
 msgid ""
 "The <bold>text='Undead'</bold> are a faction of <ref>text='undead' dst='.."
 "race_undead'</ref> creatures and <ref>text='human' dst='..race_human'</ref> "
@@ -469,33 +421,33 @@ msgstr "2g – Aethermaw"
 #. [multiplayer]: id=multiplayer_Aethermaw
 #: data/multiplayer/scenarios/2p_Aethermaw.cfg:6
 msgid ""
-"Long ago, the Great Mage Sulla was imprisoned in the Aethermaw, a nexus of "
-"mystical energy whose chaotic nature was able to prevent her escape. Over "
-"the centuries, however, Sulla gradually attuned her powers to the maelstrom "
-"of disorder that is the Aethermaw, and has now begun to project its "
-"influence onto the material plane, drawing in entire regions of land from "
-"hundreds of different worlds, realities and time-periods. She experiments "
-"with these disparate pieces of the cosmos, manipulating them, merging them "
-"and sending them back and forth between the Aethermaw and their place of "
-"origin. Perhaps, as her mastery over the Aethermaw grows, Sulla will one day "
-"break free of its bonds. Until that time comes, she will continue to amuse "
-"herself by arranging battles between the mortal beings unlucky enough to be "
-"drawn into its depths. Designed by Doc Paterson."
+"Long ago, the Legendary Aether Mage, Sulla, was imprisoned in the Aethermaw, "
+"a nexus of mystical energy whose chaotic nature was able to prevent her "
+"escape. Over the centuries, however, Sulla gradually attuned her powers to "
+"the maelstrom of disorder that is the Aethermaw, and has now begun to "
+"project its influence onto the material plane, drawing in entire regions of "
+"land from hundreds of different worlds, realities and time-periods. She now "
+"experiments with these disparate pieces of the cosmos, manipulating them, "
+"merging them and sending them back and forth between the Aethermaw and their "
+"place of origin. Perhaps, as her mastery over the Aethermaw grows, Sulla "
+"will one day break free of its bonds. Until that time comes, she will "
+"continue to amuse herself by arranging battles between the mortal beings "
+"unlucky enough to be drawn into its depths. Designed by Doc Paterson."
 msgstr ""
-"Tanto tempo fa, la grande maga Sulla fu imprigionata nell’Aethermaw, una "
-"stringa di energia mistica la cui natura caotica era capace di impedire la "
-"sua fuga. Tuttavia dopo molti secoli, Sulla a poco a poco sincronizzò i suoi "
-"poteri col vortice del disordine che era nientemeno che l’Aethermaw stesso, "
-"e da ciò ha cominciato a creare terreni materiali e a disegnare intere "
-"regioni, realtà e periodi di tempo appartenenti a centinaia di mondi "
-"differenti. La maga fa esperimenti con questi disparati pezzi di cosmo, li "
-"manipola, li mescola e poi li spedisce avanti e indietro tra l’Aethermaw e "
-"il loro punto di origine. Se riuscirà a dominare i brontolii dell’Aethermaw, "
-"forse un giorno Sulla riuscirà a rompere le catene e potrà essere di nuovo "
-"libera. In attesa che ciò accada, continuerà ad organizzare battaglie "
-"coinvolgendo creature mortali abbastanza sfortunate da farsi richiamare "
-"nelle profondità del suo mondo, per il solo puro divertimento. Progettata da "
-"Doc Paterson."
+"Tanto tempo fa, la Leggendaria Maga Eterica, Sulla fu imprigionata "
+"nell’Aethermaw, una stringa di energia mistica la cui natura caotica era "
+"capace di impedire la sua fuga. Tuttavia dopo molti secoli, Sulla a poco a "
+"poco sincronizzò i suoi poteri col vortice del disordine che era nientemeno "
+"che l’Aethermaw stesso, iniziando a proiettare la sua influenza sui piani "
+"materiali, disegnando intere regioni di terra provenienti da realtà e "
+"periodi di tempo appartenenti a centinaia di mondi differenti. La maga fa "
+"esperimenti con questi vari pezzi di cosmo: li manipola, li mescola e poi li "
+"spedisce avanti e indietro tra l’Aethermaw e il loro punto di origine. Se "
+"riuscirà a dominare i brontolii dell’Aethermaw, forse un giorno Sulla "
+"riuscirà a rompere le catene e potrà essere di nuovo libera. In attesa che "
+"ciò accada, continuerà ad organizzare battaglie coinvolgendo creature "
+"mortali abbastanza sfortunate da farsi richiamare nelle profondità del suo "
+"mondo, per il solo puro divertimento. Progettata da Doc Paterson."
 
 #. [side]
 #: data/multiplayer/scenarios/2p_Aethermaw.cfg:22
@@ -580,11 +532,11 @@ msgstr "Sconfiggi il condottiero nemico"
 #. [note]
 #: data/multiplayer/scenarios/2p_Aethermaw.cfg:312
 msgid ""
-"The Great Mage Sulla has transported your armies to this bizarre nexus, and "
+"The Aether Mage Sulla has transported your armies to this bizarre nexus, and "
 "demands that you amuse her by doing battle."
 msgstr ""
-"La grande maga Sulla ha trasportato le tue armate in questa bizzarra "
-"dimensione, e chiede che tu la faccia divertire con una battaglia."
+"Sulla, la Maga Eterica, ha trasportato le tue armate in questa bizzarra "
+"dimensione, e chiede che tu intrattenga con una battaglia per il suo diletto."
 
 #. [note]
 #: data/multiplayer/scenarios/2p_Aethermaw.cfg:315
@@ -598,10 +550,10 @@ msgstr ""
 #. [note]
 #: data/multiplayer/scenarios/2p_Aethermaw.cfg:318
 msgid ""
-"Beginning on turn 4, the Great Mage Sulla will begin to unite the two halves "
-"of the battlefield. The process will be complete by the end of turn 6."
+"Beginning on turn 4, the Aether Mage Sulla will begin to unite the two "
+"halves of the battlefield. The process will be complete by the end of turn 6."
 msgstr ""
-"All’inizio del quarto turno, la grande maga Sulla inizierà a congiungere le "
+"All’inizio del quarto turno, la Maga Eterica Sulla inizierà a congiungere le "
 "due metà del campo di battaglia. Il processo sarà completato alla fine del "
 "sesto turno."
 
@@ -987,8 +939,6 @@ msgstr ""
 
 #. [side]
 #: data/multiplayer/scenarios/2p_Caves_of_the_Basilisk.cfg:162
-#, fuzzy
-#| msgid "Turin's Monster of the Lake"
 msgid "Turin’s Monster of the Lake"
 msgstr "Mostro del lago di Turin"
 
@@ -1211,16 +1161,6 @@ msgstr "2g - Ripulire le fonti"
 
 #. [multiplayer]: id=multiplayer_Clearing_Gushes
 #: data/multiplayer/scenarios/2p_Clearing_Gushes.cfg:8
-#, fuzzy
-#| msgid ""
-#| "The banks of the Great River make for some of the most fertile land in "
-#| "all the known world. The spring and summer bring floods all along its "
-#| "length, making the soil rich and providing bountiful harvests each "
-#| "autumn. The Kingdom of Wesnoth has turned this land into the engine of "
-#| "their wealth and prosperity — making it the target of countless raids and "
-#| "attacks. The rigorous discipline and organization of Wesnoth's armies are "
-#| "in no small part driven by a constant need to patrol and defend these "
-#| "prosperous lands."
 msgid ""
 "The banks of the Great River make for some of the most fertile land in all "
 "the known world. The spring and summer bring floods all along its length, "
@@ -1231,12 +1171,12 @@ msgid ""
 "part driven by a constant need to patrol and defend these prosperous lands."
 msgstr ""
 "Le rive del Grande Fiume per molti sono le terre più fertili che si "
-"conoscano. La primavera e l’estate portano allagamenti lungo tutta la sua "
+"conoscano. La primavera e l’estate portano allagamenti lungo tutta la loro "
 "estensione, rendendo il suolo fertile e regalando copiosi raccolti "
 "autunnali. Il regno di Wesnoth ha reso questa terra il motore della sua "
 "salute e prosperità, rendendola altresì il bersaglio di innumerevoli "
 "attacchi ed incursioni. La disciplina rigorosa e l’organizzazione delle "
-"armate di Wesnoth sono il larga parte generate dal costante bisogno di "
+"armate di Wesnoth sono in larga parte generate dal costante bisogno di "
 "pattugliare e difendere queste lande prosperose."
 
 #. [multiplayer]: id=multiplayer_Cynsaun_Battlefield
@@ -1971,7 +1911,7 @@ msgstr ""
 msgid "Statue of Sulla"
 msgstr "Statua di Sulla"
 
-#. [unit]
+#. [unit]: gender=female
 #: data/multiplayer/scenarios/2p_Sullas_Ruins.cfg:101
 msgid ""
 "A stone-carved likeness of Sulla the Great, also known as Sulla the Just, "
@@ -1980,7 +1920,7 @@ msgid ""
 msgstr ""
 "Una statua di pietra di Sulla la grande, noto anche come Sulla la giusta, la "
 "tiranna Sulla, imperatrice della torre che affonda, signora del ghiacciaio "
-"che cammina, Sulla l’inceneratrice, Sulla l’orgogliosa e Sulla la retta."
+"che cammina, Sulla l’inceneritrice, Sulla l’orgogliosa e Sulla la retta."
 
 #. [side]
 #: data/multiplayer/scenarios/2p_Sullas_Ruins.cfg:103
@@ -2029,18 +1969,6 @@ msgstr "2g – Palude dell’Orrore"
 
 #. [multiplayer]: id=multiplayer_Swamp_of_Dread
 #: data/multiplayer/scenarios/2p_Swamp_of_Dread.cfg:8
-#, fuzzy
-#| msgid ""
-#| "North of the Great River lies the Swamp of Dread, a vast, inhospitable "
-#| "mire cursed by foul magic. There exist only a few routes that aren't "
-#| "nearly guaranteed entrapment and death. Nonetheless, they are highly "
-#| "sought after as lucrative bridges between the southern flatlands and the "
-#| "rugged north, and intrepid explorers traverse the perilous bogs in search "
-#| "of profitable places to set up trading posts. The largest of these "
-#| "routes, Areth's Pass, is a long-disputed and well-known crossing since "
-#| "the first ancient wars between elves and dwarves. Despite poor land and "
-#| "limited resources, its great strategic value means it is fiercely "
-#| "contested by all with military aims in the Great Continent's heart."
 msgid ""
 "North of the Great River lies the Swamp of Dread, a vast, inhospitable mire "
 "cursed by foul magic. There exist only a few routes that aren’t nearly "
@@ -2058,14 +1986,14 @@ msgstr ""
 "poche strade che la attraversano e non garantiscono troppo sulle possibilità "
 "di rimanere intrappolati o morire. Nonostante tutto, questi percorsi sono "
 "molto ricercati in quanto lucrose connessioni tra le pianure meridionali e "
-"il rude nord, ed esploratori intrepidi sono disposti ad attraversare le "
-"pericolose piantagioni in cerca di luoghi redditizi ove piazzare stazioni di "
+"il rude nord, ed esploratori intrepidi sono disposti ad attraversare i "
+"pericolosi acquitrini in cerca di luoghi redditizi ove piazzare stazioni di "
 "commercio. La più grande di queste stazioni, il Passo di Areth, è un "
 "attraversamento molto conosciuto e da lungo tempo conteso, fin dalle prime "
 "antiche guerre tra elfi e nani. A dispetto della povertà della zona e delle "
-"limitate risorse, il suo altissimo valore strategico conduce al fatto che "
-"sia aspramente contesa da tutti quelli i cui scopi bellici coinvolgano il "
-"cuore del Grande Continente."
+"limitate risorse, il suo altissimo valore strategico comporta che sia "
+"aspramente contesa da tutti quelli i cui scopi bellici coinvolgano il cuore "
+"del Grande Continente."
 
 #. [multiplayer]: id=multiplayer_The_Freelands
 #: data/multiplayer/scenarios/2p_The_Freelands.cfg:6
@@ -2238,7 +2166,7 @@ msgid ""
 "The tile in the centre, which contains the casket of the titular "
 "necromancer, is always covered in pitch black fog."
 msgstr ""
-"L’esagono centrale, contenente la bara del necromante del titolo, è "
+"L’esagono centrale, contenente la bara del negromante del titolo, è "
 "perennemente coperto da una fitta nebbia nera come la pece."
 
 #. [multiplayer]: id=multiplayer_Weldyn_Channel
@@ -2329,17 +2257,6 @@ msgstr "4g – Bagno della Gloria"
 
 #. [multiplayer]: id=multiplayer_Bath_of_Glory
 #: data/multiplayer/scenarios/4p_Bath_of_Glory.cfg:9
-#, fuzzy
-#| msgid ""
-#| "The distant, legendary city of Malisat is famed for many great works — "
-#| "among its most prized being the enormous complex known as the Bath of "
-#| "Glory. Made to be a relaxing paradise to weary soldiers returning home, "
-#| "the Bath is a stunning oasis built where once was nothing but sand. In "
-#| "time, it has become a city unto its own, with arts and music flourishing "
-#| "about the wild culture centered on the baths. The complex's vastness "
-#| "means flared tempers between wealthy nobles can turn into veritable "
-#| "battlegrounds — but even this has become a form of entertainment woven "
-#| "into the allure of the Bath."
 msgid ""
 "The distant, legendary city of Malisat is famed for many great works — among "
 "its most prized being the enormous complex known as the Bath of Glory. Made "
@@ -3178,8 +3095,8 @@ msgstr ""
 
 #. [multiplayer]: id=multiplayer_test_Elevation_Demo
 #: data/multiplayer/scenarios/Test_Elevation_Test.cfg:5
-msgid "3p - Elevation Test"
-msgstr "3g - Test terreni sopraelevati"
+msgid "3p — Elevation Test"
+msgstr "3g — Test terreni sopraelevati"
 
 #. [multiplayer]: id=multiplayer_test_Elevation_Demo
 #: data/multiplayer/scenarios/Test_Elevation_Test.cfg:6
@@ -3189,6 +3106,44 @@ msgid ""
 msgstr ""
 "Questa mappa è un esempio di utilizzo della nuova (BfW v1.17) grafica per i "
 "terreni sopraelevati. Non è una mappa adatta ad un reale utilizzo in gioco."
+
+#~ msgid "Default + Dunefolk"
+#~ msgstr "Default + Popolo delle Dune"
+
+#~ msgid ""
+#~ "An era featuring an additional faction besides the six factions from "
+#~ "Default Era. Dunefolk units rely on careful use of terrain and "
+#~ "coordinated strikes around dusk or dawn.\n"
+#~ "\n"
+#~ "This era is still under development, so please be sure to report any "
+#~ "problems that arise."
+#~ msgstr ""
+#~ "Un’era che propone una fazione aggiuntiva rispetto alle sei dell’era "
+#~ "predefinita. Le unità del Popolo delle Dune preferiscono fare affidamento "
+#~ "ad un uso accorto del terreno e di attacchi coordinati, sferrati "
+#~ "preferibilmente all’alba o al tramonto.\n"
+#~ "\n"
+#~ "Quest’era è ancora in fase di sviluppo, siete quindi pregati di riportare "
+#~ "qualsiasi problema possiate incontrare."
+
+#~ msgid "Age of Heroes + Dunefolk"
+#~ msgstr "Era degli eroi + Popolo delle Dune"
+
+#~ msgid ""
+#~ "An era featuring an additional faction besides the six factions from Age "
+#~ "of Heroes Era. Dunefolk units rely on careful use of terrain and "
+#~ "coordinated strikes around dusk or dawn.\n"
+#~ "\n"
+#~ "This era is still under development, so please be sure to report any "
+#~ "problems that arise."
+#~ msgstr ""
+#~ "Un’era che propone una fazione aggiuntiva rispetto alle sei dell’Era "
+#~ "degli Eroi. Le unità del Popolo delle Dune preferiscono fare affidamento "
+#~ "ad un uso accorto del terreno e di attacchi coordinati, sferrati "
+#~ "preferibilmente all’alba o al tramonto.\n"
+#~ "\n"
+#~ "Quest’era è ancora in fase di sviluppo, siete quindi pregati di riportare "
+#~ "qualsiasi problema possiate incontrare."
 
 #~ msgid ""
 #~ "Controlling the area around the central keep is very lucrative in this 4 "

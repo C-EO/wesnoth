@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wescamp-i 18n\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2023-09-17 03:32 UTC\n"
+"POT-Creation-Date: 2025-01-19 17:47 UTC\n"
 "PO-Revision-Date: 2022-05-04 11:09+0300\n"
 "Last-Translator: Ivan Petrov <vankata_petrov@abv.bg>\n"
 "Language-Team: none\n"
@@ -3155,7 +3155,7 @@ msgstr "Вътрешност"
 msgid "Find Lady Karae"
 msgstr "Намерете лейди Карае"
 
-#. [unit]: type=Silver Mage, id=Lady Karae
+#. [unit]: type=Silver Mage, id=Lady Karae, gender=female
 #: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:177
 msgid "Lady Karae"
 msgstr "Лейди Карае"
@@ -5452,7 +5452,7 @@ msgstr "Сигурно е свързана със силата на лича! О
 msgid "<small>(faking pain)</small> Aaargh!"
 msgstr "<small>(имитира болка)</small> Аааргх!"
 
-#. [message]: role=unit
+#. [message]: speaker=unit
 #: data/campaigns/Descent_Into_Darkness/scenarios/10_Endless_Night.cfg:1187
 #: data/campaigns/Descent_Into_Darkness/scenarios/10_Endless_Night.cfg:1215
 msgid "It’s not catching fire!"
@@ -5507,9 +5507,13 @@ msgstr "Брадвата ми не ще да реже хартията. Сигу
 #. [message]: role=speakinghero
 #. regular english: Yes, but the lich still seems to be hurt. Let's take it and retreat. Maybe the forge can destroy it.
 #: data/campaigns/Descent_Into_Darkness/scenarios/10_Endless_Night.cfg:1266
+#, fuzzy
+#| msgid ""
+#| "Aye, but the lich still seems ta be hurtin’. Let’s take it ’n retreat. "
+#| "Maybe tha forge ken destroy it."
 msgid ""
 "Aye, but the lich still seems ta be hurtin’. Let’s take it ’n retreat. Maybe "
-"tha forge ken destroy it."
+"tha forge can destroy it."
 msgstr ""
 "Аха, ама личът го заболя. Да я вземем и да бягаме. Сигурно в ковачницата ще "
 "изгори."
@@ -5613,7 +5617,7 @@ msgstr ""
 msgid "A monolith of black stone, cold and brittle to the touch."
 msgstr "Паметник от черен камък, на допир студен и ронлив."
 
-#. [unit]: type=Cuttle Fish, id=Inky
+#. [unit]: type=Cuttle Fish, id=Inky, gender=female
 #: data/campaigns/Descent_Into_Darkness/scenarios/10_Endless_Night.cfg:1399
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:558
 msgid "female^Inky"
@@ -5929,7 +5933,9 @@ msgstr ""
 #. [message]: role=second
 #. regular english - I don't know. You think the lich's castle can be useful
 #: data/campaigns/Descent_Into_Darkness/scenarios/10_Endless_Night.cfg:1895
-msgid "I dinna know. Ye think tha lich’s castle ken be useful?"
+#, fuzzy
+#| msgid "I dinna know. Ye think tha lich’s castle ken be useful?"
+msgid "I dinna know. Ye think tha lich’s castle can be useful?"
 msgstr "Де да знам. Дали замъкът му може да ни е от полза?"
 
 #. [message]: role=speakinghero
@@ -6206,12 +6212,12 @@ msgid ""
 "village of squids for all eternity."
 msgstr ""
 
-#. [unit_type]: id=Apprentice Mage, race=human
+#. [unit_type]: id=Apprentice Mage, race=human, gender=male
 #: data/campaigns/Descent_Into_Darkness/units/Apprentice_Mage.cfg:4
 msgid "Apprentice Mage"
 msgstr "Начинаещ магьосник"
 
-#. [unit_type]: id=Apprentice Mage, race=human
+#. [unit_type]: id=Apprentice Mage, race=human, gender=male
 #: data/campaigns/Descent_Into_Darkness/units/Apprentice_Mage.cfg:17
 msgid ""
 "Trained in swordsmanship as a boy and the magical arts as a young man, Malin "
@@ -6230,12 +6236,12 @@ msgstr ""
 msgid "magic blast"
 msgstr "магически взрив"
 
-#. [unit_type]: id=Apprentice Necromancer, race=human
+#. [unit_type]: id=Apprentice Necromancer, race=human, gender=male
 #: data/campaigns/Descent_Into_Darkness/units/Apprentice_Necromancer.cfg:4
 msgid "Apprentice Necromancer"
 msgstr "Начинаещ некромант"
 
-#. [unit_type]: id=Apprentice Necromancer, race=human
+#. [unit_type]: id=Apprentice Necromancer, race=human, gender=male
 #: data/campaigns/Descent_Into_Darkness/units/Apprentice_Necromancer.cfg:16
 msgid ""
 "Under Darken Volk’s tutelage, Malin has become adept at wielding necromancy "
@@ -6267,12 +6273,12 @@ msgstr ""
 "продължава да го използва в борба, вероятно от сантименталност. Способността "
 "му с магията, обаче, е повече от достатъчна."
 
-#. [unit_type]: id=Frontier Baroness, race=human
+#. [unit_type]: id=Frontier Baroness, race=human, gender=female
 #: data/campaigns/Descent_Into_Darkness/units/Frontier_Baroness.cfg:6
 msgid "female^Frontier Baroness"
 msgstr "погранична баронеса"
 
-#. [unit_type]: id=Frontier Baroness, race=human
+#. [unit_type]: id=Frontier Baroness, race=human, gender=female
 #: data/campaigns/Descent_Into_Darkness/units/Frontier_Baroness.cfg:23
 msgid ""
 "At Wesnoth’s frontiers, all able-bodied men and women must be able to defend "

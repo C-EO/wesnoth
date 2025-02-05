@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2008 - 2023
+	Copyright (C) 2008 - 2024
 	by Tomasz Sniatowski <kailoran@gmail.com>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
@@ -17,13 +17,13 @@
 
 #include "editor/controller/editor_controller.hpp"
 
+#include "addon/validation.hpp"
 #include "gettext.hpp"
 #include "gui/dialogs/editor/choose_addon.hpp"
-#include "gui/dialogs/message.hpp"
+#include "gui/dialogs/prompt.hpp"
 #include "filesystem.hpp"
 #include "editor/action/action_base.hpp"
-#include "serialization/parser.hpp"
-#include "serialization/preprocessor.hpp"
+#include "serialization/chrono.hpp"
 
 lg::log_domain log_editor("editor");
 
@@ -43,8 +43,17 @@ std::string initialize_addon()
 	}
 
 	if(addon_id == "///newaddon///") {
-		std::int64_t current_millis = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
-		addon_id = "MyAwesomeAddon-"+std::to_string(current_millis);
+		static constexpr std::string_view ts_format = "%Y-%m-%d_%H-%M-%S";
+		std::string timestamp = chrono::format_local_timestamp(std::chrono::system_clock::now(), ts_format);
+
+		addon_id = "MyAwesomeAddon-" + timestamp;
+		std::string addon_id_new = addon_id;
+
+		if(gui2::dialogs::prompt::execute(addon_id_new)) {
+			if(addon_filename_legal(addon_id_new)) {
+				addon_id = addon_id_new;
+			}
+		}
 	}
 
 	if(addon_id == "mainline") {
@@ -92,7 +101,6 @@ std::string initialize_addon()
 				<< "    path=\"data/add-ons/" << addon_id << "/translations\"\n"
 				<< "[/textdomain]\n"
 				<< "\n"
-				<< "#ifdef MULTIPLAYER\n"
 				<< "[binary_path]\n"
 				<< "    path=data/add-ons/" << addon_id << "\n"
 				<< "[/binary_path]\n"
@@ -102,8 +110,7 @@ std::string initialize_addon()
 				<< "\n"
 				<< "[units]\n"
 				<< "    {~add-ons/" << addon_id << "/units}\n"
-				<< "[/units]\n"
-				<< "#endif\n";
+				<< "[/units]\n";
 	}
 
 	return addon_id;
@@ -117,7 +124,7 @@ EXIT_STATUS start(bool clear_id, const std::string& filename, bool take_screensh
 
 		editor_controller editor(clear_id);
 
-		if (!filename.empty() && filesystem::file_exists (filename)) {
+		if (!filename.empty() && filesystem::file_exists(filename)) {
 			if (filesystem::is_directory(filename)) {
 				editor.context_manager_->set_default_dir(filename);
 				editor.context_manager_->load_map_dialog(true);
@@ -125,8 +132,7 @@ EXIT_STATUS start(bool clear_id, const std::string& filename, bool take_screensh
 				editor.context_manager_->load_map(filename, false);
 
 				// HACK: this fixes an issue where the button overlays would be missing when
-				// the loaded map appears. Since we're gonna drop this ridiculous GUI1 drawing
-				// stuff in 1.15 I'm not going to waste time coming up with a better fix.
+				// the loaded map appears.
 				//
 				// Do note adding a redraw_everything call to context_manager::refresh_all also
 				// fixes the issue, but I'm pretty sure thats just because editor_controller::

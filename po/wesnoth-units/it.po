@@ -8,13 +8,13 @@
 # Automatically generated, 2004.
 # Alessio D'Ascanio <otaku@fastwebnet.it>, 2004, 2005.
 # Luciano Montanaro <mikelima@cirulla.net>, 2006, 2007, 2009.
-# Antonio Rosella <arosella@yahoo.com>, 2012-2023.
+# Antonio Rosella <arosella@yahoo.com>, 2012-2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2023-11-20 17:23 UTC\n"
-"PO-Revision-Date: 2023-10-21 15:41+0200\n"
+"POT-Creation-Date: 2025-01-19 17:47 UTC\n"
+"PO-Revision-Date: 2024-12-08 23:04+0100\n"
 "Last-Translator: Antonio 'Antro' Rosella <arosella@yahoo.com>\n"
 "Language-Team: Italian <>\n"
 "Language: it\n"
@@ -29,8 +29,6 @@ msgstr ""
 #: data/campaigns/Dead_Water/units/Soldier_King.cfg:30
 #: data/campaigns/Dead_Water/units/Warrior_King.cfg:31
 #: data/campaigns/Dead_Water/units/Young_King.cfg:26
-#: data/campaigns/The_South_Guard/units/Horseman_Commander.cfg:41
-#: data/campaigns/The_South_Guard/units/Mounted_General.cfg:42
 #: data/core/units/dunefolk/Alchemist.cfg:35
 #: data/core/units/dunefolk/Apothecary.cfg:36
 #: data/core/units/dunefolk/Cataphract.cfg:43
@@ -41,8 +39,8 @@ msgstr ""
 #: data/core/units/dunefolk/Sunderer.cfg:32
 #: data/core/units/dunefolk/Windbolt.cfg:32
 #: data/core/units/humans/Loyalist_Heavy_Infantryman.cfg:23
-#: data/core/units/nagas/Guard.cfg:27 data/core/units/nagas/Guard_High.cfg:37
-#: data/core/units/nagas/Guard_Shield.cfg:35
+#: data/core/units/nagas/Guard.cfg:26 data/core/units/nagas/Guard_High.cfg:36
+#: data/core/units/nagas/Guard_Shield.cfg:36
 msgid "mace"
 msgstr "mazza"
 
@@ -136,6 +134,9 @@ msgstr "onda oscura"
 #: data/campaigns/The_Rise_Of_Wesnoth/units/Wesfolk_Lady.cfg:73
 #: data/campaigns/The_Rise_Of_Wesnoth/units/Wesfolk_Leader.cfg:74
 #: data/campaigns/The_Rise_Of_Wesnoth/units/Wesfolk_Outcast.cfg:73
+#: data/campaigns/The_South_Guard/units/Mari2-relaxed.cfg:40
+#: data/campaigns/The_South_Guard/units/Mari2.cfg:39
+#: data/campaigns/The_South_Guard/units/Mari3.cfg:38
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Scout.cfg:39
 #: data/core/units/dunefolk/Skirmisher.cfg:44
 #: data/core/units/humans/Outlaw.cfg:31
@@ -165,20 +166,21 @@ msgstr "fionda"
 #: data/core/units/bats/Bat_Vampire.cfg:116
 #: data/core/units/goblins/Direwolf_Rider.cfg:32
 #: data/core/units/goblins/Knight.cfg:34
-#: data/core/units/goblins/Pillager.cfg:32
+#: data/core/units/goblins/Pillager.cfg:59
 #: data/core/units/goblins/Wolf_Rider.cfg:46
-#: data/core/units/monsters/Ant.cfg:32 data/core/units/monsters/Ant_Fire.cfg:69
-#: data/core/units/monsters/Ant_Fire_Queen.cfg:73
+#: data/core/units/monsters/Ant.cfg:32 data/core/units/monsters/Ant_Fire.cfg:71
+#: data/core/units/monsters/Ant_Fire_Queen.cfg:75
 #: data/core/units/monsters/Ant_Firebane.cfg:70
-#: data/core/units/monsters/Ant_Firebomb.cfg:72
+#: data/core/units/monsters/Ant_Firebomb.cfg:74
 #: data/core/units/monsters/Ant_Queen.cfg:36
 #: data/core/units/monsters/Ant_Soldier.cfg:38
 #: data/core/units/monsters/Bear.cfg:42 data/core/units/monsters/Caribe.cfg:114
 #: data/core/units/monsters/Caribe_Hunter.cfg:115
 #: data/core/units/monsters/Caribe_Nibbler.cfg:129
+#: data/core/units/monsters/Cat_Forest.cfg:91
 #: data/core/units/monsters/Giant_Spider.cfg:28
 #: data/core/units/monsters/Sea_Serpent.cfg:27
-#: data/core/units/monsters/Shadow_Jumping_Spider.cfg:54
+#: data/core/units/monsters/Shadow_Jumping_Spider.cfg:87
 #: data/core/units/monsters/Water_Serpent.cfg:42
 #: data/core/units/monsters/Wolf.cfg:48
 #: data/core/units/monsters/Wolf_Dire.cfg:33
@@ -188,8 +190,6 @@ msgstr "zanne"
 
 #. [attack]: type=pierce
 #: data/campaigns/Eastern_Invasion/units/Human_Banneret.cfg:24
-#: data/campaigns/The_South_Guard/units/Horseman_Commander.cfg:30
-#: data/campaigns/The_South_Guard/units/Mounted_General.cfg:31
 #: data/core/units/dunefolk/Cataphract.cfg:52
 #: data/core/units/humans/Horse_Grand_Knight.cfg:33
 #: data/core/units/humans/Horse_Knight.cfg:32
@@ -260,6 +260,7 @@ msgstr "tocco"
 #: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Annalist.cfg:33
 #: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Loremaster.cfg:36
 #: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Witness.cfg:38
+#: data/campaigns/The_South_Guard/units/MECH_Quintain.cfg:25
 #: data/campaigns/tutorial/units/Quintain.cfg:25
 #: data/core/units/humans/Loyalist_Iron_Mauler.cfg:26
 #: data/core/units/humans/Loyalist_Shock_Trooper.cfg:23
@@ -275,7 +276,8 @@ msgstr "mazzafrusto"
 #: data/campaigns/Eastern_Invasion/units/Human_Owaec_Clan_Captain.cfg:37
 #: data/campaigns/Eastern_Invasion/units/Human_Owaec_Horse_Lord.cfg:38
 #: data/campaigns/Eastern_Invasion/units/Human_Owaec_Princeling.cfg:37
-#: data/campaigns/Eastern_Invasion/units/Human_Terraent_Paladin.cfg:15
+#: data/campaigns/Eastern_Invasion/units/Human_Terraent_Paladin.cfg:38
+#: data/campaigns/Eastern_Invasion/units/Undead_Horse_Barrow_Wight.cfg:48
 #: data/campaigns/Eastern_Invasion/units/Undead_Horse_Pyre_Wight.cfg:45
 #: data/campaigns/Eastern_Invasion/units/Undead_Horse_Pyre_Wight.cfg:57
 #: data/campaigns/Heir_To_The_Throne/units/Battle_Princess.cfg:34
@@ -285,7 +287,7 @@ msgstr "mazzafrusto"
 #: data/campaigns/Heir_To_The_Throne/units/Lord.cfg:25
 #: data/campaigns/Heir_To_The_Throne/units/Princess.cfg:34
 #: data/campaigns/Heir_To_The_Throne/units/Princess.cfg:91
-#: data/campaigns/Heir_To_The_Throne/units/Sea_Orc.cfg:36
+#: data/campaigns/Heir_To_The_Throne/units/Sea_Orc.cfg:38
 #: data/campaigns/Sceptre_of_Fire/units/Haldric_II.cfg:26
 #: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Commander.cfg:34
 #: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Fighter.cfg:23
@@ -301,7 +303,7 @@ msgstr "mazzafrusto"
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Ranger.cfg:33
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Ranger.cfg:62
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Scout.cfg:27
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:878
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:929
 #: data/campaigns/tutorial/units/Fighter.cfg:24
 #: data/campaigns/tutorial/units/Fighteress.cfg:25
 #: data/campaigns/tutorial/units/Warrior.cfg:25
@@ -317,17 +319,16 @@ msgstr "mazzafrusto"
 #: data/core/units/humans/Horse_Knight.cfg:23
 #: data/core/units/humans/Horse_Paladin.cfg:39
 #: data/core/units/humans/Loyalist_Cavalryman.cfg:58
-#: data/core/units/humans/Loyalist_Dragoon.cfg:35
+#: data/core/units/humans/Loyalist_Dragoon.cfg:54
 #: data/core/units/humans/Loyalist_Lieutenant.cfg:27
 #: data/core/units/humans/Loyalist_Longbowman.cfg:25
 #: data/core/units/humans/Loyalist_Master_Bowman.cfg:25
 #: data/core/units/humans/Loyalist_Sergeant.cfg:27
 #: data/core/units/humans/Loyalist_Swordsman.cfg:29
-#: data/core/units/humans/Woodsman_Ranger.cfg:44
+#: data/core/units/humans/Woodsman_Ranger.cfg:49
 #: data/core/units/nagas/Fighter.cfg:30 data/core/units/nagas/Myrmidon.cfg:29
 #: data/core/units/nagas/Warrior.cfg:27 data/core/units/orcs/Grunt.cfg:88
 #: data/core/units/orcs/Leader.cfg:27
-#: data/core/units/undead/Skele_Death_Squire.cfg:32
 msgid "sword"
 msgstr "spada"
 
@@ -337,8 +338,9 @@ msgstr "spada"
 #: data/campaigns/Eastern_Invasion/units/Human_Gweddry_Frontier_Sergeant.cfg:38
 #: data/campaigns/Eastern_Invasion/units/Human_Gweddry_Veteran_Commander.cfg:55
 #: data/campaigns/Eastern_Invasion/units/Human_Gweddry_Veteran_Lieutenant.cfg:53
+#: data/campaigns/The_South_Guard/units/Deoran3_Cavalier.cfg:51
 #: data/core/units/humans/Loyalist_Cavalier.cfg:45
-#: data/core/units/humans/Loyalist_Dragoon.cfg:44
+#: data/core/units/humans/Loyalist_Dragoon.cfg:63
 #: data/core/units/humans/Loyalist_Duelist.cfg:45
 #: data/core/units/humans/Loyalist_General.cfg:53
 #: data/core/units/humans/Loyalist_Grand_Marshal.cfg:47
@@ -356,6 +358,8 @@ msgstr "balestra"
 #. [attack]: type=blade
 #: data/campaigns/Eastern_Invasion/units/Human_Gweddry_Veteran_Commander.cfg:46
 #: data/campaigns/Eastern_Invasion/units/Human_Gweddry_Veteran_Lieutenant.cfg:44
+#: data/campaigns/Liberty/units/Maddock.cfg:51
+#: data/campaigns/The_South_Guard/units/Deoran3_Cavalier.cfg:42
 #: data/core/units/humans/Horse_Grand_Knight.cfg:24
 #: data/core/units/humans/Loyalist_Cavalier.cfg:36
 #: data/core/units/humans/Loyalist_General.cfg:44
@@ -365,7 +369,7 @@ msgid "longsword"
 msgstr "spada lunga"
 
 #. [attack]: type=impact
-#: data/campaigns/Eastern_Invasion/units/Human_Konrad_King_of_Wesnoth.cfg:28
+#: data/campaigns/Eastern_Invasion/units/Human_Konrad_King_of_Wesnoth.cfg:29
 #: data/core/units/humans/Outlaw.cfg:23
 #: data/core/units/humans/Outlaw_Bandit.cfg:29
 #: data/core/units/humans/Outlaw_Fugitive.cfg:28
@@ -374,12 +378,67 @@ msgstr "spada lunga"
 msgid "morning star"
 msgstr "mazza ferrata"
 
+#. [unit_type]: id=Terraent, race=human
+#. [unit_type]: id=Paladin, race=human
+#: data/campaigns/Eastern_Invasion/units/Human_Terraent_Paladin.cfg:18
+#: data/core/units/humans/Horse_Paladin.cfg:4
+msgid "Paladin"
+msgstr "Paladino"
+
+#. [unit_type]: id=Terraent, race=human
+#. [unit_type]: id=Paladin, race=human
+#: data/campaigns/Eastern_Invasion/units/Human_Terraent_Paladin.cfg:19
+#: data/core/units/humans/Horse_Paladin.cfg:20
+msgid ""
+"Knights of the highest virtue, Paladins have sworn their strength not to "
+"king and crown, but to ideals themselves; of chivalry, and the stewardship "
+"of everything that is good. They may serve in the armies of the world, but "
+"their first loyalties often lie with groups of their own making; secret, "
+"monastic orders that cross political and cultural boundaries. Rulers are "
+"sometimes wary of them, for the paladins’ loyalty is only as strong as the "
+"liege’s apparent virtue. This has led the more darkly ambitious to either "
+"attempt to defame and disperse these groups, or more rarely, to conjure "
+"elaborate deceptions to keep these otherwise staunchly loyal troops in "
+"service.\n"
+"\n"
+"Full paladins are generally not quite as fearsome as the ‘Grand Knights’ "
+"that champion most armies, but they are first-class fighters nonetheless. "
+"Additionally, their wisdom and piety grants these warrior monks certain "
+"curious abilities; a paladin is very powerful in fighting magical or "
+"unnatural things, and most have some skill at medicine and healing."
+msgstr ""
+"Cavalieri della più alta virtù, i paladini hanno giurato di servire con la "
+"loro forza non il re o la corona, ma gli ideali stessi della cavalleria e "
+"della difesa di tutto ciò che è buono. Costoro possono offrire i loro "
+"servigi negli eserciti di tutto il mondo, ma la devozione maggiore viene "
+"spesso riposta nei loro stessi gruppi, ordini monastici segreti e "
+"trasversali rispetto ai confini politici e culturali. I governanti talvolta "
+"diffidano di loro, poiché la lealtà di un paladino è tanto forte solo quanto "
+"lo è la virtù apparente del signore che serve. Questo ha fatto sì che i "
+"sovrani più oscuri e ambiziosi tentassero di screditare e di disperdere "
+"questi gruppi, oppure, più di rado, di ordire complessi inganni pur di "
+"mantenere al loro servizio queste truppe altrimenti fermamente leali.\n"
+"\n"
+"I paladini veri e propri non sono in genere così temuti come i “gran "
+"cavalieri” che primeggiano nella maggior parte degli eserciti, ma sono "
+"comunque guerrieri di primissimo livello. Inoltre, la loro saggezza e la "
+"loro pietà donano a questi monaci guerrieri certe abilità peculiari: i "
+"paladini sono infatti molto potenti quando combattono contro le entità "
+"magiche o innaturali e gran parte di loro possiede pure delle abilità di "
+"cura e guarigione."
+
 #. [attack]: type=blade
 #: data/campaigns/Eastern_Invasion/units/Ogre_Ancient.cfg:35
 #: data/campaigns/Eastern_Invasion/units/Ogre_Great.cfg:32
 #: data/core/units/ogres/Ogre.cfg:28 data/core/units/ogres/Young_Ogre.cfg:27
 msgid "cleaver"
 msgstr "mannaia"
+
+#. [attack]: type=impact
+#: data/campaigns/Eastern_Invasion/units/Undead_Horse_Barrow_Wight.cfg:57
+#: data/core/units/undead/Skele_Bone_Knight.cfg:77
+msgid "trample"
+msgstr "calpestamento"
 
 #. [attack]: type=cold
 #: data/campaigns/Eastern_Invasion/units/Undead_Ravanal_Dread_Lich.cfg:96
@@ -400,22 +459,24 @@ msgstr "tempesta gelida"
 #: data/campaigns/Under_the_Burning_Suns/units/nagas/Naga_Hunter.cfg:34
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Archer.cfg:40
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Marksman.cfg:43
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:891
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:942
+#: data/core/units/boats/Raider_Coastal.cfg:139
+#: data/core/units/boats/Raider_Iron.cfg:146
 #: data/core/units/dunefolk/Marauder.cfg:70
 #: data/core/units/dunefolk/Raider.cfg:68 data/core/units/elves/Archer.cfg:32
 #: data/core/units/elves/Avenger.cfg:48 data/core/units/elves/Captain.cfg:43
-#: data/core/units/elves/Champion.cfg:33 data/core/units/elves/Fighter.cfg:31
+#: data/core/units/elves/Champion.cfg:35 data/core/units/elves/Fighter.cfg:31
 #: data/core/units/elves/Hero.cfg:31 data/core/units/elves/Marshal.cfg:48
 #: data/core/units/elves/Outrider.cfg:54 data/core/units/elves/Ranger.cfg:47
 #: data/core/units/elves/Rider.cfg:41 data/core/units/elves/Scout.cfg:41
 #: data/core/units/humans/Loyalist_Bowman.cfg:32
 #: data/core/units/humans/Woodsman.cfg:37
-#: data/core/units/humans/Woodsman_Huntsman.cfg:45
+#: data/core/units/humans/Woodsman_Huntsman.cfg:48
 #: data/core/units/humans/Woodsman_Poacher.cfg:42
-#: data/core/units/humans/Woodsman_Ranger.cfg:53
+#: data/core/units/humans/Woodsman_Ranger.cfg:58
 #: data/core/units/humans/Woodsman_Trapper.cfg:42
 #: data/core/units/orcs/Archer.cfg:33 data/core/units/orcs/Archer.cfg:42
-#: data/core/units/orcs/Warlord.cfg:33
+#: data/core/units/orcs/Warlord.cfg:39
 #: data/core/units/undead/Skele_Banebow.cfg:40
 #: data/core/units/undead/Skele_Bone_Shooter.cfg:38
 #: data/core/units/undead/Skeleton_Archer.cfg:46
@@ -426,6 +487,7 @@ msgstr "arco"
 #. [unit_type]: id=SotA Flying Corpse_Gryphon
 #. [unit_type]: id=SotA Soulless_Gryphon
 #. [attack]: type=pierce
+#. [variation]
 #: data/campaigns/Heir_To_The_Throne/units/Sleeping_Gryphon.cfg:30
 #: data/campaigns/Secrets_of_the_Ancients/units/SotA_Corpses.cfg:160
 #: data/campaigns/Secrets_of_the_Ancients/units/SotA_Soulless.cfg:132
@@ -436,16 +498,20 @@ msgstr "arco"
 #: data/core/units/gryphons/Gryphon_Master.cfg:28
 #: data/core/units/gryphons/Gryphon_Rider.cfg:27
 #: data/core/units/monsters/Bear.cfg:51
-#: data/core/units/monsters/Elder_Falcon.cfg:41
+#: data/core/units/monsters/Cat_Forest.cfg:82
+#: data/core/units/monsters/Cat_Jump.cfg:80
+#: data/core/units/monsters/Elder_Falcon.cfg:75
 #: data/core/units/monsters/Falcon.cfg:86
 #: data/core/units/monsters/Icemonax.cfg:53
 #: data/core/units/monsters/Icemonax_Greater.cfg:54
 #: data/core/units/monsters/Jinn.cfg:91
-#: data/core/units/monsters/Raven_Harbinger.cfg:87
+#: data/core/units/monsters/Raven_Harbinger.cfg:83
 #: data/core/units/monsters/Roc.cfg:55
-#: data/core/units/monsters/Skeletal_Dragon.cfg:43
+#: data/core/units/monsters/Skeletal_Dragon.cfg:42
 #: data/core/units/undead/Corpse_Ghoul.cfg:32
 #: data/core/units/undead/Corpse_Necrophage.cfg:26
+#: data/core/units/undead/Corpse_Soulless.cfg:186
+#: data/core/units/undead/Corpse_Walking.cfg:187
 #: data/core/units/undead/Spirit_Nightgaunt.cfg:94
 #: data/core/units/undead/Spirit_Shadow.cfg:62
 msgid "claws"
@@ -455,6 +521,9 @@ msgstr "artigli"
 #: data/campaigns/Secrets_of_the_Ancients/units/Bone_Captain.cfg:32
 #: data/campaigns/Secrets_of_the_Ancients/units/Sailor.cfg:23
 #: data/campaigns/Secrets_of_the_Ancients/units/Sea_Captain.cfg:26
+#: data/campaigns/The_South_Guard/units/Mari2-relaxed.cfg:29
+#: data/campaigns/The_South_Guard/units/Mari2.cfg:28
+#: data/campaigns/The_South_Guard/units/Mari3.cfg:27
 #: data/core/units/humans/Loyalist_Duelist.cfg:36
 #: data/core/units/humans/Loyalist_Fencer.cfg:59
 #: data/core/units/humans/Loyalist_Master_at_Arms.cfg:31
@@ -522,7 +591,7 @@ msgid "Ancient Lich"
 msgstr "Lich Antico"
 
 #. [unit_type]: id=Sacrifice, race=human
-#. [unit_type]: id=Necromancer, race=human
+#. [unit_type]: id=Necromancer, gender=male,female, race=human
 #: data/campaigns/Secrets_of_the_Ancients/units/Necro_Sacrifice.cfg:8
 #: data/core/units/undead/Necromancer.cfg:4
 msgid "Necromancer"
@@ -538,7 +607,7 @@ msgstr "bastone del contagio"
 #. [attack]: type=cold
 #: data/campaigns/Secrets_of_the_Ancients/units/Orcish_Shaman.cfg:36
 #: data/campaigns/Son_Of_The_Black_Eye/units/Orcish_Shaman.cfg:35
-#: data/campaigns/The_Rise_Of_Wesnoth/units/Vampire_Lady.cfg:36
+#: data/campaigns/The_Rise_Of_Wesnoth/units/Vampire_Lady.cfg:37
 #: data/core/units/saurians/Augur.cfg:33 data/core/units/saurians/Oracle.cfg:44
 #: data/core/units/saurians/Prophet.cfg:46 data/core/units/saurians/Seer.cfg:34
 #: data/core/units/saurians/Soothsayer.cfg:33
@@ -557,10 +626,10 @@ msgstr "maledizione"
 #: data/core/units/dunefolk/Wyvern_Rider.cfg:23
 #: data/core/units/monsters/Boar.cfg:50
 #: data/core/units/monsters/Boar_Piglet.cfg:50
-#: data/core/units/monsters/Crocodile.cfg:159
-#: data/core/units/monsters/Dragonfly.cfg:30
-#: data/core/units/monsters/Dragonfly_Grand.cfg:31
-#: data/core/units/monsters/Dragonfly_Naiad.cfg:61
+#: data/core/units/monsters/Crocodile.cfg:146
+#: data/core/units/monsters/Dragonfly.cfg:31
+#: data/core/units/monsters/Dragonfly_Grand.cfg:32
+#: data/core/units/monsters/Dragonfly_Naiad.cfg:62
 #: data/core/units/monsters/Fire_Dragon.cfg:33
 #: data/core/units/monsters/Frost_Stoat.cfg:94
 #: data/core/units/monsters/Giant_Rat.cfg:30
@@ -571,9 +640,13 @@ msgstr "maledizione"
 #: data/core/units/monsters/Wild_Wyvern.cfg:97
 #: data/core/units/undead/Corpse_Ghast.cfg:27
 #: data/core/units/undead/Corpse_Soulless.cfg:154
-#: data/core/units/undead/Corpse_Soulless.cfg:294
+#: data/core/units/undead/Corpse_Soulless.cfg:170
+#: data/core/units/undead/Corpse_Soulless.cfg:270
+#: data/core/units/undead/Corpse_Soulless.cfg:347
 #: data/core/units/undead/Corpse_Walking.cfg:155
-#: data/core/units/undead/Corpse_Walking.cfg:295
+#: data/core/units/undead/Corpse_Walking.cfg:171
+#: data/core/units/undead/Corpse_Walking.cfg:271
+#: data/core/units/undead/Corpse_Walking.cfg:348
 msgid "bite"
 msgstr "morso"
 
@@ -683,7 +756,7 @@ msgstr ""
 #: data/core/units/humans/Outlaw_Rogue.cfg:26
 #: data/core/units/humans/Outlaw_Thief.cfg:94
 #: data/core/units/humans/Woodsman.cfg:28
-#: data/core/units/humans/Woodsman_Huntsman.cfg:36
+#: data/core/units/humans/Woodsman_Huntsman.cfg:39
 #: data/core/units/humans/Woodsman_Poacher.cfg:33
 #: data/core/units/humans/Woodsman_Trapper.cfg:33
 #: data/core/units/nagas/Dirkfang.cfg:29 data/core/units/orcs/Archer.cfg:24
@@ -719,17 +792,18 @@ msgstr ""
 #: data/core/units/dunefolk/Explorer.cfg:35
 #: data/core/units/dunefolk/Rover.cfg:32
 #: data/core/units/dunefolk/Wayfarer.cfg:43
-#: data/core/units/dwarves/Explorer.cfg:33
+#: data/core/units/dwarves/Explorer.cfg:37
 #: data/core/units/dwarves/Fighter.cfg:57
 #: data/core/units/dwarves/Pathfinder.cfg:36
 #: data/core/units/dwarves/Pathfinder.cfg:44
 #: data/core/units/dwarves/Scout.cfg:35 data/core/units/dwarves/Scout.cfg:43
-#: data/core/units/undead/Skele_Bone_Knight.cfg:52
+#: data/core/units/undead/Skele_Bone_Knight.cfg:67
+#: data/core/units/undead/Skele_Death_Squire.cfg:51
 #: data/core/units/undead/Skele_Deathblade.cfg:53
 #: data/core/units/undead/Skele_Draug.cfg:30
 #: data/core/units/undead/Skele_Revenant.cfg:31
 #: data/core/units/undead/Skeleton.cfg:49
-#: data/core/units/undead/Skeleton_Rider.cfg:52
+#: data/core/units/undead/Skeleton_Rider.cfg:86
 msgid "axe"
 msgstr "ascia"
 
@@ -770,7 +844,6 @@ msgstr ""
 #: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Guardsman.cfg:28
 #: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Sentinel.cfg:37
 #: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Stalwart.cfg:32
-#: data/campaigns/The_South_Guard/units/Junior_Commander.cfg:30
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Fighter.cfg:29
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Fighter.cfg:45
 #: data/core/units/drakes/Clasher.cfg:34 data/core/units/drakes/Thrasher.cfg:32
@@ -830,7 +903,7 @@ msgstr "giavellotto"
 #. [attack]: type=blade
 #: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Lord.cfg:28
 #: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Steelclad.cfg:28
-#: data/core/units/dwarves/Explorer.cfg:24 data/core/units/dwarves/Lord.cfg:48
+#: data/core/units/dwarves/Explorer.cfg:28 data/core/units/dwarves/Lord.cfg:48
 #: data/core/units/dwarves/Steelclad.cfg:48
 #: data/core/units/undead/Skele_Death_Knight.cfg:33
 msgid "battle axe"
@@ -973,15 +1046,16 @@ msgstr ""
 "dall’invincibilità, in quanto le loro rune fanno sì che gli attacchi fisici "
 "dei loro nemici causino meno danni del solito."
 
-#. [unit_type]: id=Autumn Shyde, race=elf
-#. [unit_type]: id=Elvish Shyde, race=elf
+#. [unit_type]: id=Autumn Shyde, race=elf, gender=female
+#. [unit_type]: id=Elvish Shyde, race=elf, gender=female
 #: data/campaigns/The_Rise_Of_Wesnoth/units/Autumn_Shyde.cfg:5
 #: data/core/units/elves/Shyde.cfg:4
 msgid "female^Elvish Shyde"
 msgstr "Fata"
 
 #. [attack]: type=impact
-#: data/campaigns/The_South_Guard/units/Infantry_Commander.cfg:40
+#: data/campaigns/The_South_Guard/units/Gerrick2_Veteran_Infantryman.cfg:31
+#: data/campaigns/The_South_Guard/units/Gerrick3_Master_Infantryman.cfg:32
 #: data/core/units/dunefolk/Spearguard.cfg:42
 #: data/core/units/dunefolk/Spearmaster.cfg:45
 msgid "shield bash"
@@ -994,7 +1068,7 @@ msgstr "colpo di scudo"
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Divine_Avatar.cfg:28
 #: data/core/units/merfolk/Brawler.cfg:22
 #: data/core/units/merfolk/Citizen.cfg:22
-#: data/core/units/monsters/Giant_Mudcrawler.cfg:32
+#: data/core/units/monsters/Giant_Mudcrawler.cfg:40
 #: data/core/units/monsters/Yeti.cfg:37
 #: data/core/units/trolls/Rocklobber.cfg:25
 #: data/core/units/trolls/Troll_Shaman.cfg:31
@@ -1037,49 +1111,49 @@ msgid "bolas"
 msgstr "bolas"
 
 #. [effect]: type=blade
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:124
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:157
 msgid "taunting strike"
-msgstr ""
+msgstr "colpo provocatorio"
 
 #. [advancement]: id=run_by_taunt
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:145
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:184
 msgid "Run By (Taunting strike)"
-msgstr ""
+msgstr "In corsa (colpo provocatorio)"
 
 #. [advancement]: id=strength_training
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:158
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:202
 msgid "Strength Training"
 msgstr "Allenamento della Forza"
 
 #. [advancement]: id=bowmanship_training
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:170
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:214
 msgid "Bowmanship Training"
 msgstr "Addestramento arceria"
 
 #. [advancement]: id=strong_shots
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:187
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:231
 msgid "Strong Shots"
 msgstr "Colpi potenti"
 
 #. [advancement]: id=Bowman
-#. [unit_type]: id=Bowman, race=human
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:199
+#. [unit_type]: id=Bowman, race=human, gender=male
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:243
 #: data/core/units/humans/Loyalist_Bowman.cfg:4
 msgid "Bowman"
 msgstr "Arciere"
 
 #. [advancement]: id=piercing_shot
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:216
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:260
 msgid "Piercing Shot"
 msgstr "Colpo Penetrante"
 
 #. [effect]: type=pierce
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:224
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:268
 msgid "piercing shot"
 msgstr "colpo penetrante"
 
 #. [effect]: type=pierce
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:528
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:582
 msgid "Rain of arrows"
 msgstr "Pioggia di frecce"
 
@@ -1140,7 +1214,7 @@ msgid "Boat"
 msgstr "Barca"
 
 #. [unit_type]: id=Boat, race=mechanical
-#: data/core/units/boats/Boat.cfg:17
+#: data/core/units/boats/Boat.cfg:21
 msgid ""
 "Propelled by oars or small sails, boats are used to travel short distances "
 "and in shallows where large ships cannot navigate."
@@ -1149,25 +1223,69 @@ msgstr ""
 "brevi distanze o per gli spostamenti nelle acque basse, dove le grandi navi "
 "non riescono a navigare."
 
+#. [unit_type]: id=Derelict Hulk, race=ship
+#: data/core/units/boats/Derelict_Galleon.cfg:4
+msgid "Derelict Hulk"
+msgstr ""
+
+#. [unit_type]: id=Derelict Hulk, race=ship
+#: data/core/units/boats/Derelict_Galleon.cfg:18
+msgid ""
+"Derelicts are abandoned wrecks that continue to drift across the seas. Most "
+"are merely ruined ships that will soon sink, but there are tales of others "
+"that haunt certain waterways for generations."
+msgstr ""
+
+#. [attack]: type=impact
+#: data/core/units/boats/Derelict_Galleon.cfg:135
+msgid "jetsam"
+msgstr ""
+
+#. [unit_type]: id=Fireship, race=ship
+#: data/core/units/boats/Fireship.cfg:4
+#, fuzzy
+#| msgid "Fire Wisp"
+msgid "Fireship"
+msgstr "Spiritello di Fuoco"
+
+#. [unit_type]: id=Fireship, race=ship
+#: data/core/units/boats/Fireship.cfg:18
+msgid ""
+"Fireships are generally derelict or doomed ships set ablaze to create chaos "
+"in one last act of belligerence. Their main hazard is fiery collision, but "
+"they also shed burning embers. Sometimes they have a skeleton crew to guide "
+"them, but often they just drift along on unseen winds and currents."
+msgstr ""
+
+#. [attack]: type=fire
+#: data/core/units/boats/Fireship.cfg:165
+msgid "ember"
+msgstr ""
+
+#. [attack]: type=fire
+#: data/core/units/boats/Fireship.cfg:174
+msgid "crash"
+msgstr ""
+
 #. [unit_type]: id=Galleon, race=mechanical
 #: data/core/units/boats/Galleon.cfg:6
 msgid "Galleon"
 msgstr "Galeone"
 
 #. [unit_type]: id=Galleon, race=mechanical
-#: data/core/units/boats/Galleon.cfg:19
+#: data/core/units/boats/Galleon.cfg:23
 msgid "Galleons are blue-water ships built for trade and transport."
 msgstr ""
 "I galeoni sono navi d’alto mare costruite per il commercio e il trasporto "
 "marittimo."
 
-#. [unit_type]: id=Pirate Galleon, race=mechanical
+#. [unit_type]: id=Pirate Galleon, race=ship
 #: data/core/units/boats/Pirate_Galleon.cfg:4
 msgid "Pirate Galleon"
 msgstr "Galeone pirata"
 
-#. [unit_type]: id=Pirate Galleon, race=mechanical
-#: data/core/units/boats/Pirate_Galleon.cfg:17
+#. [unit_type]: id=Pirate Galleon, race=ship
+#: data/core/units/boats/Pirate_Galleon.cfg:22
 msgid ""
 "Pirate galleons are to transport ships what wolves are to sheep. The pirates "
 "who crew them are more than happy to help relieve other ships of their "
@@ -1178,18 +1296,69 @@ msgstr ""
 "altre navi a disfarsi del loro pesante carico."
 
 #. [attack]: type=pierce
-#: data/core/units/boats/Pirate_Galleon.cfg:20
-#: data/core/units/boats/Transport_Galleon.cfg:20
+#: data/core/units/boats/Pirate_Galleon.cfg:160
+#: data/core/units/boats/Transport_Galleon.cfg:158
 msgid "ballista"
 msgstr "balista"
 
-#. [unit_type]: id=Transport Galleon, race=mechanical
+#. [unit_type]: id=Coastal Raider, race=ship
+#: data/core/units/boats/Raider_Coastal.cfg:4
+#, fuzzy
+#| msgid "Wolf Rider"
+msgid "Coastal Raider"
+msgstr "Cavalcatore di Lupi"
+
+#. [unit_type]: id=Coastal Raider, race=ship
+#: data/core/units/boats/Raider_Coastal.cfg:30
+msgid ""
+"While many larger ships rely on impressive sails to harness the power of the "
+"wind, galleys and raiders are propelled by muscle-power of the crew manning "
+"the oars. This has the disadvantage of requiring a larger crew, and it does "
+"limit the speed and efficiency of transport. But these seeming weaknesses "
+"also make the vessel less vulnerable to the whims of weather and the "
+"predations of pirates.\n"
+"\n"
+"Coastal raider ships are a very basic warship, used by several races to move "
+"armed forces rapidly through shallow and coastal water. They do not possess "
+"any specific armaments, but there are always archers amongst the crew."
+msgstr ""
+
+#. [unit_type]: id=Iron Raider, race=ship
+#: data/core/units/boats/Raider_Iron.cfg:4
+#, fuzzy
+#| msgid "Gryphon Rider"
+msgid "Iron Raider"
+msgstr "Cavalcatore di Grifoni"
+
+#. [unit_type]: id=Iron Raider, race=ship
+#: data/core/units/boats/Raider_Iron.cfg:36
+msgid ""
+"While Galleons and Cogs rely on impressive sails to harness the power of the "
+"wind, galleys and raiders are propelled by muscle-power of the crew manning "
+"the oars. This has the disadvantage of requiring a larger crew, and it does "
+"limit the speed and efficiency of transport. But these seeming weaknesses "
+"also make the vessel less vulnerable to the whims of weather and the "
+"predations of pirates.\n"
+"\n"
+"Iron Raiders are Coastal Raiders that have been hardened to become tougher "
+"targets and harder hitters, at the expense of speed. They are often used as "
+"front-line escorts of slower cargo ships in rivers and coasts."
+msgstr ""
+
+#. [attack]: type=impact
+#: data/core/units/boats/Raider_Iron.cfg:156
+#, fuzzy
+#| msgid "Cavalryman"
+msgid "naval ram"
+msgstr "Cavalleggero"
+
+#. [unit_type]: id=Transport Galleon, race=ship
 #: data/core/units/boats/Transport_Galleon.cfg:4
 msgid "Transport Galleon"
 msgstr "Galeone da trasporto"
 
-#. [unit_type]: id=Transport Galleon, race=mechanical
-#: data/core/units/boats/Transport_Galleon.cfg:16
+#. [unit_type]: id=Transport Galleon, race=ship
+#: data/core/units/boats/Transport_Galleon.cfg:20
 msgid ""
 "Transport Galleons are well-armed ships that carry troops. If they reach the "
 "shore, they can land the troops to attack."
@@ -1198,12 +1367,12 @@ msgstr ""
 "Nel caso riescano a raggiungere la costa, possono far sbarcare le truppe per "
 "lanciare un attacco."
 
-#. [unit_type]: id=Drake Arbiter, race=drake
+#. [unit_type]: id=Drake Arbiter, race=drake, gender=male,female
 #: data/core/units/drakes/Arbiter.cfg:4
 msgid "Drake Arbiter"
 msgstr "Drago Arbitro"
 
-#. [unit_type]: id=Drake Arbiter, race=drake
+#. [unit_type]: id=Drake Arbiter, race=drake, gender=male,female
 #: data/core/units/drakes/Arbiter.cfg:18
 msgid ""
 "Arbiters take their caste duty of enforcing order very seriously. In order "
@@ -1239,19 +1408,17 @@ msgstr ""
 msgid "halberd"
 msgstr "alabarda"
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/drakes/Arbiter.cfg:174
-#, fuzzy
-#| msgid "Drake Arbiter"
 msgid "female^Drake Arbiter"
-msgstr "Drago Arbitro"
+msgstr "Dragonessa Arbitro"
 
-#. [unit_type]: id=Armageddon Drake, race=drake
+#. [unit_type]: id=Armageddon Drake, race=drake, gender=male,female
 #: data/core/units/drakes/Armageddon.cfg:4
 msgid "Armageddon Drake"
 msgstr "Drago dell’Apocalisse"
 
-#. [unit_type]: id=Armageddon Drake, race=drake
+#. [unit_type]: id=Armageddon Drake, race=drake, gender=male,female
 #: data/core/units/drakes/Armageddon.cfg:20
 msgid ""
 "Were it not for the armor they wear, certain drakes might be "
@@ -1281,24 +1448,23 @@ msgstr "artigli da battaglia"
 #: data/core/units/drakes/Inferno.cfg:41 data/core/units/drakes/Sky.cfg:60
 #: data/core/units/drakes/Warrior.cfg:35
 #: data/core/units/monsters/Fire_Dragon.cfg:51
-#: data/core/units/monsters/Fire_Guardian.cfg:37
-#: data/core/units/monsters/Fire_Wraith.cfg:59
+#: data/core/units/monsters/Fire_Guardian.cfg:32
+#: data/core/units/monsters/Fire_Wisp.cfg:33
+#: data/core/units/monsters/Fire_Wraith.cfg:60
 msgid "fire breath"
 msgstr "respiro infuocato"
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/drakes/Armageddon.cfg:65
-#, fuzzy
-#| msgid "Armageddon Drake"
 msgid "female^Armageddon Drake"
-msgstr "Drago dell’Apocalisse"
+msgstr "Dragonessa dell’Apocalisse"
 
-#. [unit_type]: id=Drake Blademaster, race=drake
+#. [unit_type]: id=Drake Blademaster, race=drake, gender=male,female
 #: data/core/units/drakes/Blademaster.cfg:4
 msgid "Drake Blademaster"
 msgstr "Drago Maestro di Lame"
 
-#. [unit_type]: id=Drake Blademaster, race=drake
+#. [unit_type]: id=Drake Blademaster, race=drake, gender=male,female
 #: data/core/units/drakes/Blademaster.cfg:20
 msgid ""
 "Black armor marks the elite order of the Fighter caste: the Blademasters. "
@@ -1323,19 +1489,17 @@ msgstr ""
 msgid "war talon"
 msgstr "artiglio da guerra"
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/drakes/Blademaster.cfg:61
-#, fuzzy
-#| msgid "Drake Blademaster"
 msgid "female^Drake Blademaster"
-msgstr "Drago Maestro di Lame"
+msgstr "Dragonessa Maestra di Lame"
 
-#. [unit_type]: id=Drake Burner, race=drake
+#. [unit_type]: id=Drake Burner, race=drake, gender=male,female
 #: data/core/units/drakes/Burner.cfg:4
 msgid "Drake Burner"
 msgstr "Drago Inceneritore"
 
-#. [unit_type]: id=Drake Burner, race=drake
+#. [unit_type]: id=Drake Burner, race=drake, gender=male,female
 #: data/core/units/drakes/Burner.cfg:18
 msgid ""
 "Drake Burners are the proud few in whom the blood and strength of their "
@@ -1348,19 +1512,17 @@ msgstr ""
 "conferisce loro la capacità di sputare fuoco. Questo, abbinato alla possente "
 "stazza e agli spaventosi artigli, li rende dei nemici letali in battaglia."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/drakes/Burner.cfg:67
-#, fuzzy
-#| msgid "female^Dune Burner"
 msgid "female^Drake Burner"
-msgstr "Inceneritrice delle Dune"
+msgstr "Dragonessa Inceneritrice"
 
-#. [unit_type]: id=Drake Clasher, race=drake
+#. [unit_type]: id=Drake Clasher, race=drake, gender=male,female
 #: data/core/units/drakes/Clasher.cfg:4
 msgid "Drake Clasher"
 msgstr "Drago Distruttore"
 
-#. [unit_type]: id=Drake Clasher, race=drake
+#. [unit_type]: id=Drake Clasher, race=drake, gender=male,female
 #: data/core/units/drakes/Clasher.cfg:19
 msgid ""
 "The Clashers are members of a unique caste among the drakes. Their thick "
@@ -1372,8 +1534,8 @@ msgid ""
 "\n"
 "This is also the only caste that is allowed to break taboo and fight with "
 "spears in addition to the drake’s traditional metal claws, which makes them "
-"particularly good at \"resolving\" territorial disputes with other drakes "
-"and enforcing the laws of their tribe."
+"particularly good at “resolving” territorial disputes with other drakes and "
+"enforcing the laws of their tribe."
 msgstr ""
 "I distruttori sono membri di una casta unica tra i draghi. Sebbene la loro "
 "spessa armatura compensi la naturale debolezza dei draghi contro lance e "
@@ -1389,19 +1551,17 @@ msgstr ""
 "territoriali con gli altri draghi e a far rispettare la legge della loro "
 "tribù."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/drakes/Clasher.cfg:111
-#, fuzzy
-#| msgid "Drake Clasher"
 msgid "female^Drake Clasher"
-msgstr "Drago Distruttore"
+msgstr "Dragonessa Distruttrice"
 
-#. [unit_type]: id=Drake Enforcer, race=drake
+#. [unit_type]: id=Drake Enforcer, race=drake, gender=male,female
 #: data/core/units/drakes/Enforcer.cfg:4
 msgid "Drake Enforcer"
 msgstr "Drago Vigilante"
 
-#. [unit_type]: id=Drake Enforcer, race=drake
+#. [unit_type]: id=Drake Enforcer, race=drake, gender=male,female
 #: data/core/units/drakes/Enforcer.cfg:20
 msgid ""
 "Not for Enforcers are the tactics of maneuver and deception; rather, they "
@@ -1427,19 +1587,17 @@ msgstr ""
 msgid "trident"
 msgstr "tridente"
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/drakes/Enforcer.cfg:119
-#, fuzzy
-#| msgid "Drake Enforcer"
 msgid "female^Drake Enforcer"
-msgstr "Drago Vigilante"
+msgstr "Dragonessa Vigilante"
 
-#. [unit_type]: id=Drake Fighter, race=drake
+#. [unit_type]: id=Drake Fighter, race=drake, gender=male,female
 #: data/core/units/drakes/Fighter.cfg:4
 msgid "Drake Fighter"
 msgstr "Drago Combattente"
 
-#. [unit_type]: id=Drake Fighter, race=drake
+#. [unit_type]: id=Drake Fighter, race=drake, gender=male,female
 #: data/core/units/drakes/Fighter.cfg:18
 msgid ""
 "Drake Fighters wield curved war blades, and possess the fire-breathing "
@@ -1460,19 +1618,17 @@ msgstr ""
 msgid "war blade"
 msgstr "lama da guerra"
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/drakes/Fighter.cfg:64
-#, fuzzy
-#| msgid "Drake Fighter"
 msgid "female^Drake Fighter"
-msgstr "Drago Combattente"
+msgstr "Dragonessa Combattente"
 
-#. [unit_type]: id=Fire Drake, race=drake
+#. [unit_type]: id=Fire Drake, race=drake, gender=male,female
 #: data/core/units/drakes/Fire.cfg:4
 msgid "Fire Drake"
 msgstr "Drago di Fuoco"
 
-#. [unit_type]: id=Fire Drake, race=drake
+#. [unit_type]: id=Fire Drake, race=drake, gender=male,female
 #: data/core/units/drakes/Fire.cfg:18
 msgid ""
 "Not yet permitted to wear the red-gold reserved for the highest ranks of the "
@@ -1488,19 +1644,17 @@ msgstr ""
 "filtra attraverso la loro pelle, arroventando le loro scaglie e tingendole "
 "di un colore grigio-rossastro."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/drakes/Fire.cfg:62
-#, fuzzy
-#| msgid "Fire Drake"
 msgid "female^Fire Drake"
-msgstr "Drago di Fuoco"
+msgstr "Dragonessa di Fuoco"
 
-#. [unit_type]: id=Drake Flameheart, race=drake
+#. [unit_type]: id=Drake Flameheart, race=drake, gender=male,female
 #: data/core/units/drakes/Flameheart.cfg:4
 msgid "Drake Flameheart"
 msgstr "Drago Cuore di Fiamma"
 
-#. [unit_type]: id=Drake Flameheart, race=drake
+#. [unit_type]: id=Drake Flameheart, race=drake, gender=male,female
 #: data/core/units/drakes/Flameheart.cfg:19
 msgid ""
 "Flamehearts lack the strength to defeat other high-ranking drakes in single "
@@ -1519,19 +1673,17 @@ msgstr ""
 "occasionalmente un drago cuore di fiamma sfida il capo della sua tribù per "
 "la supremazia, ma solo se è certo del supporto dei suoi alleati draghi."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/drakes/Flameheart.cfg:66
-#, fuzzy
-#| msgid "Drake Flameheart"
 msgid "female^Drake Flameheart"
-msgstr "Drago Cuore di Fiamma"
+msgstr "Dragonessa Cuore di Fiamma"
 
-#. [unit_type]: id=Drake Flare, race=drake
+#. [unit_type]: id=Drake Flare, race=drake, gender=male,female
 #: data/core/units/drakes/Flare.cfg:4
 msgid "Drake Flare"
 msgstr "Drago Splendente"
 
-#. [unit_type]: id=Drake Flare, race=drake
+#. [unit_type]: id=Drake Flare, race=drake, gender=male,female
 #: data/core/units/drakes/Flare.cfg:18
 msgid ""
 "Respected for the heat of their flame and revered for their charisma, Flares "
@@ -1547,19 +1699,17 @@ msgstr ""
 "splendente, questi si vedono più spesso alla guida di piccoli plotoni oppure "
 "intenti nella sottile arte di mediare le dispute, spesso subdolamente."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/drakes/Flare.cfg:65
-#, fuzzy
-#| msgid "Drake Flare"
 msgid "female^Drake Flare"
-msgstr "Drago Splendente"
+msgstr "Dragonessa Splendente"
 
-#. [unit_type]: id=Drake Glider, race=drake
+#. [unit_type]: id=Drake Glider, race=drake, gender=male,female
 #: data/core/units/drakes/Glider.cfg:4
 msgid "Drake Glider"
 msgstr "Drago Leggero"
 
-#. [unit_type]: id=Drake Glider, race=drake
+#. [unit_type]: id=Drake Glider, race=drake, gender=male,female
 #: data/core/units/drakes/Glider.cfg:19
 msgid ""
 "Many drakes enjoy the flow of air over scales, leading them to don the light "
@@ -1597,19 +1747,17 @@ msgstr ""
 msgid "slam"
 msgstr "colpo"
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/drakes/Glider.cfg:66
-#, fuzzy
-#| msgid "Drake Glider"
 msgid "female^Drake Glider"
-msgstr "Drago Leggero"
+msgstr "Dragonessa Leggera"
 
-#. [unit_type]: id=Hurricane Drake, race=drake
+#. [unit_type]: id=Hurricane Drake, race=drake, gender=male,female
 #: data/core/units/drakes/Hurricane.cfg:4
 msgid "Hurricane Drake"
 msgstr "Drago degli Uragani"
 
-#. [unit_type]: id=Hurricane Drake, race=drake
+#. [unit_type]: id=Hurricane Drake, race=drake, gender=male,female
 #: data/core/units/drakes/Hurricane.cfg:19
 msgid ""
 "Hurricane Drakes have moved above the menial hunting and gathering to which "
@@ -1630,19 +1778,17 @@ msgstr ""
 "loro maggiori punti di forza risiedono comunque nella velocità e nelle loro "
 "abilità aeree."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/drakes/Hurricane.cfg:101
-#, fuzzy
-#| msgid "Hurricane Drake"
 msgid "female^Hurricane Drake"
-msgstr "Drago degli Uragani"
+msgstr "Dragonessa degli Uragani"
 
-#. [unit_type]: id=Inferno Drake, race=drake
+#. [unit_type]: id=Inferno Drake, race=drake, gender=male,female
 #: data/core/units/drakes/Inferno.cfg:4
 msgid "Inferno Drake"
 msgstr "Drago Infernale"
 
-#. [unit_type]: id=Inferno Drake, race=drake
+#. [unit_type]: id=Inferno Drake, race=drake, gender=male,female
 #: data/core/units/drakes/Inferno.cfg:20
 msgid ""
 "Inferno Drakes are masters of the fire they breathe, respected and feared in "
@@ -1658,19 +1804,17 @@ msgstr ""
 "La loro armatura scolpita nei colori rosso e oro aumenta l’illusione che "
 "essi siano effettivamente dei dragoni."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/drakes/Inferno.cfg:64
-#, fuzzy
-#| msgid "Inferno Drake"
 msgid "female^Inferno Drake"
-msgstr "Drago Infernale"
+msgstr "Dragonessa Infernale"
 
-#. [unit_type]: id=Sky Drake, race=drake
+#. [unit_type]: id=Sky Drake, race=drake, gender=male,female
 #: data/core/units/drakes/Sky.cfg:4
 msgid "Sky Drake"
 msgstr "Drago del Cielo"
 
-#. [unit_type]: id=Sky Drake, race=drake
+#. [unit_type]: id=Sky Drake, race=drake, gender=male,female
 #: data/core/units/drakes/Sky.cfg:18
 msgid ""
 "The lightweight ceramic armor that the Sky Drakes wear is a symbol of their "
@@ -1686,19 +1830,17 @@ msgstr ""
 "indietro con quante più prede possibile, in competizione per guadagnare il "
 "rispetto della propria tribù."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/drakes/Sky.cfg:98
-#, fuzzy
-#| msgid "Sky Drake"
 msgid "female^Sky Drake"
-msgstr "Drago del Cielo"
+msgstr "Dragonessa del Cielo"
 
-#. [unit_type]: id=Drake Thrasher, race=drake
+#. [unit_type]: id=Drake Thrasher, race=drake, gender=male,female
 #: data/core/units/drakes/Thrasher.cfg:4
 msgid "Drake Thrasher"
 msgstr "Drago Massacratore"
 
-#. [unit_type]: id=Drake Thrasher, race=drake
+#. [unit_type]: id=Drake Thrasher, race=drake, gender=male,female
 #: data/core/units/drakes/Thrasher.cfg:19
 msgid ""
 "Instead of letting themselves be bound by their armor, Thrashers have "
@@ -1716,19 +1858,17 @@ msgstr ""
 "considerati armi. Un massacratore adempirà volentieri ai suoi obblighi di "
 "casta fintanto che potrà farlo sul campo di battaglia."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/drakes/Thrasher.cfg:118
-#, fuzzy
-#| msgid "Drake Thrasher"
 msgid "female^Drake Thrasher"
-msgstr "Drago Massacratore"
+msgstr "Dragonessa Massacratrice"
 
-#. [unit_type]: id=Drake Warden, race=drake
+#. [unit_type]: id=Drake Warden, race=drake, gender=male,female
 #: data/core/units/drakes/Warden.cfg:4
 msgid "Drake Warden"
 msgstr "Drago Custode"
 
-#. [unit_type]: id=Drake Warden, race=drake
+#. [unit_type]: id=Drake Warden, race=drake, gender=male,female
 #: data/core/units/drakes/Warden.cfg:19
 msgid ""
 "Wardens are set apart from the rest of the Clasher caste by two things: "
@@ -1755,22 +1895,20 @@ msgid ""
 "Compared to other drakes, Drake Wardens have a higher resistance to ‘pierce’ "
 "attacks."
 msgstr ""
-"Rispetto agli altri draghi, i Custodi hanno una resistenza maggiore agli "
+"Rispetto agli altri draghi, i custodi hanno una resistenza maggiore agli "
 "attacchi di tipo ‘perforazione’."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/drakes/Warden.cfg:175
-#, fuzzy
-#| msgid "Drake Warden"
 msgid "female^Drake Warden"
-msgstr "Drago Custode"
+msgstr "Dragonessa Custode"
 
-#. [unit_type]: id=Drake Warrior, race=drake
+#. [unit_type]: id=Drake Warrior, race=drake, gender=male,female
 #: data/core/units/drakes/Warrior.cfg:4
 msgid "Drake Warrior"
 msgstr "Drago Guerriero"
 
-#. [unit_type]: id=Drake Warrior, race=drake
+#. [unit_type]: id=Drake Warrior, race=drake, gender=male,female
 #: data/core/units/drakes/Warrior.cfg:18
 msgid ""
 "Drakes of the Fighter caste, like the Warrior, are the foundation of any "
@@ -1788,12 +1926,10 @@ msgstr ""
 "ceramica e armati con la tradizionale lama da guerra montata sul dorso delle "
 "loro mani."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/drakes/Warrior.cfg:58
-#, fuzzy
-#| msgid "Drake Warrior"
 msgid "female^Drake Warrior"
-msgstr "Drago Guerriero"
+msgstr "Dragonessa Guerriera"
 
 #. [unit_type]: id=Dune Alchemist, race=dunefolk
 #: data/core/units/dunefolk/Alchemist.cfg:8
@@ -1851,8 +1987,8 @@ msgid ""
 "these men possess a special role in supporting the remedial arts of their "
 "kind."
 msgstr ""
-"Anche in mancanza di battaglie, le infezioni e le lesioni cono problemi "
-"comuni nelle aspre sabbie del deserto. In particolare, ai guaritori del "
+"Anche in mancanza di battaglie, le infezioni e le lesioni sono problemi "
+"comuni nelle arcigne sabbie del deserto. In particolare, ai guaritori del "
 "Popolo delle Dune viene richiesta una vasta conoscenza delle erbe e della "
 "medicina rispetto a quella richiesta ai guaritori di altre razze. La "
 "mancanza di magia, combinata con la scarsa vita vegetale del deserto porta a "
@@ -1860,7 +1996,7 @@ msgstr ""
 "che affliggono la gente del deserto. Gli speziali sono tipicamente più "
 "istruiti dei loro fratelli meno esperti, e hanno anche viaggiato molto di "
 "più, ma la loro vera abilità risiede nel complesso compito di prendersi cura "
-"delle preziose piante medicinali. Il Popolo delle Dune non hanno mezzi di "
+"delle preziose piante medicinali. Il Popolo delle Dune non ha mezzi di "
 "guarigione senza i materiali necessari, e così questi uomini hanno un ruolo "
 "speciale nel sostenere le arti curative dei loro simili."
 
@@ -1922,12 +2058,12 @@ msgstr ""
 msgid "scimitar"
 msgstr "scimitarra"
 
-#. [unit_type]: id=Dune Burner, race=dunefolk
+#. [unit_type]: id=Dune Burner, race=dunefolk, gender=male,female
 #: data/core/units/dunefolk/Burner.cfg:8
 msgid "Dune Burner"
 msgstr "Inceneritore delle Dune"
 
-#. [unit_type]: id=Dune Burner, race=dunefolk
+#. [unit_type]: id=Dune Burner, race=dunefolk, gender=male,female
 #: data/core/units/dunefolk/Burner.cfg:21
 msgid ""
 "An oft forgotten hazard of traversing the desert is the freezing cold that "
@@ -1954,7 +2090,7 @@ msgstr ""
 msgid "tar bomb"
 msgstr "bomba di catrame"
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/dunefolk/Burner.cfg:98
 msgid "female^Dune Burner"
 msgstr "Inceneritrice delle Dune"
@@ -2056,12 +2192,12 @@ msgstr ""
 "avanscoperta per individuare i nemici, ma sono abbastanza abili da essere "
 "efficaci spalle d’aiuto o potenti attaccanti d’urto."
 
-#. [unit_type]: id=Dune Falconer, race=dunefolk
+#. [unit_type]: id=Dune Falconer, race=dunefolk, gender=female
 #: data/core/units/dunefolk/Falconer.cfg:15
 msgid "female^Dune Falconer"
 msgstr "Falconiera delle Dune"
 
-#. [unit_type]: id=Dune Falconer, race=dunefolk
+#. [unit_type]: id=Dune Falconer, race=dunefolk, gender=female
 #: data/core/units/dunefolk/Falconer.cfg:39
 msgid ""
 "While well respected among the dunefolk, the art of falconry is relatively "
@@ -2099,12 +2235,12 @@ msgstr ""
 msgid "falcon"
 msgstr "falcone"
 
-#. [unit_type]: id=Dune Firetrooper, race=dunefolk
+#. [unit_type]: id=Dune Firetrooper, race=dunefolk, gender=male,female
 #: data/core/units/dunefolk/Firetrooper.cfg:8
 msgid "Dune Firetrooper"
 msgstr "Incendiario delle Dune"
 
-#. [unit_type]: id=Dune Firetrooper, race=dunefolk
+#. [unit_type]: id=Dune Firetrooper, race=dunefolk, gender=male,female
 #: data/core/units/dunefolk/Firetrooper.cfg:22
 msgid ""
 "By refining Sanbaar sap through a very specific distillation process, it "
@@ -2132,18 +2268,18 @@ msgstr ""
 msgid "flamethrower"
 msgstr "lanciafiamme"
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/dunefolk/Firetrooper.cfg:149
 msgid "female^Dune Firetrooper"
 msgstr "Incendiaria delle Dune"
 
 # Harrier = genere Circus della famiglia degli Accipitridi. Comprende 16 specie: il falco di palude e una quindicina di albanelle...
-#. [unit_type]: id=Dune Harrier, race=dunefolk
+#. [unit_type]: id=Dune Harrier, race=dunefolk, gender=female
 #: data/core/units/dunefolk/Harrier.cfg:8
 msgid "female^Dune Harrier"
 msgstr "Albanella delle Dune"
 
-#. [unit_type]: id=Dune Harrier, race=dunefolk
+#. [unit_type]: id=Dune Harrier, race=dunefolk, gender=female
 #: data/core/units/dunefolk/Harrier.cfg:25
 msgid ""
 "While harriers can fulfill a similar role to striders in hampering enemy "
@@ -2157,7 +2293,7 @@ msgid ""
 "thrust of spears is often enough to severely cripple the target, allowing "
 "the main Dunefolk force to close in and finish the job."
 msgstr ""
-"Sebbene le Albanelle possano svolgere un ruolo simile a quello delle "
+"Sebbene le albanelle possano svolgere un ruolo simile a quello delle "
 "Tiratrici nell’ostacolare le forze nemiche, il loro epiteto deriva in realtà "
 "dal tipo di falco che impiegano per mantenere il contatto col grosso di una "
 "truppa del Popolo delle Dune: un falco albanese, o appunto albanella. "
@@ -2309,7 +2445,7 @@ msgstr ""
 #. [attack]: type=fire
 #: data/core/units/dunefolk/Marauder.cfg:61
 #: data/core/units/dunefolk/Raider.cfg:59
-#: data/core/units/goblins/Pillager.cfg:41
+#: data/core/units/goblins/Pillager.cfg:68
 msgid "torch"
 msgstr "torcia"
 
@@ -2457,12 +2593,12 @@ msgstr ""
 "di combattere meglio all’alba e al tramonto corrisponde ai periodi in cui le "
 "temperature del deserto sono più accettabili."
 
-#. [unit_type]: id=Dune Scorcher, race=dunefolk
+#. [unit_type]: id=Dune Scorcher, race=dunefolk, gender=male,female
 #: data/core/units/dunefolk/Scorcher.cfg:9
 msgid "Dune Scorcher"
 msgstr "Piromane delle Dune"
 
-#. [unit_type]: id=Dune Scorcher, race=dunefolk
+#. [unit_type]: id=Dune Scorcher, race=dunefolk, gender=male,female
 #: data/core/units/dunefolk/Scorcher.cfg:22
 msgid ""
 "The scorcher’s moniker is derived not from the destruction they wreak on "
@@ -2483,17 +2619,17 @@ msgstr ""
 "campi di battaglia, sebbene questo a volte si trasformi in un fuoco amico "
 "non intenzionale."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/dunefolk/Scorcher.cfg:95
 msgid "female^Dune Scorcher"
 msgstr "Piromane delle Dune"
 
-#. [unit_type]: id=Dune Skirmisher, race=dunefolk
+#. [unit_type]: id=Dune Skirmisher, race=dunefolk, gender=female
 #: data/core/units/dunefolk/Skirmisher.cfg:8
 msgid "female^Dune Skirmisher"
 msgstr "Assaltatrice delle Dune"
 
-#. [unit_type]: id=Dune Skirmisher, race=dunefolk
+#. [unit_type]: id=Dune Skirmisher, race=dunefolk, gender=female
 #: data/core/units/dunefolk/Skirmisher.cfg:21
 msgid ""
 "Born and raised out on the open sands, skirmishers are accustomed to the "
@@ -2517,12 +2653,12 @@ msgstr ""
 "e le linee di rifornimento, assassinare unità chiave nelle retrovie o tenere "
 "una formazione nemica in una posizione di svantaggio."
 
-#. [unit_type]: id=Dune Sky Hunter, race=dunefolk
+#. [unit_type]: id=Dune Sky Hunter, race=dunefolk, gender=female
 #: data/core/units/dunefolk/Sky_Hunter.cfg:14
 msgid "female^Dune Sky Hunter"
 msgstr "Cacciatrice dei Cieli delle Dune"
 
-#. [unit_type]: id=Dune Sky Hunter, race=dunefolk
+#. [unit_type]: id=Dune Sky Hunter, race=dunefolk, gender=female
 #: data/core/units/dunefolk/Sky_Hunter.cfg:39
 msgid ""
 "Often mistaken for young Rocs, desert eagles are large, majestic birds of "
@@ -2662,12 +2798,12 @@ msgstr ""
 "distinzione, è tuttavia un minimo di riconoscimento per coloro che erano "
 "pronti a morire come martiri senza nome per proteggere i loro fratelli."
 
-#. [unit_type]: id=Dune Strider, race=dunefolk
+#. [unit_type]: id=Dune Strider, race=dunefolk, gender=female
 #: data/core/units/dunefolk/Strider.cfg:8
 msgid "female^Dune Strider"
 msgstr "Tiratrice delle Dune"
 
-#. [unit_type]: id=Dune Strider, race=dunefolk
+#. [unit_type]: id=Dune Strider, race=dunefolk, gender=female
 #: data/core/units/dunefolk/Strider.cfg:21
 msgid ""
 "The power of any Dunefolk assault is inhibited by one major drawback: "
@@ -2901,10 +3037,36 @@ msgstr ""
 "modo. Avendo affinato la loro arte fino al suo apice, i saettatori sono i "
 "maestri indiscussi del combattimento a distanza tra il Popolo delle Dune."
 
-#. [unit_type]: id=Wyvern Rider, race=monster, description=
+#. [unit_type]: id=Wyvern Rider, race=monster
 #: data/core/units/dunefolk/Wyvern_Rider.cfg:4
 msgid "Wyvern Rider"
 msgstr "Cavalcatore di Viverne"
+
+#. [unit_type]: id=Wyvern Rider, race=monster
+#: data/core/units/dunefolk/Wyvern_Rider.cfg:17
+msgid ""
+"Although generally peaceful, wyverns can easily become fierce and angry "
+"beasts when provoked. When truly enraged they can even tear apart "
+"experienced warriors with relative ease. Most travelers would run or fight "
+"in their mighty presence, yet a few are able to tame these wild creatures. "
+"These Dunefolk riders spend years, even decades of their lives bonding with "
+"them, slowly building up their trust until they have gained true mastery "
+"over the skies. The most experienced of these Wyvern riders have ascended to "
+"be the greatest and most revered travelers of the land. While they do not "
+"usually use their knowledge for warfare, they can be threatening warriors "
+"when defending their homes."
+msgstr ""
+"Sebbene genericamente pacifiche, le viverne posso facilmente trasformarsi in "
+"bestie feroci e arrabbiate quando vengono provocate. Quando sono veramente "
+"infuriate possono fare a pezzi anche dei guerrieri esperti con relativa "
+"facilità. La maggior parte dei viaggiatori fuggirebbe o le combatterebbe, ma "
+"alcuni di loro sono in grado di domare queste creature selvagge. Questi "
+"cavalieri del Popolo delle Dune passano anni, persino decenni della loro "
+"vita a fraternizzare con loro, costruendo lentamente un rapporto di fiducia "
+"fino a raggiungere una vera padronanza dei cieli. I più esperti tra questi "
+"cavalcatori di viverne sono diventati i più grandi e venerati viaggiatori "
+"della terra. Sebbene di solito non usino la loro conoscenza per la guerra, "
+"possono essere guerrieri minacciosi quando difendono le loro case."
 
 #. [unit_type]: id=Dwarvish Arcanister, race=dwarf
 #: data/core/units/dwarves/Arcanister.cfg:4
@@ -2963,7 +3125,7 @@ msgid "Dwarvish Explorer"
 msgstr "Nano Esploratore"
 
 #. [unit_type]: id=Dwarvish Explorer, race=dwarf
-#: data/core/units/dwarves/Explorer.cfg:18
+#: data/core/units/dwarves/Explorer.cfg:23
 msgid ""
 "Dwarvish Explorers are peerless survivalists. Using only the equipment they "
 "carry, they can range for months around the forests and mountains looking "
@@ -3016,20 +3178,20 @@ msgid "Dwarvish Miner"
 msgstr "Nano Minatore"
 
 #. [unit_type]: id=Dwarvish Miner, race=dwarf
-#: data/core/units/dwarves/Miner.cfg:17
+#: data/core/units/dwarves/Miner.cfg:21
 msgid ""
-"Dwarvish miners are the grunt workers of dwarvish society. They take the "
+"Dwarvish Miners are the grunt workers of dwarvish society. They take the "
 "precious ores out of the ground, but do not ever take part in the crafting "
-"of weapons or artifacts. They have no military training, but they can still "
-"do some damage with their picks."
+"of weapons or artifacts. Despite their lack of military training, their "
+"weighty pickaxes can deal substantial damage."
 msgstr ""
 "I nani minatori sono la bassa manovalanza della società nanica. Estraggono i "
-"preziosi minerali dal suolo, ma non prendono parte nella manifattura delle "
+"preziosi minerali dal suolo, ma non prendono parte alla manifattura delle "
 "armi o degli artefatti. Non hanno alcun addestramento militare, ma possono "
 "comunque causare dei danni attaccando con i loro picconi."
 
 #. [attack]: type=pierce
-#: data/core/units/dwarves/Miner.cfg:22
+#: data/core/units/dwarves/Miner.cfg:26
 msgid "pick"
 msgstr "piccone"
 
@@ -3192,12 +3354,12 @@ msgstr ""
 msgid "Dwarvish Ulfserker"
 msgstr "Nano Ulfserker"
 
-#. [unit_type]: id=Elvish Archer, race=elf
+#. [unit_type]: id=Elvish Archer, race=elf, gender=male,female
 #: data/core/units/elves/Archer.cfg:4
 msgid "Elvish Archer"
 msgstr "Elfo Arciere"
 
-#. [unit_type]: id=Elvish Archer, race=elf
+#. [unit_type]: id=Elvish Archer, race=elf, gender=male,female
 #: data/core/units/elves/Archer.cfg:19
 msgid ""
 "As primarily foragers and hunters, most elves learn to become proficient "
@@ -3220,17 +3382,17 @@ msgstr ""
 "arcieri rimangono dei combattenti efficaci, specialmente quando combattono "
 "al riparo delle loro foreste."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/elves/Archer.cfg:80
 msgid "female^Elvish Archer"
 msgstr "Elfa Arciere"
 
-#. [unit_type]: id=Elvish Avenger, race=elf
+#. [unit_type]: id=Elvish Avenger, race=elf, gender=male,female
 #: data/core/units/elves/Avenger.cfg:4
 msgid "Elvish Avenger"
 msgstr "Elfo Vendicatore"
 
-#. [unit_type]: id=Elvish Avenger, race=elf
+#. [unit_type]: id=Elvish Avenger, race=elf, gender=male,female
 #: data/core/units/elves/Avenger.cfg:20
 msgid ""
 "The curious name of the Elvish ‘Avengers’ comes from a tactic often employed "
@@ -3260,7 +3422,7 @@ msgstr ""
 "Gli elfi vendicatori sono degli ottimi viaggiatori ed altrettanto abili "
 "nell’attraversare terreni aspri come sabbia, acqua e montagne."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/elves/Avenger.cfg:96
 msgid "female^Elvish Avenger"
 msgstr "Elfa Vendicatrice"
@@ -3325,12 +3487,12 @@ msgstr ""
 "loro vita ad affinare la loro abilità con la lama, questi elfi sono "
 "eccezionalmente pericolosi e non dovrebbero mai essere sottovalutati."
 
-#. [unit_type]: id=Elvish Druid, race=elf
+#. [unit_type]: id=Elvish Druid, race=elf, gender=female
 #: data/core/units/elves/Druid.cfg:4
 msgid "female^Elvish Druid"
 msgstr "Driade"
 
-#. [unit_type]: id=Elvish Druid, race=elf
+#. [unit_type]: id=Elvish Druid, race=elf, gender=female
 #: data/core/units/elves/Druid.cfg:19
 msgid ""
 "Some elves choose to deepen their connection to the corporeal world, thereby "
@@ -3364,12 +3526,12 @@ msgstr ""
 msgid "ensnare"
 msgstr "irretire"
 
-#. [unit_type]: id=Elvish Enchantress, race=elf
+#. [unit_type]: id=Elvish Enchantress, race=elf, gender=female
 #: data/core/units/elves/Enchantress.cfg:4
 msgid "female^Elvish Enchantress"
 msgstr "Incantatrice Elfica"
 
-#. [unit_type]: id=Elvish Enchantress, race=elf
+#. [unit_type]: id=Elvish Enchantress, race=elf, gender=female
 #: data/core/units/elves/Enchantress.cfg:19
 msgid ""
 "In the context of Elven magic, the notion of enchanting is a little bit "
@@ -3397,15 +3559,13 @@ msgstr ""
 "particolari."
 
 #. [attack]: type=impact
-#: data/core/units/elves/Enchantress.cfg:36 data/core/units/elves/Shaman.cfg:42
-#: data/core/units/elves/Sorceress.cfg:36
-#: data/core/units/monsters/Caribe_Hunter.cfg:124
-#: data/core/units/wose/Wose_Shaman.cfg:43
-msgid "entangle"
-msgstr "intrappolare"
+#. in game mechanics an upgrade of the Shaman’s slowing “entangle”, but in lore has the different magic style of the Enchantress’s unit description
+#: data/core/units/elves/Enchantress.cfg:37 data/core/units/elves/Sylph.cfg:41
+msgid "ethereal web"
+msgstr "ragnatela eterea"
 
 #. [attack]: type=arcane
-#: data/core/units/elves/Enchantress.cfg:47
+#: data/core/units/elves/Enchantress.cfg:49
 #: data/core/units/elves/High_Lord.cfg:56 data/core/units/elves/Lord.cfg:35
 #: data/core/units/elves/Sorceress.cfg:47 data/core/units/elves/Sylph.cfg:53
 msgid "faerie fire"
@@ -3521,12 +3681,12 @@ msgstr ""
 "prosperità del dominio elfico, indipendentemente dal fatto che siedano o "
 "meno in cima alla catena di comando."
 
-#. [unit_type]: id=Elvish Lady, race=elf
+#. [unit_type]: id=Elvish Lady, gender=female, race=elf
 #: data/core/units/elves/Lady.cfg:4
 msgid "female^Elvish Lady"
 msgstr "Signora degli Elfi"
 
-#. [unit_type]: id=Elvish Lady, race=elf
+#. [unit_type]: id=Elvish Lady, gender=female, race=elf
 #: data/core/units/elves/Lady.cfg:20
 msgid ""
 "Usually strongly connected with the earthly aspect of Elven magic, noble "
@@ -3599,12 +3759,12 @@ msgstr ""
 "nobili raramente è assoluta, e ci si aspetta che guidino il popolo "
 "attraverso la diplomazia e la saggezza, piuttosto che con la forza."
 
-#. [unit_type]: id=Elvish Marksman, race=elf
+#. [unit_type]: id=Elvish Marksman, race=elf, gender=male,female
 #: data/core/units/elves/Marksman.cfg:4
 msgid "Elvish Marksman"
 msgstr "Elfo Tiratore Scelto"
 
-#. [unit_type]: id=Elvish Marksman, race=elf
+#. [unit_type]: id=Elvish Marksman, race=elf, gender=male,female
 #: data/core/units/elves/Marksman.cfg:19
 msgid ""
 "Elves have an intimate connection to the world of faerie, which innately "
@@ -3635,7 +3795,7 @@ msgstr ""
 msgid "longbow"
 msgstr "arco lungo"
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/elves/Marksman.cfg:89
 msgid "female^Elvish Marksman"
 msgstr "Elfa Tiratrice Scelta"
@@ -3738,12 +3898,12 @@ msgstr ""
 "La verità di questa storia, si può solo supporre, ma senza dubbio, le "
 "Avanguardie più veloci la comprendono."
 
-#. [unit_type]: id=Elvish Ranger, race=elf
+#. [unit_type]: id=Elvish Ranger, race=elf, gender=male,female
 #: data/core/units/elves/Ranger.cfg:3
 msgid "Elvish Ranger"
 msgstr "Elfo Ranger"
 
-#. [unit_type]: id=Elvish Ranger, race=elf
+#. [unit_type]: id=Elvish Ranger, race=elf, gender=male,female
 #: data/core/units/elves/Ranger.cfg:19
 msgid ""
 "The silent watchers of the forests, Elvish rangers are masters of stealth "
@@ -3777,7 +3937,7 @@ msgstr ""
 "I ranger sono ottimamente equipaggiati per viaggiare e sono molto abili "
 "nell’attraversare terreni impervi come sabbia, acqua e montagne."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/elves/Ranger.cfg:95
 msgid "female^Elvish Ranger"
 msgstr "Elfa Ranger"
@@ -3853,12 +4013,12 @@ msgstr ""
 "rapidamente informazioni tra pattuglie e gruppi di incursori, che rinforzano "
 "anche qualora sia necessario."
 
-#. [unit_type]: id=Elvish Shaman, race=elf
+#. [unit_type]: id=Elvish Shaman, race=elf, gender=female
 #: data/core/units/elves/Shaman.cfg:4
 msgid "female^Elvish Shaman"
 msgstr "Elfa Sciamana"
 
-#. [unit_type]: id=Elvish Shaman, race=elf
+#. [unit_type]: id=Elvish Shaman, race=elf, gender=female
 #: data/core/units/elves/Shaman.cfg:19
 msgid ""
 "With a little training, an elf’s inherent affinity with the natural world "
@@ -3881,12 +4041,19 @@ msgstr ""
 "invece la loro magia per comandare alla terra stessa di ostacolare o placare "
 "i loro nemici."
 
-#. [unit_type]: id=Elvish Sharpshooter, race=elf
+#. [attack]: type=impact
+#: data/core/units/elves/Shaman.cfg:42 data/core/units/elves/Sorceress.cfg:36
+#: data/core/units/monsters/Caribe_Hunter.cfg:124
+#: data/core/units/wose/Wose_Shaman.cfg:43
+msgid "entangle"
+msgstr "intrappolare"
+
+#. [unit_type]: id=Elvish Sharpshooter, race=elf, gender=male,female
 #: data/core/units/elves/Sharpshooter.cfg:4
 msgid "Elvish Sharpshooter"
 msgstr "Elfo Maestro di Tiro"
 
-#. [unit_type]: id=Elvish Sharpshooter, race=elf
+#. [unit_type]: id=Elvish Sharpshooter, race=elf, gender=male,female
 #: data/core/units/elves/Sharpshooter.cfg:20
 msgid ""
 "Though not a formal title, ‘Sharpshooter’ is the epithet given to the most "
@@ -3910,12 +4077,12 @@ msgstr ""
 "pochi colpi aggiuntivi. I maestri di tiro degli elfi hanno portato la loro "
 "arte alla sua più alta forma e sono i maestri indiscussi del tiro con l’arco."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/elves/Sharpshooter.cfg:81
 msgid "female^Elvish Sharpshooter"
 msgstr "Elfa Maestra di Tiro"
 
-#. [unit_type]: id=Elvish Shyde, race=elf
+#. [unit_type]: id=Elvish Shyde, race=elf, gender=female
 #: data/core/units/elves/Shyde.cfg:22
 msgid ""
 "As an elf maiden entwines herself more and more with nature, the essence of "
@@ -3942,12 +4109,12 @@ msgstr ""
 msgid "faerie touch"
 msgstr "tocco fatato"
 
-#. [unit_type]: id=Elvish Sorceress, race=elf
+#. [unit_type]: id=Elvish Sorceress, race=elf, gender=female
 #: data/core/units/elves/Sorceress.cfg:4
 msgid "female^Elvish Sorceress"
 msgstr "Strega Elfica"
 
-#. [unit_type]: id=Elvish Sorceress, race=elf
+#. [unit_type]: id=Elvish Sorceress, race=elf, gender=female
 #: data/core/units/elves/Sorceress.cfg:19
 msgid ""
 "Elven magic most commonly diverges among two paths — manipulation of the "
@@ -3975,12 +4142,12 @@ msgstr ""
 "tengono comunque in grande considerazione la fiamma arcana e sono attenti a "
 "utilizzarla con prudente cautela."
 
-#. [unit_type]: id=Elvish Sylph, race=elf
+#. [unit_type]: id=Elvish Sylph, race=elf, gender=female
 #: data/core/units/elves/Sylph.cfg:4
 msgid "female^Elvish Sylph"
 msgstr "Silfide"
 
-#. [unit_type]: id=Elvish Sylph, race=elf
+#. [unit_type]: id=Elvish Sylph, race=elf, gender=female
 #: data/core/units/elves/Sylph.cfg:21
 msgid ""
 "Tremendously powerful in unfathomable ways, the sage-like Sylphs are masters "
@@ -4014,11 +4181,6 @@ msgstr ""
 "intrighi nel piano corporeo dove il riflesso del piano arcano è più forte. "
 "La capacità di una Silfide di individuare queste “pozze di riflessione“ e di "
 "guidarle è una delle sue più grandi - e più temute - abilità."
-
-#. [attack]: type=impact
-#: data/core/units/elves/Sylph.cfg:41
-msgid "gossamer"
-msgstr "ragnatela"
 
 #. [unit_type]: id=Fog Clearer, race=monster
 #: data/core/units/fake/Fog_Clearer.cfg:13
@@ -4131,7 +4293,7 @@ msgstr ""
 "difendersi o lanciare una rappresaglia."
 
 #. [attack]: type=impact
-#: data/core/units/goblins/Pillager.cfg:50
+#: data/core/units/goblins/Pillager.cfg:77
 #: data/core/units/merfolk/Entangler.cfg:34
 #: data/core/units/merfolk/Netcaster.cfg:33
 msgid "net"
@@ -4140,7 +4302,7 @@ msgstr "rete"
 #. [unit_type]: id=Goblin Rouser, race=goblin
 #: data/core/units/goblins/Rouser.cfg:4
 msgid "Goblin Rouser"
-msgstr "Goblin Incitatore"
+msgstr "Goblin Alfiere"
 
 #. [unit_type]: id=Goblin Rouser, race=goblin
 #: data/core/units/goblins/Rouser.cfg:19
@@ -4154,9 +4316,9 @@ msgstr ""
 "Gli alfieri sono considerati una stranezza tra i goblin. È piuttosto raro "
 "che un goblin sopravviva a tante battaglie da essere considerato un "
 "veterano, ed è ancor più raro che gli altri goblin riconoscano e rispettino "
-"tale titolo. Ciò nonostante, i frenetici incitamenti lanciati da un goblin "
-"incitatore spronano efficacemente i combattenti non veterani a lottare più "
-"duramente e più a lungo prima di morire."
+"tale titolo. Ciò nonostante, i frenetici incitamenti lanciati da un alfiere "
+"spronano efficacemente i combattenti non veterani a lottare più duramente e "
+"più a lungo prima di morire."
 
 #. [unit_type]: id=Goblin Spearman, race=goblin
 #: data/core/units/goblins/Spearman.cfg:4
@@ -4165,15 +4327,6 @@ msgstr "Fante Goblin"
 
 #. [unit_type]: id=Goblin Spearman, race=goblin
 #: data/core/units/goblins/Spearman.cfg:17
-#, fuzzy
-#| msgid ""
-#| "In any race, there are always those rare individuals who, by stroke of "
-#| "bad luck, are born much smaller and weaker than the rest of their kind. "
-#| "For Orcs, however, such occurrences are extraordinarily common, with "
-#| "there usually being several runts born in each litter. Known as "
-#| "‘Goblins’, these sickly creatures nearly always live short, brutal lives, "
-#| "most used merely as fodder against an enemy of their larger siblings' "
-#| "choosing while equipped with only the crudest of spears."
 msgid ""
 "In any race, there are always those rare individuals who, by stroke of bad "
 "luck, are born much smaller and weaker than the rest of their kind. For "
@@ -4187,9 +4340,9 @@ msgstr ""
 "più gracili e deboli dei loro simili. Per gli orchi, invece, queste "
 "occasionali nascite sono straordinariamente comuni, dato che ad ogni "
 "cucciolata ne nascono diversi. Conosciuti come “Goblin”, queste creature "
-"malaticce hanno sempre una vita breve e travagliata, venendo utilizzati dai "
-"loro fratelli maggiori come carne da macello contro i nemici, munendoli "
-"soltanto di rozze lance."
+"malaticce hanno sempre una vita breve e travagliata, venendo la maggior "
+"parte di loro utilizzata dai loro fratelli maggiori come carne da macello "
+"contro i nemici, munendoli soltanto di rozze lance."
 
 #. [unit_type]: id=Wolf Rider, race=wolf
 #: data/core/units/goblins/Wolf_Rider.cfg:4
@@ -4340,51 +4493,6 @@ msgstr ""
 "che ha commesso l’errore di rompere le righe e per sfondare le linee "
 "difensive nemiche; tuttavia, la loro utilità in difesa è limitata."
 
-#. [unit_type]: id=Paladin, race=human
-#: data/core/units/humans/Horse_Paladin.cfg:4
-msgid "Paladin"
-msgstr "Paladino"
-
-#. [unit_type]: id=Paladin, race=human
-#: data/core/units/humans/Horse_Paladin.cfg:20
-msgid ""
-"Knights of the highest virtue, Paladins have sworn their strength not to "
-"king and crown, but to ideals themselves; of chivalry, and the stewardship "
-"of everything that is good. They may serve in the armies of the world, but "
-"their first loyalties often lie with groups of their own making; secret, "
-"monastic orders that cross political and cultural boundaries. Rulers are "
-"sometimes wary of them, for the paladins’ loyalty is only as strong as the "
-"liege’s apparent virtue. This has led the more darkly ambitious to either "
-"attempt to defame and disperse these groups, or more rarely, to conjure "
-"elaborate deceptions to keep these otherwise staunchly loyal troops in "
-"service.\n"
-"\n"
-"Full paladins are generally not quite as fearsome as the ‘Grand Knights’ "
-"that champion most armies, but they are first-class fighters nonetheless. "
-"Additionally, their wisdom and piety grants these warrior monks certain "
-"curious abilities; a paladin is very powerful in fighting magical or "
-"unnatural things, and most have some skill at medicine and healing."
-msgstr ""
-"Cavalieri della più alta virtù, i paladini hanno giurato di servire con la "
-"loro forza non il re o la corona, ma gli ideali stessi della cavalleria e "
-"della difesa di tutto ciò che è buono. Costoro possono offrire i loro "
-"servigi negli eserciti di tutto il mondo, ma la devozione maggiore viene "
-"spesso riposta nei loro stessi gruppi, ordini monastici segreti e "
-"trasversali rispetto ai confini politici e culturali. I governanti talvolta "
-"diffidano di loro, poiché la lealtà di un paladino è tanto forte solo quanto "
-"lo è la virtù apparente del signore che serve. Questo ha fatto sì che i "
-"sovrani più oscuri e ambiziosi tentassero di screditare e di disperdere "
-"questi gruppi, oppure, più di rado, di ordire complessi inganni pur di "
-"mantenere al loro servizio queste truppe altrimenti fermamente leali.\n"
-"\n"
-"I paladini veri e propri non sono in genere così temuti come i “gran "
-"cavalieri” che primeggiano nella maggior parte degli eserciti, ma sono "
-"comunque guerrieri di primissimo livello. Inoltre, la loro saggezza e la "
-"loro pietà donano a questi monaci guerrieri certe abilità peculiari: i "
-"paladini sono infatti molto potenti quando combattono contro le entità "
-"magiche o innaturali e gran parte di loro possiede pure delle abilità di "
-"cura e guarigione."
-
 #. [unit_type]: id=Horseman, race=human
 #: data/core/units/humans/Horseman.cfg:4
 msgid "Horseman"
@@ -4410,7 +4518,7 @@ msgstr ""
 "attenzione sia ai fanti che agli arcieri, per i quali la loro massa "
 "imponente rappresenta un bersaglio invitante."
 
-#. [unit_type]: id=Bowman, race=human
+#. [unit_type]: id=Bowman, race=human, gender=male
 #: data/core/units/humans/Loyalist_Bowman.cfg:18
 msgid ""
 "The use of archery in shooting something other than game was seen from its "
@@ -4758,12 +4866,12 @@ msgstr ""
 "di altre razze. Tutto ciò è però ampiamente compensato dalla loro superiore "
 "conoscenza e addestramento nelle tattiche militari."
 
-#. [unit_type]: id=Longbowman, race=human
+#. [unit_type]: id=Longbowman, race=human, gender=male
 #: data/core/units/humans/Loyalist_Longbowman.cfg:4
 msgid "Longbowman"
 msgstr "Arciere Esperto"
 
-#. [unit_type]: id=Longbowman, race=human
+#. [unit_type]: id=Longbowman, race=human, gender=male
 #: data/core/units/humans/Loyalist_Longbowman.cfg:19
 msgid ""
 "Longbows are fearsome weapons, but too difficult for beginning archers to "
@@ -4778,12 +4886,12 @@ msgstr ""
 "buona mira. Gli arcieri esperti portano con orgoglio le loro armi: molti "
 "arcieri semplici sognano il giorno in cui potranno usare un arco lungo."
 
-#. [unit_type]: id=Master Bowman, race=human
+#. [unit_type]: id=Master Bowman, race=human, gender=male
 #: data/core/units/humans/Loyalist_Master_Bowman.cfg:4
 msgid "Master Bowman"
 msgstr "Maestro Arciere"
 
-#. [unit_type]: id=Master Bowman, race=human
+#. [unit_type]: id=Master Bowman, race=human, gender=male
 #: data/core/units/humans/Loyalist_Master_Bowman.cfg:19
 msgid ""
 "Master bowmen have reached the zenith of their art, inasmuch as any human is "
@@ -4908,14 +5016,14 @@ msgid ""
 "Compared to other loyalists, Royal Guards have a higher resistance to "
 "‘blade’ and ‘impact’ attacks."
 msgstr ""
-"Rispetto agli altri lealisti, le Guardie Reali hanno una resistenza maggiore "
+"Rispetto agli altri lealisti, le guardie reali hanno una resistenza maggiore "
 "agli attacchi di tipo ‘taglio’ e ‘impatto’."
 
 #. [special_note]
 #: data/core/units/humans/Loyalist_Royal_Guard.cfg:25
 msgid "Compared to other loyalists, Royal Guards have more movement points."
 msgstr ""
-"Rispetto agli altri lealisti, le Guardie Reali hanno più punti movimento."
+"Rispetto agli altri lealisti, le guardie reali hanno più punti movimento."
 
 #. [unit_type]: id=Sergeant, race=human
 #: data/core/units/humans/Loyalist_Sergeant.cfg:4
@@ -4955,7 +5063,7 @@ msgid ""
 "drawback of such heavy armor is, of course, the time it takes to move into "
 "and out of combat."
 msgstr ""
-"Le truppe d’assalto sono il corpo migliore della fanteria pesante: una parte "
+"Le truppe d’assalto sono l’elite della fanteria pesante: una parte "
 "significativa del loro impiego consiste nella semplice intimidazione. I soli "
 "uomini che possono entrare nelle loro fila appaiono incredibilmente possenti "
 "e, quando indossano le loro armature nere ricoperte di spuntoni, sono uno "
@@ -5016,15 +5124,15 @@ msgid ""
 "Compared to other loyalists, Swordsmen have a higher resistance to ‘blade’ "
 "and ‘impact’ attacks."
 msgstr ""
-"Rispetto agli altri lealisti, gli Armigeri hanno una resistenza maggiore "
+"Rispetto agli altri lealisti, gli armigeri hanno una resistenza maggiore "
 "agli attacchi di tipo ‘taglio’ e ‘impatto’."
 
-#. [unit_type]: id=Mage, race=human
+#. [unit_type]: id=Mage, race=human, gender=male,female
 #: data/core/units/humans/Mage.cfg:4
 msgid "Mage"
 msgstr "Mago"
 
-#. [unit_type]: id=Mage, race=human
+#. [unit_type]: id=Mage, race=human, gender=male,female
 #: data/core/units/humans/Mage.cfg:19
 msgid ""
 "Humans have often pondered the workings of the world in which they live. "
@@ -5072,17 +5180,17 @@ msgstr ""
 msgid "missile"
 msgstr "proiettile"
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/humans/Mage.cfg:159
 msgid "female^Mage"
 msgstr "Maga"
 
-#. [unit_type]: id=Arch Mage, race=human
+#. [unit_type]: id=Arch Mage, race=human, gender=male,female
 #: data/core/units/humans/Mage_Arch.cfg:4
 msgid "Arch Mage"
 msgstr "Arcimago"
 
-#. [unit_type]: id=Arch Mage, race=human
+#. [unit_type]: id=Arch Mage, race=human, gender=male,female
 #: data/core/units/humans/Mage_Arch.cfg:18
 msgid ""
 "The title of Arch Mage is traditionally conferred only after a lifetime of "
@@ -5128,7 +5236,7 @@ msgstr ""
 msgid "fireball"
 msgstr "palla di fuoco"
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/humans/Mage_Arch.cfg:109
 msgid "female^Arch Mage"
 msgstr "Arcimaga"
@@ -5151,17 +5259,17 @@ msgstr ""
 
 #. [attack]: type=fire
 #: data/core/units/humans/Mage_Elder.cfg:35
-#: data/core/units/monsters/Raven_Harbinger.cfg:104
-#: data/core/units/monsters/Raven_Omen.cfg:94
+#: data/core/units/monsters/Raven_Harbinger.cfg:100
+#: data/core/units/monsters/Raven_Omen.cfg:90
 msgid "lightning"
 msgstr "saetta"
 
-#. [unit_type]: id=Great Mage, race=human
+#. [unit_type]: id=Great Mage, race=human, gender=male,female
 #: data/core/units/humans/Mage_Great.cfg:4
 msgid "Great Mage"
 msgstr "Mago Supremo"
 
-#. [unit_type]: id=Great Mage, race=human
+#. [unit_type]: id=Great Mage, race=human, gender=male,female
 #: data/core/units/humans/Mage_Great.cfg:19
 msgid ""
 "Any person who is even considered for the title of Great Mage is quite "
@@ -5196,20 +5304,20 @@ msgid ""
 "Compared to other mages, Great Mages have a higher resistance to ‘fire’ "
 "attacks."
 msgstr ""
-"Rispetto agli altri maghi, i Maghi Supremi hanno una resistenza maggiore "
+"Rispetto agli altri maghi, i maghi supremi hanno una resistenza maggiore "
 "agli attacchi di tipo ‘fuoco’."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/humans/Mage_Great.cfg:90
 msgid "female^Great Mage"
 msgstr "Maga Suprema"
 
-#. [unit_type]: id=Red Mage, race=human
+#. [unit_type]: id=Red Mage, race=human, gender=male,female
 #: data/core/units/humans/Mage_Red.cfg:4
 msgid "Red Mage"
 msgstr "Mago Rosso"
 
-#. [unit_type]: id=Red Mage, race=human
+#. [unit_type]: id=Red Mage, race=human, gender=male,female
 #: data/core/units/humans/Mage_Red.cfg:18
 msgid ""
 "Upon the successful culmination of their apprenticeship, a mage is stripped "
@@ -5245,20 +5353,20 @@ msgid ""
 "Compared to other mages, Red Mages have a higher resistance to ‘fire’ "
 "attacks."
 msgstr ""
-"Rispetto agli altri maghi, i Maghi Rossi hanno una resistenza maggiore agli "
+"Rispetto agli altri maghi, i maghi rossi hanno una resistenza maggiore agli "
 "attacchi di tipo ‘fuoco’."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/humans/Mage_Red.cfg:98
 msgid "female^Red Mage"
 msgstr "Maga Rossa"
 
-#. [unit_type]: id=Silver Mage, race=human
+#. [unit_type]: id=Silver Mage, race=human, gender=male,female
 #: data/core/units/humans/Mage_Silver.cfg:4
 msgid "Silver Mage"
 msgstr "Mago Argentato"
 
-#. [unit_type]: id=Silver Mage, race=human
+#. [unit_type]: id=Silver Mage, race=human, gender=male,female
 #: data/core/units/humans/Mage_Silver.cfg:19
 msgid ""
 "The many paths that a mage can take in study lead to strikingly different "
@@ -5307,17 +5415,17 @@ msgstr ""
 "I maghi argentati si trovano in notevole sintonia con la propria natura "
 "magica e sono altamente resistenti ai danni non fisici."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/humans/Mage_Silver.cfg:163
 msgid "female^Silver Mage"
 msgstr "Maga Argentata"
 
-#. [unit_type]: id=White Mage, race=human
+#. [unit_type]: id=White Mage, race=human, gender=male,female
 #: data/core/units/humans/Mage_White.cfg:4
 msgid "White Mage"
 msgstr "Mago Bianco"
 
-#. [unit_type]: id=White Mage, race=human
+#. [unit_type]: id=White Mage, race=human, gender=male,female
 #: data/core/units/humans/Mage_White.cfg:18
 msgid ""
 "Some magi, as they learn about the world around them, and learn the truth of "
@@ -5347,20 +5455,20 @@ msgid ""
 "Compared to other mages, White Mages have a higher resistance to ‘arcane’ "
 "attacks."
 msgstr ""
-"Rispetto agli altri maghi, i Maghi Bianchi hanno una resistenza maggiore "
+"Rispetto agli altri maghi, i maghi bianchi hanno una resistenza maggiore "
 "agli attacchi di tipo ‘arcano’."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/humans/Mage_White.cfg:105
 msgid "female^White Mage"
 msgstr "Maga Bianca"
 
-#. [unit_type]: id=Mage of Light, race=human
+#. [unit_type]: id=Mage of Light, race=human, gender=male,female
 #: data/core/units/humans/Mage_of_Light.cfg:4
 msgid "Mage of Light"
 msgstr "Mago della Luce"
 
-#. [unit_type]: id=Mage of Light, race=human
+#. [unit_type]: id=Mage of Light, race=human, gender=male,female
 #: data/core/units/humans/Mage_of_Light.cfg:19
 msgid ""
 "After years of experience, the most devout of white magi develop vast "
@@ -5384,20 +5492,20 @@ msgid ""
 "Compared to other mages, Mages of Light have a higher resistance to ‘arcane’ "
 "attacks."
 msgstr ""
-"Rispetto agli altri maghi, i Maghi della Luce hanno una resistenza maggiore "
+"Rispetto agli altri maghi, i maghi della luce hanno una resistenza maggiore "
 "agli attacchi di tipo ‘arcano’."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/humans/Mage_of_Light.cfg:101
 msgid "female^Mage of Light"
 msgstr "Maga della Luce"
 
-#. [unit_type]: id=Outlaw, race=human
+#. [unit_type]: id=Outlaw, race=human, gender=male,female
 #: data/core/units/humans/Outlaw.cfg:4
 msgid "Outlaw"
 msgstr "Fuorilegge"
 
-#. [unit_type]: id=Outlaw, race=human
+#. [unit_type]: id=Outlaw, race=human, gender=male,female
 #: data/core/units/humans/Outlaw.cfg:18
 msgid ""
 "After some years of service, former ‘footpads’ rise up in the ranks of their "
@@ -5417,17 +5525,17 @@ msgstr ""
 "in qualche modo a disagio nel combattere durante il giorno e preferiscono "
 "celarsi tra le ombre della notte."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/humans/Outlaw.cfg:74
 msgid "female^Outlaw"
 msgstr "Fuorilegge"
 
-#. [unit_type]: id=Assassin, race=human
+#. [unit_type]: id=Assassin, race=human, gender=male,female
 #: data/core/units/humans/Outlaw_Assassin.cfg:4
 msgid "Assassin"
 msgstr "Assassino"
 
-#. [unit_type]: id=Assassin, race=human
+#. [unit_type]: id=Assassin, race=human, gender=male,female
 #: data/core/units/humans/Outlaw_Assassin.cfg:19
 msgid ""
 "The greatest of thieves are sometimes tasked to take far more than their "
@@ -5452,7 +5560,7 @@ msgstr ""
 msgid "throwing knives"
 msgstr "coltelli da lancio"
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/humans/Outlaw_Assassin.cfg:101
 msgid "female^Assassin"
 msgstr "Assassina"
@@ -5479,12 +5587,12 @@ msgstr ""
 "loro agio quando devono combattere alla luce del giorno, essendo abituati a "
 "lavorare di notte."
 
-#. [unit_type]: id=Footpad, race=human
+#. [unit_type]: id=Footpad, race=human, gender=male,female
 #: data/core/units/humans/Outlaw_Footpad.cfg:4
 msgid "Footpad"
 msgstr "Galoppino"
 
-#. [unit_type]: id=Footpad, race=human
+#. [unit_type]: id=Footpad, race=human, gender=male,female
 #: data/core/units/humans/Outlaw_Footpad.cfg:19
 msgid ""
 "These petty criminals are often derisively called ‘footpads’ by their "
@@ -5502,17 +5610,17 @@ msgstr ""
 "pietoso, sono piuttosto esperti nell’assalire i loro nemici, specialmente "
 "col favore delle tenebre."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/humans/Outlaw_Footpad.cfg:89
 msgid "female^Footpad"
 msgstr "Galoppina"
 
-#. [unit_type]: id=Fugitive, race=human
+#. [unit_type]: id=Fugitive, race=human, gender=male,female
 #: data/core/units/humans/Outlaw_Fugitive.cfg:5
 msgid "Fugitive"
 msgstr "Fuggiasco"
 
-#. [unit_type]: id=Fugitive, race=human
+#. [unit_type]: id=Fugitive, race=human, gender=male,female
 #: data/core/units/humans/Outlaw_Fugitive.cfg:20
 msgid ""
 "Veteran criminals become notorious for both their ruthlessness and ability "
@@ -5524,7 +5632,7 @@ msgstr ""
 "pericolosi in gruppo, pur non potendo competere con l’incredibile numero di "
 "soldati che le milizie lealiste sono in grado di scagliargli contro."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/humans/Outlaw_Fugitive.cfg:80
 msgid "female^Fugitive"
 msgstr "Fuggiasca"
@@ -5550,12 +5658,12 @@ msgstr ""
 "L’esperienza che traggono da questo tipo di incontri li rende avversari "
 "mortali nel combattimento corpo a corpo."
 
-#. [unit_type]: id=Rogue, race=human
+#. [unit_type]: id=Rogue, race=human, gender=male,female
 #: data/core/units/humans/Outlaw_Rogue.cfg:4
 msgid "Rogue"
 msgstr "Furfante"
 
-#. [unit_type]: id=Rogue, race=human
+#. [unit_type]: id=Rogue, race=human, gender=male,female
 #: data/core/units/humans/Outlaw_Rogue.cfg:18
 msgid ""
 "The ringleaders of any group of thieves earn their positions by skill. These "
@@ -5573,7 +5681,7 @@ msgstr ""
 "con impressionante precisione, e le lunghe ore passate a vagare furtivamente "
 "nel cuore nella notte li hanno resi più adatti al combattimento notturno."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/humans/Outlaw_Rogue.cfg:78
 msgid "female^Rogue"
 msgstr "Furfantessa"
@@ -5598,12 +5706,12 @@ msgstr ""
 "Con la giusta dose di esperienza e di fortuna, talvolta riescono ad evitare "
 "la prigionia o la morte che attende la maggior parte dei loro colleghi."
 
-#. [unit_type]: id=Thief, race=human
+#. [unit_type]: id=Thief, race=human, gender=male,female
 #: data/core/units/humans/Outlaw_Thief.cfg:4
 msgid "Thief"
 msgstr "Ladro"
 
-#. [unit_type]: id=Thief, race=human
+#. [unit_type]: id=Thief, race=human, gender=male,female
 #: data/core/units/humans/Outlaw_Thief.cfg:18
 msgid ""
 "For as long as anyone can remember, the members of the various ‘guilds’ of "
@@ -5623,7 +5731,7 @@ msgstr ""
 "felici di impiegare tattiche men che onorevoli in combattimento, non "
 "trovando alcun merito nel “combattere lealmente”."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/humans/Outlaw_Thief.cfg:147
 msgid "female^Thief"
 msgstr "Ladra"
@@ -5649,12 +5757,12 @@ msgstr ""
 "passato, tutti condividono l’inclinazione ad usare grosse clave per "
 "picchiare le loro vittime."
 
-#. [unit_type]: id=Peasant, race=human
+#. [unit_type]: id=Peasant, race=human, gender=male
 #: data/core/units/humans/Peasant.cfg:4
 msgid "Peasant"
 msgstr "Contadino"
 
-#. [unit_type]: id=Peasant, race=human
+#. [unit_type]: id=Peasant, race=human, gender=male
 #: data/core/units/humans/Peasant.cfg:18
 msgid ""
 "Peasants are the backbone of the rural economy, and the soldiers of last "
@@ -5676,12 +5784,12 @@ msgstr ""
 msgid "pitchfork"
 msgstr "forcone"
 
-#. [unit_type]: id=Royal Warrior, race=human
+#. [unit_type]: id=Royal Warrior, race=human, gender=male
 #: data/core/units/humans/Royal_Warrior.cfg:8
 msgid "Royal Warrior"
 msgstr "Guerriero Reale"
 
-#. [unit_type]: id=Royal Warrior, race=human
+#. [unit_type]: id=Royal Warrior, race=human, gender=male
 #: data/core/units/humans/Royal_Warrior.cfg:25
 msgid ""
 "The kings and princes of human nobility are still often trained rigorously "
@@ -5700,12 +5808,12 @@ msgstr ""
 "di battaglia molto più velocemente di quando possano suggerire le loro "
 "corazze dorate."
 
-#. [unit_type]: id=Woodsman, race=human
+#. [unit_type]: id=Woodsman, race=human, gender=male
 #: data/core/units/humans/Woodsman.cfg:4
 msgid "Woodsman"
 msgstr "Boscaiolo"
 
-#. [unit_type]: id=Woodsman, race=human
+#. [unit_type]: id=Woodsman, race=human, gender=male
 #: data/core/units/humans/Woodsman.cfg:18
 msgid ""
 "Woodsmen are hunters, woodcutters, charcoal-burners, and others who eke out "
@@ -5724,14 +5832,30 @@ msgstr "Maestro di Caccia"
 
 #. [unit_type]: id=Huntsman, race=human
 #: data/core/units/humans/Woodsman_Huntsman.cfg:19
+#, fuzzy
+#| msgid ""
+#| "Hunting is a popular sport of noblemen, but it can also be a livelihood "
+#| "for commoners. Like any other craft, it has men of masterful skill in its "
+#| "practice. Huntsmen know all the tricks of their trade, and are skilled at "
+#| "navigating the wilderness, at tracking, and at the use of the bow. They "
+#| "are a fair shot at moving targets, and targets hiding under brush and "
+#| "cover; a skill wrought from years of practice at shooting game, and one "
+#| "which garrisoned bowmen often lack.\n"
+#| "\n"
+#| "Master hunters are employed by any group living in or passing through "
+#| "wild country, be they men of the law, or those working against it. Even "
+#| "nature itself can have deadly surprises, and any commander who fails to "
+#| "hire a such a guide can lose his men to nothing more than terrain. Good "
+#| "woodsmen can save lives, ease travel, provide food, and their skill with "
+#| "a bow is capitally useful in a fight."
 msgid ""
 "Hunting is a popular sport of noblemen, but it can also be a livelihood for "
 "commoners. Like any other craft, it has men of masterful skill in its "
 "practice. Huntsmen know all the tricks of their trade, and are skilled at "
-"navigating the wilderness, at tracking, and at the use of the bow. They are "
-"a fair shot at moving targets, and targets hiding under brush and cover; a "
-"skill wrought from years of practice at shooting game, and one which "
-"garrisoned bowmen often lack.\n"
+"tracking, the use of the bow, and at disguising their silhouette and scent "
+"among the marshy wilds. They are a fair shot at moving targets, and targets "
+"hiding under brush and cover; a skill wrought from years of practice at "
+"shooting game, and one which garrisoned bowmen often lack.\n"
 "\n"
 "Master hunters are employed by any group living in or passing through wild "
 "country, be they men of the law, or those working against it. Even nature "
@@ -5790,12 +5914,27 @@ msgstr "Ranger"
 
 #. [unit_type]: id=Ranger, race=human
 #: data/core/units/humans/Woodsman_Ranger.cfg:19
+#, fuzzy
+#| msgid ""
+#| "Rangers are wild men and wanderers, who have chosen to shun the company "
+#| "of their fellow men for myriad reasons. They have spent the better part "
+#| "of their lives in the thick of nature, and know many of its secrets. They "
+#| "are excellent pathfinders and explorers, and can find food and shelter "
+#| "where other men would find only sticks and stones.\n"
+#| "\n"
+#| "The presence of these men troubles the more authoritarian of rulers; they "
+#| "are an element that knights and landed armies cannot control. They are "
+#| "men of dubious motives, and are the first to scoff at any royal decree, "
+#| "if they even hear of it at all. Rangers can be hired, but they are just "
+#| "as likely to be in the employ of bandits, as they are to be in the king’s "
+#| "service."
 msgid ""
 "Rangers are wild men and wanderers, who have chosen to shun the company of "
-"their fellow men for myriad reasons. They have spent the better part of "
-"their lives in the thick of nature, and know many of its secrets. They are "
-"excellent pathfinders and explorers, and can find food and shelter where "
-"other men would find only sticks and stones.\n"
+"their fellow men for myriad reasons. Unaccustomed to places of civilization, "
+"they have spent the better part of their lives in the thick of nature, and "
+"know many of its secrets. They are excellent pathfinders and explorers, and "
+"can find food and shelter where other men would find only sticks and "
+"stones.\n"
 "\n"
 "The presence of these men troubles the more authoritarian of rulers; they "
 "are an element that knights and landed armies cannot control. They are men "
@@ -5860,6 +5999,7 @@ msgstr ""
 
 #. [attack]: type=impact
 #: data/core/units/merfolk/Brawler.cfg:30
+#: data/core/units/monsters/Cat_Jump.cfg:92
 #: data/core/units/monsters/Fire_Dragon.cfg:42
 #: data/core/units/monsters/Icemonax_Greater.cfg:72
 msgid "tail"
@@ -5880,12 +6020,12 @@ msgstr ""
 "combattere per difendere le loro abitazioni. In tali frangenti, anche un "
 "nereide senza armi o addestramento può essere pericoloso."
 
-#. [unit_type]: id=Mermaid Diviner, race=merman
+#. [unit_type]: id=Mermaid Diviner, race=merman, gender=female
 #: data/core/units/merfolk/Diviner.cfg:4
 msgid "female^Mermaid Diviner"
 msgstr "Nereide Divinatrice"
 
-#. [unit_type]: id=Mermaid Diviner, race=merman
+#. [unit_type]: id=Mermaid Diviner, race=merman, gender=female
 #: data/core/units/merfolk/Diviner.cfg:22
 msgid ""
 "Years of devotion may endow a priestess with great wisdom on the workings of "
@@ -5903,12 +6043,12 @@ msgstr ""
 "all’ultimo uomo, ma che il giorno seguente cavalcarono di nuovo a ranghi "
 "completi e portarono alla caduta del Duca Cremisi."
 
-#. [unit_type]: id=Mermaid Enchantress, race=merman
+#. [unit_type]: id=Mermaid Enchantress, race=merman, gender=female
 #: data/core/units/merfolk/Enchantress.cfg:4
 msgid "female^Mermaid Enchantress"
 msgstr "Nereide Incantatrice"
 
-#. [unit_type]: id=Mermaid Enchantress, race=merman
+#. [unit_type]: id=Mermaid Enchantress, race=merman, gender=female
 #: data/core/units/merfolk/Enchantress.cfg:18
 msgid ""
 "Mermaids, like elves, have a powerful and native ability in magic, though "
@@ -6026,12 +6166,12 @@ msgstr ""
 "vivono in acqua. In caso di necessità, molti nereidi cacciatori si offrono "
 "volontari per accrescere i ranghi della milizia."
 
-#. [unit_type]: id=Mermaid Initiate, race=merman
+#. [unit_type]: id=Mermaid Initiate, race=merman, gender=female
 #: data/core/units/merfolk/Initiate.cfg:4
 msgid "female^Mermaid Initiate"
 msgstr "Nereide Iniziata"
 
-#. [unit_type]: id=Mermaid Initiate, race=merman
+#. [unit_type]: id=Mermaid Initiate, race=merman, gender=female
 #: data/core/units/merfolk/Initiate.cfg:18
 msgid ""
 "Young mermaids are often initiated into the water magics native to their "
@@ -6102,12 +6242,12 @@ msgstr ""
 "vicine alla riva. Le clave usate in combattimento differiscono poco o niente "
 "da quelle usate per la pesca, data la loro forza già di per sé micidiale."
 
-#. [unit_type]: id=Mermaid Priestess, race=merman
+#. [unit_type]: id=Mermaid Priestess, race=merman, gender=female
 #: data/core/units/merfolk/Priestess.cfg:4
 msgid "female^Mermaid Priestess"
 msgstr "Nereide Sacerdotessa"
 
-#. [unit_type]: id=Mermaid Priestess, race=merman
+#. [unit_type]: id=Mermaid Priestess, race=merman, gender=female
 #: data/core/units/merfolk/Priestess.cfg:21
 msgid ""
 "Among merfolk, mysticism is generally left to the mermaids, who are more "
@@ -6122,12 +6262,12 @@ msgstr ""
 "Inoltre, la devozione conferisce loro determinati poteri, permettendo alle "
 "sacerdotesse di proteggere la loro gente dalle entità magiche o innaturali."
 
-#. [unit_type]: id=Mermaid Siren, race=merman
+#. [unit_type]: id=Mermaid Siren, race=merman, gender=female
 #: data/core/units/merfolk/Siren.cfg:4
 msgid "Mermaid Siren"
 msgstr "Sirena"
 
-#. [unit_type]: id=Mermaid Siren, race=merman
+#. [unit_type]: id=Mermaid Siren, race=merman, gender=female
 #: data/core/units/merfolk/Siren.cfg:19
 msgid ""
 "The faerie nature of the mermaids is strongest in the Sirens, whose "
@@ -6159,7 +6299,7 @@ msgstr "tocco della naiade"
 #. [unit_type]: id=Merman Spearman, race=merman
 #: data/core/units/merfolk/Spearman.cfg:4
 msgid "Merman Spearman"
-msgstr "Lanciere Nereide"
+msgstr "Nereide Lanciere"
 
 #. [unit_type]: id=Merman Spearman, race=merman
 #: data/core/units/merfolk/Spearman.cfg:17
@@ -6171,10 +6311,10 @@ msgid ""
 "wreak damage. They are also useful in melee, even deep under the surface, "
 "which is something that certainly cannot be said of arrows."
 msgstr ""
-"L’uso di arco e frecce non trova grandi favori tra i nereidi, per i quali i "
-"giavellotti svolgono una funzione simile. Anche se i giavellotti sono ben "
-"poco utili sott’acqua, risultano estremamente efficaci in superficie, dove "
-"il loro peso permette loro di sprofondare ad alcuni piedi sott’acqua "
+"L’uso di arco e frecce non è molto apprezzato dai nereidi, preferendo "
+"utilizzare i giavellotti in loro vece. Sebbene i giavellotti siano ben poco "
+"utili sott’acqua, risultano estremamente efficaci in superficie, dove il "
+"peso dell’arma permette loro di sprofondare ad alcuni piedi sott’acqua "
 "mantenendo una forza cinetica sufficiente a causare dei danni. Inoltre si "
 "rivelano utili nel combattimento in mischia, anche sotto la superficie "
 "dell’acqua, cosa che non si può invece dire delle frecce."
@@ -6266,7 +6406,7 @@ msgid ""
 "any suitable location.\n"
 "\n"
 msgstr ""
-"Le Formiche Giganti sono diffuse in quasi tutti gli ambienti, e le loro uova "
+"Le formiche giganti sono diffuse in quasi tutti gli ambienti, e le loro uova "
 "da cui emergono si trovano spesso in caverne o in qualsiasi ambiente "
 "riparato. La maggior parte delle uova proviene da una delle regine della "
 "colonia, ma le operaie le trasportano in qualsiasi luogo adatto.\n"
@@ -6285,7 +6425,7 @@ msgid ""
 "colony queens, but the workers transport them to any suitable location.\n"
 "\n"
 msgstr ""
-"Quando in gran numero, le Formiche del Fuoco possono rappresentare una seria "
+"Quando in gran numero, le formiche del fuoco possono rappresentare una seria "
 "minaccia, e quei numeri minacciosi iniziano dalle loro uova. La maggior "
 "parte delle uova proviene da una delle regine della colonia, ma le operaie "
 "le trasportano in qualsiasi luogo adatto.\n"
@@ -6298,7 +6438,7 @@ msgstr "Formica del Fuoco"
 
 #. [unit_type]: id=Fire Ant, race=monster
 #. [unit_type]: id=Firebane Ant, race=monster
-#: data/core/units/monsters/Ant_Fire.cfg:51
+#: data/core/units/monsters/Ant_Fire.cfg:53
 #: data/core/units/monsters/Ant_Firebane.cfg:51
 msgid ""
 "Small but deadly in large numbers, fire ants possess fierce fangs and an "
@@ -6314,10 +6454,10 @@ msgstr ""
 
 # Attacco della formica del fuoco, da definire quando avremo la descrizione...
 #. [attack]: type=fire
-#: data/core/units/monsters/Ant_Fire.cfg:78
-#: data/core/units/monsters/Ant_Fire_Queen.cfg:88
+#: data/core/units/monsters/Ant_Fire.cfg:80
+#: data/core/units/monsters/Ant_Fire_Queen.cfg:90
 #: data/core/units/monsters/Ant_Firebane.cfg:79
-#: data/core/units/monsters/Ant_Firebomb.cfg:81
+#: data/core/units/monsters/Ant_Firebomb.cfg:83
 msgid "fire"
 msgstr "fuoco"
 
@@ -6327,12 +6467,12 @@ msgid "Fire Ant Queen"
 msgstr "Formica del Fuoco Regina"
 
 #. [unit_type]: id=Fire Ant Queen, race=monster
-#: data/core/units/monsters/Ant_Fire_Queen.cfg:52
+#: data/core/units/monsters/Ant_Fire_Queen.cfg:54
 msgid ""
 "Fire ants possess fierce fangs and an unusual ability to generate fire, and "
 "the queen is no different."
 msgstr ""
-"Le Formiche del Fuoco sfoderano possenti zanne e una insolita capacità di "
+"Le formiche del fuoco sfoderano possenti zanne e una insolita capacità di "
 "generare fuoco; la loro regina non è diversa."
 
 #. [unit_type]: id=Firebane Ant, race=monster
@@ -6346,7 +6486,7 @@ msgid "Firebomb Ant"
 msgstr "Formica Incendiaria"
 
 #. [unit_type]: id=Firebomb Ant, race=monster
-#: data/core/units/monsters/Ant_Firebomb.cfg:51
+#: data/core/units/monsters/Ant_Firebomb.cfg:53
 msgid ""
 "More developed and specialized Fire Ants can take different forms. The "
 "firebomb ants can produce and carry large quantities of their flammable "
@@ -6354,8 +6494,8 @@ msgid ""
 "also makes them weak to physical attacks and they cannot sustain the fire as "
 "their health fails."
 msgstr ""
-"Le Formiche del Fuoco possono evolvere e specializzarsi in diversi modi. Le "
-"Incendiarie possono produrre e trasportare grosse quantità del loro spray "
+"Le formiche del fuoco possono evolvere e specializzarsi in diversi modi. Le "
+"incendiarie possono produrre e trasportare grosse quantità del loro spray "
 "infiammabile in un addome rigonfio, che può essere utilizzato per un "
 "terribile attacco, ma che le rende anche vulnerabili agli attacchi fisici e "
 "non permette loro di sostenere il fuoco mentre la loro salute peggiora."
@@ -6367,16 +6507,6 @@ msgstr "Formica Gigante Regina"
 
 #. [unit_type]: id=Giant Ant Queen, race=monster
 #: data/core/units/monsters/Ant_Queen.cfg:19
-#, fuzzy
-#| msgid ""
-#| "Giant Ants are common in almost any environment, from caverns deep under "
-#| "the earth to the tops of tall mountains. The queens are not royalty as "
-#| "many other races would understand, but they are the heart of any "
-#| "functioning nest and will be defended at all costs. As the nest core, "
-#| "they must be capable tacticians, and as a target of rival nests, they "
-#| "must also be deft warriors. The typical human or orc that finds an "
-#| "audience with an Ant Queen can expect a very short continued existence - "
-#| "and if their flesh is warm and nourishing, they can host an ant egg."
 msgid ""
 "Giant Ants are common in almost any environment, from caverns deep under the "
 "earth to the tops of tall mountains. The queens are not royalty as many "
@@ -6387,15 +6517,15 @@ msgid ""
 "a very short continued existence — and if their flesh is warm and "
 "nourishing, they can host an ant egg."
 msgstr ""
-"Le Formiche Giganti sono piuttosto comuni in quasi tutti gli ambienti, dalle "
-"caverne della terra più profonde alle cime delle montagne più alte. Le loro "
-"regine non sono così regali come quelle di molte altre razze, ma sono il "
-"cuore pulsante di ogni nido operativo e verranno difese ad ogni costo. In "
-"quanto cuore del nico, devono possedere abilità tattiche e, avendo come "
-"bersaglio i nidi rivali, devono essere anche abili guerriere. Il tipico "
-"essere umano o orco che trova udienza con una Formica Regina può aspettarsi "
-"una esistenza molto breve - e se la sua carne è tiepida e nutriente, può "
-"ospitare una uovo di formica."
+"Le formiche giganti sono piuttosto comuni in quasi tutti gli ambienti, dalle "
+"più profonde caverne della terra alle più alte cime delle montagne. Le "
+"regine non sono così regali come vengono considerate quelle di molte altre "
+"razze, ma sono il cuore pulsante di ogni nido operativo e verranno difese ad "
+"ogni costo. In quanto cuore del nido, devono possedere abilità tattiche e, "
+"avendo come bersaglio i nidi rivali, devono essere anche abili guerriere. Il "
+"tipico essere umano o orco che trova udienza con una Formica Regina può "
+"aspettarsi una esistenza molto breve — e se la sua carne è tiepida e "
+"nutriente, può ospitare una uovo di formica."
 
 #. [unit_type]: id=Soldier Ant, race=monster
 #: data/core/units/monsters/Ant_Soldier.cfg:4
@@ -6454,8 +6584,8 @@ msgstr ""
 #. [attack]: type=pierce
 #. [variation]
 #: data/core/units/monsters/Boar.cfg:59
-#: data/core/units/undead/Corpse_Soulless.cfg:399
-#: data/core/units/undead/Corpse_Walking.cfg:400
+#: data/core/units/undead/Corpse_Soulless.cfg:452
+#: data/core/units/undead/Corpse_Walking.cfg:453
 msgid "tusk"
 msgstr "zanna"
 
@@ -6530,10 +6660,53 @@ msgstr ""
 "pericolosi. Un singolo individuo può non essere considerato una minaccia, ma "
 "questi pesci raramente viaggiano solitari."
 
+#. [unit_type]: id=Forest Lion, race=cats
+#: data/core/units/monsters/Cat_Forest.cfg:4
+msgid "Forest Lion"
+msgstr "Leone delle foreste"
+
+#. [unit_type]: id=Forest Lion, race=cats
+#: data/core/units/monsters/Cat_Forest.cfg:31
+msgid ""
+"Forest Lions are light-brown cats, roughly the same size as a wolf, that "
+"hunt the woods and hills at dusk and dawn. Their most distinctive feature is "
+"their odd, triply branched tail, which they seem to use for camouflage and "
+"disruptive patterning."
+msgstr ""
+"I leoni delle foreste sono dei felini dal manto marrone chiaro, più o meno "
+"della taglia di un lupo, che cacciano nei boschi e nelle colline all’alba e "
+"al tramonto. Caratteristica distintiva è la loro strana coda a tre rami, che "
+"sembrano usare per mimetizzarsi o come azione di disturbo."
+
+#. [unit_type]: id=Jumpcat, race=cats
+#: data/core/units/monsters/Cat_Jump.cfg:4
+msgid "Jumpcat"
+msgstr "Gatto salterino"
+
+#. [unit_type]: id=Jumpcat, race=cats
+#: data/core/units/monsters/Cat_Jump.cfg:30
+msgid ""
+"Jumpcats are opportunistic predators with keen senses and fast reflexes, but "
+"very little bulk, so they are easily dispatched if they can be hit, and "
+"easily scared off if they can’t. One of the most distinctive features of "
+"these odd creatures is the hard clump of twigs, clay, and rocks they carry "
+"on their tail, which is their primary offensive weapon. Their actions are "
+"mostly driven by instinct, but they are sometimes used as assassins by more "
+"sophisticated handlers."
+msgstr ""
+"I gatti salterini sono dei predatori opportunisti dai sensi acuti e i "
+"riflessi rapidi, ma piuttosto piccoli e quindi possono essere facilmente "
+"eliminati se si riesce a colpirli, o quantomeno a spaventarli se si mancano. "
+"Una delle caratteristiche più distintive di queste strane creature è il duro "
+"ammasso di ramoscelli, argilla e rocce che trasportano sulla coda, che è la "
+"loro principale arma offensiva. Le loro azioni sono per lo più guidate "
+"dall’istinto, ma a volte vengono usati come assassini dagli addestratori più "
+"sofisticati."
+
 #. [unit_type]: id=Swamp Lizard, race=monster
 #: data/core/units/monsters/Crocodile.cfg:13
 msgid "Swamp Lizard"
-msgstr "Lucertola delle Paludi"
+msgstr "Lucertola Palustre"
 
 #. [unit_type]: id=Swamp Lizard, race=monster
 #: data/core/units/monsters/Crocodile.cfg:122
@@ -6545,12 +6718,12 @@ msgid ""
 "adopted a ‘two legs bad’ outlook and do not hesitate to avenge their "
 "ancestors."
 msgstr ""
-"Le paludi sono ambienti vibranti, ma spesso non amichevoli per umani o "
-"orchi. Le Lucertole delle Paludi sono uno dei più grandi pericoli, con le "
-"loro potenti mascelle e la pelle corazzata. Nonostante il loro aspetto "
-"primitivo, queste lucertole non sono stupide e, dopo generazioni in cui sono "
-"state cacciate per le loro pelli, hanno adottato una atteggiamento "
-"minaccioso \"su due zampe\" e non esitano a vendicare i loro antenati."
+"Le paludi sono ambienti vibranti, ma spesso poco amichevoli per umani o "
+"orchi. Le lucertole palustri sono uno dei pericoli più grandi, con le loro "
+"potenti mascelle e la pelle corazzata. Nonostante il loro aspetto primitivo, "
+"queste lucertole non sono stupide e, dopo generazioni in cui sono state "
+"cacciate per le loro pelli, hanno adottato una atteggiamento minaccioso \"su "
+"due zampe\" e non esitano a vendicare i loro antenati."
 
 #. [special_note]
 #: data/core/units/monsters/Crocodile.cfg:124
@@ -6560,33 +6733,6 @@ msgid ""
 msgstr ""
 "Questa unità può muoversi inosservata sui territori paludosi, mantenendo la "
 "maggior parte del suo corpo sott’acqua."
-
-#. [hides]: id=swamp_lurk
-#: data/core/units/monsters/Crocodile.cfg:144
-msgid "swamp lurk"
-msgstr "agguato nella palude"
-
-#. [hides]: id=swamp_lurk
-#: data/core/units/monsters/Crocodile.cfg:145
-msgid "female^swamp lurk"
-msgstr "agguato nella palude"
-
-#. [hides]: id=swamp_lurk
-#: data/core/units/monsters/Crocodile.cfg:146
-msgid ""
-"This unit can hide in swamp, and remain undetected by its enemies.\n"
-"\n"
-"Enemy units cannot see this unit while it is in swamp, except if they have "
-"units next to it. Any enemy unit that first discovers this unit immediately "
-"loses all its remaining movement."
-msgstr ""
-"Questa unità può nascondersi nella palude e non essere rilevata dai suoi "
-"nemici.\n"
-"\n"
-"Le unità nemiche non possono vedere questa unità mentre si trova nella "
-"palude, a meno che non abbiano accanto una unità. Qualsiasi unità nemica che "
-"scopre per prima questa unità perde immediatamente tutto il suo movimento "
-"rimanente."
 
 #. [unit_type]: id=Cuttle Fish, race=monster
 #: data/core/units/monsters/Cuttle_Fish.cfg:4
@@ -6652,9 +6798,11 @@ msgstr ""
 "gigante."
 
 #. [attack]: type=pierce
-#: data/core/units/monsters/Dragonfly_Grand.cfg:43
+#: data/core/units/monsters/Dragonfly_Grand.cfg:44
 #: data/core/units/monsters/Giant_Scorpion.cfg:47
 #: data/core/units/monsters/Giant_Scorpling.cfg:32
+#: data/core/units/monsters/Sand_Scamperer.cfg:37
+#: data/core/units/monsters/Sand_Scuttler.cfg:49
 msgid "sting"
 msgstr "aculeo"
 
@@ -6683,7 +6831,7 @@ msgid "Elder Falcon"
 msgstr "Falcone Anziano"
 
 #. [unit_type]: id=Elder Falcon, race=falcon
-#: data/core/units/monsters/Elder_Falcon.cfg:18
+#: data/core/units/monsters/Elder_Falcon.cfg:19
 msgid ""
 "Elder Falcons bear the telltale scars of veteran warriors from protecting "
 "their masters, their bodies proof of repeated dives into a swirling melee. "
@@ -6698,10 +6846,10 @@ msgstr ""
 
 #. [attack]: type=blade
 #. [attack]: type=pierce
-#: data/core/units/monsters/Elder_Falcon.cfg:50
-#: data/core/units/monsters/Falcon.cfg:95 data/core/units/monsters/Raven.cfg:86
-#: data/core/units/monsters/Raven_Harbinger.cfg:96
-#: data/core/units/monsters/Raven_Omen.cfg:86
+#: data/core/units/monsters/Elder_Falcon.cfg:84
+#: data/core/units/monsters/Falcon.cfg:95 data/core/units/monsters/Raven.cfg:82
+#: data/core/units/monsters/Raven_Harbinger.cfg:92
+#: data/core/units/monsters/Raven_Omen.cfg:82
 #: data/core/units/monsters/Roc.cfg:64
 msgid "beak"
 msgstr "beccata"
@@ -6762,7 +6910,7 @@ msgid "Fire Guardian"
 msgstr "Guardiano di Fuoco"
 
 #. [unit_type]: id=Fire Guardian, race=monster
-#: data/core/units/monsters/Fire_Guardian.cfg:25
+#: data/core/units/monsters/Fire_Guardian.cfg:20
 msgid ""
 "Fire Guardians are spirits of smoke and flame. No one is exactly sure where "
 "they come from, but they are occasionally summoned by powerful mages to do "
@@ -6776,10 +6924,32 @@ msgstr ""
 "diletto nel bruciare qualsiasi cosa trovino nelle vicinanze."
 
 #. [attack]: type=fire
-#: data/core/units/monsters/Fire_Guardian.cfg:28
-#: data/core/units/monsters/Fire_Wraith.cfg:50
+#: data/core/units/monsters/Fire_Guardian.cfg:23
+#: data/core/units/monsters/Fire_Wraith.cfg:51
 msgid "fire claws"
 msgstr "artigli di fuoco"
+
+#. [unit_type]: id=Fire Wisp, race=monster
+#: data/core/units/monsters/Fire_Wisp.cfg:4
+msgid "Fire Wisp"
+msgstr "Spiritello di Fuoco"
+
+#. [unit_type]: id=Fire Wisp, race=monster
+#: data/core/units/monsters/Fire_Wisp.cfg:19
+msgid ""
+"Fire Wisps are spirits of smoke and flame. When not being ordered around "
+"they like to frolic in pools of lava and take great delight in burning "
+"anything they can reach."
+msgstr ""
+"Gli spiritelli di fuoco sono degli esseri composti di fumo e fiamme. Quando "
+"non sottoposti ad un controllo superiore, amano sguazzare nelle pozze di "
+"lava e traggono gran diletto nel bruciare qualsiasi cosa trovino nelle "
+"vicinanze."
+
+#. [attack]: type=fire
+#: data/core/units/monsters/Fire_Wisp.cfg:24
+msgid "fire bash"
+msgstr "colpo infuocato"
 
 #. [unit_type]: id=Fire Wraith, race=monster
 #: data/core/units/monsters/Fire_Wraith.cfg:8
@@ -6787,7 +6957,7 @@ msgid "Fire Wraith"
 msgstr "Spettro di Fuoco"
 
 #. [unit_type]: id=Fire Wraith, race=monster
-#: data/core/units/monsters/Fire_Wraith.cfg:47
+#: data/core/units/monsters/Fire_Wraith.cfg:48
 msgid ""
 "Fire Wraiths are spirits of smoke and flame. No one is exactly sure where "
 "they come from, but they are occasionally summoned by powerful mages to do "
@@ -6816,7 +6986,7 @@ msgid ""
 "animals, but are quite territorial and the young adults have been known to "
 "attack larger intruders, including humans and orcs."
 msgstr ""
-"Gli Ermellini dei Ghiacci sono dei subdoli roditori che possono essere "
+"Gli ermellini dei ghiacci sono dei subdoli roditori che possono essere "
 "trovati prevalentemente nei territori ghiacciati del Nord, sebbene possano "
 "sopravvivere dappertutto. La loro principale caratteristica sono gli artigli "
 "ghiacciati delle zampe anteriori, diversi da quelli di qualsiasi altro "
@@ -6836,7 +7006,7 @@ msgid "Giant Mudcrawler"
 msgstr "Fanghiglia Gigante"
 
 #. [unit_type]: id=Giant Mudcrawler, race=monster
-#: data/core/units/monsters/Giant_Mudcrawler.cfg:19
+#: data/core/units/monsters/Giant_Mudcrawler.cfg:27
 msgid ""
 "More resilient than their smaller counterparts, these golems of mud are much "
 "more capable of putting up a fight with a proper soldier even with their "
@@ -6854,8 +7024,8 @@ msgstr ""
 "qualsiasi forma di vita che basa i propri attacchi sul veleno."
 
 #. [attack]: type=impact
-#: data/core/units/monsters/Giant_Mudcrawler.cfg:41
-#: data/core/units/monsters/Mudcrawler.cfg:42
+#: data/core/units/monsters/Giant_Mudcrawler.cfg:49
+#: data/core/units/monsters/Mudcrawler.cfg:50
 msgid "mud glob"
 msgstr "palla di fango"
 
@@ -6897,6 +7067,8 @@ msgstr ""
 #: data/core/units/monsters/Giant_Scorpion.cfg:59
 #: data/core/units/monsters/Giant_Scorpling.cfg:44
 #: data/core/units/monsters/Rock_Scorpion.cfg:53
+#: data/core/units/monsters/Sand_Scamperer.cfg:49
+#: data/core/units/monsters/Sand_Scuttler.cfg:61
 msgid "pincers"
 msgstr "chele"
 
@@ -6906,16 +7078,16 @@ msgid "scuttler"
 msgstr "orrido"
 
 #. [variation]
-#. [unit_type]: id=Sand Scuttler
+#. [unit_type]: id=Sand Scuttler, race=monster
 #: data/core/units/monsters/Giant_Scorpion.cfg:112
-#: data/core/units/monsters/Sand_Scuttler.cfg:8
+#: data/core/units/monsters/Sand_Scuttler.cfg:5
 msgid "Sand Scuttler"
 msgstr "Orrido delle Sabbie"
 
 #. [variation]
-#. [unit_type]: id=Sand Scuttler
+#. [unit_type]: id=Sand Scuttler, race=monster
 #: data/core/units/monsters/Giant_Scorpion.cfg:119
-#: data/core/units/monsters/Sand_Scuttler.cfg:13
+#: data/core/units/monsters/Sand_Scuttler.cfg:43
 msgid ""
 "Making their homes in sandy dunes, these critters are an odd mix of mundane "
 "creature and elemental beast. Though usually timid, Sand Scuttlers sometimes "
@@ -7003,18 +7175,18 @@ msgstr ""
 #. [attack]: type=impact
 #: data/core/units/monsters/Horse.cfg:32
 #: data/core/units/monsters/Horse_Black.cfg:50
-#: data/core/units/monsters/Horse_Dark.cfg:44
+#: data/core/units/monsters/Horse_Dark.cfg:49
 #: data/core/units/monsters/Horse_Great.cfg:34
-#: data/core/units/monsters/Horse_White.cfg:38
+#: data/core/units/monsters/Horse_White.cfg:43
 msgid "hooves"
 msgstr "zoccoli"
 
-#. [unit_type]: id=Black Horse, race=horse
+#. [unit_type]: id=Black Horse, race=horse, gender=male,female
 #: data/core/units/monsters/Horse_Black.cfg:14
 msgid "Black Horse"
 msgstr "Cavallo Nero"
 
-#. [unit_type]: id=Black Horse, race=horse
+#. [unit_type]: id=Black Horse, race=horse, gender=male,female
 #: data/core/units/monsters/Horse_Black.cfg:34
 msgid ""
 "The true nature of Black Horses is impossible to discern, but the fire in "
@@ -7027,7 +7199,7 @@ msgstr ""
 
 #. [attack]: type=cold
 #: data/core/units/monsters/Horse_Black.cfg:59
-#: data/core/units/monsters/Horse_Dark.cfg:53
+#: data/core/units/monsters/Horse_Dark.cfg:58
 msgid "whinny"
 msgstr "nitrito"
 
@@ -7040,15 +7212,15 @@ msgstr "Stallone Nero"
 #. Female variant of the Black Horse or Black Stallion; in English this is a pun on the word "Mare"
 #: data/core/units/monsters/Horse_Black.cfg:100
 msgid "female^Black Nightmare"
-msgstr "Incubo Nero"
+msgstr "Giumenta Nera"
 
-#. [unit_type]: id=Dark Horse
+#. [unit_type]: id=Dark Horse, race=horse, gender=male,female
 #: data/core/units/monsters/Horse_Dark.cfg:14
 msgid "Dark Horse"
 msgstr "Cavallo Scuro"
 
-#. [unit_type]: id=Dark Horse
-#: data/core/units/monsters/Horse_Dark.cfg:40
+#. [unit_type]: id=Dark Horse, race=horse, gender=male,female
+#: data/core/units/monsters/Horse_Dark.cfg:33
 msgid ""
 "Dark Horses are wild animals, but they seem to take an odd interest in the "
 "civilized races. They leave no signs of their passage, but they have been "
@@ -7059,12 +7231,12 @@ msgstr ""
 "ma sono stati notati curiosare di notte per accampamenti e avamposti."
 
 #. [male]
-#: data/core/units/monsters/Horse_Dark.cfg:88
+#: data/core/units/monsters/Horse_Dark.cfg:93
 msgid "male^Dark Horse"
 msgstr "Cavallo Scuro"
 
 #. [female]
-#: data/core/units/monsters/Horse_Dark.cfg:92
+#: data/core/units/monsters/Horse_Dark.cfg:97
 msgid "female^Dark Horse"
 msgstr "Giumenta Scura"
 
@@ -7087,13 +7259,13 @@ msgstr ""
 "troppo difficili da domare, sebbene molti principi arroganti o signori della "
 "guerra abbiano provato e fallito."
 
-#. [unit_type]: id=White Horse
+#. [unit_type]: id=White Horse, race=horse
 #: data/core/units/monsters/Horse_White.cfg:14
 msgid "White Horse"
 msgstr "Cavallo Bianco"
 
-#. [unit_type]: id=White Horse
-#: data/core/units/monsters/Horse_White.cfg:25
+#. [unit_type]: id=White Horse, race=horse
+#: data/core/units/monsters/Horse_White.cfg:29
 msgid ""
 "Some horses have a white color, and they are merely white horses. But there "
 "exist a special breed, found only in the wild woods, that are White Horses. "
@@ -7204,7 +7376,7 @@ msgid "Mudcrawler"
 msgstr "Fanghiglia"
 
 #. [unit_type]: id=Mudcrawler, race=monster
-#: data/core/units/monsters/Mudcrawler.cfg:21
+#: data/core/units/monsters/Mudcrawler.cfg:29
 msgid ""
 "Simple beings conjured up from soil and water, Mudcrawlers fend for "
 "themselves by spitting globs of mud with surprising force. Even though they "
@@ -7287,21 +7459,6 @@ msgstr "Roc"
 
 #. [unit_type]: id=Roc, race=monster
 #: data/core/units/monsters/Roc.cfg:20
-#, fuzzy
-#| msgid ""
-#| "In remote desert mountains, far from any city or settlement, enormous "
-#| "raptors are rumoured to nest in the lofty crags.  Travellers and nomads "
-#| "claim to have witnessed livestock and grown men snatched into the sky "
-#| "without warning by these monsters.  While one should not place much faith "
-#| "in the accounts of the desert roamers, they are less fantastical than the "
-#| "drunken lies of sailors who claim to have witnessed full-rigged ships, "
-#| "attempting to navigate the narrow straights between the sheer cliffs "
-#| "where nothing can grow, sunk by giant eagles dropping large rocks.\n"
-#| "\n"
-#| "Whatever kernel of truth is in these tall tales, there is no denying that "
-#| "the desert is a dangerous place, and both traders and armies do sometimes "
-#| "disappear when trying to cross the harsh ranges.  If you must traverse "
-#| "the great deserts, keep an eye to the sky."
 msgid ""
 "In remote desert mountains, far from any city or settlement, enormous "
 "raptors are rumoured to nest in the lofty crags. Travellers and nomads claim "
@@ -7324,8 +7481,8 @@ msgstr ""
 "nei resoconti di qualche vagabondo del deserto, essi sono meno fantasiosi "
 "delle frottole di qualche marinaio ubriaco che afferma di aver visto navi "
 "completamente equipaggiate, tentare di navigare lungo degli angusti passaggi "
-"fra le scogliere a picco dove non può cresce nulla, affondate da aquile "
-"gigantesche che lasciano cadere grandi massi.\n"
+"fra le scogliere a picco dove non può cresce nulla e finire affondate da "
+"aquile gigantesche che lasciano cadere grandi massi.\n"
 "\n"
 "Qualunque sia il nocciolo di verità in fondo a queste storie, non si può "
 "negare che il deserto sia un posto pericolo, e che sia i mercanti che gli "
@@ -7347,7 +7504,7 @@ msgstr "Scorpione delle rocce"
 #: data/core/units/monsters/Rock_Scorpion.cfg:47
 msgid ""
 "Rock scorpions have featured in tales of highwaymen and drunks, but there "
-"has been scant evidence that they truly exist. They've been described as "
+"has been scant evidence that they truly exist. They’ve been described as "
 "stealthy monsters with a hide of solid rock, and sharp, crystalline claws. "
 "Unlike most scorpions, they do not deliver their poison with a piercing "
 "stinger, but instead spray their enemies with a noxious, volatile stream."
@@ -7365,13 +7522,13 @@ msgstr ""
 msgid "spray"
 msgstr "spruzzo"
 
-#. [unit_type]: id=Sand Scamperer
-#: data/core/units/monsters/Sand_Scamperer.cfg:11
+#. [unit_type]: id=Sand Scamperer, race=monster
+#: data/core/units/monsters/Sand_Scamperer.cfg:8
 msgid "Sand Scamperer"
 msgstr "Scorrazzatore delle Sabbie"
 
-#. [unit_type]: id=Sand Scamperer
-#: data/core/units/monsters/Sand_Scamperer.cfg:16
+#. [unit_type]: id=Sand Scamperer, race=monster
+#: data/core/units/monsters/Sand_Scamperer.cfg:31
 msgid ""
 "This impressive creature swiftly moves through the scorching desert sand. "
 "Its body is covered in a thick, sand-colored exoskeleton absorbing any "
@@ -7474,20 +7631,6 @@ msgstr "Ragno Saltaombra"
 
 #. [unit_type]: id=Shadow Jumping Spider, race=monster
 #: data/core/units/monsters/Shadow_Jumping_Spider.cfg:29
-#, fuzzy
-#| msgid ""
-#| "Unlike the feared Giant Spider, that uses poison and webs to catch prey, "
-#| "the Shadow Jumper relies on speed and the element of surprise.  These "
-#| "stealthy, keen-eyed hunters creep to within striking distance, then "
-#| "pounce with a piercing bite that is said to punch through steel.  Once "
-#| "they have pierced their victim's defenses, the spiders take what "
-#| "nourishment is available, feeding in a manner as fast and remorseless as "
-#| "befits their nature.\n"
-#| "\n"
-#| "These giant jumping spiders often hunt in the same dark caverns as their "
-#| "web-weaving cousins, but they also prowl the forest canopy, ambushing "
-#| "happless wanderers on the ground below.  While they prefer the shadows, "
-#| "they are perfectly capable of hunting in the broad daylight."
 msgid ""
 "Unlike the feared Giant Spider that uses poison and webs to catch prey, the "
 "Shadow Jumper relies on speed and the element of surprise. These stealthy, "
@@ -7522,7 +7665,7 @@ msgid "Skeletal Dragon"
 msgstr "Dragone Scheletrico"
 
 #. [unit_type]: id=Skeletal Dragon, race=undead
-#: data/core/units/monsters/Skeletal_Dragon.cfg:27
+#: data/core/units/monsters/Skeletal_Dragon.cfg:26
 msgid ""
 "Long ago one of the mightiest living creatures, the feared Dragon has become "
 "only bones and dark sinew. Long after its death, it was raised through the "
@@ -7539,7 +7682,7 @@ msgstr ""
 "idea."
 
 #. [attack]: type=blade
-#: data/core/units/monsters/Skeletal_Dragon.cfg:31
+#: data/core/units/monsters/Skeletal_Dragon.cfg:30
 msgid "jaw"
 msgstr "fauci"
 
@@ -7645,7 +7788,7 @@ msgid ""
 "match. Posing a considerable threat to even experienced soldiers, direwolves "
 "are avoided by all but madmen."
 msgstr ""
-"I ‘Metalupi’ differiscono dalla varietà comune solo per dimensioni e colore. "
+"I ‘metalupi’ differiscono dalla varietà comune solo per dimensioni e colore. "
 "In genere sono più alti di un cavallo al garrese e hanno un appetito "
 "adeguato alla loro statura. Costituendo una minaccia considerevole anche per "
 "dei soldati esperti, i metalupi vengono evitati da tutti tranne che dai "
@@ -7694,12 +7837,13 @@ msgstr ""
 "lontano dalle montagne dove si dice abitino anche il più dubbioso della loro "
 "esistenza."
 
-#. [unit_type]: id=Naga Dirkfang, race=naga
+# Il Dirk è un tipo di pugnale
+#. [unit_type]: id=Naga Dirkfang, race=naga, gender=male,female
 #: data/core/units/nagas/Dirkfang.cfg:4
 msgid "Naga Dirkfang"
 msgstr "Naga Dirkfang"
 
-#. [unit_type]: id=Naga Dirkfang, race=naga
+#. [unit_type]: id=Naga Dirkfang, race=naga, gender=male,female
 #: data/core/units/nagas/Dirkfang.cfg:18
 msgid ""
 "In contrast to the heavily melee-focused style of their northern brethren, "
@@ -7728,17 +7872,17 @@ msgstr ""
 msgid "chakri"
 msgstr "chakri"
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/nagas/Dirkfang.cfg:93
 msgid "Nagini Dirkfang"
 msgstr "Nagini Dirkfang"
 
-#. [unit_type]: id=Naga Fighter, race=naga
+#. [unit_type]: id=Naga Fighter, race=naga, gender=male,female
 #: data/core/units/nagas/Fighter.cfg:4
 msgid "Naga Fighter"
 msgstr "Naga Combattente"
 
-#. [unit_type]: id=Naga Fighter, race=naga
+#. [unit_type]: id=Naga Fighter, race=naga, gender=male,female
 #: data/core/units/nagas/Fighter.cfg:18
 msgid ""
 "The serpentine naga are one of the few races capable of any meaningful "
@@ -7755,7 +7899,7 @@ msgstr ""
 "li rende timorosi degli abissi. Sono piccoli e un po’ deboli di "
 "costituzione, ma spesso molto più agili dei loro nemici."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/nagas/Fighter.cfg:49
 msgid "Nagini Fighter"
 msgstr "Nagini Combattente"
@@ -7766,7 +7910,7 @@ msgid "Naga Guard"
 msgstr "Naga Guardiano"
 
 #. [unit_type]: id=Naga Guard, race=naga
-#: data/core/units/nagas/Guard.cfg:22
+#: data/core/units/nagas/Guard.cfg:21
 msgid ""
 "Nagas tend to value agility and grace on the battlefield, but the slower, "
 "stronger individuals play a key role in defending important positions. These "
@@ -7788,7 +7932,7 @@ msgid "Naga High Guard"
 msgstr "Naga Guardiano Supremo"
 
 #. [unit_type]: id=Naga High Guard, race=naga
-#: data/core/units/nagas/Guard_High.cfg:23
+#: data/core/units/nagas/Guard_High.cfg:22
 msgid ""
 "The elite naga guards are a rigid barrier to any invaders of a naga "
 "stronghold. They have powerful strikes and, like the lesser Shield Guard, "
@@ -7806,8 +7950,8 @@ msgstr ""
 "a loro favorevole."
 
 #. [attack]: type=impact
-#: data/core/units/nagas/Guard_High.cfg:45
-#: data/core/units/nagas/Guard_Shield.cfg:43
+#: data/core/units/nagas/Guard_High.cfg:47
+#: data/core/units/nagas/Guard_Shield.cfg:47
 msgid "shield"
 msgstr "colpo di scudo"
 
@@ -7817,25 +7961,26 @@ msgid "Naga Shield Guard"
 msgstr "Naga Scudiero"
 
 #. [unit_type]: id=Naga Shield Guard, race=naga
-#: data/core/units/nagas/Guard_Shield.cfg:22
+#: data/core/units/nagas/Guard_Shield.cfg:21
 msgid ""
-"The veteran naga guards are more difficult to dislodge from their posts "
-"because of effective use of a shield in melee techniques. This tactic does "
-"nothing against ranged attacks, but the nagas can usually seek better "
-"terrain advantage in such situations."
+"The veteran naga guards have learnt a unique fighting style, different from "
+"the heavy infantry of other races. By combining the inertia of a heavy mace "
+"with the flexibility of their bodies, they can deliver a series of swift and "
+"crushing blows.\n"
+"\n"
+"This technique can be powerful given time to prepare, but is challenging to "
+"use under duress. Defensively, Shield Guards instead leverage their natural "
+"flexibility to shield themselves and bend in the direction of the blow, "
+"absorbing some of the damage. Though their small shields do little against "
+"ranged attacks, this tactic nevertheless makes them sturdy fighters in melee."
 msgstr ""
-"I veterani tra i naga guardiani sono molto difficili da scalzare dalle loro "
-"postazioni, a causa dell’efficace utilizzo di uno scudo nelle tecniche di "
-"lotta in mischia. Queste tattiche non sono molto efficaci contro attacchi da "
-"lontano, ma in questi casi i naga solitamente cercano di sfruttare i "
-"vantaggi di un terreno a loro favorevole."
 
-#. [unit_type]: id=Naga Myrmidon, race=naga
+#. [unit_type]: id=Naga Myrmidon, race=naga, gender=male,female
 #: data/core/units/nagas/Myrmidon.cfg:4
 msgid "Naga Myrmidon"
 msgstr "Naga Mirmidone"
 
-#. [unit_type]: id=Naga Myrmidon, race=naga
+#. [unit_type]: id=Naga Myrmidon, race=naga, gender=male,female
 #: data/core/units/nagas/Myrmidon.cfg:20
 msgid ""
 "The most practiced of the naga blademasters are initiated into the caste of "
@@ -7850,12 +7995,12 @@ msgstr ""
 "Non solo sono potenti nemici in campo aperto, ma la loro abilità nel nuoto "
 "li rende mortalmente veloci nell’acqua."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/nagas/Myrmidon.cfg:48
 msgid "Nagini Myrmidon"
 msgstr "Nagini Mirmidone"
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/nagas/Myrmidon.cfg:50
 msgid ""
 "The most practiced of the nagini blademasters are initiated into the caste "
@@ -7870,12 +8015,12 @@ msgstr ""
 "Non solo sono potenti nemiche in campo aperto, ma la loro abilità nel nuoto "
 "le rende mortalmente veloci nell’acqua."
 
-#. [unit_type]: id=Naga Ophidian, race=naga
+#. [unit_type]: id=Naga Ophidian, race=naga, gender=male,female
 #: data/core/units/nagas/Ophidian.cfg:4
 msgid "Naga Ophidian"
 msgstr "Naga Serpentino"
 
-#. [unit_type]: id=Naga Ophidian, race=naga
+#. [unit_type]: id=Naga Ophidian, race=naga, gender=male,female
 #: data/core/units/nagas/Ophidian.cfg:18
 msgid ""
 "Experienced warriors of the Southern Naga often find work as mercenaries, "
@@ -7891,7 +8036,7 @@ msgid ""
 "encourage a healthy amount of competition among the surface factions, "
 "ensuring their services are valued by one tribe or another."
 msgstr ""
-"I guerrieri esperti dei Naga Meridionali spesso trovano lavoro come "
+"I guerrieri esperti dei naga meridionali spesso trovano lavoro come "
 "mercenari, solitamente assunti dai vicini del Popolo delle Dune per "
 "controllare i corsi d’acqua chiave vicino alla costa. A causa dei loro "
 "continui confronti con i cavalieri nemici, i Serpentini hanno riposto le "
@@ -7912,21 +8057,21 @@ msgid "curved blade"
 msgstr "lama curva"
 
 #. [attack]: type=pierce
-#: data/core/units/nagas/Ophidian.cfg:36 data/core/units/nagas/Sicarius.cfg:41
+#: data/core/units/nagas/Ophidian.cfg:36
 msgid "jarid"
 msgstr "jarid"
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/nagas/Ophidian.cfg:91
 msgid "Nagini Ophidian"
 msgstr "Nagini Serpentina"
 
-#. [unit_type]: id=Naga Ringcaster, race=naga
+#. [unit_type]: id=Naga Ringcaster, race=naga, gender=male,female
 #: data/core/units/nagas/Ringcaster.cfg:4
 msgid "Naga Ringcaster"
 msgstr "Naga Lancianelli"
 
-#. [unit_type]: id=Naga Ringcaster, race=naga
+#. [unit_type]: id=Naga Ringcaster, race=naga, gender=male,female
 #: data/core/units/nagas/Ringcaster.cfg:18
 msgid ""
 "The chakram, a greater blade ring than the chakri, is the signature weapon "
@@ -7948,17 +8093,17 @@ msgstr ""
 msgid "chakram"
 msgstr "chakram"
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/nagas/Ringcaster.cfg:104
 msgid "Nagini Ringcaster"
 msgstr "Nagini Lancianelli"
 
-#. [unit_type]: id=Naga Sicarius, race=naga
+#. [unit_type]: id=Naga Sicarius, race=naga, gender=male,female
 #: data/core/units/nagas/Sicarius.cfg:4
 msgid "Naga Sicarius"
 msgstr "Naga Sicario"
 
-#. [unit_type]: id=Naga Sicarius, race=naga
+#. [unit_type]: id=Naga Sicarius, race=naga, gender=male,female
 #: data/core/units/nagas/Sicarius.cfg:19
 msgid ""
 "While they sometimes still stand in as sellswords for potential Dunefolk "
@@ -7976,11 +8121,11 @@ msgid ""
 "blade to deflect or distract at the critical moment."
 msgstr ""
 "Anche se a volte continuano a fungere da mercenari per potenziali alleati "
-"del Popolo delle Dune, i Naga Sicari sono più spesso i custodi di rotte "
+"del Popolo delle Dune, i naga sicari sono più spesso i custodi di rotte "
 "commerciali e giacimenti di risorse vicino ai corsi d’acqua. Per il giusto "
 "compenso o cambio merce, un Sicario garantirà viaggi sicuri o libero accesso "
 "a forniture di valore nel suo territorio. Preso nel modo sbagliato, un "
-"Sicario diventa un temibile nemico, non tanto per la sua personale forza in "
+"sicario diventa un temibile nemico, non tanto per la sua personale forza in "
 "combattimento, ma piuttosto a causa dei numerosi alleati a cui può fare "
 "appello per reprimere qualsiasi potenziale seccatore. Sebbene guerrieri "
 "perfettamente capaci qualora il contesto lo richieda, questi mercenari "
@@ -7990,17 +8135,22 @@ msgstr ""
 "molti attacchi nemici e utilizzare la loro pesante lama ricurva per deviare "
 "o sviare un attacco nel momento critico."
 
-#. [female]
-#: data/core/units/nagas/Sicarius.cfg:95
+#. [attack]: type=pierce
+#: data/core/units/nagas/Sicarius.cfg:40
+msgid "trishula"
+msgstr ""
+
+#. [female]: gender=female
+#: data/core/units/nagas/Sicarius.cfg:94
 msgid "Nagini Sicarius"
 msgstr "Nagini Sicaria"
 
-#. [unit_type]: id=Naga Warrior, race=naga
+#. [unit_type]: id=Naga Warrior, race=naga, gender=male,female
 #: data/core/units/nagas/Warrior.cfg:4
 msgid "Naga Warrior"
 msgstr "Naga Guerriero"
 
-#. [unit_type]: id=Naga Warrior, race=naga
+#. [unit_type]: id=Naga Warrior, race=naga, gender=male,female
 #: data/core/units/nagas/Warrior.cfg:18
 msgid ""
 "The young warriors of the naga aspire to the day when they merit their "
@@ -8017,12 +8167,12 @@ msgstr ""
 "zigzagando per schivare i colpi. Ciò li rende potenti sulla terra, ma la "
 "resistenza dovuta all’acqua ostacola enormemente l’impiego di tale tecnica."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/nagas/Warrior.cfg:46
 msgid "Nagini Warrior"
 msgstr "Nagini Guerriera"
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/nagas/Warrior.cfg:48
 msgid ""
 "Many of the young warriors of the nagini aspire for the day when they merit "
@@ -8039,12 +8189,12 @@ msgstr ""
 "zigzagando per schivare i colpi. Ciò le rende potenti sulla terra, ma la "
 "resistenza dovuta all’acqua ostacola enormemente l’impiego di tale tecnica."
 
-#. [unit_type]: id=Naga Zephyr, race=naga
+#. [unit_type]: id=Naga Zephyr, race=naga, gender=male,female
 #: data/core/units/nagas/Zephyr.cfg:4
 msgid "Naga Zephyr"
 msgstr "Naga Zefiro"
 
-#. [unit_type]: id=Naga Zephyr, race=naga
+#. [unit_type]: id=Naga Zephyr, race=naga, gender=male,female
 #: data/core/units/nagas/Zephyr.cfg:19
 msgid ""
 "The Southern Naga commonly recount a curious story about the Wind Spirit, "
@@ -8082,28 +8232,28 @@ msgid ""
 "blades fly.\n"
 "\n"
 "While the old tales drive the elite warriors of this legacy to focus on the "
-"thrown blade, this doesn't mean they are weak in melee combat, as the "
+"thrown blade, this doesn’t mean they are weak in melee combat, as the "
 "unbalanced chakram can be enhanced with spikes and smaller blades.\n"
 msgstr ""
-"I Naga meridionali raccontano comunemente una curiosa storia che narra di "
+"I naga meridionali raccontano comunemente una curiosa storia che narra di "
 "Zefra, lo Spirito del Vento, e del chakram etereo:\n"
 "\n"
 "C’era una volta, tanto tempo fa, un lanciatore di chakram che possedeva "
-"abilità leggendarie. Si diceva che potesse fendere anche i mai con una "
+"abilità leggendarie. Si diceva che potesse fendere anche i mari con una "
 "raffica di lame, che potesse abbattere cento nemici prima che uno solo "
 "riuscisse a sfiorarlo, e a deviare mille frecce senza essere colpito. "
-"Rispondeva al nome di Xylrix, ed era un guerriero la cui arroganza era "
-"grande tanto quanto il suo talento. Era sempre più che disposto a vantarsi "
-"delle sue abilità con chiunque lo guardasse. Poi, un giorno, mentre si "
-"pavoneggiava davanti ad un gruppo di giovani Nagini, scelse come suo "
-"bersaglio un albero sacro ad Allnai.\n"
+"Rispondeva al nome di Xylrix, la tempesta, ed era un guerriero la cui "
+"arroganza era grande tanto quanto il suo talento. Era sempre più che "
+"disposto a vantarsi delle sue abilità con chiunque lo guardasse. Poi, un "
+"giorno, mentre si pavoneggiava davanti ad un gruppo di giovani nagini, "
+"scelse come suo bersaglio un albero sacro ad Allnai.\n"
 "\n"
-"\"Guardate\", urlò, e divise l’albero in due.\n"
+"\"Guardate\", urlò, e spaccò l’albero in due.\n"
 "\n"
 "In quell’istante, fu circondato da un forte vento e la voce dello Spirito "
 "del Vento gli riecheggiò nelle orecchie: \"Ti ritieni potente per aver "
 "ucciso la mia sfortunata prole? Anche se possiedi del talento, nessun "
-"mortale dovrebbe farsi beffe delle divinità che lo guidano.\"\n"
+"mortale dovrebbe farsi beffe delle divinità che li guidano.\"\n"
 "\n"
 "Lui ribatté: ’Vieni, spirito. Non sono spaventato. Nessuna arma, acciaio, "
 "acqua o vento resisterà ai miei anelli.\"\n"
@@ -8117,15 +8267,15 @@ msgstr ""
 "\n"
 "Così come era apparsa, la tempesta scomparve improvvisamente, lasciando "
 "Xylrix a contemplare le sue armi spezzate. Quando finalmente tornò a casa, "
-"molti giorni dopo, annunciò il suo nuovo nome: Zefiro, un guerriero che "
-"server il Vento sul quale volano le sue lame.\n"
+"molti giorni dopo, annunciò il suo nuovo nome: Zefiro, un guerriero "
+"servitore del Vento sul quale volano le sue lame.\n"
 "\n"
 "Sebbene gli antichi racconti spingano i guerrieri elitari seguaci di questa "
 "disciplina a concentrarsi sul lancio delle lame, questo non significa che "
 "siano deboli nel corpo a corpo, poiché il chakram sbilanciato può essere "
 "migliorato con punte e lame più piccole.\n"
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/nagas/Zephyr.cfg:111
 msgid "Nagini Zephyr"
 msgstr "Nagini Zefiro"
@@ -8156,11 +8306,11 @@ msgstr "Giovane Ogre"
 #. [unit_type]: id=Young Ogre, race=ogre
 #: data/core/units/ogres/Young_Ogre.cfg:23
 msgid ""
-"When still young, Ogres are sometimes captured and taken into armies to be "
+"When still young, ogres are sometimes captured and taken into armies to be "
 "trained. They cannot manage weapons skillfully, but they compensate for that "
 "lack with great strength."
 msgstr ""
-"Ancora in giovane età, gli ogre vengono talvolta catturati e inseriti "
+"Quando capita che vengano catturati da giovani, gli ogre sono inseriti "
 "nell’esercito per ricevere un addestramento. Pur non essendo in grado di "
 "maneggiare con abilità le armi, compensano questa mancanza con la loro "
 "grande forza."
@@ -8312,7 +8462,7 @@ msgstr ""
 "miglior offerente. Quando l’accordo è stato concluso e le provviste "
 "necessarie ottenute, l’assassino colpisce rapidamente e silenziosamente il "
 "suo bersaglio, eliminandolo silenziosamente sotto la copertura "
-"dell’oscurità. Un contratto con una Lamaoscura è quasi sempre una condanna a "
+"dell’oscurità. Un contratto con una lamaoscura è quasi sempre una condanna a "
 "morte per la vittima, il che rende tale competenza degna del suo alto prezzo."
 
 #. [attack]: type=blade
@@ -8352,7 +8502,7 @@ msgstr ""
 
 #. [attack]: type=blade
 #: data/core/units/orcs/Ruler.cfg:27 data/core/units/orcs/Sovereign.cfg:28
-#: data/core/units/orcs/Warlord.cfg:24 data/core/units/orcs/Warrior.cfg:38
+#: data/core/units/orcs/Warlord.cfg:30 data/core/units/orcs/Warrior.cfg:38
 msgid "greatsword"
 msgstr "spadone"
 
@@ -8511,12 +8661,12 @@ msgstr ""
 "combattenti, che mancano dell’addestramento e della finezza per utilizzare "
 "strategie più complesse."
 
-#. [unit_type]: id=Saurian Ambusher, race=lizard
+#. [unit_type]: id=Saurian Ambusher, race=lizard, gender=female
 #: data/core/units/saurians/Ambusher.cfg:4
 msgid "female^Saurian Ambusher"
 msgstr "Saura Imboscatrice"
 
-#. [unit_type]: id=Saurian Ambusher, race=lizard
+#. [unit_type]: id=Saurian Ambusher, race=lizard, gender=female
 #: data/core/units/saurians/Ambusher.cfg:18
 msgid ""
 "Saurians are light on their feet, and able at navigating terrain that often "
@@ -8553,12 +8703,12 @@ msgstr ""
 "quanto poco comprese, esse sono giustamente temute da coloro contro i quali "
 "vengono usate."
 
-#. [unit_type]: id=Saurian Flanker, race=lizard
+#. [unit_type]: id=Saurian Flanker, race=lizard, gender=female
 #: data/core/units/saurians/Flanker.cfg:4
 msgid "female^Saurian Flanker"
 msgstr "Saura Affiancatrice"
 
-#. [unit_type]: id=Saurian Flanker, race=lizard
+#. [unit_type]: id=Saurian Flanker, race=lizard, gender=female
 #: data/core/units/saurians/Flanker.cfg:19
 msgid ""
 "Saurian warriors are generally weaker in frame than their elven or human "
@@ -8574,12 +8724,12 @@ msgstr ""
 "battaglia, poiché un nemico imprudente può trovarsi ben presto con le "
 "proprie truppe di supporto circondate da queste creature."
 
-#. [unit_type]: id=Saurian Javelineer, race=lizard
+#. [unit_type]: id=Saurian Javelineer, race=lizard, gender=female
 #: data/core/units/saurians/Javelineer.cfg:4
 msgid "female^Saurian Javelineer"
 msgstr "Saura Giavellottiere"
 
-#. [unit_type]: id=Saurian Javelineer, race=lizard
+#. [unit_type]: id=Saurian Javelineer, race=lizard, gender=female
 #: data/core/units/saurians/Javelineer.cfg:19
 msgid ""
 "After years of combat practice, saurians warriors that are the most talented "
@@ -8614,12 +8764,12 @@ msgstr ""
 "strana magia posseduta dalla loro razza: sono quindi da trattare con "
 "prudenza in caso di incontro."
 
-#. [unit_type]: id=Saurian Prophet, race=lizard
+#. [unit_type]: id=Saurian Prophet, race=lizard, gender=male
 #: data/core/units/saurians/Prophet.cfg:4
 msgid "Saurian Prophet"
 msgstr "Sauro Profeta"
 
-#. [unit_type]: id=Saurian Prophet, race=lizard
+#. [unit_type]: id=Saurian Prophet, race=lizard, gender=male
 #: data/core/units/saurians/Prophet.cfg:19
 msgid ""
 "Certain saurians are seen dressed in arcane regalia and covered head to toe "
@@ -8654,12 +8804,12 @@ msgstr ""
 "in una sorta di arte medica, che risulta di grande aiuto quando la battaglia "
 "incombe su di loro."
 
-#. [unit_type]: id=Saurian Skirmisher, race=lizard
+#. [unit_type]: id=Saurian Skirmisher, race=lizard, gender=female
 #: data/core/units/saurians/Skirmisher.cfg:4
 msgid "female^Saurian Skirmisher"
 msgstr "Saura Assaltatrice"
 
-#. [unit_type]: id=Saurian Skirmisher, race=lizard
+#. [unit_type]: id=Saurian Skirmisher, race=lizard, gender=female
 #: data/core/units/saurians/Skirmisher.cfg:18
 msgid ""
 "Saurians are very small of frame, and though they are somewhat frail because "
@@ -8686,12 +8836,12 @@ msgstr ""
 msgid "Saurian Soothsayer"
 msgstr "Sauro Indovino"
 
-#. [unit_type]: id=Saurian Spearthrower, race=lizard
+#. [unit_type]: id=Saurian Spearthrower, race=lizard, gender=female
 #: data/core/units/saurians/Spearthrower.cfg:4
 msgid "female^Saurian Spearthrower"
 msgstr "Saura Lanciera"
 
-#. [unit_type]: id=Saurian Spearthrower, race=lizard
+#. [unit_type]: id=Saurian Spearthrower, race=lizard, gender=female
 #: data/core/units/saurians/Spearthrower.cfg:18
 msgid ""
 "Some saurians with particularly good aim prefer to aid their allies from the "
@@ -8940,120 +9090,138 @@ msgstr "Formica"
 #. [variation]
 #: data/core/units/undead/Corpse_Soulless.cfg:159
 #: data/core/units/undead/Corpse_Walking.cfg:160
+msgid "wc_variation^Bug"
+msgstr "Insetto"
+
+#. [variation]
+#: data/core/units/undead/Corpse_Soulless.cfg:175
+#: data/core/units/undead/Corpse_Walking.cfg:176
+msgid "wc_variation^Cat"
+msgstr "Gatto"
+
+#. [variation]
+#: data/core/units/undead/Corpse_Soulless.cfg:191
+#: data/core/units/undead/Corpse_Walking.cfg:192
 msgid "wc_variation^Drake"
 msgstr "Drago"
 
 #. [variation]
-#: data/core/units/undead/Corpse_Soulless.cfg:174
-#: data/core/units/undead/Corpse_Walking.cfg:175
+#: data/core/units/undead/Corpse_Soulless.cfg:206
+#: data/core/units/undead/Corpse_Walking.cfg:207
 msgid "wc_variation^Dwarf"
 msgstr "Nano"
 
 #. [variation]
-#: data/core/units/undead/Corpse_Soulless.cfg:187
-#: data/core/units/undead/Corpse_Walking.cfg:188
+#: data/core/units/undead/Corpse_Soulless.cfg:219
+#: data/core/units/undead/Corpse_Walking.cfg:220
 msgid "wc_variation^Falcon"
 msgstr "Falcone"
 
 #. [variation]
-#: data/core/units/undead/Corpse_Soulless.cfg:222
-#: data/core/units/undead/Corpse_Walking.cfg:223
+#: data/core/units/undead/Corpse_Soulless.cfg:254
+#: data/core/units/undead/Corpse_Walking.cfg:255
+msgid "wc_variation^Fish"
+msgstr "Pesce"
+
+#. [variation]
+#: data/core/units/undead/Corpse_Soulless.cfg:275
+#: data/core/units/undead/Corpse_Walking.cfg:276
 msgid "wc_variation^Goblin"
 msgstr "Goblin"
 
 #. [variation]
-#: data/core/units/undead/Corpse_Soulless.cfg:232
-#: data/core/units/undead/Corpse_Walking.cfg:256
+#: data/core/units/undead/Corpse_Soulless.cfg:285
+#: data/core/units/undead/Corpse_Walking.cfg:309
 msgid "wc_variation^Horse"
 msgstr "Cavallo"
 
 #. [variation]
-#: data/core/units/undead/Corpse_Soulless.cfg:241
-#: data/core/units/undead/Corpse_Walking.cfg:265
+#: data/core/units/undead/Corpse_Soulless.cfg:294
+#: data/core/units/undead/Corpse_Walking.cfg:318
 msgid "wc_variation^Mounted"
 msgstr "a Cavallo"
 
 #. [variation]
-#: data/core/units/undead/Corpse_Soulless.cfg:250
-#: data/core/units/undead/Corpse_Walking.cfg:274
+#: data/core/units/undead/Corpse_Soulless.cfg:303
+#: data/core/units/undead/Corpse_Walking.cfg:327
 msgid "wc_variation^Beast-Rider"
 msgstr "Cavalcabestie"
 
 #. [variation]
-#: data/core/units/undead/Corpse_Soulless.cfg:259
-#: data/core/units/undead/Corpse_Walking.cfg:233
+#: data/core/units/undead/Corpse_Soulless.cfg:312
+#: data/core/units/undead/Corpse_Walking.cfg:286
 msgid "wc_variation^Gryphon"
 msgstr "Grifone"
 
 #. [variation]
-#: data/core/units/undead/Corpse_Soulless.cfg:282
-#: data/core/units/undead/Corpse_Walking.cfg:283
+#: data/core/units/undead/Corpse_Soulless.cfg:335
+#: data/core/units/undead/Corpse_Walking.cfg:336
 msgid "wc_variation^Rat"
 msgstr "Ratto"
 
 #. [variation]
-#: data/core/units/undead/Corpse_Soulless.cfg:299
-#: data/core/units/undead/Corpse_Walking.cfg:300
+#: data/core/units/undead/Corpse_Soulless.cfg:352
+#: data/core/units/undead/Corpse_Walking.cfg:353
 msgid "wc_variation^Saurian"
 msgstr "Sauro"
 
 #. [variation]
-#: data/core/units/undead/Corpse_Soulless.cfg:309
-#: data/core/units/undead/Corpse_Walking.cfg:310
+#: data/core/units/undead/Corpse_Soulless.cfg:362
+#: data/core/units/undead/Corpse_Walking.cfg:363
 msgid "wc_variation^Scorpion"
 msgstr "Scorpione"
 
 #. [variation]
-#: data/core/units/undead/Corpse_Soulless.cfg:327
-#: data/core/units/undead/Corpse_Walking.cfg:328
+#: data/core/units/undead/Corpse_Soulless.cfg:380
+#: data/core/units/undead/Corpse_Walking.cfg:381
 msgid "wc_variation^Scuttler"
 msgstr "Orrido"
 
 #. [variation]
-#: data/core/units/undead/Corpse_Soulless.cfg:336
-#: data/core/units/undead/Corpse_Walking.cfg:337
+#: data/core/units/undead/Corpse_Soulless.cfg:389
+#: data/core/units/undead/Corpse_Walking.cfg:390
 msgid "wc_variation^Spider"
 msgstr "Aracnide"
 
 #. [variation]
-#: data/core/units/undead/Corpse_Soulless.cfg:345
-#: data/core/units/undead/Corpse_Walking.cfg:346
+#: data/core/units/undead/Corpse_Soulless.cfg:398
+#: data/core/units/undead/Corpse_Walking.cfg:399
 msgid "wc_variation^Serpent"
 msgstr "Serpente"
 
 #. [variation]
-#: data/core/units/undead/Corpse_Soulless.cfg:364
-#: data/core/units/undead/Corpse_Walking.cfg:365
+#: data/core/units/undead/Corpse_Soulless.cfg:417
+#: data/core/units/undead/Corpse_Walking.cfg:418
 msgid "wc_variation^Swimmer"
 msgstr "Acquatico"
 
 #. [variation]
-#: data/core/units/undead/Corpse_Soulless.cfg:382
-#: data/core/units/undead/Corpse_Walking.cfg:383
+#: data/core/units/undead/Corpse_Soulless.cfg:435
+#: data/core/units/undead/Corpse_Walking.cfg:436
 msgid "wc_variation^Troll"
 msgstr "Troll"
 
 #. [variation]
-#: data/core/units/undead/Corpse_Soulless.cfg:391
-#: data/core/units/undead/Corpse_Walking.cfg:392
+#: data/core/units/undead/Corpse_Soulless.cfg:444
+#: data/core/units/undead/Corpse_Walking.cfg:445
 msgid "wc_variation^Boar"
 msgstr "Cinghiale"
 
 #. [variation]
-#: data/core/units/undead/Corpse_Soulless.cfg:404
-#: data/core/units/undead/Corpse_Walking.cfg:405
+#: data/core/units/undead/Corpse_Soulless.cfg:457
+#: data/core/units/undead/Corpse_Walking.cfg:458
 msgid "wc_variation^Wose"
 msgstr "Wose"
 
 #. [variation]
-#: data/core/units/undead/Corpse_Soulless.cfg:416
-#: data/core/units/undead/Corpse_Walking.cfg:417
+#: data/core/units/undead/Corpse_Soulless.cfg:469
+#: data/core/units/undead/Corpse_Walking.cfg:470
 msgid "wc_variation^Wolf"
 msgstr "Lupo"
 
 #. [variation]
-#: data/core/units/undead/Corpse_Soulless.cfg:429
-#: data/core/units/undead/Corpse_Walking.cfg:430
+#: data/core/units/undead/Corpse_Soulless.cfg:482
+#: data/core/units/undead/Corpse_Walking.cfg:483
 msgid "wc_variation^Bat"
 msgstr "Pipistrello"
 
@@ -9081,12 +9249,12 @@ msgstr ""
 "dai più valorosi tra gli eroi se l’ascesa di un lich antico non ha fatto "
 "sprofondare il mondo nelle tenebre fino alla fine dei tempi."
 
-#. [unit_type]: id=Dark Adept, race=human
+#. [unit_type]: id=Dark Adept, gender=male,female, race=human
 #: data/core/units/undead/Necro_Dark_Adept.cfg:4
 msgid "Dark Adept"
 msgstr "Adepto dell’Oscurità"
 
-#. [unit_type]: id=Dark Adept, race=human
+#. [unit_type]: id=Dark Adept, gender=male,female, race=human
 #: data/core/units/undead/Necro_Dark_Adept.cfg:22
 msgid ""
 "To attract any practitioners, the lure of black magic must be a great prize "
@@ -9111,17 +9279,17 @@ msgstr ""
 "In tali condizioni, la loro unica arma è l’arte che si sono a tal punto "
 "impegnati ad apprendere."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/undead/Necro_Dark_Adept.cfg:160
 msgid "female^Dark Adept"
 msgstr "Adepta dell’Oscurità"
 
-#. [unit_type]: id=Dark Sorcerer, race=human
+#. [unit_type]: id=Dark Sorcerer, gender=male,female, race=human
 #: data/core/units/undead/Necro_Dark_Sorcerer.cfg:4
 msgid "Dark Sorcerer"
 msgstr "Mago Oscuro"
 
-#. [unit_type]: id=Dark Sorcerer, race=human
+#. [unit_type]: id=Dark Sorcerer, gender=male,female, race=human
 #: data/core/units/undead/Necro_Dark_Sorcerer.cfg:18
 msgid ""
 "The dread inspired by black magic is enhanced by the secrecy and fell rumors "
@@ -9158,12 +9326,12 @@ msgstr ""
 "qualsiasi tiranno si sogna, allettante per chi nutre anche solo il minimo "
 "desiderio di potere."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/undead/Necro_Dark_Sorcerer.cfg:145
 msgid "Dark Sorceress"
 msgstr "Maga Oscura"
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/undead/Necro_Dark_Sorcerer.cfg:149
 msgid ""
 "The dread inspired by black magic comes chiefly from how little is known "
@@ -9231,7 +9399,7 @@ msgstr ""
 "semplice fatto che si possa sollevare una tale questione testimonia la "
 "grandezza di ciò che il loro ordine ha ottenuto."
 
-#. [unit_type]: id=Necromancer, race=human
+#. [unit_type]: id=Necromancer, gender=male,female, race=human
 #: data/core/units/undead/Necromancer.cfg:22
 msgid ""
 "One of the pinnacles of what is considered ‘black magic’ is the art of "
@@ -9251,7 +9419,7 @@ msgstr ""
 "Quest’abilità è, sotto tutti gli aspetti, il primo passo verso la "
 "sottrazione alla morte del suo pedaggio finale."
 
-#. [female]
+#. [female]: gender=female
 #: data/core/units/undead/Necromancer.cfg:152
 msgid "female^Necromancer"
 msgstr "Negromante"
@@ -9282,7 +9450,7 @@ msgid "Bone Knight"
 msgstr "Cavaliere d’ossa"
 
 #. [unit_type]: id=Bone Knight, race=undead
-#: data/core/units/undead/Skele_Bone_Knight.cfg:45
+#: data/core/units/undead/Skele_Bone_Knight.cfg:60
 msgid ""
 "Once great warriors across the plains, these mounted riders atop their "
 "skeletal horses were raised from the ground by unholy magic to spread fear "
@@ -9291,11 +9459,6 @@ msgstr ""
 "Conosciuti un tempo come grandi guerrieri delle pianure, questi cavalieri in "
 "sella alle loro scheletriche cavalcature sono stati evocati dalle loro tombe "
 "da una empio rituale magico, al solo scopo di spargere terrore e distruzione."
-
-#. [attack]: type=impact
-#: data/core/units/undead/Skele_Bone_Knight.cfg:62
-msgid "trample"
-msgstr "calpestamento"
 
 #. [unit_type]: id=Bone Shooter, race=undead
 #: data/core/units/undead/Skele_Bone_Shooter.cfg:4
@@ -9484,7 +9647,7 @@ msgid "Skeleton Rider"
 msgstr "Scheletro Cavaliere"
 
 #. [unit_type]: id=Skeleton Rider, race=undead
-#: data/core/units/undead/Skeleton_Rider.cfg:45
+#: data/core/units/undead/Skeleton_Rider.cfg:79
 msgid ""
 "Once great warriors thundering across the plains, these mounted riders atop "
 "their skeletal horses were raised from the grave by unholy magic to spread "
@@ -9726,6 +9889,42 @@ msgid ""
 msgstr ""
 "Questi wose sono in grado di controllare le piante delle foreste, possono "
 "quindi ostacolare i loro nemici con viticci e rampicanti."
+
+#~ msgid "swamp lurk"
+#~ msgstr "agguato nella palude"
+
+#~ msgid "female^swamp lurk"
+#~ msgstr "agguato nella palude"
+
+#~ msgid ""
+#~ "This unit can hide in swamp, and remain undetected by its enemies.\n"
+#~ "\n"
+#~ "Enemy units cannot see this unit while it is in swamp, except if they "
+#~ "have units next to it. Any enemy unit that first discovers this unit "
+#~ "immediately loses all its remaining movement."
+#~ msgstr ""
+#~ "Questa unità può nascondersi nella palude e non essere rilevata dai suoi "
+#~ "nemici.\n"
+#~ "\n"
+#~ "Le unità nemiche non possono vedere questa unità mentre si trova nella "
+#~ "palude, a meno che un esagono a loro adiacente. Qualsiasi unità nemica "
+#~ "che scopre per prima questa unità perde immediatamente tutto il suo "
+#~ "movimento rimanente."
+
+#~ msgid ""
+#~ "The veteran naga guards are more difficult to dislodge from their posts "
+#~ "because of effective use of a shield in melee techniques. This tactic "
+#~ "does nothing against ranged attacks, but the nagas can usually seek "
+#~ "better terrain advantage in such situations."
+#~ msgstr ""
+#~ "I veterani tra i naga guardiani sono molto difficili da scalzare dalle "
+#~ "loro postazioni, a causa dell’efficace utilizzo di uno scudo nelle "
+#~ "tecniche di lotta in mischia. Queste tattiche non sono molto efficaci "
+#~ "contro attacchi da lontano, ma in questi casi i naga solitamente cercano "
+#~ "di sfruttare i vantaggi di un terreno a loro favorevole."
+
+#~ msgid "gossamer"
+#~ msgstr "ragnatela"
 
 #~ msgid ""
 #~ "Far from human cities in the great desert mountains, the large birds of "
