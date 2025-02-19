@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2003 - 2023
+	Copyright (C) 2003 - 2025
 	by David White <dave@whitevine.net>
 	Copyright (C) 2013 - 2015 by Iris Morelle <shadowm2006@gmail.com>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
@@ -66,13 +66,11 @@ std::string format_addon_feedback_url(const std::string& format, const config& p
 	if(!format.empty() && !params.empty()) {
 		plain_string_map escaped;
 
-		config::const_attr_itors attrs = params.attribute_range();
-
 		// Percent-encode parameter values for URL interpolation. This is
 		// VERY important since otherwise people could e.g. alter query
 		// strings from the format string.
-		for(const config::attribute& a : attrs) {
-			escaped[a.first] = utils::urlencode(a.second.str());
+		for(const auto& [key, value] : params.attribute_range()) {
+			escaped[key] = utils::urlencode(value.str());
 		}
 
 		// FIXME: We cannot use utils::interpolate_variables_into_string
@@ -96,7 +94,7 @@ std::string format_addon_feedback_url(const std::string& format, const config& p
 void support_translation(config& addon, const std::string& locale_id)
 {
 	config* locale = addon.find_child("translation", "language", locale_id).ptr();
-	if(locale) {
+	if(!locale) {
 		locale = &addon.add_child("translation");
 		(*locale)["language"] = locale_id;
 	}
@@ -107,7 +105,7 @@ void find_translations(const config& base_dir, config& addon)
 {
 	for(const config& file : base_dir.child_range("file")) {
 		const std::string& fn = file["name"].str();
-		if(filesystem::ends_with(fn, ".po")) {
+		if(boost::algorithm::ends_with(fn, ".po")) {
 			support_translation(addon, filesystem::base_name(fn, true));
 		}
 	}
@@ -191,7 +189,7 @@ void data_apply_addlist(config& data, const config& addlist)
 
 	for(const config& dir : addlist.child_range("dir")) {
 		config* data_dir = data.find_child("dir", "name", dir["name"]).ptr();
-		if(data_dir) {
+		if(!data_dir) {
 			data_dir = &data.add_child("dir");
 			(*data_dir)["name"] = dir["name"];
 		}

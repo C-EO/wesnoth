@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2010 - 2023
+	Copyright (C) 2010 - 2025
 	by Jody Northup
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
@@ -24,7 +24,6 @@
 #include "resources.hpp"
 #include "variable.hpp"
 
-#include <cassert>
 
 //TODO: remove LOG_PERSIST, ERR_PERSIST from persist_context.hpp to .cpp files.
 #define DBG_PERSIST LOG_STREAM(debug, log_persist)
@@ -171,7 +170,7 @@ void verify_and_set_global_variable(const vconfig &pcfg)
 	}
 	if (resources::controller->is_networked_mp()) {
 		config::attribute_value pcfg_side = pcfg["side"];
-		int side = pcfg_side;
+		int side = pcfg_side.to_int();
 		//Check side matching only if the side is not "global" or empty.
 		if (pcfg_side.str() != "global" && !pcfg_side.empty()) {
 			//Ensure that the side is valid.

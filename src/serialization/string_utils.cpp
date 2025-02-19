@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2005 - 2023
+	Copyright (C) 2005 - 2025
 	by Philippe Plantier <ayin@anathas.org>
 	Copyright (C) 2005 by Guillaume Melquiond <guillaume.melquiond@gmail.com>
 	Copyright (C) 2003 by David White <dave@whitevine.net>
@@ -24,11 +24,11 @@
 #include "log.hpp"
 #include "serialization/string_utils.hpp"
 #include "serialization/unicode.hpp"
+#include "utils/charconv.hpp"
 #include "utils/general.hpp"
-#include <cassert>
 #include <array>
 #include <limits>
-#include <optional>
+#include "utils/optional_fwd.hpp"
 #include <stdexcept>
 
 #include <boost/algorithm/string.hpp>
@@ -68,7 +68,7 @@ void trim(std::string_view& s)
 		return;
 	}
 	//find_last_not_of never returns npos because !s.empty()
-	size_t first_to_trim = s.find_last_not_of(" \t\r\n") + 1;
+	std::size_t first_to_trim = s.find_last_not_of(" \t\r\n") + 1;
 	s = s.substr(0, first_to_trim);
 }
 
@@ -95,6 +95,15 @@ std::set<std::string> split_set(std::string_view s, char sep, const int flags)
 	std::set<std::string> res;
 	split_foreach(s, sep, flags, [&](std::string_view item) {
 		res.emplace(item);
+	});
+	return res;
+}
+
+std::vector<std::string_view> split_view(std::string_view s, const char sep, const int flags)
+{
+	std::vector<std::string_view> res;
+	split_foreach(s, sep, flags, [&](std::string_view item) {
+		res.push_back(item);
 	});
 	return res;
 }
@@ -299,19 +308,16 @@ std::map<std::string, std::string> map_split(
 	return res;
 }
 
-std::vector<std::string> parenthetical_split(const std::string& val,
-		const char separator, const std::string& left,
-		const std::string& right,const int flags)
+std::vector<std::string> parenthetical_split(std::string_view val,
+		const char separator, std::string_view left,
+		std::string_view right,const int flags)
 {
 	std::vector< std::string > res;
 	std::vector<char> part;
 	bool in_parenthesis = false;
 
-	std::string lp=left;
-	std::string rp=right;
-
-	std::string::const_iterator i1 = val.begin();
-	std::string::const_iterator i2;
+	std::string_view::const_iterator i1 = val.begin();
+	std::string_view::const_iterator i2;
 	if (flags & STRIP_SPACES) {
 		while (i1 != val.end() && portable_isspace(*i1))
 			++i1;
@@ -355,8 +361,8 @@ std::vector<std::string> parenthetical_split(const std::string& val,
 			continue;
 		}
 		bool found=false;
-		for(std::size_t i=0; i < lp.size(); i++){
-			if (*i2 == lp[i]){
+		for(std::size_t i=0; i < left.size(); i++){
+			if (*i2 == left[i]){
 				if (!separator && part.empty()){
 					std::string new_val(i1, i2);
 					if (flags & STRIP_SPACES)
@@ -367,7 +373,7 @@ std::vector<std::string> parenthetical_split(const std::string& val,
 				}else{
 					++i2;
 				}
-				part.push_back(rp[i]);
+				part.push_back(right[i]);
 				found=true;
 				break;
 			}
@@ -407,14 +413,14 @@ int apply_modifier( const int number, const std::string &amount, const int minim
 	return value;
 }
 
-std::string escape(const std::string &str, const char *special_chars)
+std::string escape(std::string_view str, const char *special_chars)
 {
 	std::string::size_type pos = str.find_first_of(special_chars);
 	if (pos == std::string::npos) {
 		// Fast path, possibly involving only reference counting.
-		return str;
+		return std::string(str);
 	}
-	std::string res = str;
+	std::string res = std::string(str);
 	do {
 		res.insert(pos, 1, '\\');
 		pos = res.find_first_of(special_chars, pos + 2);
@@ -422,22 +428,22 @@ std::string escape(const std::string &str, const char *special_chars)
 	return res;
 }
 
-std::string unescape(const std::string &str)
+std::string unescape(std::string_view str)
 {
 	std::string::size_type pos = str.find('\\');
 	if (pos == std::string::npos) {
 		// Fast path, possibly involving only reference counting.
-		return str;
+		return std::string(str);
 	}
-	std::string res = str;
+	std::string res = std::string(str);
 	do {
 		res.erase(pos, 1);
 		pos = res.find('\\', pos + 1);
 	} while (pos != std::string::npos);
-	return str;
+	return res;
 }
 
-std::string urlencode(const std::string &str)
+std::string urlencode(std::string_view str)
 {
 	static const std::string nonresv_str =
 		"-."
@@ -658,7 +664,7 @@ bool word_completion(std::string& text, std::vector<std::string>& wordlist) {
 	{
 		if (word->size() < semiword.size()
 		|| !std::equal(semiword.begin(), semiword.end(), word->begin(),
-				utils::chars_equal_insensitive))
+			[](char a, char b) { return tolower(a) == tolower(b); })) // TODO: is this the right approach?
 		{
 			continue;
 		}
@@ -757,7 +763,7 @@ std::string indent(const std::string& string, std::size_t indent_size)
 		return string;
 	}
 
-	const std::string indent(indent_size, ' ');
+	std::string indent(indent_size, ' ');
 
 	if(string.empty()) {
 		return indent;
@@ -829,9 +835,9 @@ namespace
  * Internal common code for parse_range and parse_range_real.
  *
  * If str contains two elements and a separator such as "a-b", returns a and b.
- * Otherwise, returns the original string and std::nullopt.
+ * Otherwise, returns the original string and utils::nullopt.
  */
-std::pair<std::string, std::optional<std::string>> parse_range_internal_separator(const std::string& str)
+std::pair<std::string_view, utils::optional<std::string_view>> parse_range_internal_separator(std::string_view str)
 {
 	// If turning this into a list with additional options, ensure that "-" (if present) is last. Otherwise a
 	// range such as "-2..-1" might be incorrectly split as "-2..", "1".
@@ -847,11 +853,11 @@ std::pair<std::string, std::optional<std::string>> parse_range_internal_separato
 		return {str.substr(0, pos), str.substr(pos + length)};
 	}
 
-	return {str, std::nullopt};
+	return {str, utils::nullopt};
 }
 } // namespace
 
-std::pair<int, int> parse_range(const std::string& str)
+std::pair<int, int> parse_range(std::string_view str)
 {
 	auto [a, b] = parse_range_internal_separator(str);
 	std::pair<int, int> res{0, 0};
@@ -861,7 +867,7 @@ std::pair<int, int> parse_range(const std::string& str)
 			// both of those will report an invalid range.
 			res.first = std::numeric_limits<int>::min();
 		} else {
-			res.first = std::stoi(a);
+			res.first = utils::stoi(a);
 		}
 
 		if(!b) {
@@ -869,7 +875,7 @@ std::pair<int, int> parse_range(const std::string& str)
 		} else if(*b == "infinity") {
 			res.second = std::numeric_limits<int>::max();
 		} else {
-			res.second = std::stoi(*b);
+			res.second = utils::stoi(*b);
 			if(res.second < res.first) {
 				res.second = res.first;
 			}
@@ -881,7 +887,7 @@ std::pair<int, int> parse_range(const std::string& str)
 	return res;
 }
 
-std::pair<double, double> parse_range_real(const std::string& str)
+std::pair<double, double> parse_range_real(std::string_view str)
 {
 	auto [a, b] = parse_range_internal_separator(str);
 	std::pair<double, double> res{0, 0};
@@ -893,7 +899,7 @@ std::pair<double, double> parse_range_real(const std::string& str)
 				"Don't know how negative infinity is treated on this architecture");
 			res.first = -std::numeric_limits<double>::infinity();
 		} else {
-			res.first = std::stod(a);
+			res.first = utils::stod(a);
 		}
 
 		if(!b) {
@@ -901,7 +907,7 @@ std::pair<double, double> parse_range_real(const std::string& str)
 		} else if(*b == "infinity") {
 			res.second = std::numeric_limits<double>::infinity();
 		} else {
-			res.second = std::stod(*b);
+			res.second = utils::stod(*b);
 			if(res.second < res.first) {
 				res.second = res.first;
 			}

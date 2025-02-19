@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2003 - 2023
+	Copyright (C) 2003 - 2025
 	by David White <dave@whitevine.net>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
@@ -25,6 +25,7 @@
 #include "game_events/pump.hpp"
 
 #include "game_config.hpp"
+#include "game_version.hpp"
 #include "hotkey/hotkey_handler.hpp"
 #include "log.hpp"
 #include "replay_helper.hpp"

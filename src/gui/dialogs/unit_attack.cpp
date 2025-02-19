@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2010 - 2023
+	Copyright (C) 2010 - 2025
 	by Mark de Wever <koraq@xs4all.nl>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
@@ -16,22 +16,16 @@
 
 #include "gui/dialogs/unit_attack.hpp"
 
-#include "font/text_formatting.hpp"
-#include "gui/auxiliary/find_widget.hpp"
+#include "color.hpp"
 #include "gui/dialogs/attack_predictions.hpp"
 #include "gui/widgets/button.hpp"
-#include "gui/widgets/label.hpp"
-#include "gui/widgets/image.hpp"
 #include "gui/widgets/listbox.hpp"
-#include "gui/widgets/settings.hpp"
 #include "gui/widgets/unit_preview_pane.hpp"
 #include "gui/widgets/window.hpp"
 #include "game_config.hpp"
-#include "game_display.hpp"
 #include "gettext.hpp"
-#include "help/help.hpp"
 #include "language.hpp"
-#include "color.hpp"
+#include "serialization/markup.hpp"
 #include "units/unit.hpp"
 
 #include <functional>
@@ -56,26 +50,26 @@ unit_attack::unit_attack(const unit_map::iterator& attacker_itor,
 
 void unit_attack::damage_calc_callback()
 {
-	const std::size_t index = find_widget<listbox>(get_window(), "weapon_list", false).get_selected_row();
+	const std::size_t index = find_widget<listbox>("weapon_list").get_selected_row();
 	attack_predictions::display(weapons_[index], attacker_itor_.get_shared_ptr(), defender_itor_.get_shared_ptr());
 }
 
-void unit_attack::pre_show(window& window)
+void unit_attack::pre_show()
 {
 	connect_signal_mouse_left_click(
-			find_widget<button>(&window, "damage_calculation", false),
+			find_widget<button>("damage_calculation"),
 			std::bind(&unit_attack::damage_calc_callback, this));
 
-	find_widget<unit_preview_pane>(&window, "attacker_pane", false)
-		.set_displayed_unit(*attacker_itor_);
+	find_widget<unit_preview_pane>("attacker_pane")
+		.set_display_data(*attacker_itor_);
 
-	find_widget<unit_preview_pane>(&window, "defender_pane", false)
-		.set_displayed_unit(*defender_itor_);
+	find_widget<unit_preview_pane>("defender_pane")
+		.set_display_data(*defender_itor_);
 
 	selected_weapon_ = -1;
 
-	listbox& weapon_list = find_widget<listbox>(&window, "weapon_list", false);
-	window.keyboard_capture(&weapon_list);
+	listbox& weapon_list = find_widget<listbox>("weapon_list");
+	keyboard_capture(&weapon_list);
 
 	// Possible TODO: If a "blank weapon" is generally useful, add it as a static member in attack_type.
 	static const config empty;
@@ -115,23 +109,15 @@ void unit_attack::pre_show(window& window)
 			attacker_itor_->get_location(), false, attacker.weapon
 		);
 
-		std::pair<std::string, std::string> types = attacker_weapon.damage_type();
-		std::string attw_type_second = types.second;
-		std::string attw_type = !(types.first).empty() ? types.first : attacker_weapon.type();
+		std::string types = attacker_weapon.effective_damage_type().first;
+		std::string attw_type = !(types).empty() ? types : attacker_weapon.type();
 		if (!attw_type.empty()) {
 			attw_type = string_table["type_" + attw_type];
 		}
-		if (!attw_type_second.empty()) {
-			attw_type_second = ", " + string_table["type_" + attw_type_second];
-		}
-		std::pair<std::string, std::string> def_types = defender_weapon.damage_type();
-		std::string defw_type_second = def_types.second;
-		std::string defw_type = !(def_types.first).empty() ? def_types.first : defender_weapon.type();
+		std::string def_types = defender_weapon.effective_damage_type().first;
+		std::string defw_type = !(def_types).empty() ? def_types : defender_weapon.type();
 		if (!defw_type.empty()) {
 			defw_type = string_table["type_" + defw_type];
-		}
-		if (!defw_type_second.empty()) {
-			defw_type_second = ", " + string_table["type_" + defw_type_second];
 		}
 
 		const std::set<std::string> checking_tags_other = {"damage_type", "disable", "berserk", "drains", "heal_on_hit", "plague", "slow", "petrifies", "firststrike", "poison"};
@@ -160,7 +146,7 @@ void unit_attack::pre_show(window& window)
 			attw_specials_cth = " " + attw_specials_cth;
 		}
 		if(!attw_specials_others.empty()) {
-			attw_specials_others = "\n" + ("<b>" + _("Other aspects: ") + "</b>") + "\n" + ("<i>"+attw_specials_others+"</i>");
+			attw_specials_others = "\n" + markup::bold(_("Other aspects: ")) + "\n" + markup::italic(attw_specials_others);
 		}
 		if(!defw_specials.empty()) {
 			defw_specials = " " + defw_specials;
@@ -175,36 +161,37 @@ void unit_attack::pre_show(window& window)
 			defw_specials_cth = " " + defw_specials_cth;
 		}
 		if(!defw_specials_others.empty()) {
-			defw_specials_others = "\n" + ("<b>" + _("Other aspects: ") + "</b>") + "\n" + ("<i>"+defw_specials_others+"</i>");
+			defw_specials_others = "\n" + markup::bold(_("Other aspects: ")) + "\n" + markup::italic(defw_specials_others);
 		}
 
 		std::stringstream attacker_stats, defender_stats, attacker_tooltip, defender_tooltip;
 
 		// Use attacker/defender.num_blows instead of attacker/defender_weapon.num_attacks() because the latter does not consider the swarm weapon special
-		attacker_stats << "<b>" << attw_name << "</b>" << "\n"
-			<< attw_type << attw_type_second << "\n"
+		attacker_stats << markup::bold(attw_name) << "\n"
+			<< attw_type << "\n"
 			<< attacker.damage << font::weapon_numbers_sep << attacker.num_blows
 			<< attw_specials << "\n"
-			<< font::span_color(a_cth_color) << attacker.chance_to_hit << "%</span>";
+			<< markup::span_color(a_cth_color, attacker.chance_to_hit, "%");
 
-		attacker_tooltip << _("Weapon: ") << "<b>" << attw_name << "</b>" << "\n"
-			<< _("Type: ") << attw_type << attw_type_second << "\n"
-			<< _("Damage: ") << attacker.damage <<  "<i>" << attw_specials_dmg <<  "</i>" << "\n"
-			<< _("Attacks: ") << attacker.num_blows <<  "<i>" << attw_specials_atk <<  "</i>" << "\n"
-			<< _("Chance to hit: ") << font::span_color(a_cth_color) << attacker.chance_to_hit << "%</span>"<<  "<i>" << attw_specials_cth << "</i>"
-			<< attw_specials_others;
+		attacker_tooltip << _("Weapon: ") << markup::bold(attw_name) << "\n"
+			<< _("Type: ") << attw_type << "\n"
+			<< _("Damage: ") << attacker.damage << markup::italic(attw_specials_dmg) << "\n"
+			<< _("Attacks: ") << attacker.num_blows << markup::italic(attw_specials_atk) << "\n"
+			<< _("Chance to hit: ") << markup::span_color(a_cth_color, attacker.chance_to_hit, "%")
+			<< markup::italic(attw_specials_cth) << attw_specials_others;
 
-		defender_stats << "<b>" << defw_name << "</b>" << "\n"
-			<< defw_type << defw_type_second << "\n"
+		defender_stats << markup::bold(defw_name) << "\n"
+			<< defw_type << "\n"
 			<< defender.damage << font::weapon_numbers_sep << defender.num_blows
 			<< defw_specials << "\n"
-			<< font::span_color(d_cth_color) << defender.chance_to_hit << "%</span>";
+			<< markup::span_color(d_cth_color, defender.chance_to_hit, "%");
 
-		defender_tooltip << _("Weapon: ") << "<b>" << defw_name << "</b>" << "\n"
-			<< _("Type: ") << defw_type << defw_type_second << "\n"
-			<< _("Damage: ") << defender.damage << "<i>" << defw_specials_dmg << "</i>" << "\n"
-			<< _("Attacks: ") << defender.num_blows <<  "<i>" << defw_specials_atk <<  "</i>" << "\n"
-			<< _("Chance to hit: ") << font::span_color(d_cth_color) << defender.chance_to_hit << "%</span>"<<  "<i>" << defw_specials_cth << "</i>"
+		defender_tooltip << _("Weapon: ") << markup::bold(defw_name) << "\n"
+			<< _("Type: ") << defw_type << "\n"
+			<< _("Damage: ") << defender.damage << markup::italic(defw_specials_dmg) << "\n"
+			<< _("Attacks: ") << defender.num_blows <<  markup::italic(defw_specials_atk) << "\n"
+			<< _("Chance to hit: ") << markup::span_color(d_cth_color, defender.chance_to_hit, "%")
+			<< markup::italic(defw_specials_cth)
 			<< defw_specials_others;
 
 		widget_data data;
@@ -220,7 +207,7 @@ void unit_attack::pre_show(window& window)
 		data.emplace("attacker_weapon", item);
 		item["tooltip"] = "";
 
-		item["label"] = "<span color='#a69275'>" + font::unicode_em_dash + " " + range + " " + font::unicode_em_dash + "</span>";
+		item["label"] = markup::span_color("#a69275", font::unicode_em_dash, " ", range, " ", font::unicode_em_dash);
 		data.emplace("range", item);
 
 		item["tooltip"] = defender_attack ? defender_tooltip.str() : "";
@@ -241,10 +228,10 @@ void unit_attack::pre_show(window& window)
 	weapon_list.select_row(best_weapon_);
 }
 
-void unit_attack::post_show(window& window)
+void unit_attack::post_show()
 {
 	if(get_retval() == retval::OK) {
-		selected_weapon_ = find_widget<listbox>(&window, "weapon_list", false).get_selected_row();
+		selected_weapon_ = find_widget<listbox>("weapon_list").get_selected_row();
 	}
 }
 

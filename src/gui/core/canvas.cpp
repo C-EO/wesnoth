@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2007 - 2023
+	Copyright (C) 2007 - 2025
 	by Mark de Wever <koraq@xs4all.nl>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
@@ -25,12 +25,15 @@
 
 #include "draw.hpp"
 #include "draw_manager.hpp"
+#include "font/attributes.hpp"
 #include "font/text.hpp"
 #include "formatter.hpp"
 #include "gettext.hpp"
 #include "gui/auxiliary/typed_formula.hpp"
 #include "gui/core/log.hpp"
 #include "gui/widgets/helper.hpp"
+#include "font/font_config.hpp"
+#include "font/standard_colors.hpp"
 #include "picture.hpp"
 #include "sdl/point.hpp"
 #include "sdl/rect.hpp"
@@ -38,6 +41,8 @@
 #include "sdl/utils.hpp" // blur_surface
 #include "video.hpp" // read_pixels_low_res, only used for blurring
 #include "wml_exception.hpp"
+
+#include <iostream>
 
 namespace gui2
 {
@@ -51,7 +56,7 @@ line_shape::line_shape(const config& cfg)
 	, x2_(cfg["x2"])
 	, y2_(cfg["y2"])
 	, color_(cfg["color"])
-	, thickness_(cfg["thickness"])
+	, thickness_(cfg["thickness"].to_unsigned())
 {
 	const std::string& debug = (cfg["debug"]);
 	if(!debug.empty()) {
@@ -83,7 +88,7 @@ void line_shape::draw(wfl::map_formula_callable& variables)
 
 rectangle_shape::rectangle_shape(const config& cfg)
 	: rect_bounded_shape(cfg)
-	, border_thickness_(cfg["border_thickness"])
+	, border_thickness_(cfg["border_thickness"].to_int())
 	, border_color_(cfg["border_color"], color_t::null_color())
 	, fill_color_(cfg["fill_color"], color_t::null_color())
 {
@@ -100,10 +105,12 @@ rectangle_shape::rectangle_shape(const config& cfg)
 
 void rectangle_shape::draw(wfl::map_formula_callable& variables)
 {
-	const int x = x_(variables);
-	const int y = y_(variables);
-	const int w = w_(variables);
-	const int h = h_(variables);
+	const rect area {
+		x_(variables),
+		y_(variables),
+		w_(variables),
+		h_(variables)
+	};
 
 	const color_t fill_color = fill_color_(variables);
 
@@ -111,32 +118,16 @@ void rectangle_shape::draw(wfl::map_formula_callable& variables)
 	if(!fill_color.null()) {
 		DBG_GUI_D << "fill " << fill_color;
 		draw::set_color(fill_color);
-
-		const SDL_Rect area {
-			x +  border_thickness_,
-			y +  border_thickness_,
-			w - (border_thickness_ * 2),
-			h - (border_thickness_ * 2)
-		};
-
-		draw::fill(area);
+		draw::fill(area.padded_by(-border_thickness_));
 	}
 
 	const color_t border_color = border_color_(variables);
 
 	// Draw the border
 	draw::set_color(border_color);
-	DBG_GUI_D << "border thickness " << border_thickness_
-		<< ", colour " << border_color;
+	DBG_GUI_D << "border thickness " << border_thickness_ << ", colour " << border_color;
 	for(int i = 0; i < border_thickness_; ++i) {
-		const SDL_Rect dimensions {
-			x + i,
-			y + i,
-			w - (i * 2),
-			h - (i * 2)
-		};
-
-		draw::rect(dimensions);
+		draw::rect(area.padded_by(-i));
 	}
 }
 
@@ -145,7 +136,7 @@ void rectangle_shape::draw(wfl::map_formula_callable& variables)
 round_rectangle_shape::round_rectangle_shape(const config& cfg)
 	: rect_bounded_shape(cfg)
 	, r_(cfg["corner_radius"])
-	, border_thickness_(cfg["border_thickness"])
+	, border_thickness_(cfg["border_thickness"].to_int())
 	, border_color_(cfg["border_color"], color_t::null_color())
 	, fill_color_(cfg["fill_color"], color_t::null_color())
 {
@@ -270,7 +261,7 @@ void image_shape::dimension_validation(unsigned value, const std::string& name, 
 {
 	const int as_int = static_cast<int>(value);
 
-	VALIDATE_WITH_DEV_MESSAGE(as_int >= 0, _("Image doesn't fit on canvas."),
+	VALIDATE_WITH_DEV_MESSAGE(as_int >= 0, _("Image doesn’t fit on canvas."),
 		formatter() << "Image '" << name << "', " << key << " = " << as_int << "."
 	);
 }
@@ -287,7 +278,7 @@ void image_shape::draw(wfl::map_formula_callable& variables)
 	const std::string& name = image_name_(variables);
 
 	if(name.empty()) {
-		DBG_GUI_D << "Image: formula returned no value, will not be drawn.";
+		DBG_GUI_D << "Image: name is empty or contains invalid formula, will not be drawn.";
 		return;
 	}
 
@@ -325,6 +316,14 @@ void image_shape::draw(wfl::map_formula_callable& variables)
 	// used in gui/dialogs/story_viewer.cpp
 	local_variables.add("clip_x", wfl::variant(x));
 	local_variables.add("clip_y", wfl::variant(y));
+
+	if (variables.has_key("fake_draw") && variables.query_value("fake_draw").as_bool()) {
+		variables.add("image_original_width", wfl::variant(tex.w()));
+		variables.add("image_original_height", wfl::variant(tex.h()));
+		variables.add("image_width", wfl::variant(w ? w : tex.w()));
+		variables.add("image_height", wfl::variant(h ? h : tex.h()));
+		return;
+	}
 
 	// Execute the provided actions for this context.
 	wfl::variant(variables.fake_ptr()).execute_variant(actions_formula_.evaluate(local_variables));
@@ -395,10 +394,11 @@ image_shape::resize_mode image_shape::get_resize_mode(const std::string& resize_
 
 /***** ***** ***** ***** ***** TEXT ***** ***** ***** ***** *****/
 
-text_shape::text_shape(const config& cfg)
+text_shape::text_shape(const config& cfg, wfl::action_function_symbol_table& functions)
 	: rect_bounded_shape(cfg)
+	, cfg_(cfg)
 	, font_family_(font::str_to_family_class(cfg["font_family"]))
-	, font_size_(cfg["font_size"])
+	, font_size_(cfg["font_size"], font::SIZE_NORMAL)
 	, font_style_(decode_font_style(cfg["font_style"]))
 	, text_alignment_(cfg["text_alignment"])
 	, color_(cfg["color"])
@@ -407,13 +407,14 @@ text_shape::text_shape(const config& cfg)
 	, link_aware_(cfg["text_link_aware"], false)
 	, link_color_(cfg["text_link_color"], color_t::from_hex_string("ffff00"))
 	, maximum_width_(cfg["maximum_width"], -1)
-	, characters_per_line_(cfg["text_characters_per_line"])
+	, characters_per_line_(cfg["text_characters_per_line"].to_unsigned())
 	, maximum_height_(cfg["maximum_height"], -1)
+	, highlight_start_(cfg["highlight_start"])
+	, highlight_end_(cfg["highlight_end"])
+	, highlight_color_(cfg["highlight_color"], color_t::from_hex_string("215380"))
+	, outline_(cfg["outline"], false)
+	, actions_formula_(cfg["actions"], &functions)
 {
-	if(!font_size_.has_formula()) {
-		VALIDATE(font_size_(), _("Text has a font size of 0."));
-	}
-
 	const std::string& debug = (cfg["debug"]);
 	if(!debug.empty()) {
 		DBG_GUI_P << "Text: found debug message '" << debug << "'.";
@@ -427,14 +428,65 @@ void text_shape::draw(wfl::map_formula_callable& variables)
 	// We first need to determine the size of the text which need the rendered
 	// text. So resolve and render the text first and then start to resolve
 	// the other formulas.
-	const t_string text = text_(variables);
+	const t_string& text = cfg_["parse_text_as_formula"].to_bool(true) ? text_(variables) : cfg_["text"].t_str();
 
 	if(text.empty()) {
 		DBG_GUI_D << "Text: no text to render, leave.";
 		return;
 	}
 
+	font::attribute_list text_attributes;
+
+	//
+	// Highlight
+	//
+	const int highlight_start = highlight_start_(variables);
+	const int highlight_end = highlight_end_(variables);
+
+	if(highlight_start != highlight_end) {
+		add_attribute_bg_color(text_attributes, highlight_start, highlight_end, highlight_color_(variables));
+	}
+
+	//
+	// Attribute subtags
+	//
+	for (const auto& attr : cfg_.child_range("attribute")) {
+		const std::string& name = attr["name"];
+
+		if (name.empty()) {
+			continue;
+		}
+
+		const unsigned start = attr["start"].to_int(0);
+		const unsigned end = attr["end"].to_int(text.size());
+
+		if (name == "color" || name == "fgcolor" || name == "foreground") {
+			add_attribute_fg_color(text_attributes, start, end, attr["value"].empty() ? font::NORMAL_COLOR : font::string_to_color(attr["value"]));
+		} else if (name == "bgcolor" || name == "background") {
+			add_attribute_bg_color(text_attributes, start, end, attr["value"].empty() ? font::GOOD_COLOR : font::string_to_color(attr["value"]));
+		} else if (name == "font_size" || name == "size") {
+			add_attribute_size(text_attributes, start, end, attr["value"].to_int(font::SIZE_NORMAL));
+		} else if (name == "font_family" || name == "face") {
+			add_attribute_font_family(text_attributes, start, end, font::str_to_family_class(attr["value"]));
+		} else if (name == "weight") {
+			add_attribute_weight(text_attributes, start, end, decode_text_weight(attr["value"]));
+		} else if (name == "style") {
+			add_attribute_style(text_attributes, start, end, decode_text_style(attr["value"]));
+		} else if (name == "bold" || name == "b") {
+			add_attribute_weight(text_attributes, start, end, PANGO_WEIGHT_BOLD);
+		} else if (name == "italic" || name == "i") {
+			add_attribute_style(text_attributes, start, end, PANGO_STYLE_ITALIC);
+		} else if (name == "underline" || name == "u") {
+			add_attribute_underline(text_attributes, start, end, PANGO_UNDERLINE_SINGLE);
+		} else {
+			// Unsupported formatting or normal text
+			add_attribute_weight(text_attributes, start, end, PANGO_WEIGHT_NORMAL);
+			add_attribute_style(text_attributes, start, end, PANGO_STYLE_NORMAL);
+		}
+	}
+
 	font::pango_text& text_renderer = font::get_text_renderer();
+	text_renderer.clear_attributes();
 
 	text_renderer
 		.set_link_aware(link_aware_(variables))
@@ -451,7 +503,11 @@ void text_shape::draw(wfl::map_formula_callable& variables)
 		.set_ellipse_mode(variables.has_key("text_wrap_mode")
 				? static_cast<PangoEllipsizeMode>(variables.query_value("text_wrap_mode").as_int())
 				: PANGO_ELLIPSIZE_END)
-		.set_characters_per_line(characters_per_line_);
+		.set_characters_per_line(characters_per_line_)
+		.set_add_outline(outline_(variables));
+
+	// Do this last so it can merge with attributes from markup
+	text_renderer.apply_attributes(text_attributes);
 
 	wfl::map_formula_callable local_variables(variables);
 	const auto [tw, th] = text_renderer.get_size();
@@ -460,11 +516,20 @@ void text_shape::draw(wfl::map_formula_callable& variables)
 	local_variables.add("text_width", wfl::variant(tw));
 	local_variables.add("text_height", wfl::variant(th));
 
+	if (variables.has_key("fake_draw") && variables.query_value("fake_draw").as_bool()) {
+		variables.add("text_width", wfl::variant(tw));
+		variables.add("text_height", wfl::variant(th));
+		return;
+	}
+
 	const int x = x_(local_variables);
 	const int y = y_(local_variables);
 	const int w = w_(local_variables);
 	const int h = h_(local_variables);
 	rect dst_rect{x, y, w, h};
+
+	// Execute the provided actions for this context.
+	wfl::variant(variables.fake_ptr()).execute_variant(actions_formula_.evaluate(local_variables));
 
 	texture tex = text_renderer.render_and_get_texture();
 	if(!tex) {
@@ -555,7 +620,7 @@ bool canvas::update_blur(const rect& screen_region, bool force)
 	rect read_region = screen_region;
 	auto setter = draw::set_render_target({});
 	surface s = video::read_pixels_low_res(&read_region);
-	s = blur_surface(s, blur_depth_);
+	blur_surface(s, {0, 0, s->w, s->h}, blur_depth_);
 	blur_texture_ = texture(s);
 	deferred_ = false;
 	return true;
@@ -598,11 +663,8 @@ void canvas::parse_cfg(const config& cfg)
 {
 	log_scope2(log_gui_parse, "Canvas: parsing config.");
 
-	for(const auto shape : cfg.all_children_range())
+	for(const auto [type, data] : cfg.all_children_view())
 	{
-		const std::string& type = shape.key;
-		const config& data = shape.cfg;
-
 		DBG_GUI_P << "Canvas: found shape of the type " << type << ".";
 
 		if(type == "line") {
@@ -616,15 +678,14 @@ void canvas::parse_cfg(const config& cfg)
 		} else if(type == "image") {
 			shapes_.emplace_back(std::make_unique<image_shape>(data, functions_));
 		} else if(type == "text") {
-			shapes_.emplace_back(std::make_unique<text_shape>(data));
+			shapes_.emplace_back(std::make_unique<text_shape>(data, functions_));
 		} else if(type == "pre_commit") {
 
 			/* note this should get split if more preprocessing is used. */
-			for(const auto function : data.all_children_range())
+			for(const auto [func_key, func_cfg] : data.all_children_view())
 			{
-
-				if(function.key == "blur") {
-					blur_depth_ = function.cfg["depth"];
+				if(func_key == "blur") {
+					blur_depth_ = func_cfg["depth"].to_unsigned();
 				} else {
 					ERR_GUI_P << "Canvas: found a pre commit function"
 							  << " of an invalid type " << type << ".";
@@ -634,8 +695,6 @@ void canvas::parse_cfg(const config& cfg)
 		} else {
 			ERR_GUI_P << "Canvas: found a shape of an invalid type " << type
 					  << ".";
-
-			assert(false);
 		}
 	}
 }
@@ -659,10 +718,7 @@ void canvas::clear_shapes(const bool force)
 	if(force) {
 		shapes_.clear();
 	} else {
-		auto conditional = [](const std::unique_ptr<shape>& s)->bool { return !s->immutable(); };
-
-		auto iter = std::remove_if(shapes_.begin(), shapes_.end(), conditional);
-		shapes_.erase(iter, shapes_.end());
+		utils::erase_if(shapes_, [](const std::unique_ptr<shape>& s) { return !s->immutable(); });
 	}
 }
 

@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2008 - 2023
+	Copyright (C) 2008 - 2025
 	by Mark de Wever <koraq@xs4all.nl>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
@@ -19,12 +19,10 @@
 
 #include "gui/core/log.hpp"
 #include "gui/core/register_widget.hpp"
-#include "gui/widgets/settings.hpp"
 #include "gettext.hpp"
 #include "sdl/rect.hpp"
 #include "wml_exception.hpp"
 
-#include <functional>
 
 #define LOG_SCOPE_HEADER get_control_type() + " [" + id() + "] " + __func__
 #define LOG_HEADER LOG_SCOPE_HEADER + ':'
@@ -110,14 +108,14 @@ panel_definition::panel_definition(const config& cfg)
 
 panel_definition::resolution::resolution(const config& cfg)
 	: resolution_definition(cfg)
-	, top_border(cfg["top_border"])
-	, bottom_border(cfg["bottom_border"])
-	, left_border(cfg["left_border"])
-	, right_border(cfg["right_border"])
+	, top_border(cfg["top_border"].to_unsigned())
+	, bottom_border(cfg["bottom_border"].to_unsigned())
+	, left_border(cfg["left_border"].to_unsigned())
+	, right_border(cfg["right_border"].to_unsigned())
 {
 	// The panel needs to know the order.
-	state.emplace_back(VALIDATE_WML_CHILD(cfg, "background", _("Missing required background for panel definition")));
-	state.emplace_back(VALIDATE_WML_CHILD(cfg, "foreground", _("Missing required foreground for panel definition")));
+	state.emplace_back(VALIDATE_WML_CHILD(cfg, "background", missing_mandatory_wml_tag("panel_definition][resolution", "background")));
+	state.emplace_back(VALIDATE_WML_CHILD(cfg, "foreground", missing_mandatory_wml_tag("panel_definition][resolution", "foreground")));
 }
 
 // }---------- BUILDER -----------{

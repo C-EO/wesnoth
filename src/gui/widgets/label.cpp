@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2008 - 2023
+	Copyright (C) 2008 - 2025
 	by Mark de Wever <koraq@xs4all.nl>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
@@ -20,11 +20,8 @@
 #include "gui/core/log.hpp"
 
 #include "gui/core/widget_definition.hpp"
-#include "gui/core/window_builder.hpp"
 #include "gui/core/register_widget.hpp"
 #include "gui/dialogs/message.hpp"
-#include "gui/widgets/settings.hpp"
-#include "gui/widgets/window.hpp"
 
 #include "cursor.hpp"
 #include "desktop/clipboard.hpp"
@@ -34,7 +31,6 @@
 
 #include <functional>
 #include <string>
-#include <sstream>
 
 namespace gui2
 {
@@ -171,7 +167,7 @@ void label::signal_handler_right_button_click(bool& handled)
 
 	DBG_GUI_E << "Right Clicked Link:\"" << link << "\"";
 
-	desktop::clipboard::copy_to_clipboard(link, false);
+	desktop::clipboard::copy_to_clipboard(link);
 
 	(void) show_message("", _("Copied link!"), dialogs::message::auto_close);
 
@@ -238,8 +234,8 @@ label_definition::resolution::resolution(const config& cfg)
 	, link_color(cfg["link_color"].empty() ? color_t::from_hex_string("ffff00") : color_t::from_rgba_string(cfg["link_color"].str()))
 {
 	// Note the order should be the same as the enum state_t is label.hpp.
-	state.emplace_back(VALIDATE_WML_CHILD(cfg, "state_enabled", _("Missing required state for text label control")));
-	state.emplace_back(VALIDATE_WML_CHILD(cfg, "state_disabled", _("Missing required state for text label control")));
+	state.emplace_back(VALIDATE_WML_CHILD(cfg, "state_enabled", missing_mandatory_wml_tag("label_definition][resolution", "state_enabled")));
+	state.emplace_back(VALIDATE_WML_CHILD(cfg, "state_disabled", missing_mandatory_wml_tag("label_definition][resolution", "state_disabled")));
 }
 
 // }---------- BUILDER -----------{
@@ -250,7 +246,7 @@ namespace implementation
 builder_label::builder_label(const config& cfg)
 	: builder_styled_widget(cfg)
 	, wrap(cfg["wrap"].to_bool())
-	, characters_per_line(cfg["characters_per_line"])
+	, characters_per_line(cfg["characters_per_line"].to_unsigned())
 	, text_alignment(decode_text_alignment(cfg["text_alignment"]))
 	, can_shrink(cfg["can_shrink"].to_bool(false))
 	, link_aware(cfg["link_aware"].to_bool(false))

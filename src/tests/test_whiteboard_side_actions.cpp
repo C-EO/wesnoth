@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2012 - 2023
+	Copyright (C) 2012 - 2025
 	by Étienne Simon <etienne.jl.simon@gmail.com>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 

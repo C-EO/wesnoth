@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2006 - 2023
+	Copyright (C) 2006 - 2025
 	by Joerg Hinrichs <joerg.hinrichs@alice-dsl.de>
 	Copyright (C) 2003 by David White <dave@whitevine.net>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
@@ -24,13 +24,10 @@
 #include <vector>
 
 class game_state;
-class gamemap;
 class game_data;
 class game_board;
 class game_config_view;
 class play_controller;
-class team;
-class unit_map;
 class t_string;
 
 namespace events
@@ -38,8 +35,13 @@ namespace events
 class mouse_handler;
 }
 
-struct fallback_ai_to_human_exception : public lua_jailbreak_exception
+struct fallback_ai_to_human_exception final : public lua_jailbreak_exception
 {
+	fallback_ai_to_human_exception() : lua_jailbreak_exception()
+	{
+		this->store();
+	}
+
 	IMPLEMENT_LUA_JAILBREAK_EXCEPTION(fallback_ai_to_human_exception)
 };
 
@@ -111,8 +113,6 @@ public:
 			int side_num,
 			mouse_handler& mousehandler);
 
-	/** @return If the recruit is possible, an empty string and set @a recruited_from; otherwise, return an error message string. */
-	t_string can_recruit(const std::string& name, int side_num, map_location& target_hex, map_location& recruited_from);
 	/** @return Whether or not the recruit was successful */
 	bool do_recruit(const std::string& name, int side_num, map_location& target_hex);
 	void do_speak();

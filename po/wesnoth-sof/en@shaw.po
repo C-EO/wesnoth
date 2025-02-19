@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: en@shaw\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2023-10-28 14:02 UTC\n"
+"POT-Creation-Date: 2024-11-26 18:08 UTC\n"
 "PO-Revision-Date: 2009-10-13 12:15-0400\n"
 "Last-Translator: Arc Riley <arcriley@ubuntu.com>\n"
 "Language-Team: Shavian English <ubuntu-l10n-en-shaw@lists.launchpad.net>\n"
@@ -243,17 +243,29 @@ msgstr ""
 
 #. [objective]: condition=win
 #: data/campaigns/Sceptre_of_Fire/scenarios/1_A_Bargain_is_Struck.cfg:221
-msgid "Transport 5 caravans full of silver back to the dwarvish castle"
+#, fuzzy
+#| msgid "Transport 5 caravans full of silver back to the dwarvish castle"
+msgid ""
+"Transport 5 caravans full of silver to the dwarvish stronghold in the "
+"northeast corner"
 msgstr "𐑑𐑮𐑩𐑯𐑕𐑐𐑹𐑑 5 𐑒𐑨𐑮𐑩𐑝𐑨𐑯𐑟 𐑓𐑫𐑤 𐑝 𐑕𐑦𐑤𐑝𐑻 𐑚𐑨𐑒 𐑑 𐑞 𐑛𐑢𐑹𐑝𐑦𐑖 𐑒𐑨𐑕𐑩𐑤"
 
 #. [objective]: condition=win
 #: data/campaigns/Sceptre_of_Fire/scenarios/1_A_Bargain_is_Struck.cfg:223
-msgid "Transport 4 caravans full of silver back to the dwarvish castle"
+#, fuzzy
+#| msgid "Transport 4 caravans full of silver back to the dwarvish castle"
+msgid ""
+"Transport 4 caravans full of silver to the dwarvish stronghold in the "
+"northeast corner"
 msgstr "𐑑𐑮𐑩𐑯𐑕𐑐𐑹𐑑 4 𐑒𐑨𐑮𐑩𐑝𐑨𐑯𐑟 𐑓𐑫𐑤 𐑝 𐑕𐑦𐑤𐑝𐑻 𐑚𐑨𐑒 𐑑 𐑞 𐑛𐑢𐑹𐑝𐑦𐑖 𐑒𐑨𐑕𐑩𐑤"
 
 #. [objective]: condition=win
 #: data/campaigns/Sceptre_of_Fire/scenarios/1_A_Bargain_is_Struck.cfg:231
-msgid "Bring Alanin, who has the Ruby of Fire, to the dwarvish castle"
+#, fuzzy
+#| msgid "Bring Alanin, who has the Ruby of Fire, to the dwarvish castle"
+msgid ""
+"Bring Alanin, who has the Ruby of Fire, to the dwarvish stronghold in the "
+"northeast corner"
 msgstr "𐑚𐑮𐑦𐑙 ·𐑨𐑤𐑨𐑯𐑦𐑯, 𐑣𐑵 𐑣𐑨𐑟 𐑞 𐑮𐑵𐑚𐑰 𐑝 𐑓𐑲𐑼, 𐑑 𐑞 𐑛𐑢𐑹𐑝𐑦𐑖 𐑒𐑨𐑕𐑩𐑤"
 
 #. [objective]: condition=lose
@@ -831,7 +843,7 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Rugnur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:278
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:288
 #, fuzzy
 msgid ""
 "These elves are right behind me! We have to go warn the council of this "
@@ -839,18 +851,18 @@ msgid ""
 msgstr "𐑞𐑰𐑟 𐑧𐑤𐑝𐑟 𐑸 𐑮𐑲𐑑 𐑚𐑦𐑣𐑲𐑯𐑛 𐑥𐑰! 𐑢𐑰 𐑣𐑨𐑝 𐑑 𐑜𐑴 𐑢𐑹𐑯 𐑞 𐑒𐑬𐑯𐑕𐑩𐑤 𐑝 𐑞𐑦𐑕 𐑩𐑑𐑨𐑒!..."
 
 #. [message]: speaker=Alanin
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:282
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:292
 #, fuzzy
 msgid "Here — I’ll go warn the council. You stay here and fight."
 msgstr "𐑣𐑽 - 𐑲'𐑤 𐑜𐑴 𐑢𐑹𐑯 𐑞 𐑒𐑬𐑯𐑕𐑩𐑤. 𐑿 𐑕𐑑𐑱 𐑣𐑽 𐑯 𐑓𐑲𐑑."
 
 #. [message]: speaker=Rugnur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:286
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:296
 msgid "Yes, that sounds good. I’ll stay here and try to defend the gates..."
 msgstr "𐑘𐑧𐑕, 𐑞𐑨𐑑 𐑕𐑬𐑯𐑛𐑟 𐑜𐑫𐑛. 𐑲'𐑤 𐑕𐑑𐑱 𐑣𐑽 𐑯 𐑑𐑮𐑲 𐑑 𐑛𐑦𐑓𐑧𐑯𐑛 𐑞 𐑜𐑱𐑑𐑕..."
 
 #. [message]: speaker=Glildur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:298
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:309
 msgid ""
 "I see you have sent a messenger to the city. Good idea, but will it really "
 "help? We have more troops and more provisions, and we are going to enter "
@@ -860,32 +872,32 @@ msgstr ""
 "𐑑𐑮𐑵𐑐𐑕 𐑯 𐑥𐑹 𐑐𐑮𐑩𐑝𐑦𐑠𐑩𐑯𐑟, 𐑯 𐑢𐑰 𐑸 𐑜𐑴𐑦𐑙 𐑑 𐑧𐑯𐑑𐑼 𐑞𐑴𐑟 𐑒𐑱𐑝𐑟 𐑯 𐑒𐑦𐑤 𐑿!"
 
 #. [message]: speaker=Rugnur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:303
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:314
 msgid "(<i>Gulp</i>)"
 msgstr ""
 
 #. [message]: speaker=Glildur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:307
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:318
 msgid "Ha! I thought as much. Well then, surrender!"
 msgstr "𐑣𐑭! 𐑲 𐑔𐑷𐑑 𐑨𐑟 𐑥𐑳𐑗. 𐑢𐑧𐑤 𐑞𐑧𐑯, 𐑕𐑻𐑧𐑯𐑛𐑻!"
 
 #. [message]: speaker=Rugnur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:311
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:322
 msgid "Um... on what terms?"
 msgstr "𐑩𐑥... 𐑪𐑯 𐑢𐑪𐑑 𐑑𐑻𐑥𐑟?"
 
 #. [message]: speaker=Glildur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:315
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:326
 msgid "Unconditional."
 msgstr "𐑩𐑯𐑒𐑩𐑯𐑛𐑦𐑖𐑩𐑯𐑩𐑤."
 
 #. [unit]: type=Dwarvish Stalwart, id=Baglur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:331
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:342
 msgid "Baglur"
 msgstr "·𐑚𐑨𐑜𐑤𐑻"
 
 #. [message]: speaker=Baglur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:347
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:358
 #, fuzzy
 msgid ""
 "Wait! Rugnur, dinna’ they tell you <i>anything</i> when you took command "
@@ -893,12 +905,12 @@ msgid ""
 msgstr "𐑢𐑱𐑑! ·𐑮𐑳𐑜𐑯𐑻, 𐑛𐑦𐑯𐑯𐑩' 𐑞𐑱 𐑑𐑧𐑤 𐑿 <i>anything</i> 𐑢𐑧𐑯 𐑿 𐑑𐑫𐑒 𐑒𐑩𐑥𐑭𐑯𐑛 𐑣𐑽?!?"
 
 #. [message]: speaker=Rugnur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:351
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:362
 msgid "Not really. This was supposedly a time of peace. Who are you?"
 msgstr "𐑯𐑪𐑑 𐑮𐑾𐑤𐑦. 𐑞𐑦𐑕 𐑢𐑪𐑟 𐑕𐑩𐑐𐑴𐑟𐑩𐑛𐑤𐑰 𐑩 𐑑𐑲𐑥 𐑝 𐑐𐑰𐑕. 𐑣𐑵 𐑸 𐑿?"
 
 #. [message]: speaker=Baglur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:355
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:366
 #, fuzzy
 #| msgid ""
 #| "Argh! I’m a retired warrior... it looks like I’ll ha’ to come out and "
@@ -919,7 +931,7 @@ msgstr ""
 "𐑧𐑤𐑝𐑟; 𐑚𐑰𐑜𐑪𐑯 𐑓𐑮𐑪𐑥 𐑣𐑽!"
 
 #. [message]: speaker=Glildur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:359
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:370
 msgid ""
 "Cease your meddling, old dwarf! Rugnur is in charge here, and it is he who "
 "will bargain with us."
@@ -928,12 +940,12 @@ msgstr ""
 "𐑳𐑕."
 
 #. [message]: speaker=Rugnur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:363
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:374
 msgid "Baglur, how do you close the gates?"
 msgstr "·𐑚𐑨𐑜𐑤𐑻, 𐑣𐑬 𐑛𐑵 𐑿 𐑒𐑤𐑴𐑟 𐑞 𐑜𐑱𐑑𐑕?"
 
 #. [message]: speaker=Baglur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:367
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:378
 msgid ""
 "Och, well that’s the difficulty. It’s a magic gate. Indestructible. But that "
 "means it can only be closed by magic. Ye need to position a warrior on each "
@@ -946,12 +958,12 @@ msgstr ""
 "𐑨𐑑 𐑤𐑰𐑕𐑑 𐑔𐑮𐑵 𐑞𐑦𐑕 𐑧𐑯𐑑𐑮𐑩𐑯𐑕."
 
 #. [message]: speaker=Rugnur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:371
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:382
 msgid "Don’t we have troops positioned near these glyphs, to unlock them?"
 msgstr "𐑛𐑴𐑯𐑑 𐑢𐑰 𐑣𐑨𐑝 𐑑𐑮𐑵𐑐𐑕 𐑐𐑩𐑟𐑦𐑖𐑩𐑯𐑛 𐑯𐑽 𐑞𐑰𐑟 ·𐑜𐑤𐑦𐑓𐑕, 𐑑 𐑩𐑯𐑤𐑭𐑒 𐑞𐑧𐑥?"
 
 #. [message]: speaker=Baglur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:375
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:386
 #, fuzzy
 #| msgid ""
 #| "Och, well, no. Lately trolls have been more in charge of those caves "
@@ -964,12 +976,12 @@ msgstr ""
 "𐑛𐑢𐑹𐑝𐑟 𐑣𐑨𐑝."
 
 #. [message]: speaker=Rugnur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:379
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:390
 msgid "Well, where are they located?"
 msgstr "𐑢𐑧𐑤, 𐑢𐑺 𐑸 𐑞𐑱 𐑤𐑴𐑒𐑱𐑑𐑩𐑛?"
 
 #. [message]: speaker=Baglur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:383
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:394
 msgid ""
 "Two are down a side passage in the northwest, another two are in a similar "
 "location in the southeast, and two are right next to the front gate."
@@ -978,7 +990,7 @@ msgstr ""
 "𐑕𐑬𐑔𐑰𐑕𐑑, 𐑯 𐑑𐑵 𐑸 𐑮𐑲𐑑 𐑯𐑧𐑒𐑕𐑑 𐑑 𐑞 𐑓𐑮𐑳𐑯𐑑 𐑜𐑱𐑑."
 
 #. [message]: speaker=Glildur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:387
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:398
 #, fuzzy
 msgid ""
 "Have you made up your mind yet about surrendering? If you will not give up, "
@@ -987,7 +999,7 @@ msgstr ""
 "𐑣𐑨𐑝 𐑿 𐑥𐑱𐑛 𐑳𐑐 𐑿𐑼 𐑥𐑲𐑯𐑛 𐑘𐑧𐑑 𐑩𐑚𐑬𐑑 𐑕𐑻𐑧𐑯𐑛𐑻𐑦𐑙?! 𐑦𐑓 𐑿 𐑢𐑦𐑤 𐑯𐑪𐑑 𐑜𐑦𐑝 𐑳𐑐, 𐑐𐑮𐑰𐑐𐑺 𐑓𐑹 𐑚𐑨𐑑𐑩𐑤!"
 
 #. [message]: speaker=Rugnur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:392
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:403
 #, fuzzy
 msgid ""
 "You may be more powerful than us, but I doubt even you can blast through "
@@ -997,7 +1009,7 @@ msgstr ""
 "stonecraft. 𐑢𐑰 𐑮𐑩𐑓𐑿𐑟 - 𐑯𐑬 𐑤𐑧𐑑'𐑕 𐑒𐑤𐑴𐑟 𐑞𐑰𐑟 𐑜𐑱𐑑𐑕!"
 
 #. [message]: speaker=unit
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:508
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:519
 msgid ""
 "But what about this entrance? The elves can come through it just as easily "
 "as the main gate, and it cannot be closed!"
@@ -1007,7 +1019,7 @@ msgstr ""
 
 #. [message]: speaker=Baglur
 #. "it" is a side entrance of a dwarven fortress
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:513
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:524
 #, fuzzy
 #| msgid ""
 #| "I think it can be sealed up somehow... Yes, look, activating that glyph "
@@ -1020,12 +1032,12 @@ msgstr ""
 "𐑒𐑤𐑴𐑟𐑛 𐑳𐑐 𐑞 𐑜𐑨𐑐."
 
 #. [message]: speaker=Rugnur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:556
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:567
 msgid "We have everyone positioned on the glyphs! What do we do now?"
 msgstr "𐑢𐑰 𐑣𐑨𐑝 𐑧𐑝𐑮𐑰𐑢𐑳𐑯 𐑐𐑩𐑟𐑦𐑖𐑩𐑯𐑛 𐑪𐑯 𐑞 ·𐑜𐑤𐑦𐑓𐑕! 𐑢𐑪𐑑 𐑛𐑵 𐑢𐑰 𐑛𐑵 𐑯𐑬?"
 
 #. [message]: speaker=Baglur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:568
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:579
 #, fuzzy
 msgid ""
 "Just watch. The gates wi’ close very soon. Then the elves outside — and, "
@@ -1036,7 +1048,7 @@ msgstr ""
 
 #. [message]: speaker=Baglur
 #. all the dwarves are inside, although there might still be some elves inside too
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:575
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:586
 #, fuzzy
 msgid ""
 "Just watch. The gates wi’ close very soon. Then the elves outside wi’ become "
@@ -1046,7 +1058,7 @@ msgstr ""
 "𐑛𐑢𐑹𐑝𐑟 𐑣𐑵 𐑸 𐑕𐑑𐑦𐑤 𐑬𐑑 𐑞𐑺 - 𐑢𐑦' 𐑚𐑦𐑒𐑳𐑥 𐑽𐑧𐑤𐑩𐑝𐑩𐑯𐑑."
 
 #. [message]: speaker=Glildur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:610
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:621
 #, fuzzy
 msgid ""
 "Agh! Well, you have defeated me for now, but eventually you will have to "
@@ -1057,14 +1069,14 @@ msgstr ""
 "𐑑 𐑜𐑦𐑝 ·𐑣𐑭𐑤𐑛𐑮𐑦𐑒 𐑚𐑨𐑒 𐑣𐑦𐑟 𐑡𐑵𐑩𐑤. 𐑯 𐑢𐑧𐑯 𐑿 𐑛𐑵, 𐑢𐑰 𐑢𐑦𐑤 𐑚𐑰 𐑮𐑧𐑛𐑦 𐑓𐑹 𐑿."
 
 #. [message]: speaker=Baglur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:614
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:625
 msgid ""
 "If that is what ye choose to do, fine, but be prepared to wait for many "
 "years."
 msgstr "𐑦𐑓 𐑞𐑨𐑑 𐑦𐑟 𐑢𐑪𐑑 𐑘𐑰 𐑗𐑵𐑟 𐑑 𐑛𐑵, 𐑓𐑲𐑯, 𐑚𐑳𐑑 𐑚𐑰 𐑐𐑮𐑦𐑐𐑺𐑛 𐑑 𐑢𐑱𐑑 𐑓𐑹 𐑥𐑧𐑯𐑦 𐑘𐑽𐑟."
 
 #. [message]: speaker=Rugnur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:649
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:660
 #, fuzzy
 #| msgid ""
 #| "There are still some elves left in here. We have to eliminate them, too, "
@@ -1076,22 +1088,22 @@ msgstr ""
 "𐑞𐑺 𐑸 𐑕𐑑𐑦𐑤 𐑕𐑳𐑥 𐑧𐑤𐑝𐑟 𐑤𐑧𐑓𐑑 𐑦𐑯 𐑣𐑽. 𐑢𐑰 𐑣𐑨𐑝 𐑑 𐑩𐑤𐑦𐑥𐑦𐑯𐑱𐑑 𐑞𐑧𐑥, 𐑑𐑵, 𐑳𐑯𐑤𐑧𐑕 𐑞𐑱 𐑕𐑻𐑧𐑯𐑛𐑻."
 
 #. [message]
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:653
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:664
 msgid "You would have us be cowards! We do not surrender."
 msgstr "𐑿 𐑢𐑫𐑛 𐑣𐑨𐑝 𐑳𐑕 𐑚𐑰 𐑒𐑬𐑻𐑛𐑟! 𐑢𐑰 𐑛𐑵 𐑯𐑪𐑑 𐑕𐑻𐑧𐑯𐑛𐑻."
 
 #. [message]: speaker=Rugnur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:662
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:673
 msgid "Well, now I should go down to the city and report. I’m late already..."
 msgstr "𐑢𐑧𐑤, 𐑯𐑬 𐑲 𐑖𐑫𐑛 𐑜𐑴 𐑛𐑬𐑯 𐑑 𐑞 𐑕𐑦𐑑𐑦 𐑯 𐑮𐑩𐑐𐑹𐑑. 𐑲'𐑧𐑥 𐑤𐑱𐑑 𐑷𐑤𐑮𐑧𐑛𐑦..."
 
 #. [message]: speaker=unit
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:675
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:686
 msgid "My glyph is on."
 msgstr "𐑥𐑲 ·𐑜𐑤𐑦𐑓 𐑦𐑟 𐑪𐑯."
 
 #. [message]: speaker=Rugnur
-#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:762
+#: data/campaigns/Sceptre_of_Fire/scenarios/2_Closing_the_Gates.cfg:770
 #, fuzzy
 msgid ""
 "That’s all of the elves. Now I should go down to the city and report. I’m "
@@ -3417,11 +3429,16 @@ msgstr ""
 
 #. [message]: speaker=Rugnur
 #: data/campaigns/Sceptre_of_Fire/scenarios/6_Towards_the_Caves.cfg:457
+#, fuzzy
+#| msgid ""
+#| "The country between here and Knalga will be swarming with elves. We had "
+#| "better head back to the abandoned mines north of the Arkan-thoria, where "
+#| "we gathered our gold and coal. At least there Alanin will have some hope "
+#| "of finding us."
 msgid ""
 "The country between here and Knalga will be swarming with elves. We had "
 "better head back to the abandoned mines north of the Arkan-thoria, where we "
-"gathered our gold and coal. At least there Alanin will have some hope of "
-"finding us."
+"gathered our gold and coal."
 msgstr ""
 "𐑞 𐑒𐑳𐑯𐑑𐑮𐑰 𐑚𐑦𐑑𐑢𐑰𐑯 𐑣𐑽 𐑯 𐑯𐑭𐑤𐑜𐑳 𐑢𐑦𐑤 𐑚𐑰 𐑕𐑢𐑹𐑥𐑦𐑙 𐑢𐑦𐑞 𐑧𐑤𐑝𐑟. 𐑢𐑰 𐑣𐑨𐑛 𐑚𐑧𐑑𐑼 𐑣𐑧𐑛 𐑚𐑨𐑒 𐑑 𐑞 "
 "𐑩𐑚𐑨𐑯𐑛𐑩𐑯𐑛 𐑥𐑲𐑯𐑟 𐑯𐑹𐑔 𐑝 𐑞 ·𐑸𐑒𐑩𐑯-·𐑔𐑹𐑰𐑩, 𐑢𐑺 𐑢𐑰 𐑜𐑨𐑞𐑼𐑛 𐑬𐑼 𐑜𐑴𐑤𐑛 𐑯 𐑒𐑴𐑤. 𐑨𐑑 𐑤𐑰𐑕𐑑 𐑞𐑺 "
@@ -3687,7 +3704,7 @@ msgstr ""
 
 #. [message]: id=Alanin
 #: data/campaigns/Sceptre_of_Fire/scenarios/7_Outriding_the_Outriders.cfg:278
-msgid "Oh no, more of them? And there I thought I could catch my breath…"
+msgid "Oh no, more of them? And there I thought I could catch my breath..."
 msgstr ""
 
 #. [message]: role=fighter
@@ -4074,7 +4091,7 @@ msgstr ""
 
 #. [unit]: id=Gathor, type=Orcish Warrior
 #: data/campaigns/Sceptre_of_Fire/scenarios/9_Caverns_of_Flame.cfg:116
-msgid "Bar'Gathor"
+msgid "Bar’Gathor"
 msgstr ""
 
 #. [side]: type=Troll Warrior, id=Harohk
@@ -4916,16 +4933,16 @@ msgstr ""
 #. [attack]: type=blade
 #: data/campaigns/Sceptre_of_Fire/units/Cave_Wyrm.cfg:78
 #: data/campaigns/Sceptre_of_Fire/units/Cave_Wyrmlet.cfg:76
-#: data/campaigns/Sceptre_of_Fire/units/Red_Wyrm.cfg:82
-#: data/campaigns/Sceptre_of_Fire/units/Red_Wyrmlet.cfg:81
+#: data/campaigns/Sceptre_of_Fire/units/Red_Wyrm.cfg:91
+#: data/campaigns/Sceptre_of_Fire/units/Red_Wyrmlet.cfg:90
 msgid "fangs"
 msgstr ""
 
 #. [attack]: type=fire
 #: data/campaigns/Sceptre_of_Fire/units/Cave_Wyrm.cfg:87
 #: data/campaigns/Sceptre_of_Fire/units/Cave_Wyrmlet.cfg:85
-#: data/campaigns/Sceptre_of_Fire/units/Red_Wyrm.cfg:91
-#: data/campaigns/Sceptre_of_Fire/units/Red_Wyrmlet.cfg:90
+#: data/campaigns/Sceptre_of_Fire/units/Red_Wyrm.cfg:100
+#: data/campaigns/Sceptre_of_Fire/units/Red_Wyrmlet.cfg:99
 msgid "breath"
 msgstr ""
 
@@ -4953,12 +4970,12 @@ msgid "King of Wesnoth."
 msgstr "𐑒𐑦𐑙 𐑝 ·𐑢𐑧𐑕𐑯𐑷𐑔."
 
 #. [unit_type]: id=Red Wyrm, race=monster
-#: data/campaigns/Sceptre_of_Fire/units/Red_Wyrm.cfg:8
+#: data/campaigns/Sceptre_of_Fire/units/Red_Wyrm.cfg:17
 msgid "Red Wyrm"
 msgstr ""
 
 #. [unit_type]: id=Red Wyrm, race=monster
-#: data/campaigns/Sceptre_of_Fire/units/Red_Wyrm.cfg:23
+#: data/campaigns/Sceptre_of_Fire/units/Red_Wyrm.cfg:32
 msgid ""
 "Red Wyrms are strange beasts, stout serpents with wings, but no legs. Their "
 "skin is red and rock-like, impervious to fire but more brittle than regular "
@@ -4969,12 +4986,12 @@ msgid ""
 msgstr ""
 
 #. [unit_type]: id=Red Wyrmlet, race=monster
-#: data/campaigns/Sceptre_of_Fire/units/Red_Wyrmlet.cfg:8
+#: data/campaigns/Sceptre_of_Fire/units/Red_Wyrmlet.cfg:17
 msgid "Red Wyrmlet"
 msgstr ""
 
 #. [unit_type]: id=Red Wyrmlet, race=monster
-#: data/campaigns/Sceptre_of_Fire/units/Red_Wyrmlet.cfg:22
+#: data/campaigns/Sceptre_of_Fire/units/Red_Wyrmlet.cfg:31
 msgid ""
 "Red Wyrms are strange beasts, stout serpents with wings, but no legs, and "
 "their skin is like some reddish rock. The rocky skin seems to protect them "

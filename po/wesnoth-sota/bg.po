@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2023-05-21 03:01 UTC\n"
-"PO-Revision-Date: 2021-12-13 16:38+0200\n"
+"POT-Creation-Date: 2024-08-19 04:10 UTC\n"
+"PO-Revision-Date: 2024-04-24 19:10+0300\n"
 "Last-Translator: Ivan Petrov <vankata_petrov@abv.bg>\n"
 "Language-Team: \n"
 "Language: bg\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #. [campaign]: id=Secrets of the Ancients
 #. [editor_group]: id=sota
@@ -63,12 +63,6 @@ msgstr "Трудна"
 
 #. [campaign]: id=Secrets of the Ancients
 #: data/campaigns/Secrets_of_the_Ancients/_main.cfg:22
-#, fuzzy
-#| msgid ""
-#| "Rediscover the secrets known by the lich lords of the Green Isle. They "
-#| "knew how to live forever, so why can't you?\n"
-#| "\n"
-#| "(Hard level, 18 scenarios.)\n"
 msgid ""
 "Rediscover the secrets known by the lich lords of the Green Isle. They knew "
 "how to live forever, so why can’t you?\n"
@@ -76,7 +70,7 @@ msgid ""
 "(Hard level, 18 scenarios.)\n"
 msgstr ""
 "Разкрийте тайните, известни на великите личове от Зеленият остров. Те са "
-"знаели как да живеят вечно, а защо вие не?\n"
+"знаели как да живеят вечно, а защо не и вие?\n"
 "\n"
 "(Трудна степен, с 18 мисии)\n"
 
@@ -359,16 +353,12 @@ msgstr ""
 
 #. [message]: speaker=Ardonna
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/01_Slipping_Away.cfg:343
-#, fuzzy
-#| msgid ""
-#| "A wolf! This journey may be more dangerous than I thought. If we need to, "
-#| "I suppose we could rest inside a farmer's or woodcutter's fence."
 msgid ""
 "A wolf! This journey may be more dangerous than I thought. If we need to, I "
 "suppose we could rest inside a farmer’s or woodcutter’s fence."
 msgstr ""
 "Вълк! Това пътуване ще се окаже по-опасно от очакваното. Ако се налага, мога "
-"да се скрия зад оградата на някой фермер или дървосекач."
+"да си почина зад оградата на някой фермер или дървосекач."
 
 #. [message]: speaker=Ardonna
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/01_Slipping_Away.cfg:366
@@ -418,8 +408,6 @@ msgstr "Съживяване на Скелет-стрелец (14 злато)"
 
 #. [message]: speaker=narrator
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:159
-#, fuzzy
-#| msgid "You don't have enough gold to raise that unit."
 msgid "You don’t have enough gold to raise that unit."
 msgstr "Нямате достатъчно злато, за да съживите тази единица."
 
@@ -494,88 +482,80 @@ msgstr "Карадок"
 
 #. [message]: speaker=Ardonna
 #. She's speaking to a bat from scenario 1
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:397
-#, fuzzy
-#| msgid "Oh, hello friend! I didn't know you were hiding in there."
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:399
 msgid "Oh, hello friend! I didn’t know you were hiding in there."
 msgstr "О, здравей, приятелю! Не знаех, че се криеш там."
 
 #. [message]: speaker=Ardonna
 #. She's speaking to a bat that she hasn't met before
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:404
-#, fuzzy
-#| msgid "Oh, hello! You're a handsome one."
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:406
 msgid "Oh, hello! You’re a handsome one."
 msgstr "О, здравей! Ти си хубавец."
 
 #. [message]: speaker=Ardonna
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:421
-#, fuzzy
-#| msgid "Hey, come back! I didn't mean to frighten you."
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:423
 msgid "Hey, come back! I didn’t mean to frighten you."
-msgstr "Хей, добре дошъл! Не исках да те изплаша."
+msgstr "Хей, върни се! Не исках да те изплаша."
 
 #. [message]: speaker=Ardonna
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:425
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:427
 msgid "Maybe I could attract it if I jingled some coins."
 msgstr "Може звукът на дрънчащи монети да го привлече."
 
 #. [message]: speaker=narrator
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:448
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:450
 msgid "Right-click adjacent to your leader to summon the bat."
 msgstr "Натиснете с дясно копче до водача си, за да призовете прилепа."
 
 #. [set_menu_item]: id=summon_bat
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:456
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:458
 msgid "Summon the Bat (20 gold)"
 msgstr "Призоваване на Прилеп (20 жълтици)"
 
 #. [message]: speaker=narrator
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:496
-#, fuzzy
-#| msgid "You don't have enough gold to summon the bat."
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:498
 msgid "You don’t have enough gold to summon the bat."
 msgstr "Нямате достатъчно злато за призоваване на прилеп."
 
 #. [message]: speaker=narrator
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:578
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:580
 msgid ""
 "You can now recruit skeletons and skeleton archers! You will lose this "
 "ability if the guardhouse is retaken by the guards!"
 msgstr ""
 
 #. [event]
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:632
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:634
 msgid "Blollyn"
 msgstr "Блолин"
 
 #. [event]
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:633
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:635
 msgid "Ceoran"
 msgstr "Кеоран"
 
 #. [event]
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:635
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:637
 msgid "Vindry"
 msgstr "Виндри"
 
 #. [event]
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:636
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:638
 msgid "Aethacyn"
 msgstr "Аетачин"
 
 #. [event]
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:637
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:639
 msgid "Elomyr"
 msgstr "Еломил"
 
 #. [message]: speaker=narrator
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:667
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:669
 msgid "You can no longer recruit skeletons and skeleton archers."
 msgstr "Вече не можете да наемате скелети и скелети-стрелци."
 
 #. [message]: speaker=Ardonna
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:729
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:731
 msgid ""
 "Wait, that guard said there were twelve of them, so where are the other five?"
 msgstr ""
@@ -583,19 +563,19 @@ msgstr ""
 "петима?"
 
 #. [message]: speaker=Ardonna
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:731
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:733
 msgid ""
 "Wait, that guard said there were seven of them, so where are the other two?"
 msgstr ""
 "Чакай, онзи пазач каза, че са седем човека, тогава къде са другите двама?"
 
 #. [message]: speaker=Syrillin
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:750
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:752
 msgid "Why are we stuck guarding a cemetery all night?"
 msgstr "Защо ни накараха да пазим това гробище цяла нощ?"
 
 #. [message]: speaker=Veomyr
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:756
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:758
 msgid ""
 "And why <i>twelve</i> of us? Who wants to break into a cemetery that badly?"
 msgstr ""
@@ -603,14 +583,14 @@ msgstr ""
 "гробище?"
 
 #. [message]: speaker=Veomyr
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:758
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:760
 msgid ""
 "And why <i>seven</i> of us? Who wants to break into a cemetery that badly?"
 msgstr ""
 "И защо сме <i>седмина</i>? На кой ще му е толкова зор да нахълта в гробище?"
 
 #. [message]: speaker=Glant
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:763
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:765
 #, fuzzy
 #| msgid ""
 #| "I don’t know, but this evening a mage from the academy was here talking "
@@ -623,14 +603,14 @@ msgstr ""
 "бъбрел с кмета."
 
 #. [message]: speaker=Caradoc
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:767
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:769
 msgid "Well <i>I</i> say you shouldn’t question orders, so pipe down."
 msgstr ""
 "Е, <i>аз</i> казвам, че не трябва да поставяте под въпрос заповедите си, "
 "така че млъквайте."
 
 #. [message]: speaker=Ardonna
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:806
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:808
 msgid ""
 "They must be guarding the cemetery from <i>me</i>! Maybe Aimucasur really "
 "was suspicious. It’s a good thing I’m here already, but how am I going to "
@@ -644,53 +624,53 @@ msgstr ""
 "Добре, нека изпробвам експеримента си и после ще мисля за останалото."
 
 #. [message]: speaker=Ardonna
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:839
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:841
 msgid "Hello?"
 msgstr "Ехо?"
 
 #. [message]: speaker=first_zombie
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:844
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:846
 msgid "Uhngh."
 msgstr "Ъннгх."
 
 #. [message]: speaker=Ardonna
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:848
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:850
 msgid "Do you remember anything?"
 msgstr "Спомняш ли си нещо?"
 
 #. [message]: speaker=first_zombie
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:853
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:855
 msgid "Uhrrr."
 msgstr "Ъхррр."
 
 #. [message]: speaker=Ardonna
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:857
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:859
 msgid ""
 "It seems that my first guess was correct. The poor creature is mindless."
 msgstr "Изглежда, че бях права. Горкото създание е безмозъчно."
 
 #. [message]: speaker=Veomyr
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:871
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:873
 msgid "I heard something over there!"
 msgstr "Чух нещо там!"
 
 #. [message]: speaker=Glant
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:881
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:883
 msgid "Who’s there?"
 msgstr "Кой е там?"
 
 #. [message]: speaker=Ardonna
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:902
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:904
 msgid "It’s only me. Is the cemetery closed then? I was about to leave."
 msgstr "Само аз. Гробището затворено ли е? Тъкмо си тръгвах."
 
 #. [message]: speaker=Syrillin
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:906
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:908
 msgid "You and that... other person. Who is that?"
 msgstr "Ти и... онзи човек. Кой е това?"
 
 #. [message]: speaker=Ardonna
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:910
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:912
 #, fuzzy
 #| msgid ""
 #| "Oh, him. See here, I don't want any trouble, but he is a little... ah..."
@@ -701,7 +681,7 @@ msgstr ""
 "малко... ами..."
 
 #. [message]: speaker=Caradoc
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:914
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:916
 #, fuzzy
 #| msgid ""
 #| "He's <i>dead</i>! This is dark sorcery like in my granddad’s time in the "
@@ -714,14 +694,14 @@ msgstr ""
 "старата страна! Наказанието е смърт. Убийте ги и двамата!"
 
 #. [message]: speaker=Ardonna
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:918
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:920
 #, fuzzy
 #| msgid "Hey! Don't do that, or I will need more of them."
 msgid "Hey! Don’t do that, or I will need more of them."
 msgstr "Хей! Не правете това, иначе ще повикам още."
 
 #. [message]: speaker=Ardonna
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:922
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:924
 msgid ""
 "I would do better if I had weapons, and I bet I can find some in the "
 "guardhouse. Go take it, my companions."
@@ -730,12 +710,12 @@ msgstr ""
 "Вземете ги, другари мои."
 
 #. [message]: speaker=Caradoc
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:926
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:928
 msgid "Gwyllin, don’t move from that guardhouse."
 msgstr "Гуелин, да не си мръднал от кулата."
 
 #. [message]: speaker=Ardonna
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:935
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/02_Dark_Business.cfg:937
 msgid ""
 "The morning has come, and we have not escaped the city. We will be caught "
 "for sure!"
@@ -777,7 +757,7 @@ msgstr ""
 msgid "Garcyn"
 msgstr "Гарсин"
 
-#. [unit]: type=Outlaw, id=Mossa
+#. [unit]: type=Outlaw, gender=female, id=Mossa
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/03_Bandits.cfg:48
 msgid "Mossa"
 msgstr "Моса"
@@ -1058,6 +1038,8 @@ msgid ""
 "Player and Enemy units can move between the surface and the interior of the "
 "ship via stairs."
 msgstr ""
+"Приятелски и противникови единици могат да се движат между повърхността и "
+"вътрешността на кораба посредством стълбите."
 
 #. [note]
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/04_Becalmed.cfg:266
@@ -1218,7 +1200,7 @@ msgstr "Стража"
 msgid "Gweddyn"
 msgstr "Гуедин"
 
-#. [unit]: type=Mage, id=Bremen
+#. [unit]: type=Mage, gender=male, id=Bremen
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/05_Blackwater.cfg:75
 msgid "Bremen"
 msgstr "Бремен"
@@ -1450,12 +1432,12 @@ msgstr ""
 
 #. [message]: speaker=Ardonna
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/06_Following_the_Shadow.cfg:254
-#, fuzzy
-#| msgid "If there is one bat, there are certainly more. We should be careful."
 msgid ""
 "If there is one bat, there are certainly more. We should be careful. It "
 "would be foolish to explore this cave alone."
-msgstr "Щом сме срещнали един прилеп, ще има и още. Да внимаваме."
+msgstr ""
+"Щом сме срещнали един прилеп, ще има и още. Да внимаваме. Би било глупаво да "
+"изследваш пещерата сам.."
 
 #. [message]: speaker=Ardonna
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/06_Following_the_Shadow.cfg:276
@@ -1491,10 +1473,6 @@ msgstr "Да го последваме в пещерата."
 
 #. [message]: speaker=Blaust
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/06_Following_the_Shadow.cfg:571
-#, fuzzy
-#| msgid ""
-#| "I don’t know, Bogdush. The chief said he wanted stuff that was helpful "
-#| "for the war."
 msgid ""
 "I don’t know, Bogdush. The Chief said he wanted stuff that was helpful for "
 "the war."
@@ -1812,7 +1790,7 @@ msgstr "Завладейте всички селища"
 msgid "Wynran"
 msgstr "Винран"
 
-#. [unit]: type=Mage, id=Raydah
+#. [unit]: type=Mage, id=Raydah, gender=female
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/08_Carcyn.cfg:105
 msgid "Raydah"
 msgstr "Райда"
@@ -2175,8 +2153,6 @@ msgstr "Тук има големи кости. Виждам нокти и кри
 
 #. [message]: speaker=$other_human
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/10_Merfolk_Revenge.cfg:186
-#, fuzzy
-#| msgid "How odd. I wonder what are they from. A gryphon perhaps?"
 msgid "How odd. I wonder what they are from. A gryphon perhaps?"
 msgstr "Странно. От какво ли са? От грифон, може би?"
 
@@ -2197,9 +2173,6 @@ msgstr "Така е. Нека разберем."
 
 #. [message]: speaker=Ras-Tabahn
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/10_Merfolk_Revenge.cfg:204
-#, fuzzy
-#| msgid ""
-#| "I wonder what are they from. A large flightless bird perhaps? Let us see."
 msgid ""
 "I wonder what they are from. A large flightless bird perhaps? Let us see."
 msgstr "От какво ли са? Едра не-летяща птица? Я да видим."
@@ -3156,8 +3129,6 @@ msgstr "Тук има... доста едри кости. Нокти и крил�
 
 #. [message]: speaker=Ardonna
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/15_Mountain_Pass.cfg:176
-#, fuzzy
-#| msgid "I wonder what are they from. A gryphon perhaps?"
 msgid "I wonder what they are from. A gryphon perhaps?"
 msgstr "От какво ли са? Грифон, може би?"
 
@@ -3241,12 +3212,12 @@ msgid "Crelanu"
 msgstr "Крелану"
 
 #. [objective]: condition=win
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:69
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:73
 msgid "Defeat Crelanu"
 msgstr "Надвийте Крелану"
 
 #. [note]
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:81
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:85
 msgid ""
 "Ras-Tabahn is slowed and will lose four hitpoints every turn. He will die if "
 "he reaches zero."
@@ -3255,7 +3226,7 @@ msgstr ""
 "ще загине."
 
 #. [note]
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:84
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:88
 msgid ""
 "Moving any unit onto a bottle of holy water will remove the bottle. An "
 "undead unit will be destroyed."
@@ -3264,12 +3235,12 @@ msgstr ""
 "Немъртва единица ще бъде унищожена."
 
 #. [unit]: type=White Mage, id=Ginmera
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:220
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:224
 msgid "Ginmera"
 msgstr "Гинмера"
 
 #. [message]: speaker=Ginmera
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:253
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:257
 msgid ""
 "It seems that the invaders can raise undead soldiers, so I placed some holy "
 "water around the castle for protection."
@@ -3278,22 +3249,22 @@ msgstr ""
 "бутилки със светена вода из замъка за защита."
 
 #. [unit]: type=White Mage, id=Rinconan
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:258
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:262
 msgid "Rinconan"
 msgstr "Ринконан"
 
 #. [message]: speaker=Ginmera
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:270
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:274
 msgid "Rinconan and I will stay here to guard you."
 msgstr "Ринконан и аз ще останем, за да Ви пазим."
 
 #. [message]: speaker=Crelanu
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:274
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:278
 msgid "Yes. Thank you Ginmera."
 msgstr "Да. Благодаря ви, Гинмера."
 
 #. [message]: speaker=narrator
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:280
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:284
 msgid ""
 "Moving a unit onto a bottle of holy water will remove the bottle. A living "
 "unit can do this safely, but any undead unit will be destroyed."
@@ -3302,17 +3273,17 @@ msgstr ""
 "Живите единици не ги грозят опасност, но всяка немъртва ще бъде унищожена."
 
 #. [message]: speaker=Ras-Tabahn
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:332
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:336
 msgid "Crelanu! (<i>Cough, cough</i>) We have come... for your book."
 msgstr "Крелану! (<i>Кашля продължително</i>) Тук сме... за книгата ти."
 
 #. [message]: speaker=Ardonna
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:336
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:340
 msgid "We need to borrow it."
 msgstr "Нужна ни е само за малко."
 
 #. [message]: speaker=Crelanu
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:340
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:344
 msgid ""
 "Yes, I knew people like you would be coming, but the book is out of reach "
 "now — for all of us. I have given it to the elves. Only they know where it "
@@ -3322,12 +3293,12 @@ msgstr ""
 "Връчих я на елфите. Само те знаят къде се намира."
 
 #. [message]: speaker=Ardonna
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:344
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:348
 msgid "Why would you do such a thing?"
 msgstr "Защо си направил това?"
 
 #. [message]: speaker=Crelanu
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:348
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:352
 msgid ""
 "So that one like you would not be tempted to do what you intend. Oh, yes. I "
 "know well what you seek."
@@ -3336,22 +3307,22 @@ msgstr ""
 "какво търсите."
 
 #. [message]: speaker=Ardonna
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:352
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:356
 msgid "Then you can tell us what we want to know."
 msgstr "Кажи ни това, което искаме да знаем."
 
 #. [message]: speaker=Crelanu
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:356
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:360
 msgid "I shall not."
 msgstr "Няма да го направя."
 
 #. [message]: speaker=Ras-Tabahn
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:360
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:364
 msgid "We shall see."
 msgstr "Ще видим."
 
 #. [message]: speaker=narrator
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:365
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:369
 msgid ""
 "Ras-Tabahn is sick. He is slowed, and will lose four hitpoints every turn. "
 "He will die if he reaches zero."
@@ -3360,12 +3331,12 @@ msgstr ""
 "Ако достигне 0, ще загине."
 
 #. [message]: speaker=Ardonna
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:393
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:397
 msgid "Now, you will tell us the secret of immortality or die!"
 msgstr "Кажи ни тайната на безсмъртието, иначе ще умреш!"
 
 #. [message]: speaker=Crelanu
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:397
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:401
 msgid ""
 "There <i>is no secret</i>, you fools! Magic cannot stop aging. You cannot "
 "live forever. It is the way of nature, and the greatest thing we have in "
@@ -3378,7 +3349,7 @@ msgstr ""
 "си. Не бих направил подобен опит за нищо на света."
 
 #. [message]: speaker=Ardonna
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:401
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:405
 msgid ""
 "You are the fool, for you have, indeed, told us all we required. For that, I "
 "will spare you to live a few more lonely years with your cowardice."
@@ -3387,12 +3358,12 @@ msgstr ""
 "оставя още няколко години самотен и страхлив живот."
 
 #. [message]: speaker=Ras-Tabahn
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:414
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:418
 msgid "I don’t understand. What did Crelanu tell us?"
 msgstr "Не разбирам. Какво ни каза Крелану?"
 
 #. [message]: speaker=Ardonna
-#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:418
+#: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:422
 msgid ""
 "I will explain. Let us get you somewhere safe first. We’ll go into the cave. "
 "Come with me."
@@ -3660,8 +3631,6 @@ msgstr ""
 
 #. [message]: speaker=Ardonna
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/18_Abandoned_Outpost.cfg:436
-#, fuzzy
-#| msgid "Why would the Dwarvish empire abandon an outpost like this?"
 msgid "Why would the dwarvish empire abandon an outpost like this?"
 msgstr "Защо джуджешката империя би изоставила едно такова укрепление?"
 
@@ -3928,10 +3897,6 @@ msgstr "Значи няма да продължаваме нататък."
 
 #. [message]: speaker=Ras-Tabahn
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/20_North_Knalga.cfg:773
-#, fuzzy
-#| msgid ""
-#| "But look. There is a large crack in the wall to our left! I’m certain we "
-#| "could squeeze through."
 msgid ""
 "But look. There is a large crack in the wall to our right! I’m certain we "
 "could squeeze through."
@@ -4125,7 +4090,7 @@ msgstr "Вижте! Джуджетата са ни преградили пътя
 msgid "That’s why getting through Knalga was so easy."
 msgstr "Затова се измъкнахме така лесно от Кналга."
 
-#. [unit]: type=Great Mage, id=Carmyna
+#. [unit]: type=Great Mage, gender=female, id=Carmyna
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/21_Against_the_World.cfg:696
 msgid "Carmyna"
 msgstr "Кармина"
@@ -4338,12 +4303,12 @@ msgstr ""
 "поради навиците си те могат да управляват властта си над другите, дори "
 "когато всичките им спомени са изчезнали."
 
-#. [unit_type]: id=Delinquent, race=human
+#. [unit_type]: id=Delinquent, gender=female, race=human
 #: data/campaigns/Secrets_of_the_Ancients/units/Delinquent.cfg:4
 msgid "Delinquent"
 msgstr "Непрокопсаник"
 
-#. [unit_type]: id=Delinquent, race=human
+#. [unit_type]: id=Delinquent, gender=female, race=human
 #: data/campaigns/Secrets_of_the_Ancients/units/Delinquent.cfg:18
 msgid ""
 "Some girls shun the typical life planned for them by society, and fall in "
@@ -4495,8 +4460,6 @@ msgstr "Ъргх."
 
 #. [message]: speaker=Ardonna
 #: data/campaigns/Secrets_of_the_Ancients/utils/sota-utils.cfg:163
-#, fuzzy
-#| msgid "But I don't know how to bring you back yet!"
 msgid "But I don’t know how to bring you back yet!"
 msgstr "Но аз все още не знам как да те съживя!"
 
@@ -4514,8 +4477,6 @@ msgstr "Върнете я. Моля ви!"
 
 #. [message]: speaker=Ardonna
 #: data/campaigns/Secrets_of_the_Ancients/utils/sota-utils.cfg:202
-#, fuzzy
-#| msgid "I'm not sure that's such a good..."
 msgid "I’m not sure that’s such a good..."
 msgstr "Не съм сигурна, че това е добра..."
 
@@ -4541,14 +4502,10 @@ msgstr "Може би така е по-добре."
 
 #. [message]: speaker=Ras-Tabahn
 #: data/campaigns/Secrets_of_the_Ancients/utils/sota-utils.cfg:259
-#, fuzzy
-#| msgid ""
-#| "It's not possible. She was already back from the dead. She has been "
-#| "utterly destroyed this time."
 msgid ""
 "It’s not possible. She was already back from the dead. She has been utterly "
 "destroyed this time."
-msgstr "Не е възможно. Тя вече беше съживена. Този път е напълно унищожена."
+msgstr "Не е възможно! Тя вече беше съживена и този път е напълно унищожена."
 
 #. [message]: speaker=Shynal
 #: data/campaigns/Secrets_of_the_Ancients/utils/sota-utils.cfg:272
@@ -4572,8 +4529,6 @@ msgstr "Сссега никога няма да науча как да увел�
 
 #. [message]: speaker=Carcyn
 #: data/campaigns/Secrets_of_the_Ancients/utils/sota-utils.cfg:323
-#, fuzzy
-#| msgid "I'm going to miss him."
 msgid "I’m going to miss him."
 msgstr "Той ще ми липсва."
 

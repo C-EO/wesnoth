@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2008 - 2023
+	Copyright (C) 2008 - 2025
 	by Mark de Wever <koraq@xs4all.nl>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
@@ -17,6 +17,7 @@
 
 #include "font/text.hpp"
 
+#include "font/attributes.hpp"
 #include "font/font_config.hpp"
 
 #include "font/pango/escape.hpp"
@@ -28,14 +29,9 @@
 #include "gui/widgets/helper.hpp"
 #include "gui/core/log.hpp"
 #include "sdl/point.hpp"
-#include "sdl/utils.hpp"
-#include "serialization/string_utils.hpp"
 #include "serialization/unicode.hpp"
-#include "preferences/general.hpp"
+#include "preferences/preferences.hpp"
 #include "video.hpp"
-
-#include <boost/algorithm/string/replace.hpp>
-#include <boost/functional/hash_fwd.hpp>
 
 #include <cassert>
 #include <cstring>
@@ -46,27 +42,6 @@ static lg::log_domain log_font("font");
 
 namespace font
 {
-
-namespace
-{
-/**
- * The text texture cache.
- *
- * Each time a specific bit of text is rendered, a corresponding texture is created and
- * added to the cache. We don't store the surface since there isn't really any use for
- * it. If we need texture size that can be easily queried.
- *
- * @todo Figure out how this can be optimized with a texture atlas. It should be possible
- * to store smaller bits of text in the atlas and construct new textures from hem.
- */
-std::map<std::size_t, texture> rendered_cache{};
-} // anon namespace
-
-void flush_texture_cache()
-{
-	rendered_cache.clear();
-}
-
 pango_text::pango_text()
 	: context_(pango_font_map_create_context(pango_cairo_font_map_get_default()), g_object_unref)
 	, layout_(pango_layout_new(context_.get()), g_object_unref)
@@ -97,7 +72,7 @@ pango_text::pango_text()
 	pango_layout_set_ellipsize(layout_.get(), ellipse_mode_);
 	pango_layout_set_alignment(layout_.get(), alignment_);
 	pango_layout_set_wrap(layout_.get(), PANGO_WRAP_WORD_CHAR);
-	pango_layout_set_line_spacing(layout_.get(), 1.3f);
+	pango_layout_set_line_spacing(layout_.get(), get_line_spacing_factor());
 
 	cairo_font_options_t *fo = cairo_font_options_create();
 	cairo_font_options_set_hint_style(fo, CAIRO_HINT_STYLE_FULL);
@@ -115,22 +90,9 @@ texture pango_text::render_texture(const SDL_Rect& viewport)
 
 texture pango_text::render_and_get_texture()
 {
-	// Update our settings then hash them.
 	update_pixel_scale(); // TODO: this should be in recalculate()
 	recalculate();
-	const std::size_t hash = std::hash<pango_text>{}(*this);
-	// If we already have the appropriate texture in-cache, use it.
-	if(const auto iter = rendered_cache.find(hash); iter != rendered_cache.end()) {
-		return with_draw_scale(iter->second);
-	}
-
-	if(surface text_surf = create_surface(); text_surf) {
-		const auto& [new_iter, added] = rendered_cache.try_emplace(hash, std::move(text_surf));
-		return with_draw_scale(new_iter->second);
-	}
-
-	// Render output was null for some reason. Don't cache.
-	return {};
+	return with_draw_scale(texture(create_surface()));
 }
 
 surface pango_text::render_surface(const SDL_Rect& viewport)
@@ -161,19 +123,19 @@ point pango_text::to_draw_scale(const point& p) const
 point pango_text::get_size()
 {
 	update_pixel_scale(); // TODO: this should be in recalculate()
-	this->recalculate();
+	recalculate();
 
 	return to_draw_scale({rect_.width, rect_.height});
 }
 
 bool pango_text::is_truncated() const
 {
-	this->recalculate();
+	recalculate();
 
 	return (pango_layout_is_ellipsized(layout_.get()) != 0);
 }
 
-unsigned pango_text::insert_text(const unsigned offset, const std::string& text)
+unsigned pango_text::insert_text(const unsigned offset, const std::string& text, const bool use_markup)
 {
 	if (text.empty() || length_ == maximum_length_) {
 		return 0;
@@ -188,23 +150,23 @@ unsigned pango_text::insert_text(const unsigned offset, const std::string& text)
 	}
 	const std::string insert = text.substr(0, utf8::index(text, len));
 	std::string tmp = text_;
-	this->set_text(utf8::insert(tmp, offset, insert), false);
+	set_text(utf8::insert(tmp, offset, insert), use_markup);
 	// report back how many characters were actually inserted (e.g. to move the cursor selection)
 	return len;
 }
 
 point pango_text::get_cursor_position(const unsigned column, const unsigned line) const
 {
-	this->recalculate();
+	recalculate();
 
-	// First we need to determine the byte offset, if more routines need it it
-	// would be a good idea to make it a separate function.
+	// Determing byte offset
 	std::unique_ptr<PangoLayoutIter, std::function<void(PangoLayoutIter*)>> itor(
 		pango_layout_get_iter(layout_.get()), pango_layout_iter_free);
 
 	// Go the wanted line.
 	if(line != 0) {
-		if(pango_layout_get_line_count(layout_.get()) >= static_cast<int>(line)) {
+
+		if(static_cast<int>(line) >= pango_layout_get_line_count(layout_.get())) {
 			return point(0, 0);
 		}
 
@@ -222,7 +184,7 @@ point pango_text::get_cursor_position(const unsigned column, const unsigned line
 			if(i + 1 == column) {
 				break;
 			}
-			// We are beyond data.
+			// Beyond data.
 			return point(0, 0);
 		}
 	}
@@ -230,6 +192,11 @@ point pango_text::get_cursor_position(const unsigned column, const unsigned line
 	// Get the byte offset
 	const int offset = pango_layout_iter_get_index(itor.get());
 
+	return get_cursor_pos_from_index(offset);
+}
+
+point pango_text::get_cursor_pos_from_index(const unsigned offset) const
+{
 	// Convert the byte offset in a position.
 	PangoRectangle rect;
 	pango_layout_get_cursor_pos(layout_.get(), offset, &rect, nullptr);
@@ -244,7 +211,7 @@ std::size_t pango_text::get_maximum_length() const
 
 std::string pango_text::get_token(const point & position, const char * delim) const
 {
-	this->recalculate();
+	recalculate();
 
 	// Get the index of the character.
 	int index, trailing;
@@ -280,7 +247,7 @@ std::string pango_text::get_link(const point & position) const
 		return "";
 	}
 
-	std::string tok = this->get_token(position, " \n\r\t");
+	std::string tok = get_token(position, " \n\r\t");
 
 	if (looks_like_url(tok)) {
 		return tok;
@@ -291,7 +258,7 @@ std::string pango_text::get_link(const point & position) const
 
 point pango_text::get_column_line(const point& position) const
 {
-	this->recalculate();
+	recalculate();
 
 	// Get the index of the character.
 	int index, trailing;
@@ -315,11 +282,37 @@ point pango_text::get_column_line(const point& position) const
 	 * Until that time leave it as is.
 	 */
 	for(std::size_t i = 0; ; ++i) {
-		const int pos = this->get_cursor_position(i, line).x;
+		const int pos = get_cursor_position(i, line).x;
 
 		if(pos == offset) {
 			return  point(i, line);
 		}
+	}
+}
+
+int pango_text::xy_to_index(const point& position) const
+{
+	this->recalculate();
+
+	// Get the index of the character.
+	int index, trailing;
+	pango_layout_xy_to_index(layout_.get(), position.x * PANGO_SCALE,
+		position.y * PANGO_SCALE, &index, &trailing);
+
+	return index;
+}
+
+void pango_text::clear_attributes()
+{
+	pango_layout_set_attributes(layout_.get(), nullptr);
+}
+
+void pango_text::apply_attributes(const font::attribute_list& attrs)
+{
+	if(PangoAttrList* current_attrs = pango_layout_get_attributes(layout_.get())) {
+		attrs.splice_into(current_attrs);
+	} else {
+		attrs.apply_to(layout_.get());
 	}
 }
 
@@ -333,23 +326,20 @@ bool pango_text::set_text(const std::string& text, const bool markedup)
 		const std::u32string wide = unicode_cast<std::u32string>(text);
 		const std::string narrow = unicode_cast<std::string>(wide);
 		if(text != narrow) {
-			ERR_GUI_L << "pango_text::" << __func__
-					<< " text '" << text
-					<< "' contains invalid utf-8, trimmed the invalid parts.";
+			ERR_GUI_L
+				<< "pango_text::" << __func__
+				<< " text '" << text
+				<< "' contains invalid utf-8, trimmed the invalid parts.";
 		}
+
 		if(markedup) {
-			if(!this->set_markup(narrow, *layout_)) {
-				return false;
+			if (!set_markup(narrow, *layout_)) {
+				pango_layout_set_text(layout_.get(), narrow.c_str(), narrow.size());
 			}
 		} else {
-			/*
-			 * pango_layout_set_text after pango_layout_set_markup might
-			 * leave the layout in an undefined state regarding markup so
-			 * clear it unconditionally.
-			 */
-			pango_layout_set_attributes(layout_.get(), nullptr);
 			pango_layout_set_text(layout_.get(), narrow.c_str(), narrow.size());
 		}
+
 		text_ = narrow;
 		length_ = wide.size();
 		markedup_text_ = markedup;
@@ -371,7 +361,7 @@ pango_text& pango_text::set_family_class(font::family_class fclass)
 
 pango_text& pango_text::set_font_size(unsigned font_size)
 {
-	font_size = preferences::font_scaled(font_size) * pixel_scale_;
+	font_size = prefs::get().font_scaled(font_size) * pixel_scale_;
 
 	if(font_size != font_size_) {
 		font_size_ = font_size;
@@ -488,7 +478,7 @@ pango_text& pango_text::set_maximum_length(const std::size_t maximum_length)
 		maximum_length_ = maximum_length;
 		if(length_ > maximum_length_) {
 			std::string tmp = text_;
-			this->set_text(utf8::truncate(tmp, maximum_length_), false);
+			set_text(utf8::truncate(tmp, maximum_length_), false);
 		}
 	}
 
@@ -824,7 +814,7 @@ bool pango_text::set_markup(std::string_view text, PangoLayout& layout)
 	char* raw_text;
 	std::string semi_escaped;
 	bool valid = validate_markup(text, &raw_text, semi_escaped);
-	if(semi_escaped != "") {
+	if(!semi_escaped.empty()) {
 		text = semi_escaped;
 	}
 
@@ -835,11 +825,6 @@ bool pango_text::set_markup(std::string_view text, PangoLayout& layout)
 		} else {
 			pango_layout_set_markup(&layout, text.data(), text.size());
 		}
-	} else {
-		ERR_GUI_L << "pango_text::" << __func__
-			<< " text '" << text
-			<< "' has broken markup, set to normal text.";
-		set_text(_("The text contains invalid Pango markup: ") + std::string(text), false);
 	}
 
 	return valid;
@@ -902,7 +887,7 @@ bool pango_text::validate_markup(std::string_view text, char** raw_text, std::st
 	 * So only try to recover from broken ampersands, by simply replacing them
 	 * with the escaped version.
 	 */
-	semi_escaped = semi_escape_text(std::string(text));
+	semi_escaped = semi_escape_text(text);
 
 	/*
 	 * If at least one ampersand is replaced the semi-escaped string
@@ -934,7 +919,7 @@ void pango_text::copy_layout_properties(PangoLayout& src, PangoLayout& dst)
 
 std::vector<std::string> pango_text::get_lines() const
 {
-	this->recalculate();
+	recalculate();
 
 	PangoLayout* const layout = layout_.get();
 	std::vector<std::string> res;
@@ -958,6 +943,18 @@ std::vector<std::string> pango_text::get_lines() const
 	return res;
 }
 
+PangoLayoutLine* pango_text::get_line(int index)
+{
+	return pango_layout_get_line_readonly(layout_.get(), index);
+}
+
+int pango_text::get_line_num_from_offset(const unsigned offset)
+{
+	int line_num = 0;
+	pango_layout_index_to_line_x(layout_.get(), offset, 0, &line_num, nullptr);
+	return line_num;
+}
+
 pango_text& get_text_renderer()
 {
 	static pango_text text_renderer;
@@ -975,27 +972,3 @@ int get_max_height(unsigned size, font::family_class fclass, pango_text::FONT_ST
 }
 
 } // namespace font
-
-namespace std
-{
-std::size_t hash<font::pango_text>::operator()(const font::pango_text& t) const
-{
-	std::size_t hash = 0;
-
-	boost::hash_combine(hash, t.text_);
-	boost::hash_combine(hash, t.font_class_);
-	boost::hash_combine(hash, t.font_size_);
-	boost::hash_combine(hash, t.font_style_);
-	boost::hash_combine(hash, t.foreground_color_.to_rgba_bytes());
-	boost::hash_combine(hash, t.rect_.width);
-	boost::hash_combine(hash, t.rect_.height);
-	boost::hash_combine(hash, t.maximum_width_);
-	boost::hash_combine(hash, t.maximum_height_);
-	boost::hash_combine(hash, t.alignment_);
-	boost::hash_combine(hash, t.ellipse_mode_);
-	boost::hash_combine(hash, t.add_outline_);
-
-	return hash;
-}
-
-} // namespace std

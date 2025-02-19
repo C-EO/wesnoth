@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2008 - 2023
+	Copyright (C) 2008 - 2025
 	by Tomasz Sniatowski <kailoran@gmail.com>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
@@ -21,14 +21,14 @@
 #include "editor/action/action.hpp"
 #include "filesystem.hpp"
 #include "formula/string_utils.hpp"
-#include "game_board.hpp"
 #include "gettext.hpp"
 #include "gui/dialogs/message.hpp"
-#include "map/exception.hpp"
+#include "gui/dialogs/transient_message.hpp"
 #include "map/label.hpp"
-#include "preferences/editor.hpp"
+#include "preferences/preferences.hpp"
 #include "serialization/binary_or_text.hpp"
 #include "serialization/parser.hpp"
+#include "serialization/preprocessor.hpp"
 #include "team.hpp"
 #include "units/unit.hpp"
 #include "game_config_view.hpp"
@@ -56,6 +56,10 @@ editor_team_info::editor_team_info(const team& t)
 }
 
 const std::size_t map_context::max_action_stack_size_ = 100;
+
+namespace {
+	static const int editor_team_default_gold = 100;
+}
 
 map_context::map_context(const editor_map& map, bool pure_map, const config& schedule, const std::string& addon_id)
 	: filename_()
@@ -191,13 +195,17 @@ map_context::map_context(const game_config_view& game_config, const std::string&
 	}
 
 	// 0.3 Not a .map or .cfg file
-	if(!filesystem::ends_with(filename, ".map") && !filesystem::ends_with(filename, ".cfg")) {
-		std::string message = _("File does not have .map or .cfg extension");
+	if(!filesystem::is_map(filename)
+		&& !filesystem::is_mask(filename)
+		&& !filesystem::is_cfg(filename))
+	{
+		std::string message = _("File does not have .map, .cfg, or .mask extension");
 		throw editor_map_load_exception(filename, message);
 	}
 
 	// 1.0 Pure map data
-	if(filesystem::ends_with(filename, ".map") || filesystem::ends_with(filename, ".mask")) {
+	if(filesystem::is_map(filename)
+		|| filesystem::is_mask(filename)) {
 		LOG_ED << "Loading map or mask file";
 		map_ = editor_map::from_string(file_string); // throws on error
 		pure_map_ = true;
@@ -235,17 +243,17 @@ map_context::map_context(const game_config_view& game_config, const std::string&
 					const std::string& macro_argument = map_data_loc.substr(2, map_data_loc.size()-4);
 					LOG_ED << "Map looks like a scenario, trying {" << macro_argument << "}";
 
-					std::string new_filename = filesystem::get_wml_location(macro_argument, filesystem::directory_name(filesystem::get_short_wml_path(filename_)));
+					auto new_filename = filesystem::get_wml_location(macro_argument, filesystem::directory_name(filesystem::get_short_wml_path(filename_)));
 
-					if(new_filename.empty()) {
+					if(!new_filename) {
 						std::string message = _("The map file looks like a scenario, but the map_data value does not point to an existing file")
 											+ std::string("\n") + macro_argument;
 						throw editor_map_load_exception(filename, message);
 					}
 
-					LOG_ED << "New filename is: " << new_filename;
+					LOG_ED << "New filename is: " << new_filename.value();
 
-					filename_ = new_filename;
+					filename_ = new_filename.value();
 					file_string = filesystem::read_file(filename_);
 					map_ = editor_map::from_string(file_string);
 					pure_map_ = true;
@@ -257,7 +265,7 @@ map_context::map_context(const game_config_view& game_config, const std::string&
 				try {
 					// 5.1 The file can be loaded by the editor as a scenario
 					if(file_string.find("<<") != std::string::npos) {
-						throw editor_map_load_exception(filename, _("Found the characters '<<' indicating inline lua is present - aborting"));
+						throw editor_map_load_exception(filename, _("Found the characters ‘<<’ indicating inline lua is present — aborting"));
 					}
 					load_scenario();
 				} catch(const std::exception&) {
@@ -303,6 +311,7 @@ void map_context::new_side()
 	config cfg;
 	cfg["side"] = teams_.size(); // side is 1-indexed, so we can just use size()
 	cfg["hidden"] = false;
+	cfg["gold"] = editor_team_default_gold;
 
 	teams_.back().build(cfg, map());
 
@@ -315,7 +324,7 @@ void map_context::set_side_setup(editor_team_info& info)
 
 	team& t = teams_[info.side - 1];
 	t.change_team(info.id, info.name);
-	t.set_recruits(utils::set_split(info.recruit_list, ','));
+	t.set_recruits(utils::split_set(info.recruit_list, ','));
 	t.have_leader(!info.no_leader);
 	t.change_controller(info.controller);
 	t.set_gold(info.gold);
@@ -385,13 +394,13 @@ config map_context::convert_scenario(const config& old_scenario)
 	config& multiplayer = cfg.add_child("multiplayer");
 	multiplayer.append_attributes(old_scenario);
 	std::string map_data = multiplayer["map_data"];
-	std::string separate_map_file = filesystem::get_current_editor_dir(addon_id_) + "/maps/" + filesystem::base_name(filename_, true) + ".map";
+	std::string separate_map_file = filesystem::get_current_editor_dir(addon_id_) + "/maps/" + filesystem::base_name(filename_, true) + filesystem::map_extension;
 
 	// check that there's embedded map data, since that's how the editor used to save scenarios
 	if(!map_data.empty()) {
 		// check if a .map file already exists as a separate standalone .map in the editor folders or if a .map file already exists in the add-on
 		if(filesystem::file_exists(separate_map_file)) {
-			separate_map_file = filesystem::get_current_editor_dir(addon_id_) + "/maps/" + filesystem::get_next_filename(filesystem::base_name(filename_, true), ".map");
+			separate_map_file = filesystem::get_current_editor_dir(addon_id_) + "/maps/" + filesystem::get_next_filename(filesystem::base_name(filename_, true), filesystem::map_extension);
 		}
 		multiplayer["id"] = filesystem::base_name(separate_map_file, true);
 
@@ -415,29 +424,29 @@ config map_context::convert_scenario(const config& old_scenario)
 	//   if [unit], set the unit's side
 	// for [time]:
 	//   keep under [multiplayer]
-	for(const config::any_child child : old_scenario.all_children_range()) {
-		if(child.key != "side" && child.key != "time") {
-			config& c = event.add_child(child.key);
-			c.append_attributes(child.cfg);
-			c.append_children(child.cfg);
-		} else if(child.key == "side") {
+	for(const auto [child_key, child_cfg]: old_scenario.all_children_view()) {
+		if(child_key != "side" && child_key != "time") {
+			config& c = event.add_child(child_key);
+			c.append_attributes(child_cfg);
+			c.append_children(child_cfg);
+		} else if(child_key == "side") {
 			config& c = multiplayer.add_child("side");
-			c.append_attributes(child.cfg);
-			for(const config::any_child side_child : child.cfg.all_children_range()) {
-				if(side_child.key == "village") {
+			c.append_attributes(child_cfg);
+			for(const auto [side_key, side_cfg] : child_cfg.all_children_view()) {
+				if(side_key == "village") {
 					config& c1 = c.add_child("village");
-					c1.append_attributes(side_child.cfg);
+					c1.append_attributes(side_cfg);
 				} else {
-					config& c1 = event.add_child(side_child.key);
-					c1.append_attributes(side_child.cfg);
-					if(side_child.key == "unit") {
-						c1["side"] = child.cfg["side"];
+					config& c1 = event.add_child(side_key);
+					c1.append_attributes(side_cfg);
+					if(side_key == "unit") {
+						c1["side"] = child_cfg["side"];
 					}
 				}
 			}
-		} else if(child.key == "time") {
+		} else if(child_key == "time") {
 			config& c = multiplayer.add_child("time");
-			c.append_attributes(child.cfg);
+			c.append_attributes(child_cfg);
 		}
 	}
 
@@ -484,7 +493,7 @@ void map_context::load_scenario()
 		teams_.emplace_back();
 		teams_.back().build(side, map_);
 		if(!side["recruit"].str().empty()) {
-			teams_.back().set_recruits(utils::set_split(side["recruit"], ','));
+			teams_.back().set_recruits(utils::split_set(side["recruit"].str(), ','));
 		}
 	}
 
@@ -624,6 +633,9 @@ config map_context::to_config()
 {
 	config scen;
 
+	// Textdomain
+	std::string current_textdomain = "wesnoth-"+addon_id_;
+
 	// the state of the previous scenario cfg
 	// if it exists, alter specific parts of it (sides, times, and editor events) rather than replacing it entirely
 	if(previous_cfg_) {
@@ -643,11 +655,13 @@ config map_context::to_config()
 				: scen.add_child("multiplayer");
 
 	scenario.remove_children("side");
-	scenario.remove_children("event", [](config cfg){return cfg["id"].str() == "editor_event-start" || cfg["id"].str() == "editor_event-prestart";});
+	scenario.remove_children("event", [](const config& cfg) {
+		return cfg["id"].str() == "editor_event-start" || cfg["id"].str() == "editor_event-prestart";
+	});
 
 	scenario["id"] = scenario_id_;
-	scenario["name"] = t_string(scenario_name_);
-	scenario["description"] = scenario_description_;
+	scenario["name"] = t_string(scenario_name_, current_textdomain);
+	scenario["description"] = t_string(scenario_description_, current_textdomain);
 
 	if(xp_mod_) {
 		scenario["experience_modifier"] = *xp_mod_;
@@ -658,8 +672,8 @@ config map_context::to_config()
 	scenario["random_start_time"] = random_time_;
 
 	// write out the map data
-	scenario["map_file"] = scenario_id_ + ".map";
-	filesystem::write_file(filesystem::get_current_editor_dir(addon_id_) + "/maps/" + scenario_id_ + ".map", map_.write());
+	scenario["map_file"] = scenario_id_ + filesystem::map_extension;
+	filesystem::write_file(filesystem::get_current_editor_dir(addon_id_) + "/maps/" + scenario_id_ + filesystem::map_extension, map_.write());
 
 	// find or add the editor's start event
 	config& event = scenario.add_child("event");
@@ -671,7 +685,7 @@ config map_context::to_config()
 
 	// [time]s and [time_area]s
 	// put the [time_area]s into the event to keep as much editor-specific stuff separated in its own event as possible
-	config times = tod_manager_->to_config();
+	config times = tod_manager_->to_config(current_textdomain);
 	times.remove_attribute("turn_at");
 	times.remove_attribute("it_is_a_new_turn");
 	if(scenario["turns"].to_int() == -1) {
@@ -706,7 +720,7 @@ config map_context::to_config()
 
 			// Optional keys
 			item["id"].write_if_not_empty(o.id);
-			item["name"].write_if_not_empty(o.name);
+			item["name"].write_if_not_empty(t_string(o.name, current_textdomain));
 			item["team_name"].write_if_not_empty(o.team_name);
 			item["halo"].write_if_not_empty(o.halo);
 			if(o.submerge) {
@@ -721,6 +735,10 @@ config map_context::to_config()
 	}
 
 	// [unit]s
+	config traits;
+	preproc_map traits_map;
+	read(traits, *(preprocess_file(game_config::path + "/data/core/macros/traits.cfg", &traits_map)));
+
 	for(const auto& unit : units_) {
 		config& u = event.add_child("unit");
 
@@ -728,7 +746,7 @@ config map_context::to_config()
 
 		u["side"] = unit.side();
 		u["type"] = unit.type_id();
-		u["name"].write_if_not_empty(unit.name());
+		u["name"].write_if_not_empty(t_string(unit.name(), current_textdomain));
 		u["facing"] = map_location::write_direction(unit.facing());
 
 		if(!boost::regex_match(unit.id(), boost::regex(".*-[0-9]+"))) {
@@ -742,6 +760,16 @@ config map_context::to_config()
 		if(unit.unrenamable()) {
 			u["unrenamable"] = unit.unrenamable();
 		}
+
+		config& mods = u.add_child("modifications");
+		if(unit.loyal()) {
+			config trait_loyal;
+			read(trait_loyal, preprocess_string("{TRAIT_LOYAL}", &traits_map, "wesnoth-help"));
+			mods.append(trait_loyal);
+		}
+		//TODO this entire block could also be replaced by unit.write(u, true)
+		//however, the resultant config is massive and contains many attributes we don't need.
+		//need to find a middle ground here.
 	}
 
 	// [side]s
@@ -755,7 +783,7 @@ config map_context::to_config()
 		side["no_leader"] = team.no_leader();
 
 		side["team_name"] = team.team_name();
-		side["user_team_name"].write_if_not_empty(team.user_team_name());
+		side["user_team_name"].write_if_not_empty(t_string(team.user_team_name(), current_textdomain));
 		if(team.recruits().size() > 0) {
 			side["recruit"] = utils::join(team.recruits(), ",");
 			side["faction"] = "Custom";
@@ -777,7 +805,73 @@ config map_context::to_config()
 	return scen;
 }
 
-bool map_context::save_scenario()
+void map_context::save_schedule(const std::string& schedule_id, const std::string& schedule_name)
+{
+	// Textdomain
+	std::string current_textdomain = "wesnoth-"+addon_id_;
+
+	// Path to schedule.cfg
+	std::string schedule_path = filesystem::get_current_editor_dir(addon_id_) + "/utils/schedule.cfg";
+
+	// Create schedule config
+	config schedule;
+	try {
+		if (filesystem::file_exists(schedule_path)) {
+			/* If exists, read the schedule.cfg
+			 * and insert [editor_times] block at correct place */
+			preproc_map editor_map;
+			editor_map["EDITOR"] = preproc_define("true");
+			read(schedule, *(preprocess_file(schedule_path, &editor_map)));
+		}
+	} catch(const filesystem::io_exception& e) {
+		utils::string_map symbols;
+		symbols["msg"] = e.what();
+		const std::string msg = VGETTEXT("Could not save time schedule: $msg", symbols);
+		throw editor_map_save_exception(msg);
+	}
+
+	config& editor_times = schedule.add_child("editor_times");
+
+	editor_times["id"] = schedule_id;
+	editor_times["name"] = t_string(schedule_name, current_textdomain);
+	config times = tod_manager_->to_config(current_textdomain);
+	for(const config& time : times.child_range("time")) {
+		config& t = editor_times.add_child("time");
+		t.append(time);
+	}
+
+	// Write to file
+	try {
+		std::stringstream wml_stream;
+
+		wml_stream
+			<< "#textdomain " << current_textdomain << "\n"
+			<< "#\n"
+			<< "# This file was generated using the scenario editor.\n"
+			<< "#\n"
+			<< "#ifdef EDITOR\n";
+
+		{
+			config_writer out(wml_stream, false);
+			out.write(schedule);
+		}
+
+		wml_stream << "#endif";
+
+		if(!wml_stream.str().empty()) {
+			filesystem::write_file(schedule_path, wml_stream.str());
+			gui2::show_transient_message("", _("Time schedule saved."));
+		}
+
+	} catch(const filesystem::io_exception& e) {
+		utils::string_map symbols;
+		symbols["msg"] = e.what();
+		const std::string msg = VGETTEXT("Could not save time schedule: $msg", symbols);
+		throw editor_map_save_exception(msg);
+	}
+}
+
+void map_context::save_scenario()
 {
 	assert(!is_embedded());
 
@@ -819,13 +913,9 @@ bool map_context::save_scenario()
 
 	// After saving the map as a scenario, it's no longer a pure map.
 	pure_map_ = false;
-
-	// TODO the return value of this method does not need to be boolean.
-	// We either return true or there is an exception thrown.
-	return true;
 }
 
-bool map_context::save_map()
+void map_context::save_map()
 {
 	std::string map_data = map_.write();
 
@@ -835,7 +925,7 @@ bool map_context::save_map()
 		} else {
 			std::string map_string = filesystem::read_file(get_filename());
 
-			boost::regex rexpression_map_data(R"""((.*map_data\s*=\s*")(.+?)(".*))""");
+			boost::regex rexpression_map_data(R"((.*map_data\s*=\s*")(.+?)(".*))");
 			boost::smatch matched_map_data;
 
 			if(boost::regex_search(map_string, matched_map_data, rexpression_map_data,
@@ -861,10 +951,6 @@ bool map_context::save_map()
 
 		throw editor_map_save_exception(msg);
 	}
-
-	// TODO the return value of this method does not need to be boolean.
-	// We either return true or there is an exception thrown.
-	return true;
 }
 
 void map_context::set_map(const editor_map& map)
@@ -931,7 +1017,7 @@ void map_context::clear_modified()
 
 void map_context::add_to_recent_files()
 {
-	preferences::editor::add_recent_files_entry(get_filename());
+	prefs::get().add_recent_files_entry(get_filename());
 }
 
 bool map_context::can_undo() const

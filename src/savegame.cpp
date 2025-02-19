@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2003 - 2023
+	Copyright (C) 2003 - 2025
 	by Jörg Hinrichs, David White <dave@whitevine.net>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
@@ -13,13 +13,10 @@
 	See the COPYING file for more details.
 */
 
-#include <boost/iostreams/filter/gzip.hpp>
 
 #include "savegame.hpp"
 
-#include "carryover.hpp"
 #include "cursor.hpp"
-#include "format_time_summary.hpp"
 #include "formatter.hpp"
 #include "formula/string_utils.hpp"
 #include "game_config_manager.hpp"
@@ -34,19 +31,17 @@
 #include "gui/dialogs/message.hpp"
 #include "gui/dialogs/transient_message.hpp"
 #include "gui/widgets/retval.hpp"
-#include "gui/widgets/settings.hpp"
 #include "log.hpp"
 #include "persist_manager.hpp"
-#include "preferences/game.hpp"
+#include "preferences/preferences.hpp"
 #include "resources.hpp"
 #include "save_index.hpp"
 #include "saved_game.hpp"
 #include "serialization/binary_or_text.hpp"
-#include "serialization/parser.hpp"
 #include "serialization/utf8_exception.hpp"
+#include "utils/optimer.hpp"
 #include "video.hpp" // only for faked
 
-#include <algorithm>
 #include <iomanip>
 
 static lg::log_domain log_engine("engine");
@@ -254,7 +249,7 @@ bool loadgame::check_version_compatibility(const version_info& save_version)
 		return false;
 	}
 
-	if(preferences::confirm_load_save_from_different_version()) {
+	if(prefs::get().confirm_load_save_from_different_version()) {
 		const std::string message
 			= _("This save is from a different version of the game ($version_number|), and might not work with this "
 				"version.\n"
@@ -434,7 +429,7 @@ bool savegame::check_overwrite()
 bool savegame::check_filename(const std::string& filename)
 {
 	if(filesystem::is_compressed_file(filename)) {
-		gui2::show_error_message(_("Save names should not end on '.gz' or '.bz2'. Please remove the extension."));
+		gui2::show_error_message(_("Save names should not end with ‘.gz’ or ‘.bz2’. Please remove the extension."));
 		return false;
 	} else if(!filesystem::is_legal_user_file_name(filename)) {
 		// This message is not all-inclusive. This is on purpose. Few people
@@ -458,8 +453,9 @@ void savegame::before_save()
 bool savegame::save_game(const std::string& filename)
 {
 	try {
-		uint32_t start, end;
-		start = SDL_GetTicks();
+		utils::optional<const utils::ms_optimer> timer([this](const auto& timer) {
+			LOG_SAVE << "Milliseconds to save " << filename_ << ": " << timer;
+		});
 
 		if(filename_.empty()) {
 			filename_ = filename;
@@ -482,8 +478,8 @@ bool savegame::save_game(const std::string& filename)
 		// the came campaign, for example).
 		save_index_manager_->rebuild(filename_);
 
-		end = SDL_GetTicks();
-		LOG_SAVE << "Milliseconds to save " << filename_ << ": " << end - start;
+		// Log time before showing the confirmation
+		timer.reset();
 
 		if(show_confirmation_) {
 			gui2::show_transient_message(_("Saved"), _("The game has been saved."));
@@ -626,7 +622,7 @@ std::string autosave_savegame::create_initial_filename(unsigned int turn_number)
 }
 
 oos_savegame::oos_savegame(saved_game& gamestate, bool& ignore)
-	: ingame_savegame(gamestate, preferences::save_compression_format())
+	: ingame_savegame(gamestate, prefs::get().save_compression_format())
 	, ignore_(ignore)
 {
 }

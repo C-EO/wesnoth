@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2011 - 2023
+	Copyright (C) 2011 - 2025
 	by Sergey Popov <loonycyborg@gmail.com>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
@@ -23,7 +23,6 @@
 
 #include <boost/asio/connect.hpp>
 #include <boost/asio/read.hpp>
-#include <boost/asio/write.hpp>
 
 #include <algorithm>
 #include <cstdint>
@@ -38,7 +37,7 @@ static lg::log_domain log_network("network");
 
 namespace
 {
-std::deque<boost::asio::const_buffer> split_buffer(boost::asio::streambuf::const_buffers_type source_buffer)
+std::deque<boost::asio::const_buffer> split_buffer(const boost::asio::streambuf::const_buffers_type& source_buffer)
 {
 	const unsigned int chunk_size = 4096;
 
@@ -104,7 +103,7 @@ connection::~connection()
 	}
 }
 
-void connection::handle_resolve(const boost::system::error_code& ec, results_type results)
+void connection::handle_resolve(const boost::system::error_code& ec, const results_type& results)
 {
 	if(ec) {
 		throw system_error(ec);

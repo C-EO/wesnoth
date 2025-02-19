@@ -1,13 +1,13 @@
 # translation of it.po to Italian
 # Luciano Montanaro <mikelima@cirulla.net>, 2007.
 # Brivido <brivido(at)gmail.com>, 2007.
-# Antonio Rosella <arosella@yahoo.com>, 2011-2023
+# Antonio Rosella <arosella@yahoo.com>, 2011-2025
 msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2023-09-17 03:32 UTC\n"
-"PO-Revision-Date: 2023-10-21 20:44+0200\n"
+"POT-Creation-Date: 2025-01-19 17:47 UTC\n"
+"PO-Revision-Date: 2025-02-08 13:03+0100\n"
 "Last-Translator: Antonio 'Antro' Rosella <arosella@yahoo.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -1027,7 +1027,7 @@ msgstr "... No."
 #. [message]: speaker=second_unit
 #: data/campaigns/Descent_Into_Darkness/scenarios/02_Peaceful_Valley.cfg:308
 msgid "Ruuuun! The monster’s going to eat us!"
-msgstr "Coooorri! Il mostro ci mangerà!"
+msgstr "Scappaaaaa! Il mostro ci mangerà!"
 
 #. [unit]: id=guard_$x1|_$y1|_$guard_location.n, type=Goblin Spearman
 #: data/campaigns/Descent_Into_Darkness/scenarios/02_Peaceful_Valley.cfg:356
@@ -3306,7 +3306,7 @@ msgstr "Interni"
 msgid "Find Lady Karae"
 msgstr "Trova Lady Karae"
 
-#. [unit]: type=Silver Mage, id=Lady Karae
+#. [unit]: type=Silver Mage, id=Lady Karae, gender=female
 #: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:177
 msgid "Lady Karae"
 msgstr "Lady Karae"
@@ -5664,7 +5664,7 @@ msgstr "Potrebbe essere collegato al potere del lich! Prova a bruciarlo."
 msgid "<small>(faking pain)</small> Aaargh!"
 msgstr "<small>(fingendo di provare dolore)</small> Aaargh!"
 
-#. [message]: role=unit
+#. [message]: speaker=unit
 #: data/campaigns/Descent_Into_Darkness/scenarios/10_Endless_Night.cfg:1187
 #: data/campaigns/Descent_Into_Darkness/scenarios/10_Endless_Night.cfg:1215
 msgid "It’s not catching fire!"
@@ -5723,10 +5723,10 @@ msgstr "Mia ascia no taglia carta. Magia protegge carta!"
 #: data/campaigns/Descent_Into_Darkness/scenarios/10_Endless_Night.cfg:1266
 msgid ""
 "Aye, but the lich still seems ta be hurtin’. Let’s take it ’n retreat. Maybe "
-"tha forge ken destroy it."
+"tha forge can destroy it."
 msgstr ""
-"Eppure sembra danneggiare in qualche modo il lich. Portiamolo con noi, "
-"ritiriamoci e lasciamo che la forgia lo distrugga."
+"Vero, eppure sembra danneggiare in qualche modo il lich. Portiamolo con noi "
+"e ritiriamoci: lasciamo che la forgia lo distrugga."
 
 #. [message]: speaker=unit
 #. this orc has bad grammar on purpose
@@ -5831,7 +5831,7 @@ msgstr ""
 msgid "A monolith of black stone, cold and brittle to the touch."
 msgstr "Un monolite di pietra nera, freddo e fragile al tatto."
 
-#. [unit]: type=Cuttle Fish, id=Inky
+#. [unit]: type=Cuttle Fish, id=Inky, gender=female
 #: data/campaigns/Descent_Into_Darkness/scenarios/10_Endless_Night.cfg:1399
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:558
 msgid "female^Inky"
@@ -6159,10 +6159,10 @@ msgstr ""
 #. [message]: role=second
 #. regular english - I don't know. You think the lich's castle can be useful
 #: data/campaigns/Descent_Into_Darkness/scenarios/10_Endless_Night.cfg:1895
-msgid "I dinna know. Ye think tha lich’s castle ken be useful?"
+msgid "I dinna know. Ye think tha lich’s castle can be useful?"
 msgstr ""
-"Non ne ho idea. Pensi che il castello del lich possa essere di qualche "
-"utilità?"
+"Non ne ho la più pallida idea. Pensi che il castello del lich possa essere "
+"di qualche utilità?"
 
 #. [message]: role=speakinghero
 #. regular english - Yes. Let's get to work.
@@ -6457,12 +6457,12 @@ msgstr ""
 "vennero destinati ad essere niente di più che delle mere decorazioni del "
 "fondale acqueo del villaggio dei calamari per l’eternità."
 
-#. [unit_type]: id=Apprentice Mage, race=human
+#. [unit_type]: id=Apprentice Mage, race=human, gender=male
 #: data/campaigns/Descent_Into_Darkness/units/Apprentice_Mage.cfg:4
 msgid "Apprentice Mage"
 msgstr "Apprendista mago"
 
-#. [unit_type]: id=Apprentice Mage, race=human
+#. [unit_type]: id=Apprentice Mage, race=human, gender=male
 #: data/campaigns/Descent_Into_Darkness/units/Apprentice_Mage.cfg:17
 msgid ""
 "Trained in swordsmanship as a boy and the magical arts as a young man, Malin "
@@ -6482,12 +6482,12 @@ msgstr ""
 msgid "magic blast"
 msgstr "esplosione magica"
 
-#. [unit_type]: id=Apprentice Necromancer, race=human
+#. [unit_type]: id=Apprentice Necromancer, race=human, gender=male
 #: data/campaigns/Descent_Into_Darkness/units/Apprentice_Necromancer.cfg:4
 msgid "Apprentice Necromancer"
 msgstr "Apprendista negromante"
 
-#. [unit_type]: id=Apprentice Necromancer, race=human
+#. [unit_type]: id=Apprentice Necromancer, race=human, gender=male
 #: data/campaigns/Descent_Into_Darkness/units/Apprentice_Necromancer.cfg:16
 msgid ""
 "Under Darken Volk’s tutelage, Malin has become adept at wielding necromancy "
@@ -6522,12 +6522,12 @@ msgstr ""
 "Comunque, la sua crescente abilità con la magia compensa più che a "
 "sufficienza."
 
-#. [unit_type]: id=Frontier Baroness, race=human
+#. [unit_type]: id=Frontier Baroness, race=human, gender=female
 #: data/campaigns/Descent_Into_Darkness/units/Frontier_Baroness.cfg:6
 msgid "female^Frontier Baroness"
 msgstr "Baronessa di frontiera"
 
-#. [unit_type]: id=Frontier Baroness, race=human
+#. [unit_type]: id=Frontier Baroness, race=human, gender=female
 #: data/campaigns/Descent_Into_Darkness/units/Frontier_Baroness.cfg:23
 msgid ""
 "At Wesnoth’s frontiers, all able-bodied men and women must be able to defend "

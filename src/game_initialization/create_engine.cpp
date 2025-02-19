@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2013 - 2023
+	Copyright (C) 2013 - 2025
 	by Andrius Silinskas <silinskas.andrius@gmail.com>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
@@ -17,25 +17,22 @@
 
 #include "filesystem.hpp"
 #include "game_config_manager.hpp"
-#include "preferences/credentials.hpp"
-#include "preferences/game.hpp"
+#include "preferences/preferences.hpp"
 #include "game_initialization/component_availability.hpp"
 #include "generators/map_create.hpp"
 #include "gui/dialogs/campaign_difficulty.hpp"
 #include "log.hpp"
 #include "map/exception.hpp"
 #include "map/map.hpp"
-#include "minimap.hpp"
 #include "saved_game.hpp"
 #include "side_controller.hpp"
 #include "wml_exception.hpp"
 
+#include "serialization/chrono.hpp"
 #include "serialization/preprocessor.hpp"
 #include "serialization/parser.hpp"
-#include "serialization/string_utils.hpp"
 
 #include <sstream>
-#include <cctype>
 
 static lg::log_domain log_config("config");
 #define ERR_CF LOG_STREAM(err, log_config)
@@ -223,10 +220,10 @@ void campaign::set_metadata()
 
 void campaign::mark_if_completed()
 {
-	data_["completed"] = preferences::is_campaign_completed(data_["id"]);
+	data_["completed"] = prefs::get().is_campaign_completed(data_["id"]);
 
 	for(auto& cfg : data_.child_range("difficulty")) {
-		cfg["completed_at"] = preferences::is_campaign_completed(data_["id"], cfg["define"]);
+		cfg["completed_at"] = prefs::get().is_campaign_completed(data_["id"], cfg["define"]);
 	}
 }
 
@@ -269,10 +266,10 @@ create_engine::create_engine(saved_game& state)
 	dependency_manager_.reset(new depcheck::manager(game_config_, state_.classification().is_multiplayer()));
 
 	// TODO: the editor dir is already configurable, is the preferences value
-	filesystem::get_files_in_dir(filesystem::get_user_data_dir() + "/editor/maps", &user_map_names_,
+	filesystem::get_files_in_dir(filesystem::get_legacy_editor_dir() + "/maps", &user_map_names_,
 		nullptr, filesystem::name_mode::FILE_NAME_ONLY);
 
-	filesystem::get_files_in_dir(filesystem::get_user_data_dir() + "/editor/scenarios", &user_scenario_names_,
+	filesystem::get_files_in_dir(filesystem::get_legacy_editor_dir() + "/scenarios", &user_scenario_names_,
 		nullptr, filesystem::name_mode::FILE_NAME_ONLY);
 
 	DBG_MP << "initializing all levels, eras and mods";
@@ -283,7 +280,7 @@ create_engine::create_engine(saved_game& state)
 
 	state_.mp_settings().saved_game = saved_game_mode::type::no;
 
-	for(const std::string& str : preferences::modifications(state_.classification().is_multiplayer())) {
+	for(const std::string& str : prefs::get().modifications(state_.classification().is_multiplayer())) {
 		if(game_config_.find_child("modification", "id", str)) {
 			state_.classification().active_mods.push_back(str);
 		}
@@ -409,7 +406,7 @@ void create_engine::prepare_for_campaign(const std::string& difficulty)
 	state_.classification().abbrev = current_level_data["abbrev"].str();
 
 	state_.classification().end_text = current_level_data["end_text"].str();
-	state_.classification().end_text_duration = current_level_data["end_text_duration"];
+	state_.classification().end_text_duration = chrono::parse_duration<std::chrono::milliseconds>(current_level_data["end_text_duration"]);
 	state_.classification().end_credits = current_level_data["end_credits"].to_bool(true);
 
 	state_.classification().campaign_define = current_level_data["define"].str();
@@ -548,12 +545,12 @@ void create_engine::set_current_era_index(const std::size_t index, bool force)
 	dependency_manager_->try_era_by_index(index, force);
 }
 
-bool create_engine::toggle_mod(int index, bool force)
+bool create_engine::toggle_mod(const std::string& id, bool force)
 {
 	force |= state_.classification().type != campaign_type::type::multiplayer;
 
-	bool is_active = dependency_manager_->is_modification_active(index);
-	dependency_manager_->try_modification_by_index(index, !is_active, force);
+	bool is_active = dependency_manager_->is_modification_active(id);
+	dependency_manager_->try_modification_by_id(id, !is_active, force);
 
 	state_.classification().active_mods = dependency_manager_->get_modifications();
 
@@ -620,7 +617,7 @@ std::vector<create_engine::extras_metadata_ptr> create_engine::active_mods_data(
 	const std::vector<extras_metadata_ptr>& mods = get_const_extras_by_type(MP_EXTRA::MOD);
 
 	std::vector<extras_metadata_ptr> data_vec;
-	std::copy_if(mods.begin(), mods.end(), std::back_inserter(data_vec), [this](extras_metadata_ptr mod) {
+	std::copy_if(mods.begin(), mods.end(), std::back_inserter(data_vec), [this](const extras_metadata_ptr& mod) {
 		return dependency_manager_->is_modification_active(mod->id);
 	});
 
@@ -691,10 +688,10 @@ void create_engine::init_all_levels()
 		{
 			config data;
 			try {
-				read(data, *preprocess_file(filesystem::get_user_data_dir() + "/editor/scenarios/" + user_scenario_names_[i]));
+				read(data, *preprocess_file(filesystem::get_legacy_editor_dir() + "/scenarios/" + user_scenario_names_[i]));
 			} catch(const config::error & e) {
 				ERR_CF << "Caught a config error while parsing user made (editor) scenarios:\n" << e.message;
-				ERR_CF << "Skipping file: " << (filesystem::get_user_data_dir() + "/editor/scenarios/" + user_scenario_names_[i]);
+				ERR_CF << "Skipping file: " << (filesystem::get_legacy_editor_dir() + "/scenarios/" + user_scenario_names_[i]);
 				continue;
 			}
 
@@ -791,7 +788,6 @@ void create_engine::init_extras(const MP_EXTRA extra_type)
 				extras.push_back(std::move(new_extras_metadata));
 			}
 			else {
-				//TODO: use a more visible error message.
 				ERR_CF << "found " << extra_name << " with id=" << extra["id"] << " twice";
 			}
 		}

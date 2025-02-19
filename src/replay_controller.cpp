@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2015 - 2023
+	Copyright (C) 2015 - 2025
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
 	This program is free software; you can redistribute it and/or modify
@@ -14,8 +14,6 @@
 
 #include "replay_controller.hpp"
 
-#include "game_config_manager.hpp"
-#include "gettext.hpp"
 #include "log.hpp"
 #include "replay.hpp"
 #include "resources.hpp"
@@ -167,25 +165,19 @@ void replay_controller::play_side_impl()
 			}
 			else {
 				REPLAY_RETURN res = do_replay(true);
-				if(res == REPLAY_FOUND_END_MOVE) {
-					stop_condition_->move_done();
-				}
 				if(controller_.is_regular_game_end()) {
 					return;
 				}
 				if(res == REPLAY_FOUND_END_TURN) {
 					return;
 				}
-				// TODO: how can this be the case when we just checked for "resources::recorder->at_end()" above?
-				if(res == REPLAY_RETURN_AT_END) {
-					stop_replay();
-				}
+				stop_condition_->move_done();
 				if(res == REPLAY_FOUND_INIT_TURN)
 				{
 					stop_condition_->new_side_turn(controller_.current_side(), controller_.gamestate().tod_manager_.turn());
 				}
 			}
-			controller_.play_slice(false);
+			controller_.play_slice();
 
 			// Update the buttons once, on the transition from not-stopped to stopped.
 			if(stop_condition_->should_stop()) {
@@ -197,7 +189,7 @@ void replay_controller::play_side_impl()
 			// Don't move the update_enabled_buttons() call here. This play_slice() should block
 			// until the next event occurs, but on X11/Linux update_enabled_buttons() seems to put
 			// an event in the queue, turning this into a busy loop.
-			controller_.play_slice(true);
+			controller_.play_slice();
 		}
 	}
 	return;
